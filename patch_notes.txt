@@ -1,0 +1,209 @@
+Version 4.6.2
+-------------
+6 November 2018
+
+ 
+
+ 
+
+== Design ==
+
+ 
+
+= General =
+
+Gold Changes
+- Melee Lane Creep Gold Bounty reduced from 45-55 to 40-50.
+- Ranged Lane Creep Gold Bounty reduced from 45-55 to 40-50.
+- Siege Lane Creep Gold Bounty increased from 56-80 to 60-80. 
+
++ Although we wanted to encourage staying in lane for longer periods of time to mitigate the effectiveness of deathballs/"pubtrains" that occur too early (as well as emphasize the importance of last-hitting even more), the gold gain rate has been accelerated a little too much & favours snowballing too much from merely obtaining a lane lead.
+
++ As a result, the Gold Bounty from Lane Creeps have been reduced slightly, but still give 4 more gold on average compared to the values before patch 4.5.2 (which is about a net 10% increase in Gold Bounty as opposed to a 20% net increase).
+
+ 
+
+Kongor & Hell Kongor
+- Starting Attack Damage increased from 60 to 70.
+
++ The Bosses were doing slightly too little damage since the previous patch, so their Attack Damage values have been adjusted accordingly.
+
+ 
+
+_______________________________________________
+
+
+
+= Heroes =
+
+Bushwack
+
+Jungle Toxin
+- Physical Damage per second is now capped at 100 on Bosses.
+
++ Players were expressing that Bushwack is a problem in the new meta. This change makes it much more difficult for Bushwack to solo Kongor early on - he will likely require an ally to help kite/tank for him to sustain Jungle Toxin's DPS on Kongor (which, by the way, only has a ~1s re-application window because Kongor & Hell Kongor have high debuff duration reduction).
+
+_______________________________________________
+
+Master of Arms
+
+Acid Bomb
+- Now only deals 0.5x the Physical Damage per second to non-hero units.
+
+Weapon Enhancement
+- Attack Speed bonus on Cheetah reduced from 0/100/175/250/325 to 0/40/60/80/100.
+- Attack Damage penalty against heroes with Cheetah reduced from 20% to 10%.
+- Attack Damage bonus on Bulldozer reduced from 0/10/20/30/40 to 0/5/10/15/20.
+
+Master's Call
+- Attack Speed bonus (from the active state) while the Cheetah gun is active increased from 50/100/150 to 100/150/200.
+- Attack Damage bonus (from the active state) while the Bulldozer gun is active increased from 20/40/60 to 40/70/100.
+
++ Master of Arms has too many upsides that cover all of his weaknesses adequately, while also maintaining all of the strengths of a carry with great scaling and quick farm speed.
+
++ As a result, the area damage from Acid Bomb has been reduced significantly against creeps, and a significant portion of Master of Arms' damage output has been moved to the active state of Master's Call, which significantly reduces the 100% uptime on his heightened damage output.
+
+_______________________________________________
+
+Rampage
+
+Stampede
+- No longer has the auto-switch target mechanic.
+- Instead, when the main target dies or orderdisjoints (e.g. via using Geometer's Bane) before Stampede starts the pounce state, Rampage is put on a 5 second cooldown instead of its default cooldown value.
+
+Ability 2: Might of the Herd (Reworked)
+- Renamed from Tough Hide.
+- In addition to Tough Hide's benefits, now also grants 4/6/8/10% Movement Speed, and gains 4/6/8/10% of Movement Speed in Attack Damage.
+- Max HP granted by moving reduced from 60/120/180/240 to 60/80/100/120.
+- Shield Health increased per 100 distance traveled changed from 2/4/6/8 to 3/4/5/6.
+
++ Stampede had to be changed due to various players abusing a gamebreaking bug (of some form) on Rampage. To all those who genuinely enjoyed playing Rampage and Stampede's auto-target-switching behaviour, you can blame the players who exploited the gamebreaking bugs on Stampede.
+
++ To compensate, Tough Hide has been renamed to its legacy name (Might of the Herd), and now provides some of the benefits the legacy skill offered (since it is a rather lackluster ability). The shield does not need a high health cap & its purpose is meant to be residual defense gained while moving.
+
+_______________________________________________
+
+Shellshock
+
+Fireflies
+- Magic Damage reduced from 100/150/200/250 to 100/140/180/220.
+
++ Shellshock has been slightly overperforming for a long period of time since his most recent buffs. This adjustment should bring his performance back where we initially wanted it to be.
+
+_______________________________________________
+
+ 
+
+= Items =
+
+Arcane Bomb
+- Against enemy illusions, now removes 900 Health or 75% of the target's Max Health (whichever is higher), instead of dealing 900 Magic Damage.
+*Health Removal in this manner is lethal.
+
++ Arcane Bomb's primary purpose seemed to be lacking later in the game when enemy heroes get more survivability and increased Magic Armor. This change helps its effectiveness be retained later in the game, which is when illusions do start to become a big problem.
+
+_______________________________________________
+
+Behemoth's Heart
+- Recipe cost reduced from 800 Gold to 500 Gold.
+*Total Cost reduced from 5100 Gold to 4800 Gold.
+- Health Regeneration per second increased from 0.75% to 1% of your Max Health.
+
+Bloodborne Maul
+- Max Charges reduced from 350 to 120.
+- Strength bonus reduced from 45 to 35.
+
++ Strength carries (which have good early-game performance as well as late-game performance) are too enabled by this item, and this item has been far too powerful for such a long time because it gives both survivability and damage in the same item to such a high extent (and also dwarfs the purpose of Behemoth's Heart). In fact, multiple players still pick up this item even if they aren't a Strength hero and still dominate, so the item is being toned down significantly.
+
++ As a result, Behemoth's Heart also received a small buff.
+
+ _______________________________________________
+
+Runed Cleaver
+- Recipe Cost reduced from 575 Gold to 225 Gold.
+*Total Cost reduced from 4100 to 3750 Gold.
+
++ The cost of Runed Cleaver decreases at roughly the same proportion as the Gold Bounty changes in this patch, since this item is pivotal to certain heroes' farming performance throughout the game.
+
+  _______________________________________________
+
+
+
+ 
+
+== Matchmaking Maps & Modes ==
+
+ 
+
+Champions of Newerth (CoN)
+- Map: Forests of Caldavar
+- Mode: Ranked Pick
+
+ 
+
+Mid Wars
+- Hero Ban
+- Single Draft
+
+ 
+
+Team Deathmatch
+- Blind Ban
+
+ 
+
+ 
+
+== New Content ==
+
+ 
+
+= General =
+
+ 
+
+New Maliken Avatar: Volto Maliken
+- The annual Carnival of Adkarna festival thrown by the city's elite originated as a celebration of Maliken Grimm's victory over the Savages and thereby uniting all of Man under his banner. The tradition has continued long after Grimm's betrayal of the Legion, as humans can justify nearly any reason to don disguises and engage in highly questionable behavior, and the Carnival has morphed into a vague celebration of Man's perseverance over general misery and anguish. Among the lavish private parties thrown every year, the one hosted by the ridiculously wealthy merchant Volto is considered the best, and the nobles cannot recall a time when attendance at Volto's masquerade ball wasn't absolutely required to maintain top social status. They cannot recall that time, because it never existed. Volto was there at the very first Carnival, and he is among the most insidious sort of daemon -- the sort who blends in perfectly with his prey and caters to their wants, needs, desires, and egos, making them feel like royalty among their peers just by sparing a moment to chat with them at his luxurious ball.
+
+But every year, for a small, select group -- those targeted for their influence in various aspects of the Legion -- that chat leads to a whisper, a beckoning to deeper chambers for a more private encounter, and only there does Volto reveal his true form with daemonic zeal. And while the hapless nobles targeted for assassination are torn apart by Volto's claws, their friends and family continue to drink his wine, eat his food, and revel in the debauchery of the annual Carnival of Adkarna.
+
+ 
+
+New Monkey King Avatar: Prodigy King
+- The whiz kid could always see the underlying systems at work behind any mathematical problem, and it didn't take him long to discover that every problem was mathematical -- it was a simple matter of applying the necessary physics and deconstructing the issues until he'd found the nucleus, the core issue, and solving it. This was both encouraging and infuriating for his professors, who saw enormous potential in the lad but sometimes found his arrogance and constant perfectionism -- plus the fact that he was never wrong -- insufferable. When the prodigy became bored with his doctorate-level classes at the Adkarna Academy, one of his more frustrated instructors suggested he explore the military courses available to those interested in joining the Legion forces as officers. The boy dismissed this laughable notion at first -- one needn't be a genius to swing an over-sized letter opener -- but his brain constantly craved new and interesting information, and his curiosity eventually carried him to the Applied Research: Warfare wing of the campus. There, he had the stunning revelation that battle is math. Angles, speed, collisions, momentum -- all of it could be planned, prepared, and executed for a certain victory. And when he discovered that chaos was the fuel that powered the math, he was hopelessly lost in trying solve the problem of the perfect combination of tactics and strategy to win the war against the Hellbourne. And now that he has a theory, it's time to test it...
+
+ 
+
+New Swiftblade Avatar: Suzaku Swiftblade
+- The Suzaku is a legendary guardian of the southern Sang-La Mountains, a heavenly bird made of flames who blesses a chosen warrior with incredible speed, strength, and fiery blades so they may serve as the embodiment of justice and vigilance. This was of course known to the young female student at the Adkarna Academy -- all of the silly celestial beings from her homeland were required learning in her Astrology course -- but when she came across a classmate being bullied by a group of older students, Suzaku was the furthest thing from her mind. All she wanted to do was protect the poor child from further torment, and without concern for her own safety she plunged into the fray. This was exactly what Suzaku looked for in an exemplar, and the schoolgirl, on the verge of serious harm from the bullies, suddenly found herself moving in a blur of flames as she slashed through the aggressors, sending them limping and scurrying away. This would be the first of many battles for this incarnation of Suzaku, and while she was constantly in harm's way, her greatest fear was earning detention for being absent so many times.
+
+ 
+
+ 
+
+== Bug Fixes & Optimizations ==
+
+ 
+
+= General =
+
+- Kongor buffs now properly propagate to illusions.
+- Towers will no longer attack NPC neutral creeps.
+*Fixes a Mid Wars exploit when pulling the Ancient creep camp to the Legion tower.
+
+ 
+
+= Heroes =
+
+Keeper of the Forest
+- Strength in Numbers will no longer proc specifically from Fayde's Burning Shadows' illusions.
+
+Nymphora
+- Volatile Pod visuals have been corrected for each alternate avatar (as deemed appropriately).
+
+Warchief
+- Spawned Totems will no longer block neutral camps from respawning.
+
+ 
+
+_______________________________________________
