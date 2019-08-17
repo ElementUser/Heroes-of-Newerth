@@ -1,5 +1,5 @@
 ===========================================
 HoN - Script Compilation
 
-Copyright © William "ElementUser" Lam (2018)
+Copyright © William "ElementUser" Lam (2019)
 ===========================================
