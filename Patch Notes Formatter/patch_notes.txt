@@ -1,133 +1,525 @@
-Version 4.6.2
+Version 4.8.0
 -------------
-6 November 2018
+8 October 2019
 
  
 
+== Champions of Newerth (CoN) ==
+
+- The new Champions of Newerth Season will last indefinitely until further notice.
+*This can change at any point Garena & Frostburn Studios deems appropriate.
+
+- All players will be reset to a base MMR of 1500 at the start of this Season (instead of starting off at a base MMR of 1250).
+*This MMR reset combats all of the smurfing and stat manipulation that took place in the past, and the MMR system will be considered much more stable since it now uses the Legacy MMR system after the placement match period.
+*Placement Matches will still have additional weight for determining your initial rank, but the weight from these Placement Matches is much lighter than prior Seasons.
+
  
 
-== Design ==
+= User Interface =
+
+- Shadowpicking will no longer function during the Hero Ban Voting Phase of Ranked Pick (to prevent any confusion or unintended behaviour after the Voting Phase ends).
+
++ The following changes were implemented from the MVP Mod (credits to EngineerT):
+- Added a close button to the MVP window (so it does not obstruct your view if you wish to control your hero for a short time after the game ends).
+- Added a disconnect button to the MVP Window (so you can disconnect from the game without having to navigate to the menu).
+
+- As a result of the changes for this Champions of Newerth Season, the Ladder button has been re-enabled (since MMR will now really be "permanent" and matters a lot more than before).
+*Disclaimer: the Ladder's displayed information may not be accurate & may need additional time to synchronize properly, or may need additional time & resources to fix the issue. There is no estimated time for a fix if this feature does not display the correct information.
+
+- HoN Live has also been re-enabled to allow players to watch other HoN games once again!
 
  
 
 = General =
 
-Gold Changes
-- Melee Lane Creep Gold Bounty reduced from 45-55 to 40-50.
-- Ranged Lane Creep Gold Bounty reduced from 45-55 to 40-50.
-- Siege Lane Creep Gold Bounty increased from 56-80 to 60-80. 
-
-+ Although we wanted to encourage staying in lane for longer periods of time to mitigate the effectiveness of deathballs/"pubtrains" that occur too early (as well as emphasize the importance of last-hitting even more), the gold gain rate has been accelerated a little too much & favours snowballing too much from merely obtaining a lane lead.
-
-+ As a result, the Gold Bounty from Lane Creeps have been reduced slightly, but still give 4 more gold on average compared to the values before patch 4.5.2 (which is about a net 10% increase in Gold Bounty as opposed to a 20% net increase).
+Well/Tarpit
+- Well's/Tarpit's attacks now deal 1.35x damage to enemy heroes.
+- Well's/Tarpit's attacks now have 25% Armor Penetration against enemy heroes.
 
  
 
-Kongor & Hell Kongor
-- Starting Attack Damage increased from 60 to 70.
+= Neutral Creeps =
 
-+ The Bosses were doing slightly too little damage since the previous patch, so their Attack Damage values have been adjusted accordingly.
+- Aggro range increased from 225 to 275.
+*Applies to all neutral creeps except for those that are able to spawn in the Easy neutral camps.
+
+Dragon Master
+- Max Health reduced from 1800 to 1600.
+
+Dragon
+- Max Health increased from 900 to 1000.
 
  
+
+= Forests of Caldavar ("New") Map =
+
+- The line of trees closest to the left & right sides of the map near each side lane's Tier 1 (outermost) Tower have been drastically shortened.
+
+
 
 _______________________________________________
 
 
 
-= Heroes =
+== Heroes ==
+
+
+
+Adrenaline
+
+Death's Halo
+- Stun duration increased from 1.25 seconds to 1.6 seconds.
+- Number of Dread Stacks applied increased from 10/20/30 to 12/24/36.
+
+_______________________________________________
+
+Amun-Ra
+
+Path of Destruction
+- Projectile travel time reduced from 0.7 seconds to 0.5 seconds.
+*The impact delay is untouched, but this is still considered a buff on the overall time it takes for the meteor to impact.
+- Health Cost reduced from 20% to 18% of Max Health.
+
+Ashes to Ashes
+- Health Regeneration increased from 1/2/3/4 to 2/3/4/5.
+
+_______________________________________________
+
+Andromeda
+
+Dimensional Link
+- Base Attack Damage bonus reduced from 12/18/24/30% to 10/14/18/22%.
+
+Void Rip
+- Damage dealt by the illusion reduced from 75% to 25%.
+- Damage received by the illusion increased from 125% to 200%.
+
+_______________________________________________
+
+Arachna
+
+Spider Sting
+- Cast Range increased from 500 to 600.
+- Spiderlings now properly have a 600 range Night Vision.
+
+_______________________________________________
+
+Artillery
+
+LRM
+- Base damage per missile increased from 9 to 10.
+- Bonus damage per shot fired without breaking channeling increased from 0.75% to 1.25%.
+
+Homing Missile
+- Missile base speed increased from 100 to 250 units per second.
+- Missile acceleration increased from 150 to 300.
+*Note that the stun time is still based off the missile's distance travelled, so nothing has changed in terms of the stun time mathematics. This is ultimately a buff, as it allows the missile to hit an enemy faster.
+
+_______________________________________________
+
+Blitz
+
+Pilfering
+- Now Reveals the target while active.
+
+_______________________________________________
 
 Bushwack
-
-Jungle Toxin
-- Physical Damage per second is now capped at 100 on Bosses.
-
-+ Players were expressing that Bushwack is a problem in the new meta. This change makes it much more difficult for Bushwack to solo Kongor early on - he will likely require an ally to help kite/tank for him to sustain Jungle Toxin's DPS on Kongor (which, by the way, only has a ~1s re-application window because Kongor & Hell Kongor have high debuff duration reduction).
+- Turn rate increased from 450 degrees per second to 720 degrees per second.
 
 _______________________________________________
 
-Master of Arms
+Chronos
 
-Acid Bomb
-- Now only deals 0.5x the Physical Damage per second to non-hero units.
-
-Weapon Enhancement
-- Attack Speed bonus on Cheetah reduced from 0/100/175/250/325 to 0/40/60/80/100.
-- Attack Damage penalty against heroes with Cheetah reduced from 20% to 10%.
-- Attack Damage bonus on Bulldozer reduced from 0/10/20/30/40 to 0/5/10/15/20.
-
-Master's Call
-- Attack Speed bonus (from the active state) while the Cheetah gun is active increased from 50/100/150 to 100/150/200.
-- Attack Damage bonus (from the active state) while the Bulldozer gun is active increased from 20/40/60 to 40/70/100.
-
-+ Master of Arms has too many upsides that cover all of his weaknesses adequately, while also maintaining all of the strengths of a carry with great scaling and quick farm speed.
-
-+ As a result, the area damage from Acid Bomb has been reduced significantly against creeps, and a significant portion of Master of Arms' damage output has been moved to the active state of Master's Call, which significantly reduces the 100% uptime on his heightened damage output.
+Chronofield
+- Staff of the Master effect only:
+*Cooldown is now reduced to 100 seconds (instead of being reduced to 75 seconds).
 
 _______________________________________________
 
-Rampage
+Defiler
+- Base Movement Speed increased from 290 to 295.
 
-Stampede
-- No longer has the auto-switch target mechanic.
-- Instead, when the main target dies or orderdisjoints (e.g. via using Geometer's Bane) before Stampede starts the pounce state, Rampage is put on a 5 second cooldown instead of its default cooldown value.
+Wave of Death
+- Cooldown changed from 9 seconds to 9.5/8.5/7.5/6.5 seconds.
+- Magic Damage reduced from 100/175/250/325 to 90/165/240/315.
+- Mana Cost reduced from 100/120/140/160 to 85/110/135/160.
 
-Ability 2: Might of the Herd (Reworked)
-- Renamed from Tough Hide.
-- In addition to Tough Hide's benefits, now also grants 4/6/8/10% Movement Speed, and gains 4/6/8/10% of Movement Speed in Attack Damage.
-- Max HP granted by moving reduced from 60/120/180/240 to 60/80/100/120.
-- Shield Health increased per 100 distance traveled changed from 2/4/6/8 to 3/4/5/6.
+Grave Silence
+- Duration reduced from 3/4/5/6 seconds to 2/2.5/3/3.5 seconds.
+- Mana Cost changed from 80/70/60/50 to 65.
+- Cooldown reduced from 15 seconds to 13 seconds.
 
-+ Stampede had to be changed due to various players abusing a gamebreaking bug (of some form) on Rampage. To all those who genuinely enjoyed playing Rampage and Stampede's auto-target-switching behaviour, you can blame the players who exploited the gamebreaking bugs on Stampede.
+Siphon Soul (Reworked from Power in Death)
+*Range: 650
+*Mana Cost: 80/100/120/140
+*Cooldown: 20 seconds
+- Target an enemy hero to latch onto a fragment of their soul for up to 5 seconds, dealing 20 Magic Damage per second and heals Defiler for 8 + 1/2/3/4% of the target's Max Health per second.
+- While active, the soul link also reduces the target's Movement Speed by 15% and increases Defiler's Movement Speed by 15%.
+- The soul link has a leash range of 800 units.
 
-+ To compensate, Tough Hide has been renamed to its legacy name (Might of the Herd), and now provides some of the benefits the legacy skill offered (since it is a rather lackluster ability). The shield does not need a high health cap & its purpose is meant to be residual defense gained while moving.
+Unholy Expulsion
+- Number of spirits changed from 6/12/18 to 8/15/22.
 
 _______________________________________________
 
-Shellshock
+Doctor Repulsor
 
-Fireflies
-- Magic Damage reduced from 100/150/200/250 to 100/140/180/220.
+Opposite Charges
+- Ability can now be used on the closest enemy hero within its cast range from the caster via activation of the third ability of this hero as a subability (default hotkey "E").
 
-+ Shellshock has been slightly overperforming for a long period of time since his most recent buffs. This adjustment should bring his performance back where we initially wanted it to be.
+Ludicrous Speed
+- Cooldown reduced from 0.4 seconds to 0.3 seconds.
+- Now grants Doctor Repulsor 2/4/6 + 0/50/100% Mana Regeneration.
+
+_______________________________________________
+
+Draconis
+
+Cataclysm
+- Now refreshes the cooldown of Draconic Defense when Cataclysm is used.
+
+_______________________________________________
+
+Ellonia
+
+Flash Freeze
+- Base Magic Damage increased from 40/60/80/100 to 55/80/105/130.
+
+_______________________________________________
+
+Gauntlet
+
+Gauntlet Blast
+- Staff of the Master effect only: active ability that attaches Gauntlet to his launched fist has been moved to a subability (default hotkey: "D").
+*Shares cooldown with his regular ultimate ability.
+*Gauntlet can still detach from the launched fist at any time using either his regular ultimate ability or the ultimate's subability.
+*Side note: Grapple's extra ability button was removed as a result, but activating the hotkey for Enfeeble (default hotkey "E") will still have the exact same functionality.
+
+_______________________________________________
+
+Gladiator
+
+Flagellation
+- Now only adds 0.5x bonus damage when attacking ally units.
+
+_______________________________________________
+
+Goldenveil
+
+Perch & Plunge
+- Plunge: delay before Goldenveil lands to apply the Magic Damage & Stun reduced from 1 second to 0.6 seconds.
+- Plunge: Stun duration reduced from 1.6/1.9/2.2/2.5 seconds to 1.4/1.6/1.8/2 seconds.
+
+_______________________________________________
+
+Hellbringer
+
+Evil Presence
+- Cooldown reduced from 15 seconds to 11 seconds.
+- Mana Cost increased from 50 to 65/80/95/110.
+- Targeting scheme changed from Target Unit to Target Position.
+- Movement Speed of the minion increased from 522 to 1600 when the ability is cast.
+- Enemy units affected by the minion explosion now also heal Hellbringer for 15/20/25/30% of Damage they receive for 5/6/7/8 seconds.
+- Negative Magic Armor duration increased from 5 seconds to 5/6/7/8 seconds.
+*Movement Speed Slow duration remains the same at 5 seconds.
+*Legacy Life Void has more or less been re-integrated on Hellbringer.
+
+_______________________________________________
+
+Keeper of the Forest
+
+Nature's Guidance
+- Camouflage state now has a 0.8 second linger time if the target farther than 400 units away from a tree.
+- While Camouflage is active, the next attack will apply a 0.5/0.8/1.1/1.4 second Root if the owner of Camouflage attacks out of stealth.
+
+Animate Forest
+- Max Animated Tree spawn count changed from 1/2/3/4 to 4.
+- Max Health of Animated Trees from this ability reduced from 550 to 250/350/450/550.
+- Attack Damage of Animated Trees from this ability reduced from 28 to 16/20/24/28.
+- Cooldown reduced from 20 seconds to 17 seconds.
+
+Strength in Numbers
+- Max Health of Animated Trees reduced from 275 to 155/195/235/275.
+- Attack Damage of Animated Trees from this ability reduced from 28 to 16/20/24/28.
+- Chance to spawn an Animated Tree is now reduced by 0.6x (multiplicatively) for each Animated Tree that exists from Strength in Numbers when attacking non-hero units.
+*Does not consider the Animated Trees from Animate Forest in this calculation.
+
+_______________________________________________
+
+Kinesis
+
+Thoughtsteal
+- Now has a Mana Cost of 100/120/140/160.
+
+Telekinetic Control
+- No longer lifts player-controlled ally units if they have you flagged with NoHelp.
+
+Stasis Smash
+- Unit affected by Stasis Smash no longer gains 20% Damage Reduction.
+- Stun duration and stasis duration (for the side targets) reduced from 2.5/3/3.5 seconds to 2/2.5/3 seconds.
+- Movement Speed Slow duration after Stasis Smash expires reduced from 2 seconds to 1.5 seconds.
+- Movement Speed Slow now applies to all enemies in the area after Stasis Smash expires, including the lifted units (as opposed to only being applied to non-lifted units in the area).
+
+_______________________________________________
+
+Lodestone
+
+Headsmash
+- Ability can now be used on the closest enemy hero within its cast range from the caster via activation of the third ability of this hero as a subability (default hotkey "E").
+
+_______________________________________________
+
+Nitro
+
+Ballistic
+- Base Mana Cost reduced from 9 to 6.
+- Now becomes disabled if Nitro or Mauser is Disarmed.
+- No longer becomes disabled if Nitro or Mauser is Silenced.
+
+_______________________________________________
+
+Ophelia
+
+Nature's Wrath
+- Mana Cost increased from 70 to 70/80/90/100.
+- State duration reduced from 8 seconds to 6 seconds.
+- Movement Speed Slow changed from 15/20/25/30% to 16/19/22/25%.
+- Damage Amplification changed from 15/20/25/30% to 16/19/22/25%.
+
+_______________________________________________
+
+Parallax
+
+Earthshatter
+- Staff of the Master effect changes only:
+*Percentage of Magic Damage converted to SuperiorMagic Damage reduced from 50% to 40%.
+*Cooldown is now reduced to 55/45/35 seconds (instead of 35/30/25 seconds).
+
+_______________________________________________
+
+Pestilence
+- Agility growth per level increased from 1.5 to 1.8.
+
+Gore
+- Bonus Physical Damage when proccing increased from 20/40/60/80 to 40/60/80/100.
+
+Swarm
+- Armor reduction increased from 6/12/18 to 7/14/21.
+
+_______________________________________________
+
+Prisoner 945
+
+Shackled
+- Ability can now be used on the closest enemy hero within its cast range from the caster via activation of the third ability of this hero as a subability (default hotkey "E").
+
+_______________________________________________
+
+Rally
+
+Battle Experience
+- Armor Penetration for damage dealt by Rally changed from 20/40/60/80% to 25/40/55/70%.
+
+_______________________________________________
+
+Ravenor
+
+Static Shock
+- Max number of side targets affected by Static Shock increased from 2 to 3.
+*Total max number of targets affected by Static Shock increased from 3 to 4.
+
+_______________________________________________
+
+Riptide
+
+Watery Grave
+- Cast Range increased from 500 to 600.
+- Magic Damage changed from 90/180/270/360 to 95/170/250/330.
+- Attack Speed Slow reduced from 50% to 20%.
+
+Undertow
+- Cooldown changed from 14 seconds to 15/13/11/9 seconds.
+- Silence duration reduced from 2/2.5/3/3.5 seconds to 1.5/2/2.5/3 seconds.
+- Now deals 30/45/60/75 Magic Damage to enemies within radius upon impact.
+- Cast Range reduced from 900 to 800.
+- Undertow now ignores terrain, so Riptide will now travel to the destination in a straight line.
+
+In My Element
+- Minimap detection threshold radius when checking for nearby enemy heroes while in water increased from 800 units to 2500 units.
+
+Perfect Storm
+- Bonus Damage granted to allies increased from 10/15/20% to 15/25/35% of Riptide's Agility.
+
+_______________________________________________
+
+Sapphire
+
+Unstable Shard
+- Movement Speed Slow increased from 10/13/16/20% to 10/15/20/25%.
+- Area Magic Damage upon hitting the Unstable Shard increased from 110/115/120/125% to 115/120/125/130% of the Attacker's Attack Damage.
+
+_______________________________________________
+
+Shadowblade
+
+Essence Shift
+- Max Health reduction decreased from 7 to 3 per point of bonus Strength granted by Essence Shift (if Strength is Shadowblade's Primary Attribute).
+
+_______________________________________________
+
+Swiftblade
+
+Swift Slashes
+- Now resets Swiftblade's attack cooldown upon being cast.
+
+_______________________________________________
+
+Tremble
+
+Dark Swarm
+- Damage Reduction from enemies outside Dark Swarm that damage Tremble changed from 35/40/45/50% to 30/40/50/60%.
+
+Terrorform
+- Terror Mounds cooldown reduced from 30 seconds to 25 seconds.
+- Terror Port cooldown reduced from 50 seconds to 45 seconds.
+
+_______________________________________________
+
+Xemplar
+
+Echo Strikes
+- Whenever one of Xemplar's illusions dies within 900 radius of him, Xemplar receives a bonus 5/10/15/20Attack Speed for 6 seconds (max of 20/40/60/80 Attack Speed from this mechanic).
+*This bonus is separate from the default Echo Strikes buff & will stack with the default Echo Strikes buff.
 
 _______________________________________________
 
  
 
-= Items =
+
+== Items ==
+
+
 
 Arcane Bomb
-- Against enemy illusions, now removes 900 Health or 75% of the target's Max Health (whichever is higher), instead of dealing 900 Magic Damage.
-*Health Removal in this manner is lethal.
+- Bonus Magic Damage dealt to enemy player-controlled-non-hero units reduced from 40% of the target's Max Health to 30% of the target's Max Health.
+*Still deals the base 150 Magic Damage to enemy player-controlled-non-hero units.
 
-+ Arcane Bomb's primary purpose seemed to be lacking later in the game when enemy heroes get more survivability and increased Magic Armor. This change helps its effectiveness be retained later in the game, which is when illusions do start to become a big problem.
+- Now has new Stock mechanics in the store:
+*Initial stock of 1.
+*Item is only purchaseable after the 6-minute mark.
+*Refreshes at a rate of 1 stock every 15 minutes.
+*Maximum of 1 stock available in the store at any given time.
+
+- True Damage mechanics dealt to enemy illusions changed.
+
+- Previously:
+*Target enemy illusion receives 900 True Damage or 75% of their Max Health, whichever is higher.
+
+- After this patch:
+* Target enemy illusion receives 500 True Damage or 50% of their Max Health, whichever is higher.
+* Each enemy illusion affected spawns an invisible arcane shockwave of 600 radius that only affects other enemy illusions in the area, making them receive 200 True Damage or 15% of their Max Health, whichever is higher.
+* i.e. a Behemoth Shockwave echo effect only for enemy illusions.
 
 _______________________________________________
 
-Behemoth's Heart
-- Recipe cost reduced from 800 Gold to 500 Gold.
-*Total Cost reduced from 5100 Gold to 4800 Gold.
-- Health Regeneration per second increased from 0.75% to 1% of your Max Health.
-
 Bloodborne Maul
-- Max Charges reduced from 350 to 120.
-- Strength bonus reduced from 45 to 35.
+- Max charges increased from 120 to 150.
 
-+ Strength carries (which have good early-game performance as well as late-game performance) are too enabled by this item, and this item has been far too powerful for such a long time because it gives both survivability and damage in the same item to such a high extent (and also dwarfs the purpose of Behemoth's Heart). In fact, multiple players still pick up this item even if they aren't a Strength hero and still dominate, so the item is being toned down significantly.
+_______________________________________________
 
-+ As a result, Behemoth's Heart also received a small buff.
+Daemonic Breastplate
+- Armor granted to self increased from 7 to 10.
+- Attack Speed to allies increased from 20 to 25.
 
- _______________________________________________
+_______________________________________________
 
-Runed Cleaver
-- Recipe Cost reduced from 575 Gold to 225 Gold.
-*Total Cost reduced from 4100 to 3750 Gold.
+Frostfield Plate
+- Attack Speed Slow from the passive aura reduced from 30% to 20%.
+- Movement Speed Slow from the debuff increased from 40% to 50%.
 
-+ The cost of Runed Cleaver decreases at roughly the same proportion as the Gold Bounty changes in this patch, since this item is pivotal to certain heroes' farming performance throughout the game.
+_______________________________________________
 
-  _______________________________________________
+Frostwolf's Skull
+- Active effect's debuff: Attack Speed Slow changed from 20 to 50%.
+*Passive effect's debuff numbers remains the same as before.
+*Active effect still applies a 20% Movement Speed Slow.
+*The active effect's debuff now stacks with the passive effect's debuff.
 
+_______________________________________________
 
+Hypercrown
+- Magic Damage dealt by the Chain Lightning procs increased from 150 to 175.
+- Max number of bounces increased from 5 to 10.
+
+_______________________________________________
+
+Icon of the Goddess
+- Health Regeneration per charge increased from 1 to 1.5.
+- Mana Regeneration per charge increased from 20% to 25%.
+- In addition to its current effects: every 5 charges will grant an additional 100 Health and 100 Mana.
+- Gift of the Goddess effect: Health Regeneration per second increased from 10 to 15.
+
+_______________________________________________
+
+Logger's Hatchet
+- Bonus Damage dealt to non-hero units when wielded by a Ranged Hero reduced from 15 to 12.
+
+_______________________________________________
+
+Mock of Brilliance
+- Magic Damage per second reduced from 60 to 50.
+
+_______________________________________________
+
+Nullfire Blade
+- Recipe upgrades now also grant +2 Strength, +8 Agility, and +2 Intelligence.
+- Active effect: now removes buffs from enemies when the item is Level 2 (as opposed to Level 3).
+- Active effect: in addition to its other effects, can now target self (or double-activate) to remove debuffs from self when the item is Level 3.
+
+_______________________________________________
+
+Shieldbreaker
+- Armor reduction increased from 3/5/7 to 4/6/8.
+
+_______________________________________________
+
+Sol's Bulwark
+- New buildup: Ringmail (550) + Recipe (1000) = 1550 Gold
+- Armor granted to allies/removed from enemies reduced from 4 to 3.
+
+_______________________________________________
+
+Soultrap
+- Cast Range reduced from 800 to 700.
+- Recipe Cost increased from 485 Gold to 585 Gold.
+* Total Cost increased from 700 Gold to 800 Gold.
+
+_______________________________________________
+
+Tome of Elements
+- Stock mechanics changed for the store.
+
+- Previously:
+*Initial stock of 0.
+*Refreshes at a rate of 1 stock every 10 minutes.
+*Maximum of 3 stocks available in the store at any given time.
+
+- After this patch:
+*Initial stock of 1.
+*Item is only purchaseable after the 15-minute mark.
+*Refreshes at a rate of 1 stock every 12 minutes.
+*Maximum of 2 stocks available in the store at any given time.
+
+_______________________________________________
+
+Whispering Helm
+- Cooldown increased from 300 seconds to 720 seconds.
+- The current cooldown of Whispering Helm is reduced by 50% when a unit dominated by Whispering Helm dies.
+
+_______________________________________________
+
+ 
 
  
 
@@ -136,7 +528,7 @@ Runed Cleaver
  
 
 Champions of Newerth (CoN)
-- Map: Forests of Caldavar
+- Map: Forests of Caldavar ("New" for NAEU/International region, "Old" for SEA region)
 - Mode: Ranked Pick
 
  
@@ -147,63 +539,34 @@ Mid Wars
 
  
 
-Team Deathmatch
-- Blind Ban
-
- 
-
- 
-
-== New Content ==
-
- 
-
-= General =
-
- 
-
-New Maliken Avatar: Volto Maliken
-- The annual Carnival of Adkarna festival thrown by the city's elite originated as a celebration of Maliken Grimm's victory over the Savages and thereby uniting all of Man under his banner. The tradition has continued long after Grimm's betrayal of the Legion, as humans can justify nearly any reason to don disguises and engage in highly questionable behavior, and the Carnival has morphed into a vague celebration of Man's perseverance over general misery and anguish. Among the lavish private parties thrown every year, the one hosted by the ridiculously wealthy merchant Volto is considered the best, and the nobles cannot recall a time when attendance at Volto's masquerade ball wasn't absolutely required to maintain top social status. They cannot recall that time, because it never existed. Volto was there at the very first Carnival, and he is among the most insidious sort of daemon -- the sort who blends in perfectly with his prey and caters to their wants, needs, desires, and egos, making them feel like royalty among their peers just by sparing a moment to chat with them at his luxurious ball.
-
-But every year, for a small, select group -- those targeted for their influence in various aspects of the Legion -- that chat leads to a whisper, a beckoning to deeper chambers for a more private encounter, and only there does Volto reveal his true form with daemonic zeal. And while the hapless nobles targeted for assassination are torn apart by Volto's claws, their friends and family continue to drink his wine, eat his food, and revel in the debauchery of the annual Carnival of Adkarna.
-
- 
-
-New Monkey King Avatar: Prodigy King
-- The whiz kid could always see the underlying systems at work behind any mathematical problem, and it didn't take him long to discover that every problem was mathematical -- it was a simple matter of applying the necessary physics and deconstructing the issues until he'd found the nucleus, the core issue, and solving it. This was both encouraging and infuriating for his professors, who saw enormous potential in the lad but sometimes found his arrogance and constant perfectionism -- plus the fact that he was never wrong -- insufferable. When the prodigy became bored with his doctorate-level classes at the Adkarna Academy, one of his more frustrated instructors suggested he explore the military courses available to those interested in joining the Legion forces as officers. The boy dismissed this laughable notion at first -- one needn't be a genius to swing an over-sized letter opener -- but his brain constantly craved new and interesting information, and his curiosity eventually carried him to the Applied Research: Warfare wing of the campus. There, he had the stunning revelation that battle is math. Angles, speed, collisions, momentum -- all of it could be planned, prepared, and executed for a certain victory. And when he discovered that chaos was the fuel that powered the math, he was hopelessly lost in trying solve the problem of the perfect combination of tactics and strategy to win the war against the Hellbourne. And now that he has a theory, it's time to test it...
-
- 
-
-New Swiftblade Avatar: Suzaku Swiftblade
-- The Suzaku is a legendary guardian of the southern Sang-La Mountains, a heavenly bird made of flames who blesses a chosen warrior with incredible speed, strength, and fiery blades so they may serve as the embodiment of justice and vigilance. This was of course known to the young female student at the Adkarna Academy -- all of the silly celestial beings from her homeland were required learning in her Astrology course -- but when she came across a classmate being bullied by a group of older students, Suzaku was the furthest thing from her mind. All she wanted to do was protect the poor child from further torment, and without concern for her own safety she plunged into the fray. This was exactly what Suzaku looked for in an exemplar, and the schoolgirl, on the verge of serious harm from the bullies, suddenly found herself moving in a blur of flames as she slashed through the aggressors, sending them limping and scurrying away. This would be the first of many battles for this incarnation of Suzaku, and while she was constantly in harm's way, her greatest fear was earning detention for being absent so many times.
-
- 
-
- 
-
 == Bug Fixes & Optimizations ==
 
- 
 
-= General =
-
-- Kongor buffs now properly propagate to illusions.
-- Towers will no longer attack NPC neutral creeps.
-*Fixes a Mid Wars exploit when pulling the Ancient creep camp to the Legion tower.
-
- 
 
 = Heroes =
 
-Keeper of the Forest
-- Strength in Numbers will no longer proc specifically from Fayde's Burning Shadows' illusions.
+Blacksmith
+- Flaming Hammer no longer triggers Null Stone if Null Stone is on cooldown before Flaming Hammer is cast & Null Stone comes off cooldown before the spawned projectile impacts the target with the Null Stone.
 
-Nymphora
-- Volatile Pod visuals have been corrected for each alternate avatar (as deemed appropriately).
+Circe
+- Using Twisted Visage on an enemy Hellbringer that has 0 charges of Demon Strike will no longer disable Demon Strike on the Hellbringer mimic that Circe creates.
 
-Warchief
-- Spawned Totems will no longer block neutral camps from respawning.
+Shellshock
+- Gadgets will no longer be able to enter Shellshock's shell while Rolling Thunder is active.
+
+Tundra
+- Command Shiver will now remain on cooldown while Parasite (with Staff of the Master) is Infesting Shiver.
+- Shiver will also respawn at the appropriate timing (when Command Shiver goes off cooldown) if killed while Parasite is Infesting Shiver.
+*Previously, Shiver would not respawn until Tundra dies and respawns.
 
  
+
+= Items =
+
+General
+- Pinging items in an enemy's or ally's inventory in the bottom-right corner window will now properly display that item's modifier, if it has one (e.g. Bottle that contains a rune).
+
+Ophelia's Pact
+- Can no longer reap this item's benefits without paying Gold for it if your inventory & stash are full.
 
 _______________________________________________
