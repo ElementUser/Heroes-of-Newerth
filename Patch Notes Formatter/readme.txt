@@ -1,7 +1,5 @@
 ===========================================
 Patch Notes Formatter for HoN
-
-Copyright © William "ElementUser" Lam (2018)
 ===========================================
 
 
