@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<effect deferred="true">
+	<definitions>
+<!--
+		<modifier 
+			expirelife="250"
+			name="modifier0"
+			startalpha="0"
+			endalpha="1"
+		/>
+-->
+		<particlesystem name="system0" space="entity" scale="1">
+			
+			<sound
+				linearfalloff="true"
+				falloffstart="400"
+				falloffend="1300" 
+				volume="1" 
+				sample="/heroes/kenisis/ability_03/sounds/start.wav"
+			/>
+			
+			<sound
+			    soundloop="true"
+			    fadein="500"
+			    fadeout="500"
+				linearfalloff="true" 
+             	falloffstart="0"
+				falloffend="1300"
+				volume=".60"
+				sample="/heroes/kenisis/ability_03/sounds/state.wav"
+			/>
+			
+			<model
+				bone="_bone_center"
+				startcolor="0 .5 1"
+				endcolor="0 0 0"
+				position="0 0 0"
+				model="/heroes/artesia/projectile/effects/orb/orb.mdf"
+				material="/shared/effects/materials/shell2.material"
+				anim="idle"
+				expirelife="125"
+				startscale=".06"
+				endscale="0"
+				yawspeed="180"
+				pitchspeed="180"
+			>
+			</model>
+
+			<model
+				bone="_bone_center"
+				startcolor=".25 .3 .3"
+				endcolor="0 0 0"
+				position="0 0 0"
+				model="/heroes/artesia/projectile/effects/orb/orb.mdf"
+				material="/shared/effects/materials/shell2.material"
+				anim="idle"
+				expirelife="125"
+				startscale=".1"
+				endscale="0"
+				yawspeed="180"
+				pitchspeed="180"
+			>
+			</model>
+
+			<model
+				bone="_bone_center"
+				startcolor="0 .125 .5"
+				endcolor="0 0 0"
+				position="0 0 0"
+				model="/heroes/artesia/projectile/effects/orb/orb.mdf"
+				material="/shared/effects/materials/shell2.material"
+				anim="idle"
+				expirelife="125"
+				scale=".13"
+				yawspeed="-180"
+				pitchspeed="-180"
+			>
+			</model>
+			
+			
+			<model
+				bone="_bone_center"
+				model="/shared/effects/models/circle_of_bones/model.mdf"
+				anim="idle"
+				expirelife="125"
+				startscale="1.25"
+				endscale="0"
+				yawspeed="540"
+				pitchspeed="540"
+			>
+				<template name="trails">
+					<trailemitter
+						bone="{bone01}"
+						spawnrate="100"
+						particlelife="750"
+						texpostime="750"
+						texposscale="0.0"
+						texstretchscale=".4"
+						position="0 0 0"
+						material="/shared/effects/materials/arrow_trail.material"
+					>
+						<particle
+							startcolor="0 .25 .5"
+							midcolor=".12 0 .25"
+							endcolor="0 0 0"
+							startsize="5"
+							midsize="2.5"
+							endsize="1"
+							midsizepos="0.2"
+					 />
+					</trailemitter>	
+					
+					<billboard
+						bone="{bone01}"
+						expirelife="125"
+						startcolor="0 0 1"
+						endcolor="0 0 0"
+						startsize="13"
+						endsize="0"
+						position="0 0 0"
+						material="/shared/effects/materials/whitedot.material"
+						lockup="true"
+						pitch="90"
+					/>
+					
+					<billboard
+						bone="{bone01}"
+						expirelife="125"
+						startcolor="0 .5 1"
+						endcolor="0 0 0"
+						startsize="3"
+						endsize="0"
+						position="0 0 0"
+						material="/shared/effects/materials/whitedot.material"
+						lockup="true"
+						pitch="90"
+					/>
+					
+				</template>
+				
+				<instance name="trails" bone01="_bone_fx_01"/>
+				<instance name="trails" bone01="_bone_fx_03"/>
+				<instance name="trails" bone01="_bone_fx_05"/>
+			</model>
+<!--
+			<simpleemitter
+				bone="_bone_fx_03"
+				spawnrate="30"
+				minparticlelife="800"
+				maxparticlelife="1000"
+				gravity="-10"
+				speed="50"
+				offsetsphere="20 20 0"
+				drag="0"
+				inheritvelocity=".1"
+				direction="0 0 0"
+				material="/shared/effects/materials/star_12.material"
+			>
+				<particle 
+					startcolor="1 1 1"
+					midcolor="0 .5 1"
+					endcolor="0 0 0"
+					midcolorpos=".8"
+					minangle="0"
+					maxangle="360"
+					startsize="0"
+					midsize="25"
+					endsize="10"
+				/>
+			</simpleemitter>
+
+			<model
+				bone="_bone_fx_03"
+				startcolor=".75 1.5 3"
+				endcolor="0 0 0"
+				position="0 0 0"
+				model="/heroes/artesia/projectile/effects/orb/orb.mdf"
+				material="/shared/effects/materials/shell2.material"
+				anim="idle"
+				expirelife="125"
+				scale=".025"
+				yawspeed="180"
+				pitchspeed="180"
+			>
+			</model>
+
+			<model
+				bone="_bone_fx_03"
+				startcolor="1 0 4.5"
+				endcolor="0 0 0"
+				position="0 0 0"
+				model="/heroes/artesia/projectile/effects/orb/orb.mdf"
+				material="/shared/effects/materials/shell2.material"
+				anim="idle"
+				expirelife="125"
+				scale=".0125"
+				yawspeed="-180"
+				pitchspeed="-180"
+			>
+			</model>
+
+			<simpleemitter
+				bone="_bone_fx_03"
+				spawnrate="30"
+				minparticlelife="800"
+				maxparticlelife="1000"
+				gravity="-10"
+				minspeed="10"
+				maxspeed="25"
+				offsetsphere="20 20 0"
+				drag="0"
+				inheritvelocity=".1"
+				direction="0 0 0"
+				material="/shared/effects/materials/star_12.material"
+			>
+				<particle 
+					startcolor=".6 .85 1"
+					midcolor="0 .5 1"
+					endcolor="0 0 0"
+					midcolorpos=".8"
+					minangle="0"
+					maxangle="360"
+					startsize="0"
+					midsize="25"
+					endsize="10"
+				/>
+			</simpleemitter>
+
+			<simpleemitter
+				bone="_bone_fx_03"
+				spawnrate="50"
+				minparticlelife="250"
+				maxparticlelife="500"
+				minspeed="50"
+				maxspeed="200"
+				drag="0.10"
+				material="/shared/effects/materials/whitedot.material"
+				offsetsphere="0 0 0"
+				position="0 0 0"
+				depthbias="-35"
+			>
+				<particle
+					turn="1"
+					heightdistort=".1"
+					width=".5"
+					startscale=".5"
+					minendscale="0"
+					maxendscale="10"
+					startcolor="1 1 1"
+					midcolor=".2 0 1"
+					endcolor="0 0 0"
+					midcolorpos=".25"
+					anchor="1"
+				/>
+			</simpleemitter>
+-->
+
+		</particlesystem>
+	</definitions>
+	<thread>
+		<spawnparticlesystem instance="instance0" particlesystem="system0" />
+		<spawnmodifier instance="instance1" modifier="modifier0"/>
+      	<waitfordeath instance="instance0" />
+		<waitfordeath instance="instance1" />
+	</thread>
+</effect>
+
+<!-- [min|max][start|mid|end]property[speed][pos] -->
+

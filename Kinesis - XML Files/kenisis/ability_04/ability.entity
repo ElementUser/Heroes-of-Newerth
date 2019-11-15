@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ability
+	name="Ability_Kenisis4"
+
+	icon="icon.tga"
+	
+	anim="ability_1"
+	casttime="300"
+	castactiontime="300"
+
+	maxlevel="3"
+	requiredlevel="6,11,16"
+
+	actiontype="target_entity"
+	targetscheme="enemy_units"
+	casteffecttype="Magic"
+	range="600"
+	targetradius="400"
+	targetmaterial="/shared/materials/area_cast_indicator_pointed.material"
+
+	cooldowntime="100000,80000,60000"
+	manacost="100,150,200"
+	
+	showareacast="true"
+	areacastmaterial="/shared/materials/area_cast_indicator_spokes.material"
+	
+	showrangeandradiusintooltip="true"
+	
+	modifierkey="kinesis_ability4_Owner"
+
+	targetpriorities="enemy_heroes"
+>
+	<onimpact>
+		<starttimer duration="2000,2500,3000" />
+		<unbind />
+		
+		<spawnunit name="Gadget_Kinisis_Ability4" target="target_position" proxy="target_entity" pushentity="true" fixedposition="true" />
+		<setproxy target="stack_entity" />
+		<spawnprojectile name="Projectile_Kenisis_Ability4" source="stack_entity" target="stack_entity" bind="target_entity" bindturn="true" orbitstartingtheta="0" noresponse="true" />
+		<applystate name="State_Kenisis_Ability4" duration="2000,2500,3000" proxy="stack_entity" pushentity="true" />
+		
+		<setaccumulator value="0" />
+		<areaofeffect
+			center="target_entity"
+			radius="400"
+			targetselection="all"
+			targetscheme="all_nonhero_nonboss_units"
+			effecttype="Magic"
+			ignore="target_entity"
+		>
+			<hasmodifier name="Kenisis_Lifted" entity="target_entity" />
+			<else>
+				<hasmodifier name="kinesis_ability4_Affected" entity="target_entity" />
+				<else>
+					<unbind />
+					<spawnunit name="Gadget_Kenisis4_Minor" target="target_position" mount="target_entity" pushentity="true" proxy="target_entity" />
+					<applystate name="State_Kenisis_Ability4_Minor" duration="2000,2500,3000" proxy="stack_entity" />
+					<setaccumulator value="accumulator" valueb="1" valueop="add" />
+				</else>
+			</else>
+		</areaofeffect>
+	</onimpact>
+	
+	<oncomplete>
+		<applystate name="State_Kenisis_Ability4_Modifier" target="source_entity" duration="2000,2500,3000" />	
+	</oncomplete>
+	
+	<modifier key="ult_boost" modpriority="90"
+		targetradius="600"
+	>
+		<!-- Exact copy of the normal onimpact, except for the radius -->
+		<onimpact>
+			<starttimer duration="2000,2500,3000" />
+			<unbind />
+			
+			<spawnunit name="Gadget_Kinisis_Ability4" target="target_position" lifetime="5000" proxy="target_entity" pushentity="true" fixedposition="true" />
+			<setproxy target="stack_entity" />
+			<spawnprojectile name="Projectile_Kenisis_Ability4" source="stack_entity" target="stack_entity" bind="target_entity" bindturn="true" orbitstartingtheta="0" noresponse="true" />
+			<applystate name="State_Kenisis_Ability4" duration="2000,2500,3000" proxy="stack_entity" pushentity="true" />
+			
+			<setaccumulator value="0" />
+			<areaofeffect
+				center="target_entity"
+				radius="600"
+				targetselection="all"
+				targetscheme="all_nonhero_nonboss_units"
+				effecttype="Magic"
+				ignore="target_entity"
+			>
+				<hasmodifier name="Kenisis_Lifted" entity="target_entity" />
+				<else>
+					<hasmodifier name="kinesis_ability4_Affected" entity="target_entity" />
+					<else>
+						<unbind />
+						<spawnunit name="Gadget_Kenisis4_Minor" target="target_position" mount="target_entity" pushentity="true" proxy="target_entity" />
+						<applystate name="State_Kenisis_Ability4_Minor" duration="2000,2500,3000" proxy="stack_entity" />
+						<setaccumulator value="accumulator" valueb="1" valueop="add" />
+					</else>
+				</else>
+			</areaofeffect>
+		</onimpact>
+		
+		<oncomplete>
+			<applystate name="State_Kenisis_Ability4_Modifier" target="source_entity" duration="2000,2500,3000" />	
+		</oncomplete>
+	</modifier>
+
+	<modifier key="kinesis_ability4_Active" modpriority="100"
+		ignorecooldown="true"
+		noresponse="true"
+		
+		icon="icon_b.tga"
+		anim=""
+		casttime="0"
+		castactiontime="0"
+		manacost="0"
+		actiontype="no_target"
+		cooldowntime="0"
+		
+		nostun="true"
+		nosilence="true"
+	>
+		<onimpact>
+			<pushentity entity="this_proxy_entity" />
+			<expirestate name="State_Kenisis_Ability4" target="stack_proxy_entity" />
+			<expirestate name="State_Kenisis_Ability4_Modifier" target="source_entity" />
+			<resettimer />
+		</onimpact>
+		
+		<oncomplete />
+	</modifier>
+	
+	<modifier key="kinesis_ability4_BoostActive" modpriority="110"
+		actiontype="target_position"
+	>
+		<onimpact>
+			<pushentity entity="this_proxy_entity" />
+			<setaccumulator entity="this_proxy_entity" value="1" />
+			<teleport source="this_proxy_entity" target="target_position" />
+			<expirestate name="State_Kenisis_Ability4" target="stack_proxy_entity" />
+			<expirestate name="State_Kenisis_Ability4_Modifier" target="source_entity" />
+			<resettimer />
+		</onimpact>
+		
+		<oncomplete />
+	</modifier>
+	
+	<altavatar key="Hero_Kenisis.Alt2" modpriority="1"
+		icon="../alt2/ability_04/icon.tga"
+	>
+		<modifier key="kinesis_ability4_Active" modpriority="100"
+			ignorecooldown="true"
+			noresponse="true"
+			
+			icon="../alt2/ability_04/icon_b.tga"
+			anim=""
+			casttime="0"
+			castactiontime="0"
+			manacost="0"
+			actiontype="no_target"
+			cooldowntime="0"
+			
+			nostun="true"
+			nosilence="true"
+		>
+			<onimpact>
+				<pushentity entity="this_proxy_entity" />
+				<expirestate name="State_Kenisis_Ability4" target="stack_proxy_entity" />
+				<expirestate name="State_Kenisis_Ability4_Modifier" target="source_entity" />
+				<resettimer />
+			</onimpact>
+			
+			<oncomplete />
+		</modifier>
+	</altavatar>
+	
+	<altavatar key="Hero_Kenisis.Alt4" modpriority="1"
+		icon="../alt4/ability_04/icon.tga"
+	>
+		<modifier key="kinesis_ability4_Active" modpriority="100"
+			ignorecooldown="true"
+			noresponse="true"
+			
+			icon="../alt4/ability_04/icon_b.tga"
+			anim=""
+			casttime="0"
+			castactiontime="0"
+			manacost="0"
+			actiontype="no_target"
+			cooldowntime="0"
+			
+			nostun="true"
+			nosilence="true"
+		>
+			<onimpact>
+				<pushentity entity="this_proxy_entity" />
+				<expirestate name="State_Kenisis_Ability4" target="stack_proxy_entity" />
+				<expirestate name="State_Kenisis_Ability4_Modifier" target="source_entity" />
+				<resettimer />
+			</onimpact>
+			
+			<oncomplete />
+		</modifier>
+	</altavatar>
+	
+	<altavatar key="Hero_Kenisis.Alt6"
+	    icon="../alt6/ability_04/icon.tga" 
+	>
+		<modifier key="kinesis_ability4_Active" modpriority="100"
+			ignorecooldown="true"
+			noresponse="true"
+			
+			icon="../alt6/ability_04/icon_b.tga"
+			anim=""
+			casttime="0"
+			castactiontime="0"
+			manacost="0"
+			actiontype="no_target"
+			cooldowntime="0"
+			
+			nostun="true"
+			nosilence="true"
+		>
+			<onimpact>
+				<pushentity entity="this_proxy_entity" />
+				<expirestate name="State_Kenisis_Ability4" target="stack_proxy_entity" />
+				<expirestate name="State_Kenisis_Ability4_Modifier" target="source_entity" />
+				<resettimer />
+			</onimpact>
+			
+			<oncomplete />
+		</modifier>
+ 	</altavatar>
+	
+	<modifier key="soccer" modpriority="150" 
+		manacost="30"
+		cooldowntime="9000"
+		maxlevel="1"
+	>
+		<oncomplete />
+		
+		<onimpact>
+			<unbind />
+			<spawnunit name="Gadget_Kinisis_Ability4" target="target_position" lifetime="1400" proxy="target_entity" pushentity="true" fixedposition="true" />
+			<applystate name="State_Kenisis_Ability4" duration="1400" proxy="stack_entity" />
+			<spawnprojectile name="Projectile_Kenisis_Ability4" source="stack_entity" target="stack_entity" bind="target_entity" bindturn="true" orbitstartingtheta="0" noresponse="true" />
+			<setproxy />
+		</onimpact>
+	</modifier>	
+
+</ability>

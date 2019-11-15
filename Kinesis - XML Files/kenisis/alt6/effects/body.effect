@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<effect deferred="true" useentityeffectscale="true">
+	<definitions>
+		<particlesystem name="system0" space="entity" scale="1">
+			<billboard
+				bone="Bip01 R Hand"
+				expirelife="1500"
+				startcolor="0 .16 .05"
+				endcolor="0 0 0"
+				size="75"
+				position="0 0 0"
+				material="/shared/effects/materials/whitedot.material"
+				directionalspace="local"
+				depthbias="-60"
+				minroll="-180"
+				maxroll="180"
+				rollspeed="-360"
+				loop="true"
+			/>
+			
+			<billboard
+				bone="Bip01 L Hand"
+				expirelife="1500"
+				startcolor="0 .16 .05"
+				endcolor="0 0 0"
+				size="75"
+				position="0 0 0"
+				material="/shared/effects/materials/whitedot.material"
+				directionalspace="local"
+				depthbias="-60"
+				minroll="-180"
+				maxroll="180"
+				rollspeed="-360"
+				loop="true"
+			/>
+
+			<template name="glow">
+			
+				<simpleemitter
+					bone="{bone1}"
+					timenudge="1000"
+					spawnrate="3"
+					minparticlelife="750"
+					maxparticlelife="1250"
+					material="/shared/effects/materials/twirl_04.material"
+				>
+					<particle
+						maxangle="360"
+						startcolor="0"
+						midcolor="0 .35 .3"
+						endcolor="0"
+						midcolorpos=".25"
+						startsize="10"
+						minendsize="30"
+						maxendsize="40"
+						anchor="1"
+						minanglespeed="200"
+						maxanglespeed="50"
+					/>
+				</simpleemitter>
+			
+<!-- 				<billboard
+					expirelife="200"
+					bone="{bone1}"
+					startcolor=".02 .08 .1"
+					endcolor="0 0 0"
+					size="35"
+					depthbias="0"
+					material="/shared/effects/materials/whitedot.material"
+					lockup="true"
+					pitch="90"
+					position="0 0 5"
+				/> -->
+			
+				<billboard
+					expirelife="200"
+					bone="{bone1}"
+					startcolor="0 .2 .2"
+					endcolor="0 0 0"
+					
+					startsize="70"
+					endsize="150"
+					
+					depthbias="0"
+					material="/shared/effects/materials/flare_07.material"
+					lockup="true"
+					pitch="90"
+					position="0 0 5"
+				/>
+									
+				<billboard
+					bone="{bone1}"
+					material="/shared/effects/materials/blink.material"
+					startcolor="0 0 0"
+					midcolor="0 .5 .2"
+					endcolor="0"
+					maxroll="360"
+					size="30"
+					depthbias="-25"
+					life="1000"
+					directionalspace="local"
+					rollspeed="-150"
+					loop="true"
+				/>
+			</template>	
+			
+			
+			<model 
+				bone="_bone_origin"
+				model="stones/model.mdf"
+
+				anim="idle"
+				startcolor=".4 .7 .5"
+				endcolor="0 0 0"
+				scale="1.75"
+				expirelife="500"
+				position="0 0 0"
+				startalpha="1"
+				endalpha="0"
+			>	
+				<instance name="glow" bone1="Box004b" />
+				<instance name="glow" bone1="Box005b"/>	
+				<instance name="glow" bone1="Box006b"/>
+				<instance name="glow" bone1="Box007b"/>
+				<instance name="glow" bone1="Box008b"/>
+				<instance name="glow" bone1="Box009b"/>
+			</model>	
+
+			
+			<model 
+				bone="_bone_origin"
+				model="stones/model.mdf"
+				material="/shared/effects/materials/shell2.material"
+				anim="idle"
+				startcolor=".5 3 2"
+				endcolor="0 0 0"
+				scale="1.76"
+				position="0 0 0"
+				startalpha="1"
+				endalpha="0"
+			>		
+			</model>			
+				
+				
+		</particlesystem>
+	</definitions>
+	<thread>
+		<spawnparticlesystem instance="instance0" particlesystem="system0" />
+		<waitfordeath instance="instance0" />
+	</thread> 
+</effect>

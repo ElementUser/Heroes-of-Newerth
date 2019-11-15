@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<effect deferred="true" useentityeffectscale="true">
+
+	<definitions>
+
+		<particlesystem name="system0" space="world" scale="0.4">
+			
+			<sound
+				dampen="0.5"
+				channelid="storeaud"
+				sound2d="true"
+				volume=".5"
+				sample="../sounds/store_audio.wav"
+			/>
+			
+			<billboard
+				bone="_bone_centerofchest"
+				expirelife="1500"
+				startcolor=".125 .025 .125"
+				endcolor="0 0 0"
+				size="250"
+				position="0 0 0"
+				material="/shared/effects/materials/whitedot.material"
+				directionalspace="local"
+				depthbias="-60"
+				minroll="-180"
+				maxroll="180"
+				rollspeed="-360"
+				loop="true"
+			/>
+
+			<template name="glow">
+				<billboard
+					expirelife="200"
+					bone="{bone1}"
+					startcolor=".25 .05 .25"
+					endcolor="0 0 0"
+					size="50"
+					depthbias="0"
+					material="/shared/effects/materials/whitedot.material"
+					position="0 0 5"
+				/>	
+				
+				<billboard
+					expirelife="200"
+					bone="{bone1}"
+					startcolor=".3"
+					endcolor="0 0 0"
+					size="20"
+					maxroll="360"
+					material="/shared/effects/materials/blink.material"
+					life="300"
+					loop="true"
+					position="0 0 5"
+				/>
+				<model 
+					bone="{bone1}"
+					model="sakura/sakura.mdf"
+					material="../material_noshadow.material"
+					anim="idle"
+					color="1"
+					expirelife="500"
+					position="0 0 5"
+					pitch="90"
+					minyawspeed="-220"
+					maxyawspeed="220"
+					minscale="2"
+					maxscale="3"
+					startalpha="1"
+					endalpha="0"
+				/>	
+				<simpleemitter
+					bone="{bone1}"
+					spawnrate="4"
+					minparticlelife="400"
+					maxparticlelife="600"
+					minspeed="3"
+					maxspeed="6"
+					gravity="-10"
+					drag=".2"
+					minparticleangle="0"
+					maxparticleangle="360" 
+					position="0 0 5"
+					offsetsphere="10"
+					material="/shared/effects/materials/blink.material"
+				>
+					<particle
+						startcolor="1 .5 .8"
+						midcolor="1 .5 .8"
+						endcolor="0"
+						startsize="12"
+						endsize="1"
+						minscale=".5"
+						maxscale=".8"
+						>
+						
+						<simpleemitter
+							count="1"
+							particlelife="500"
+							direction="0 0 1"
+							position="0 0 0"
+							material="/shared/effects/materials/blink.material"
+						>
+							<particle
+								startcolor="1"
+								midcolor="1"
+								midcolorpos=".7"
+								endcolor="0"
+								startsize="5"
+								endsize="1"
+								anchor="1"
+							/>
+						</simpleemitter>
+					</particle>
+				</simpleemitter>
+			</template>
+			<model 
+				bone="_bone_origin"
+				model="../../effects/stones/model.mdf"
+				material="/shared/effects/materials/shell2.material"
+				anim="idle"
+				startcolor="0 2 5"
+				endcolor="0 0 0"
+				scale="1.75"
+				expirelife="500"
+				position="0 0 0"
+				alpha="0"
+			>	
+			<instance name="glow" bone1="Box004" />
+			<instance name="glow" bone1="Box005"/>	
+			<instance name="glow" bone1="Box006"/>
+			<instance name="glow" bone1="Box007"/>
+			<instance name="glow" bone1="Box008"/>
+			<instance name="glow" bone1="Box009"/>
+			</model>	
+			
+			<simpleemitter
+				life="5000"
+				spawnrate="5"
+				minparticlelife="2500"
+				maxparticlelife="3000"
+				minspeed="35"
+				maxspeed="105"
+				gravity="10"
+				drag=".05"
+				minparticleangle="0"
+				maxparticleangle="360"
+				direction="-.6 0 -1"		
+				position="0 0 230"
+				offsetsphere="200 200 10"
+			>
+				<particle
+					startsize="15"
+					endsize="15"
+					minscale=".3"
+					maxscale=".5"
+					maxangle="360"
+					minanglespeed="-200"
+					maxanglespeed="200"
+				>
+				<billboard
+					life="2500"
+					color="1"
+					size="20"
+					material="/shared/effects/materials/sakura02_blend.material"
+					position="20 20 5"
+					maxangle="360"
+					minrollspeed="-150"
+					maxrollspeed="150"
+				/>
+				<billboard
+					life="2500"
+					color=".25 .1 .25"
+					size="50"
+					material="/shared/effects/materials/whitedot.material"
+					position="20 20 5"
+					maxangle="360"
+					minrollspeed="-150"
+					maxrollspeed="150"
+				/>
+				</particle>
+			</simpleemitter>
+			<simpleemitter
+				life="5000"
+				spawnrate="4"
+				minparticlelife="2500"
+				maxparticlelife="3000"
+				minspeed="35"
+				maxspeed="105"
+				gravity="10"
+				drag=".05"
+				minparticleangle="0"
+				maxparticleangle="360"
+				direction="-.6 0 -1"		
+				position="0 0 230"
+				offsetsphere="200 200 10"
+			>
+				<particle
+					startsize="15"
+					endsize="15"
+					minscale=".15"
+					maxscale=".35"
+					maxangle="360"
+					minanglespeed="-300"
+					maxanglespeed="300"
+				>
+				<billboard
+					life="2500"
+					color="1 .5 .8"
+					size="20"
+					material="/shared/effects/materials/petal_sakura_blend.material"
+					position="30 30 10"
+					maxangle="360"
+					minrollspeed="-220"
+					maxrollspeed="220"
+				/>
+				</particle>
+			</simpleemitter>
+			<simpleemitter
+				life="5000"
+				spawnrate="3"
+				minparticlelife="2500"
+				maxparticlelife="3000"
+				minspeed="35"
+				maxspeed="105"
+				gravity="10"
+				drag=".05"
+				minparticleangle="0"
+				maxparticleangle="360"
+				direction="-.6 0 -1"		
+				position="0 0 230"
+				offsetsphere="200 200 10"
+			>
+				<particle
+					startsize="10"
+					endsize="10"
+					minscale=".15"
+					maxscale=".35"
+					maxangle="360"
+					minanglespeed="-300"
+					maxanglespeed="300"
+				>
+				<billboard
+					life="2500"
+					color="1 .5 .8"
+					size="20"
+					material="/shared/effects/materials/petal_sakura_blend.material"
+					position="30 30 10"
+					minyaw="0"
+					maxyaw="360"
+					minroll="0"
+					maxroll="360"
+					minpitch="0"
+					maxpitch="360"
+					minyawspeed="-200"
+					maxyawspeed="200"
+					minrollspeed="-200"
+					maxrollspeed="200"
+					minpitchspeed="200"
+					maxpitchspeed="-200"
+				/>
+				</particle>
+			</simpleemitter>
+			
+			<simpleemitter
+				delay="2500"
+				life="4000"
+				spawnrate="10"
+				minparticlelife="3000"
+				maxparticlelife="3500"
+				minparticleangle="0"
+				maxparticleangle="360" 
+				position="0 0 0"
+				offsetsphere="120 120 0"
+				material="/shared/effects/materials/sakura02_blend.material"
+			>
+				<particle
+					color="1"
+					startsize="10"
+					endsize="10"
+					minscale=".5"
+					maxscale="1"
+					pitch="90"
+					lockright="1"
+					lockup="1"
+					startalpha="1"
+					midalpha="1"
+					endalpha="0"
+					maxangle="360"
+				/>
+			</simpleemitter>
+			<simpleemitter
+				delay="2500"
+				life="4000"
+				spawnrate="10"
+				minparticlelife="3000"
+				maxparticlelife="3500"
+				minparticleangle="0"
+				maxparticleangle="360" 
+				position="0 0 0"
+				offsetsphere="120 120 0"
+				material="/shared/effects/materials/petal_sakura_blend.material"
+			>
+				<particle
+					color="1 .5 .8"
+					startsize="10"
+					endsize="10"
+					minscale=".5"
+					maxscale="1"
+					pitch="90"
+					lockright="1"
+					lockup="1"
+					startalpha="1"
+					midalpha="1"
+					endalpha="0"
+					maxangle="360"
+				/>
+			</simpleemitter>
+			<trailemitter
+				life="6000"
+				bone="Bip01 L Hand"
+				spawnrate="150"
+				particlelife="800"
+				texpostime="300"
+				texposscale="0.0"
+				texstretchscale="1.0"
+				material="/shared/effects/materials/trail_head.material"
+				subframepos="true"
+				position="0 0 0"
+			>
+				<particle
+					startcolor="1 .5 .8"
+					midcolor="1 .5 .8"
+					endcolor="0"
+					startalpha=".4"
+					endalpha="0"
+					startsize="20"
+					endsize="0"
+				/>
+			</trailemitter>
+			<trailemitter
+				life="6000"
+				bone="Bip01 R Hand"
+				spawnrate="150"
+				particlelife="800"
+				texpostime="300"
+				texposscale="0.0"
+				texstretchscale="1.0"
+				material="/shared/effects/materials/trail_head.material"
+				subframepos="true"
+				position="0 0 0"
+			>
+				<particle
+					startcolor="1 .5 .8"
+					midcolor="1 .5 .8"
+					endcolor="0"
+					startalpha=".4"
+					endalpha="0"
+					startsize="20"
+					endsize="0"
+				/>
+			</trailemitter>
+			<simpleemitter
+				delay="4400"
+				life="500"
+				bone="Bip01 R Finger1"
+				spawnrate="50"					
+				minparticlelife="1000"
+				maxparticlelife="1500"
+				gravity="10"
+				minspeed="10"
+				maxspeed="20"
+				drag=".02"
+				acceleration="0.0"
+				position="0 0 0"
+				offsetsphere="10"
+				inheritvelocity=".5"
+				material="/shared/effects/materials/petal_sakura_blend.material"
+			>
+				<particle
+					minangle="-360"
+					maxangle="360"
+					turn="1"
+					startsize="10"
+					endsize="15"
+					color="1 .5 .8"
+					startalpha="1"
+					midalpha="1"
+					endalpha="0"
+					midalphapos=".7"
+					minscale=".3"
+					maxscale=".6"
+					minanglespeed="-200"
+					maxanglespeed="200"
+				/>
+				<particle
+					minangle="-360"
+					maxangle="360"
+					turn="1"
+					startsize="10"
+					endsize="15"
+					color="1 .5 .8"
+					startalpha="1"
+					midalpha="1"
+					endalpha="0"
+					midalphapos=".7"
+					minscale=".3"
+					maxscale=".6"
+					minyaw="0"
+					maxyaw="360"
+					minroll="0"
+					maxroll="360"
+					minpitch="0"
+					maxpitch="360"
+					minyawspeed="-200"
+					maxyawspeed="200"
+					minrollspeed="-200"
+					maxrollspeed="200"
+					minpitchspeed="200"
+					maxpitchspeed="-200"
+				/>
+			</simpleemitter>
+		</particlesystem>
+	</definitions>
+	<thread>
+		<spawnparticlesystem instance="instance0" particlesystem="system0" />
+		<waitfordeath instance="instance0" />
+		
+	</thread> 
+</effect>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<effect name="cyclone">
+	<definitions>
+		<particlesystem name="system0" space="world" scale="1">
+			
+			<sound
+			    randomloop="true"
+			    soundloop="true"
+			    fadein="200"
+			    fadeout="500"
+				linearfalloff="true" 
+				falloffstart="0"
+				minfalloffend="500"
+				maxfalloffend="1300"
+				volume=".55"
+				sample="/heroes/kenisis/ability_02/sounds/tree_float_%.wav"
+			/>
+			
+					<sound
+			    randomloop="true"
+			    soundloop="true"
+			    fadein="200"
+			    fadeout="500"
+				linearfalloff="true" 
+				mintimenudge="0"
+				maxtimenudge="2000"
+             	falloffstart="0"
+				minfalloffend="500"
+				maxfalloffend="1300"
+				volume=".55"
+				sample="/heroes/kenisis/alt5/sounds/ab2_loop_%.wav"
+			/>
+			
+			<sound
+				linearfalloff="true" 
+				falloffstart="0"
+				minfalloffend="700"
+				maxfalloffend="1300"
+                minvolume=".7"
+				maxvolume="1"
+				sample="/heroes/kenisis/ability_02/sounds/throw_%.wav"
+			/>
+			
+			<sound
+			    channelid="kentree"
+			    forcestereo="true"
+				linearfalloff="true" 
+				falloffstart="0"
+				minfalloffend="700"
+				maxfalloffend="1300"
+                minvolume=".7"
+				maxvolume="1"
+				sample="/heroes/kenisis/alt5/sounds/ab2_%.wav"
+			/>
+			
+			<model
+				position="0 0 50"
+				expirelife="200"
+				model="/heroes/kenisis/ability_02/effects/tree/model.mdf"
+				anim="idle"
+				color="1.25 1 .6"
+				startscale=".5"
+				endscale="0"
+				startalpha="1"
+				endalpha="0"
+				yaw="360"
+				yawspeed="180"
+				pitchspeed="180"
+			>
+			</model>
+			
+			<model
+				position="0 0 50"
+				expirelife="200"
+				model="/heroes/kenisis/ability_02/effects/bark/model.mdf"
+				anim="idle"
+				color=".8"
+				startscale=".65"
+				endscale="0"
+				startalpha="1"
+				endalpha="0"
+				yaw="0"
+				yawspeed="-180"
+				pitchspeed="-180"
+			>
+						
+			</model>
+
+			<template name="sparks">
+			<model
+				model="/shared/effects/models/circle_of_bones/model.mdf"
+				scale=".6"
+				position="0 0 60"
+				anim="idle"
+				yawspeed="600"
+			>
+			
+			<simpleemitter
+				
+				spawnrate="100"
+				bone="{bone}"
+				particlelife="500"			
+				gravity="30"
+				minspeed="1"
+				maxspeed="150"
+				drag=".04"
+				material="/shared/effects/materials/whitedot.material"
+				offsetsphere="5 5 5"
+				inheritvelocity="1"
+				direction="0 0 1"
+				collide="true"
+			>
+				<particle 					
+					startcolor=".957 .580 .145"
+					midcolor=".557 .180 0"
+					endcolor="0 0 0"
+					startheightdistort=".06"
+					startsize="1"
+					midsize="2"
+					endsize="1"
+					scale="2"
+					turn="1"
+				/>
+			</simpleemitter>
+			</model>
+			</template>
+			<instance name="sparks" bone="_bone_fx_01"/>
+			<instance name="sparks" bone="_bone_fx_03"/>
+			<instance name="sparks" bone="_bone_fx_05"/>
+			<instance name="sparks" bone="_bone_fx_07"/>
+			<instance name="sparks" bone="_bone_fx_09"/>
+			<instance name="sparks" bone="_bone_fx_11"/>
+			
+			<billboard
+				expirelife="200"
+				position="0 0 50"
+				spawnrate="50"
+				material="/shared/effects/materials/whitedot.material"
+				startsize="150"
+				endsize="0"
+				lockup="1"
+				color=".3 0 0"
+				depthbias="-75"
+			/>
+
+			<billboard
+				position="0 0 50"
+				spawnrate="50"
+				life="200"
+				material="/shared/effects/materials/flare2.material"
+				startheight="0"
+				endheight="500"
+				width="10"
+				roll="90"
+				midheightpos=".75"
+				lockup="1"
+				color=".7 .1 0"
+			/>
+			
+			
+			
+			
+					
+			<simpleemitter
+				position="0 0 50"
+				spawnrate="10"
+				particlelife="250"
+				material="/shared/effects/materials/rad_add.material"
+				offsetsphere="5 5 10"
+			>
+				<particle 
+					minangle="0"
+					maxangle="360"
+					minanglespeed="-25"
+					maxanglespeed="25"
+					startcolor=".3 0 0"
+					midcolor=".1 0 0"
+					endcolor="0"
+					midcolorpos=".25"
+					width="35"
+					startsize="100"
+					endsize="400"
+					lockup="1"
+					lockright="1"
+					pitch="-90"
+					startanchor="1"
+					endanchor=".7"
+				/>
+			</simpleemitter>
+
+		</particlesystem>
+	</definitions>
+	<thread>
+		<spawnparticlesystem instance="instance0" particlesystem="system0" />
+		<waitfordeath instance="instance0" />
+		<!-- <die /> -->
+	</thread>
+</effect>
+
+<!-- [min|max][start|mid|end]property[speed][position] -->
+

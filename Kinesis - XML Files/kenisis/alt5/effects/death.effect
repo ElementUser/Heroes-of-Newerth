@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<effect deferred="true" useentityeffectscale="true" persisent="true">
+
+	<definitions>
+
+		<particlesystem name="system0" space="world" scale="2">
+	
+		
+			
+	
+	<simpleemitter
+				bone="_bone_centerofchest"
+				particlelife="200"
+				count="1"
+				material="/shared/effects/materials/flare_01.material"
+				
+				
+			>
+				<particle
+					startcolor="1"
+					endcolor="0"
+					startsize="200"
+					endsize="0"
+				/>
+			</simpleemitter>
+			
+			<simpleemitter
+				bone="_bone_centerofchest"
+				particlelife="200"
+				count="1"
+				material="/shared/effects/materials/corona_01.material"
+				
+				
+			>
+				<particle
+					startcolor="1 0 0"
+					endcolor="0"
+					startsize="0"
+					endsize="200"
+				/>
+			</simpleemitter>
+	
+	<template name="firecracker">
+			<simpleemitter
+				delay="{delay}"
+				bone="_bone_centerofchest"
+				particlelife="1000"
+				count="100"
+				particledirectionalspace="local"
+				material="/shared/effects/materials/whitedot.material"
+				position="{position}"
+				minparticleangle="0"
+				maxparticleangle="360"
+				direction="0 0 1"
+				speed="300"
+				drag=".03"
+				friction="30"
+				gravity="50"
+				collide="true"
+				
+			>
+				<particle
+					startcolor="1 .4 0"
+					endcolor="0"
+					startsize="2"
+					endsize=".5"
+					turn="true"
+					endheight="20"
+				/>
+			</simpleemitter>
+			
+			<simpleemitter
+				bone="_bone_centerofchest"
+				particlelife="200"
+				count="1"
+				material="/shared/effects/materials/flare_01.material"
+				position="{position}"
+				delay="{delay}"
+			>
+				<particle
+					startcolor="1"
+					endcolor="0"
+					startsize="100"
+					endsize="0"
+				/>
+			</simpleemitter>
+			
+			
+	</template>
+
+	<instance name="firecracker" position="20 30 10" />
+	<instance name="firecracker" position="-20 -30 10" delay="50"/>
+	<instance name="firecracker" position="50 30 10" delay="100"/>
+	<instance name="firecracker" position="20 50 10" delay="150"/>
+	<instance name="firecracker" position="-20 -30 10" delay="200"/>
+	<instance name="firecracker" position="-50 30 10" delay="250"/>
+	<instance name="firecracker" position="20 -50 10" delay="300"/>
+	<instance name="firecracker" position="20 30 10" delay="350"/>
+	<instance name="firecracker" position="-20 -30 10" delay="400"/>
+	<instance name="firecracker" position="50 30 10" delay="450"/>
+	<instance name="firecracker" position="20 50 10" delay="500"/>
+	<instance name="firecracker" position="-20 -30 10" delay="550"/>
+	<instance name="firecracker" position="-50 30 10" delay="600"/>
+	<instance name="firecracker" position="20 -50 10" delay="650"/>
+	
+		</particlesystem>
+	</definitions>
+	<thread>
+		<spawnparticlesystem instance="instance0" particlesystem="system0" />
+		<waitfordeath instance="instance0" />
+		
+	</thread> 
+</effect>

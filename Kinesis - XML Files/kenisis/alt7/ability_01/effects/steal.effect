@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<effect name="tracker"  deferred="true" scale="2">
+	<definitions >
+		
+			<trailemitter
+				name="trail_01"
+				life="2000"
+				bone="_bone_centerofchest"
+				spawnrate="50"
+				startminparticlelife="2000"
+				startmaxparticlelife="2000"		
+				
+				endminparticlelife="1"
+				endmaxparticlelife="1" 
+				texpostime="2000"
+			 	texposscale="0"
+			 	texstretchscale="1"
+				position="0 0 0"
+				material="/shared/effects/materials/wave_trail.material"
+			>
+				<particle
+					startcolor=".3 0 .3"
+					endcolor=".6 .1 .6"
+					midcolorpos=".2"
+					
+					startsize="6"
+					midsize="20"
+					endsize="0"
+					midsizepos=".1"
+				/>
+				
+			</trailemitter>
+			<!-- <trailemitter
+				name="trail_02"
+				life="2000"
+				bone="_bone_centerofchest"
+				spawnrate="50"
+				startminparticlelife="800"
+				startmaxparticlelife="800"		
+				
+				endminparticlelife="1"
+				endmaxparticlelife="1" 
+				texpostime="2000"
+			 	texposscale="0"
+			 	texstretchscale="1"
+				position="0 0 0"
+				material="/shared/effects/materials/arrow_head.material"
+			>
+				<particle
+					startcolor=".8 .6 .2"
+					endcolor=".8 .4 0"
+					midcolorpos=".2"
+					
+					startsize="6"
+					midsize="20"
+					endsize="0"
+					midsizepos=".1"
+				/>
+				
+			</trailemitter> -->
+			<trailemitter
+				name="trail_02"
+				life="2000"
+				bone="_bone_centerofchest"
+				spawnrate="50"
+				startminparticlelife="800"
+				startmaxparticlelife="800"		
+				
+				endminparticlelife="1"
+				endmaxparticlelife="1" 
+				texpostime="2000"
+			 	texposscale="0"
+			 	texstretchscale="1"
+				position="0 0 0"
+				material="/shared/effects/materials/trail_head.material"
+			>
+				<particle
+					startcolor=".8 .7 .2"
+					endcolor=".8 .5 .1"
+					midcolorpos=".2"
+					size="30"
+				/>
+				
+			</trailemitter>
+			<model
+				name="trail_03"
+				anim="idle"
+				model="/shared/effects/models/circle_of_bones/model.mdf"
+				scale=".6"
+				color="0"
+				alpha="0"
+				rollspeed="800"
+				position="0 0 10"
+			>
+			
+				<template name="trails">
+					<trailemitter
+						name="trail01"
+						position="0 0 0"
+						bone="{bone01}"
+						spawnrate="100"
+						particlelife="1000"
+						subframepose="1"
+						texpostime="1000"
+						texposscale="0"
+						texstretchscale="1"
+						material="/shared/effects/materials/wave_trail.material"
+					>
+						<particle
+							startcolor=".35 .35 0"
+							midcolor=".25 .25 .1"
+							endcolor="0 0 0"
+							midcolorpos=".2"
+							startalpha="1"
+							midalpha="0"
+							endalpha="0"
+							startsize="10"
+							endsize="0"
+						/>
+					</trailemitter>
+				</template>
+				
+				<instance name="trails" bone01="_bone_fx_01"/>
+				<instance name="trails" bone01="_bone_fx_03"/>
+				<instance name="trails" bone01="_bone_fx_05"/>
+				<instance name="trails" bone01="_bone_fx_05"/>
+				<instance name="trails" bone01="_bone_fx_05"/>
+				
+			</model>
+
+		<particlesystem name="system0" space="world" >
+			
+			<sound
+			    forcestereo="true"
+				linearfalloff="true" 
+				falloffstart="400"
+				falloffend="1300"
+   				volume="1"
+				sample="/heroes/kenisis/ability_01/sounds/cast_2.wav"
+			/>
+
+			<trackeremitter
+				count="1"
+				
+				bone="_bone_centerofchest"
+				owner="target"
+				targetbone="_bone_centerofchest"
+				targetowner="source"
+				
+				tracktype="distance"
+				trackspeed="22.0" 				
+				drag="0"
+				spawnrate="250"
+				particlelife="2000"
+				gravity="-50"
+				offsetsphere="5 5 5"
+				minspeed="40.0"
+				maxspeed="220.0"
+				
+				acceleration="500.0"
+				direction="0.0 0.0 1.0"
+				
+				inheritvelocity="0.0"
+				distancelife="true"
+			>
+				<particle		
+					emitter0="trail_01"
+					emitter1="trail_02"
+					emitter2="trail_03"
+				/>				
+			</trackeremitter>
+			
+		
+			<trackeremitter
+				life="800"
+				spawnrate="10"
+				bone="_bone_centerofchest"
+				owner="target"
+				targetbone="_bone_centerofchest"
+				targetowner="source"
+				
+				tracktype="lerp"
+				trackspeed="1"
+				
+				minspeed="300"
+				maxspeed="500"
+				angle="0"
+				particlelife="1500"
+				distancelife="true"
+				expirelife="200"
+				position="0 0 0"
+			>
+				<particle
+					minyawspeed="-750"
+					maxyawspeed="750"
+				>
+					<billboard
+						maxroll="360"
+						position="10 10 0"
+						life="1000"
+						material="/shared/effects/materials/blink_02.material"
+						startsize="6"
+						endsize="2"
+						startcolor="1 .8 .5"
+						midcolor="1 .5 0"
+						endcolor="0"
+						directionalspace="local"
+						minscale="1"
+						maxscale="3"
+					/>
+					<billboard
+						maxroll="360"
+						position="10 10 0"
+						life="1000"
+						material="/shared/effects/materials/blink_02.material"
+						startsize="2"
+						endsize="1"
+						startcolor="1"
+						midcolor="1"
+						midcolorpos=".7"
+						endcolor="0"
+						directionalspace="local"
+						minscale="1"
+						maxscale="3"
+					/>
+				</particle>
+			</trackeremitter>
+			<trackeremitter
+				life="1000"
+				spawnrate="6"
+				bone="_bone_centerofchest"
+				owner="target"
+				targetbone="_bone_centerofchest"
+				targetowner="source"
+				
+				tracktype="lerp"
+				trackspeed="1"
+				
+				minspeed="200"
+				maxspeed="400"
+				angle="0"
+				particlelife="1500"
+				distancelife="true"
+				expirelife="200"
+				position="0 0 0"
+			>
+				<particle
+					minyawspeed="-750"
+					maxyawspeed="750"
+				>
+					<billboard
+						maxroll="360"
+						position="10 10 0"
+						life="1000"
+						material="/shared/effects/materials/sakura02_blend.material"
+						size="5"
+						color="1"
+						directionalspace="local"
+						minscale="1.5"
+						maxscale="3.5"
+						minrollspeed="-500"
+						maxrollspeed="500"
+					/>
+				</particle>
+			</trackeremitter>
+			<trackeremitter
+				life="1500"
+				spawnrate="4"
+				bone="_bone_centerofchest"
+				owner="target"
+				targetbone="_bone_centerofchest"
+				targetowner="source"
+				
+				tracktype="lerp"
+				trackspeed="1"
+				
+				minspeed="300"
+				maxspeed="500"
+				angle="0"
+				particlelife="1500"
+				distancelife="true"
+				startparticlescale="1"
+				endparticlescale=".5"
+				expirelife="200"
+				position="0 0 0"
+			>
+				<particle
+					minyawspeed="-750"
+					maxyawspeed="750"
+					maxangle="360"
+				>
+					<billboard
+						maxroll="360"
+						position="10 10 0"
+						life="1000"
+						material="/shared/effects/materials/petal_sakura_blend.material"
+						startsize="5"
+						endsize="5"
+						color="1 .6 .9"
+						directionalspace="local"
+						minscale="2"
+						maxscale="4"
+						minrollspeed="-500"
+						maxrollspeed="500"
+					/>
+				</particle>
+			</trackeremitter>
+
+			
+		<!-- 	<trackeremitter
+				life="1500"
+				spawnrate="10"
+				bone="_bone_centerofchest"
+				owner="target"
+				targetbone="_bone_centerofchest"
+				targetowner="source"
+				
+				tracktype="lerp"
+				trackspeed="1"
+				position="10 10 0"
+				minspeed="300"
+				maxspeed="400"
+				direction="0 0 1"
+				particlelife="1500"
+				distancelife="true"
+				startparticlescale=".6"
+				endparticlescale=".3"
+				expirelife="200"
+				offsetsphere="10"
+				material="/shared/effects/materials/blink_02.material"
+			>
+				<particle
+					startcolor="1 .8 .4"
+					midcolor="1 .5 0"
+					endcolor="0"
+					startsize="15"
+					endsize="1"
+					minscale="2"
+					maxscale="3"
+					>
+					<simpleemitter
+						count="1"
+						particlelife="900"
+						direction="0 0 1"
+						material="/shared/effects/materials/blink_02.material"
+					>
+						<particle
+							startcolor="1"
+							midcolor="1"
+							midcolorpos=".7"
+							endcolor="0"
+							startsize="5"
+							endsize="1"
+							anchor="1"
+						/>
+					</simpleemitter>
+				</particle>
+			</trackeremitter> -->
+			
+		</particlesystem>
+	</definitions>
+	<thread>
+		<spawnparticlesystem instance="instance0" particlesystem="system0" />
+		<waitfordeath instance="instance0" />
+		<!-- <die /> -->
+	</thread>
+</effect>
+
+<!-- [min|max][start|mid|end]property[speed][pos] -->
+

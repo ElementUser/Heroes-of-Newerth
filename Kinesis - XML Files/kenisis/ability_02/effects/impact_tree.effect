@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<effect name="ability_04_impact" useentityeffectscale="true">
+	<definitions>
+
+		<particlesystem name="system0" space="world" scale="1">
+
+
+
+			<billboard
+			bone="_bone_centerofchest"
+				life="500"
+				color="1 1 1"
+				startalpha="1"
+				midalpha="1"
+				endalpha="0"
+				midalphapos="0.75"
+				startparam=".1"
+				endparam="0"
+				startsize="128"
+				endsize="475"
+				depthbias="0"
+				position="0 0 50"
+				material="/shared/effects/materials/refract_ring.material"
+				lockup="true"
+				lockright="true"
+				pitch="90"
+			/>	
+
+			<billboard
+			bone="_bone_centerofchest"
+				position="0 0 0"
+				delay="150"
+				life="500"
+				color="1.0 1.0 1.0"
+				startalpha="1.0"
+				midalpha="1.0"
+				endalpha="0.0"
+				midalphapos="0.75"
+				startparam=".075"
+				endparam="0.0"
+				startsize="0"
+				endsize="325"
+				depthbias="-100"
+				material="/shared/effects/materials/refract_ring.material"
+				lockup="true"
+				pitch="90"				
+			/>
+			
+			<simpleemitter
+				bone="_bone_centerofchest"
+				position="0 0 0"
+				count="35"
+				life="400"
+				spawnrate="500"
+				minspeed="150"
+				maxspeed="250"
+				drag="0.15"
+				minparticlelife="500"
+				maxparticlelife="1200"
+				offsetsphere="25"
+				depthbias="-100"
+				gravity="50"
+				material="/shared/effects/materials/flare_03.material"
+         	>
+				<particle 
+					minangle="0"
+					maxangle="360"
+					startcolor=".1 .1 .25"
+					midcolor="0 .25 1"
+					endcolor="0 0 0"
+					midcolorpos=".5"
+					startalpha=".5"
+					endalpha="0"
+					startsize="100"
+					midsize="20"
+					endsize="20"
+					midsizepos=".25"
+					flare="1"
+				/>
+			</simpleemitter>
+
+      </particlesystem>
+   </definitions>
+   <thread>
+      <spawnparticlesystem instance="instance0"  particlesystem="system0" />	
+	  <spawnmodifier instance="instance1" modifier="modifier0"/>  
+	   <camerashake2 scale="12" radius="1500" duration="400" frequency="22" />
+	  <waitfordeath instance="instance0" />
+	  <waitfordeath instance="instance1" />	  
+      <!-- <die /> -->
+   </thread>
+</effect>
+
+<!-- [min|max][start|mid|end]property[speed][position] -->
+

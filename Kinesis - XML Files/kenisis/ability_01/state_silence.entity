@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<state
+	name="State_Kenisis_Ability1_Silence"
+
+	icon="icon.tga"
+	passiveeffect="effects/silence.effect"
+	
+	silenced="true"
+	
+	effecttype="StatusDebuff"
+	allowtransfer="true"
+>
+
+	<altavatar key="Hero_Kenisis.Alt7" modpriority="1"
+		passiveeffect="/heroes/kenisis/alt7/ability_01/effects/silence.effect"
+	/>
+
+</state>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<state
+	name="State_Kenisis_Ability2_Self"
+	
+	ishidden="true"
+	
+	passiveeffect="/heroes/kenisis/effects/passive_levetate.effect"
+	
+	modifierkey="kinesis_ability2_Active"
+>
+	<altavatar key="Hero_Kenisis.Alt7"
+		passiveeffect="/heroes/kenisis/alt7/effects/passive_levetate.effect"
+	/>
+</state>

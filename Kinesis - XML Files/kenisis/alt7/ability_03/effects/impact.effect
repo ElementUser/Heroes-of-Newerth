@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<effect deferred="true">
+	<definitions>
+		<particlesystem name="system0" space="world" scale=".9">
+
+			<sound
+				linearfalloff="true"
+				falloffstart="400"
+				falloffend="1300" 
+				volume="1" 
+				sample="/heroes/kenisis/ability_03/sounds/impact_%.wav"
+			/>
+
+			<model
+				life="500"
+				bone="_bone_center"
+				startcolor=".5 .1 .5"
+				endcolor="0 0 0"
+				midcolorpos=".99"
+				position="0 0 0"
+				model="/heroes/artesia/projectile/effects/orb/orb.mdf"
+				material="/shared/effects/materials/shell2.material"
+				anim="idle"
+				startscale="0"
+				endscale=".2"
+				yawspeed="180"
+				pitchspeed="180"
+			>
+			</model>
+			<billboard
+				bone="_bone_centerofchest"
+				life="500"
+				startcolor="1 .2 1"
+				endcolor="0 0 0"
+				startsize="0"
+				endsize="120"
+				position="0 0 -10"
+				material="/shared/effects/materials/corona_01.material"
+				depthbias="-75"
+			/>
+
+			
+			<simpleemitter
+				bone="_bone_centerofchest"
+				count="10"
+				minparticlelife="500"
+				maxparticlelife="700"
+				minspeed="35"
+				maxspeed="105"
+				gravity="-10"
+				drag=".05"
+				minparticleangle="0"
+				maxparticleangle="360" 
+				position="0 0 0"
+				offsetsphere="20"
+				material="/shared/effects/materials/blink_02.material"
+			>
+				<particle
+					startcolor="1 1 .5"
+					midcolor="1 .5 0"
+					endcolor="0"
+					startsize="20"
+					endsize="0.5"
+					minscale="0.5"
+					maxscale="1.3"
+					>
+					<simpleemitter
+						count="1"
+						direction="0 0 1"
+						position="0 0 0"
+						material="/shared/effects/materials/blink_02.material"
+					>
+						<particle
+							startcolor="1"
+							midcolor="1"
+							midcolorpos=".7"
+							endcolor="0"
+							startsize="5"
+							endsize="0.5"
+							anchor="1"
+						/>
+					</simpleemitter>
+				</particle>
+			</simpleemitter>
+
+		</particlesystem>
+	</definitions>
+
+	<thread>
+		<spawnparticlesystem instance="instance0" particlesystem="system0" />
+		<waitfordeath instance="instance0" />
+	</thread>
+</effect>
+
+
+
+
+
+
+

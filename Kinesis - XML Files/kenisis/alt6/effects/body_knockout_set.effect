@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<effect deferred="true">
+	<definitions>
+		<particlesystem name="systemEntity" space="entity" scale="1">
+			<simpleemitter
+				position="0 0 -45"
+				bone="_bone_centerofchest"
+				spawnrate="1.8"
+				speed="20" direction="0 0 1"
+				gravity="1" drag=".05"
+				particlelife="2000"
+				angle="0"
+			>
+				<particle scale="2.8" angle="0">
+					<template name="ring">
+						<model
+							life="1350"
+							anim="idle"
+							model="ring/model.mdf"
+							startcolor="0 .2 .05" midcolor="0 .2 .05" endcolor="0"
+							material="/shared/effects/materials/shell_green_lightning.material"
+							startparam0="0" midparam0=".8" endparam0="1"
+						/>
+						<model
+							life="1350"
+							anim="idle"
+							model="ring/model.mdf"
+							startcolor="{startcolor}" midcolor="{color}" endcolor="0"
+							material="/shared/effects/materials/shell_lightning.material"
+							startparam0="0" midparam0=".8" endparam0="1"
+						>
+							<billboard
+								bone="_bone_ring"
+								life="1350"
+								startsize="1" midsize="40" endsize="0" midsizepos=".5"
+								pitch="-90"
+								lockup="true" lockright="true"
+								startcolor="{startcolor}" midcolor="{startcolor}" endcolor="0" midcolorpos=".35"
+								material="/shared/effects/materials/corona_06.material"
+							/>
+							<billboard
+								bone="_bone_ring"
+								life="1350"
+								startsize="1" midsize="40" endsize="0" midsizepos=".5"
+								pitch="-90"
+								lockup="true" lockright="true"
+								startcolor="{startcolor}" midcolor="{startcolor}" endcolor="0" midcolorpos=".35"
+								material="/shared/effects/materials/corona_07.material"
+							/>
+						</model>
+					</template>
+					<instance name="ring" startcolor="0 .2 .05" color="0.000000 0.850000 0.210000"/>
+				</particle>
+			</simpleemitter>
+		</particlesystem>
+	</definitions>
+	<thread>
+		<spawnparticlesystem instance="instanceEntity" particlesystem="systemEntity" />
+		<waitfordeath instance="instanceEntity" />
+	</thread>
+</effect>

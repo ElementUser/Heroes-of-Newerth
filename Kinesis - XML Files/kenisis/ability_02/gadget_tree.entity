@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gadget
+	name="Gadget_Kenisis2_Tree"
+	
+	icon=""
+	portrait=""
+	model="/shared/models/invis.mdf"
+	passiveeffect="effects/tree_state.effect"
+
+	preglobalscale="1"
+	modelscale="1.75"
+	effectscale="0.9"
+	boundsheight="0"
+	boundsradius="0"
+	isselectable="false"
+	iscontrollable="false"
+	selectionradius="0"
+	targetoffset="0 0 0"
+
+	canturn="true"
+	canrotate="true"
+	ismobile="false"
+
+	movespeed="450"
+	turnrate="900"
+
+	attacktype="none"
+	combattype="Ranged"
+
+	sightrangeday="0"
+	sightrangenight="0"
+
+	deathtime="0"
+	corpsetime="0"
+	
+	flying="true"
+	
+	invulnerable="true"
+	drawonmap="false"
+	unitwalking="true"
+	treewalking="true"
+	buildingwalking="true"
+	cliffwalking="true"
+	
+	lifetime="8000"
+	
+	unittype="Levitated"
+>
+	<modifier key="kinesis_ability2_Moves"
+		ismobile="true"
+	>
+		<onframe>
+			<hasmodifier name="Kenisis_Projectile_Bound" />
+			<else>
+				<order command="follow" force="true" source="this_entity" target="this_owner_entity" />
+				
+				<hasmodifier entity="this_owner_entity" name="kinesis_ability2_Active">
+					<distance source="this_entity" target="this_owner_entity" />
+					<compare a="result" b="1500" op="gt">
+						<kill target="this_entity" source="" />
+					</compare>
+				</hasmodifier>
+				<else>
+					<kill target="this_entity" source="" />
+				</else>
+			</else>
+		</onframe>
+	</modifier>
+
+	<altavatar key="Hero_Kenisis.Alt2" modpriority="1"
+		passiveeffect="/heroes/kenisis/alt2/ability_02/effects/tree_state.effect"
+		isselectable="false"
+	/>
+	
+	<altavatar key="Hero_Kenisis.Alt3" modpriority="1"
+		passiveeffect="/heroes/kenisis/alt3/ability_02/effects/tree_state.effect"
+		isselectable="false"
+	/>
+	
+	<altavatar key="Hero_Kenisis.Alt4" modpriority="1"
+		passiveeffect="/heroes/kenisis/alt4/ability_02/effects/tree_state.effect"
+	/>
+
+	<altavatar key="Hero_Kenisis.Alt5" modpriority="1"
+		passiveeffect="/heroes/kenisis/alt5/ability_02/effects/tree_state.effect"
+	/>
+	
+	<altavatar key="Hero_Kenisis.Alt6" modpriority="1"
+		passiveeffect="/heroes/kenisis/alt6/ability_02/effects/tree_state.effect"
+	/>
+	
+	<altavatar key="Hero_Kenisis.Alt7" modpriority="1"
+		passiveeffect="/heroes/kenisis/alt7/ability_02/effects/tree_state.effect"
+	/>
+</gadget>

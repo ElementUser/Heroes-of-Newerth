@@ -1,0 +1,907 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<effect name="cyclone" deferred="true">
+	<definitions>	
+		<particlesystem name="system0" space="world" scale="2.5">
+				<controller yawspeed="-500" position="0 0 100">
+				<simpleemitter
+					spawnrate="6"
+					minparticlelife="400"
+					maxparticlelife="600"
+					minspeed="3"
+					maxspeed="6"
+					gravity="-10"
+					drag=".2"
+					minparticleangle="0"
+					maxparticleangle="360" 
+					position="0 80 0"
+					offsetsphere="10"
+					material="/shared/effects/materials/blink.material"
+				>
+					<particle
+						startcolor="1 1 .5"
+						midcolor="1 .5 0"
+						endcolor="0"
+						startsize="20"
+						endsize="1"
+						minscale=".5"
+						maxscale=".8"
+						>
+						<simpleemitter
+							count="1"
+							particlelife="900"
+							direction="0 0 1"
+							position="0 0 0"
+							material="/shared/effects/materials/blink.material"
+						>
+							<particle
+								startcolor="1"
+								midcolor="1"
+								midcolorpos=".7"
+								endcolor="0"
+								startsize="5"
+								endsize="1"
+								anchor="1"
+							/>
+						</simpleemitter>
+					</particle>
+				</simpleemitter>
+				<simpleemitter
+					spawnrate="6"
+					minparticlelife="400"
+					maxparticlelife="600"
+					minspeed="3"
+					maxspeed="6"
+					gravity="-10"
+					drag=".2"
+					minparticleangle="0"
+					maxparticleangle="360" 
+					position="0 -60 0"
+					offsetsphere="10"
+					material="/shared/effects/materials/blink.material"
+				>
+					<particle
+						startcolor="1 1 .5"
+						midcolor="1 .5 0"
+						endcolor="0"
+						startsize="20"
+						endsize="1"
+						minscale=".5"
+						maxscale=".8"
+						>
+						<simpleemitter
+							count="1"
+							particlelife="900"
+							direction="0 0 1"
+							position="0 0 0"
+							material="/shared/effects/materials/blink.material"
+						>
+							<particle
+								startcolor="1"
+								midcolor="1"
+								midcolorpos=".7"
+								endcolor="0"
+								startsize="5"
+								endsize="1"
+								anchor="1"
+							/>
+						</simpleemitter>
+					</particle>
+				</simpleemitter>
+				<simpleemitter
+					spawnrate="20"
+					minparticlelife="300"
+					maxparticlelife="500"
+					minspeed="35"
+					maxspeed="105"
+					gravity="-10"
+					drag=".05"
+					minparticleangle="0"
+					maxparticleangle="360" 
+					position="0 60 0"
+					offsetsphere="30"
+					material="/shared/effects/materials/sakura02_blend.material"
+				>
+					<particle
+						color="1"
+						startsize="10"
+						endsize="1"
+						minscale="1"
+						maxscale="2"
+					/>
+				</simpleemitter>
+				<trailemitter
+					spawnrate="44"
+					particlelife="350"
+					texpostime="300"
+					texposscale="0.0"
+					texstretchscale="1.0"
+					material="/shared/effects/materials/trail_head.material"
+					subframepos="true"
+					position="0 80 0"
+				>
+					<particle
+						startcolor=".6 .55 .25"
+						endcolor=".4 .2 .1"
+						startalpha=".4"
+						endalpha="0"
+						startsize="25"
+						endsize="10"
+					/>
+				</trailemitter>
+				<trailemitter
+					spawnrate="44"
+					particlelife="350"
+					texpostime="300"
+					texposscale="0.0"
+					texstretchscale="1.0"
+					material="/shared/effects/materials/trail_head.material"
+					subframepos="true"
+					position="50 -50 0"
+				>
+					<particle
+						startcolor=".6 .55 .25"
+						endcolor=".4 .2 .1"
+						startalpha=".4"
+						endalpha="0"
+						startsize="22"
+						endsize="8"
+					/>
+				</trailemitter>
+				<trailemitter
+					spawnrate="44"
+					particlelife="350"
+					texpostime="300"
+					texposscale="0.0"
+					texstretchscale="1.0"
+					material="/shared/effects/materials/trail_head.material"
+					subframepos="true"
+					position="-20 -40 0"
+				>
+					<particle
+						startcolor=".6 .55 .25"
+						endcolor=".4 .2 .1"
+						startalpha=".4"
+						endalpha="0"
+						startsize="15"
+						endsize="5"
+					/>
+				</trailemitter>
+			</controller>
+		</particlesystem>
+		<particlesystem name="system1" space="entity" scale="2.5">
+			
+			<sound
+			    forcestereo="true"
+				linearfalloff="true"
+				falloffstart="400"
+				falloffend="1300"
+				volume="1"
+				sample="../../sounds/ab4.wav"
+			/>
+			
+			<simpleemitter
+				count="1"
+				spawnrate="2000"
+				expirelife="250"
+			>
+				<particle>
+					<model
+						model="../../../ability_04/effects/cyclone/cyclone_bones.mdf"
+						anim="idle"
+						expirelife="250"
+						startalpha="1"
+						midalpha="1"
+						endalpha="0"
+						midalphapos=".5"
+						startscale=".65"
+						endscale="0"
+					>
+						<groundsprite
+							expirelife="250"
+							bone="_bone_cyclone01"
+							material="/shared/effects/materials/whitedot_blend.material"
+							size="155"
+							startcolor=".3 .1 .3"
+							endcolor="0 0 0"
+							midcolorpos=".95"
+							alpha="1"
+						/> 
+						<billboard
+							expirelife="250"
+							bone="_bone_cyclone01"
+							alpha="1"
+							size="120"
+							position="0 0 0"
+							material="/shared/effects/materials/sakura03_add.material"
+							lockup="true"
+							lockright="true"
+							pitch="90"
+							color="0.5"
+							depthbias="-35"
+						/>
+						<simpleemitter
+							count="1"
+							bone="_bone_cyclone01"
+							spawnrate="2000"
+							particlelife="5000"
+						>
+							<particle>
+								<simpleemitter
+									bone="_bone_cyclone01"
+									spawnrate="75"
+									count="20"
+									particlelife="1000"
+									gravity="-55"
+									speed="40"
+									drag=".08"
+									acceleration="0"
+									position="0 0 0"
+									material="/shared/effects/materials/phantom_smoke_13.material"
+									offsetsphere="20 20 50"
+									minangle="90"
+									maxangle="-90"
+								>
+									<particle 
+										startcolor="1 1 1"
+										midcolor=".5 .25 .5"
+										endcolor="0"
+										midcolorpos=".1"
+										startframe="0"
+										endframe="1"
+										startwidth="20"
+										midwidth="15"
+										endwidth="6"
+										midwidthpos=".5"
+										startheight="0"
+										endheight="1000"
+										lockup="true"
+									/>
+								</simpleemitter>
+							</particle>
+						</simpleemitter>
+						<simpleemitter
+							count="1"
+							delay="1000"
+							bone="_bone_cyclone01"
+							spawnrate="2000"
+							particlelife="5000"
+						>
+							<particle>
+								<simpleemitter
+									bone="_bone_cyclone01"
+									spawnrate="75"
+									count="20"
+									particlelife="1000"
+									gravity="-55"
+									speed="40"
+									drag=".08"
+									acceleration="0"
+									position="0 0 0"
+									material="/shared/effects/materials/phantom_smoke_10.material"
+									offsetsphere="20 20 50"
+									minangle="90"
+									maxangle="-90"
+								>
+									<particle 
+										startcolor="1 1 1"
+										midcolor=".5 .25 .5"
+										endcolor="0"
+										midcolorpos=".1"
+										startframe="0"
+										endframe="1"
+										startwidth="20"
+										midwidth="15"
+										endwidth="6"
+										midwidthpos=".5"
+										startheight="0"
+										endheight="1000"
+										lockup="true"
+									/>
+								</simpleemitter>
+							</particle>
+						</simpleemitter>
+						<template name="wind">
+<!-- 							<billboard
+								bone="{bone}"
+								position="0 0 20"
+								expirelife="250"
+								color="1 1 1"
+								startalpha="1"
+								midalpha="1"
+								endalpha="1"
+								startparam=".025"
+								endparam="0"
+								startsize="100"
+								endsize="500"
+								material="/shared/effects/materials/refract_pinch.material"
+								lockup="1"
+								pitch="90"
+							/> -->
+							<billboard
+								expirelife="250"
+								bone="{bone}"
+								material="/shared/effects/materials/twirl_06.material"
+								position="0 0 0"
+								size="{size}"
+								roll="105"
+								rollspeed="{speed}"
+								color=".3 .2 .1"
+								lockup="true"
+								lockright="true"
+								pitch="90"
+								yaw="180"
+							/>
+						</template>
+<!-- 						<instance name="wind"  size="120"  size2="80" roll="180" speed="1600" orbit="-10" origin="40" bone="_bone_cyclone04"/>
+						<instance name="wind"  size="180"  size2="90" roll="220" speed="400" orbit="-8" origin="55" bone="_bone_cyclone05"/>
+						<instance name="wind" size="230"  size2="100" roll="300" speed="400" orbit="-4" origin="70" bone="_bone_cyclone06"/>
+						<instance name="wind"  size="320"  size2="140" roll="360" speed="400" orbit="-4" origin="80" bone="_bone_cyclone07"/>
+ -->						<model
+							bone="_bone_cyclone04"
+							model="../../../ability_04/effects/stones/model.mdf"
+							material="/shared/effects/materials/shell2.material"
+							anim="idle"
+							startcolor="0 2 4"
+							endcolor="0 0 0"
+							scale=".55"
+							expirelife="250"
+							alpha="0"
+							minyaw="0"
+							maxyaw="360"
+							minyawspeed="-180"
+							maxyawspeed="-360"
+						>
+							<billboard
+								bone="_bone_fx_01"
+								material="/shared/effects/materials/whitedot.material"
+								position="0 0 0"
+								size="50"
+								roll="105"
+								color=".4 .05 .4"
+								lockup="true"
+								lockright="true"
+								pitch="90"
+								yaw="0"
+							/>
+							<billboard
+								bone="_bone_fx_02"
+								material="/shared/effects/materials/whitedot.material"
+								position="0 0 0"
+								size="50"
+								roll="105"
+								color=".4 .05 .4"
+								lockup="true"
+								lockright="true"
+								pitch="90"
+								yaw="0"
+							/>
+							<billboard
+								bone="_bone_fx_03"
+								material="/shared/effects/materials/whitedot.material"
+								position="0 0 0"
+								size="50"
+								roll="105"
+								color=".4 .05 .4"
+								lockup="true"
+								lockright="true"
+								pitch="90"
+								yaw="0"
+							/>
+							<billboard
+								bone="_bone_fx_04"
+								material="/shared/effects/materials/whitedot.material"
+								position="0 0 0"
+								size="50"
+								roll="105"
+								color=".4 .05 .4"
+								lockup="true"
+								lockright="true"
+								pitch="90"
+								yaw="0"
+							/>
+							<billboard
+								expirelife="200"
+								bone="_bone_fx_01"
+								startcolor=".3"
+								endcolor="0 0 0"
+								size="50"
+								maxroll="360"
+								material="/shared/effects/materials/blink.material"
+								life="100"
+								loop="true"
+								position="0 0 5"
+							/>
+							<billboard
+								expirelife="200"
+								bone="_bone_fx_02"
+								startcolor=".3"
+								endcolor="0 0 0"
+								size="50"
+								maxroll="360"
+								material="/shared/effects/materials/blink.material"
+								life="100"
+								loop="true"
+								position="0 0 0"
+							/>
+							<billboard
+								expirelife="200"
+								bone="_bone_fx_03"
+								startcolor=".3"
+								endcolor="0 0 0"
+								size="50"
+								maxroll="360"
+								material="/shared/effects/materials/blink.material"
+								life="100"
+								loop="true"
+								position="0 0 0"
+							/>
+							<billboard
+								expirelife="200"
+								bone="_bone_fx_04"
+								startcolor=".3"
+								endcolor="0 0 0"
+								size="50"
+								maxroll="360"
+								material="/shared/effects/materials/blink.material"
+								life="100"
+								loop="true"
+								position="0 0 0"
+							/>
+							<model 
+								bone="_bone_fx_01"
+								model="../../effects/sakura/sakura.mdf"
+								material="../../material_noshadow.material"
+								anim="idle"
+								color="1"
+								scale="4"
+								expirelife="500"
+								position="0 0 0"
+								pitch="90"
+								minyawspeed="-220"
+								maxyawspeed="220"
+								startalpha="1"
+								endalpha="0"
+							/>	
+							<model 
+								bone="_bone_fx_02"
+								model="../../effects/sakura/sakura.mdf"
+								material="../../material_noshadow.material"
+								anim="idle"
+								color="1"
+								scale="6"
+								expirelife="500"
+								position="0 0 0"
+								pitch="90"
+								minyawspeed="-220"
+								maxyawspeed="220"
+								startalpha="1"
+								endalpha="0"
+							/>	
+							<model 
+								bone="_bone_fx_03"
+								model="../../effects/sakura/sakura.mdf"
+								material="../../material_noshadow.material"
+								anim="idle"
+								color="1"
+								scale="5"
+								expirelife="500"
+								position="0 0 0"
+								pitch="90"
+								minyawspeed="-220"
+								maxyawspeed="220"
+								startalpha="1"
+								endalpha="0"
+							/>	
+							<model 
+								bone="_bone_fx_04"
+								model="../../effects/sakura/sakura.mdf"
+								material="../../material_noshadow.material"
+								anim="idle"
+								color="1"
+								scale="6"
+								expirelife="500"
+								position="0 0 0"
+								pitch="90"
+								minyawspeed="-220"
+								maxyawspeed="220"
+								startalpha="1"
+								endalpha="0"
+							/>	
+						</model>
+						<model
+							bone="_bone_cyclone05"
+							model="../../../ability_04/effects/stones/model.mdf"
+							material="/shared/effects/materials/shell2.material"
+							anim="idle"
+							startcolor="0 2 4"
+							endcolor="0 0 0"
+							scale=".85"
+							expirelife="250"
+							startalpha="0"
+							endalpha="0"
+							minyaw="0"
+							maxyaw="360"
+							minyawspeed="-180"
+							maxyawspeed="-360"
+						>
+							<billboard
+								bone="_bone_fx_01"
+								material="/shared/effects/materials/whitedot.material"
+								position="0 0 0"
+								size="50"
+								roll="105"
+								color=".4 .05 .4"
+								lockup="true"
+								lockright="true"
+								pitch="90"
+								yaw="0"
+							/>
+							<billboard
+								bone="_bone_fx_02"
+								material="/shared/effects/materials/whitedot.material"
+								position="0 0 0"
+								size="50"
+								roll="105"
+								color=".4 .05 .4"
+								lockup="true"
+								lockright="true"
+								pitch="90"
+								yaw="0"
+							/>
+							<billboard
+								bone="_bone_fx_03"
+								material="/shared/effects/materials/whitedot.material"
+								position="0 0 0"
+								size="50"
+								roll="105"
+								color=".4 .05 .4"
+								lockup="true"
+								lockright="true"
+								pitch="90"
+								yaw="0"
+							/>
+							<billboard
+								bone="_bone_fx_04"
+								material="/shared/effects/materials/whitedot.material"
+								position="0 0 0"
+								size="50"
+								roll="105"
+								color=".4 .05 .4"
+								lockup="true"
+								lockright="true"
+								pitch="90"
+								yaw="0"
+							/>
+							<model 
+								bone="_bone_fx_01"
+								model="../../effects/sakura/sakura.mdf"
+								material="../../material_noshadow.material"
+								anim="idle"
+								color="1"
+								scale="3"
+								expirelife="500"
+								position="0 0 0"
+								pitch="90"
+								minyawspeed="-220"
+								maxyawspeed="220"
+								startalpha="1"
+								endalpha="0"
+							/>	
+							<model 
+								bone="_bone_fx_02"
+								model="../../effects/sakura/sakura.mdf"
+								material="../../material_noshadow.material"
+								anim="idle"
+								color="1"
+								scale="4"
+								expirelife="500"
+								position="0 0 0"
+								pitch="90"
+								minyawspeed="-220"
+								maxyawspeed="220"
+								startalpha="1"
+								endalpha="0"
+							/>	
+							<model 
+								bone="_bone_fx_03"
+								model="../../effects/sakura/sakura.mdf"
+								material="../../material_noshadow.material"
+								anim="idle"
+								color="1"
+								scale="3"
+								expirelife="500"
+								position="0 0 0"
+								pitch="90"
+								minyawspeed="-220"
+								maxyawspeed="220"
+								startalpha="1"
+								endalpha="0"
+							/>	
+							<model 
+								bone="_bone_fx_04"
+								model="../../effects/sakura/sakura.mdf"
+								material="../../material_noshadow.material"
+								anim="idle"
+								color="1"
+								scale="5"
+								expirelife="500"
+								position="0 0 0"
+								pitch="90"
+								minyawspeed="-220"
+								maxyawspeed="220"
+								startalpha="1"
+								endalpha="0"
+							/>	
+						</model>
+						<model
+							bone="_bone_cyclone06"
+							model="../../../ability_04/effects/stones/model.mdf"
+							material="/shared/effects/materials/shell2.material"
+							anim="idle"
+							startcolor="0 2 4"
+							endcolor="0 0 0"
+							scale="1.25"
+							expirelife="250"
+							startalpha="0"
+							endalpha="0"
+							minyaw="0"
+							maxyaw="360"
+							minyawspeed="-180"
+							maxyawspeed="-360"
+						>
+							<billboard
+								bone="_bone_fx_01"
+								material="/shared/effects/materials/whitedot.material"
+								position="0 0 0"
+								size="50"
+								roll="105"
+								color=".4 .05 .4"
+								lockup="true"
+								lockright="true"
+								pitch="90"
+								yaw="0"
+							/>
+							<billboard
+								bone="_bone_fx_02"
+								material="/shared/effects/materials/whitedot.material"
+								position="0 0 0"
+								size="50"
+								roll="105"
+								color=".4 .05 .4"
+								lockup="true"
+								lockright="true"
+								pitch="90"
+								yaw="0"
+							/>
+							<billboard
+								bone="_bone_fx_03"
+								material="/shared/effects/materials/whitedot.material"
+								position="0 0 0"
+								size="50"
+								roll="105"
+								color=".4 .05 .4"
+								lockup="true"
+								lockright="true"
+								pitch="90"
+								yaw="0"
+							/>
+							<billboard
+								bone="_bone_fx_04"
+								material="/shared/effects/materials/whitedot.material"
+								position="0 0 0"
+								size="50"
+								roll="105"
+								color=".4 .05 .4"
+								lockup="true"
+								lockright="true"
+								pitch="90"
+								yaw="0"
+							/>
+							<model 
+								bone="_bone_fx_01"
+								model="../../effects/sakura/sakura.mdf"
+								material="../../material_noshadow.material"
+								anim="idle"
+								color="1"
+								scale="4"
+								expirelife="500"
+								position="0 0 0"
+								pitch="90"
+								minyawspeed="-220"
+								maxyawspeed="220"
+								startalpha="1"
+								endalpha="0"
+							/>	
+							<model 
+								bone="_bone_fx_02"
+								model="../../effects/sakura/sakura.mdf"
+								material="../../material_noshadow.material"
+								anim="idle"
+								color="1"
+								scale="3"
+								expirelife="500"
+								position="0 0 0"
+								pitch="90"
+								minyawspeed="-220"
+								maxyawspeed="220"
+								startalpha="1"
+								endalpha="0"
+							/>	
+							<model 
+								bone="_bone_fx_03"
+								model="../../effects/sakura/sakura.mdf"
+								material="../../material_noshadow.material"
+								anim="idle"
+								color="1"
+								scale="5"
+								expirelife="500"
+								position="0 0 0"
+								pitch="90"
+								minyawspeed="-220"
+								maxyawspeed="220"
+								startalpha="1"
+								endalpha="0"
+							/>	
+							<model 
+								bone="_bone_fx_04"
+								model="../../effects/sakura/sakura.mdf"
+								material="../../material_noshadow.material"
+								anim="idle"
+								color="1"
+								scale="3"
+								expirelife="500"
+								position="0 0 0"
+								pitch="90"
+								minyawspeed="-220"
+								maxyawspeed="220"
+								startalpha="1"
+								endalpha="0"
+							/>	
+						</model>
+						<model
+							bone="_bone_cyclone07"
+							model="../../../ability_04/effects/stones/model.mdf"
+							material="/shared/effects/materials/shell2.material"
+							anim="idle"
+							startcolor="0 2 4"
+							endcolor="0 0 0"
+							scale="1.5"
+							expirelife="250"
+							startalpha="0"
+							endalpha="0"
+							minyaw="0"
+							maxyaw="360"
+							minyawspeed="-180"
+							maxyawspeed="-360"
+						>
+							<billboard
+								bone="_bone_fx_01"
+								material="/shared/effects/materials/whitedot.material"
+								position="0 0 0"
+								size="50"
+								roll="105"
+								color=".4 .05 .4"
+								lockup="true"
+								lockright="true"
+								pitch="90"
+								yaw="0"
+							/>
+							<billboard
+								bone="_bone_fx_02"
+								material="/shared/effects/materials/whitedot.material"
+								position="0 0 0"
+								size="50"
+								roll="105"
+								color=".4 .05 .4"
+								lockup="true"
+								lockright="true"
+								pitch="90"
+								yaw="0"
+							/>
+							<billboard
+								bone="_bone_fx_03"
+								material="/shared/effects/materials/whitedot.material"
+								position="0 0 0"
+								size="50"
+								roll="105"
+								color=".4 .05 .4"
+								lockup="true"
+								lockright="true"
+								pitch="90"
+								yaw="0"
+							/>
+							<billboard
+								bone="_bone_fx_04"
+								material="/shared/effects/materials/whitedot.material"
+								position="0 0 0"
+								size="50"
+								roll="105"
+								color=".4 .05 .4"
+								lockup="true"
+								lockright="true"
+								pitch="90"
+								yaw="0"
+							/>
+							<model 
+								bone="_bone_fx_01"
+								model="../../effects/sakura/sakura.mdf"
+								material="../../material_noshadow.material"
+								anim="idle"
+								color="1"
+								scale="3"
+								expirelife="500"
+								position="0 0 0"
+								pitch="90"
+								minyawspeed="-220"
+								maxyawspeed="220"
+								startalpha="1"
+								endalpha="0"
+							/>	
+							<model 
+								bone="_bone_fx_02"
+								model="../../effects/sakura/sakura.mdf"
+								material="../../material_noshadow.material"
+								anim="idle"
+								color="1"
+								scale="4"
+								expirelife="500"
+								position="0 0 0"
+								pitch="90"
+								minyawspeed="-220"
+								maxyawspeed="220"
+								startalpha="1"
+								endalpha="0"
+							/>	
+							<model 
+								bone="_bone_fx_03"
+								model="../../effects/sakura/sakura.mdf"
+								material="../../material_noshadow.material"
+								anim="idle"
+								color="1"
+								scale="3.5"
+								expirelife="500"
+								position="0 0 0"
+								pitch="90"
+								minyawspeed="-220"
+								maxyawspeed="220"
+								startalpha="1"
+								endalpha="0"
+							/>	
+							<model 
+								bone="_bone_fx_04"
+								model="../../effects/sakura/sakura.mdf"
+								material="../../material_noshadow.material"
+								anim="idle"
+								color="1"
+								scale="4"
+								expirelife="500"
+								position="0 0 0"
+								pitch="90"
+								minyawspeed="-220"
+								maxyawspeed="220"
+								startalpha="1"
+								endalpha="0"
+							/>	
+						</model>
+					</model>
+				</particle>
+			</simpleemitter>
+			<sound
+			    soundloop="true"
+			    fadein="50"
+			    fadeout="500"
+				linearfalloff="true" 
+             	falloffstart="200"
+				falloffend="1300"
+				volume="1"
+				sample="/heroes/kenisis/ability_01/sounds/state.wav"
+			/>
+		</particlesystem>
+	</definitions>
+	<thread>
+		<spawnparticlesystem instance="instance0" particlesystem="system0" />
+		<spawnparticlesystem instance="instance1" particlesystem="system1" />
+		<waitfordeath instance="instance0" />
+		<waitfordeath instance="instance1" />
+	</thread>
+</effect>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<state
+	name="State_Kenisis_Ability2_Tree"
+	
+	icon="icon.tga"
+	passiveeffect=""
+	
+	invulnerable="true"
+	disarmed="true"
+	silenced="true"
+	
+	perplexed="true"
+	
+	effecttype="StatusDebuff"
+	allowtransfer="true"
+	modifierkey="Kenisis_Lifted"
+>
+	<onexpired>
+		<kill source="" target="this_owner_entity" />
+	</onexpired>
+</state>

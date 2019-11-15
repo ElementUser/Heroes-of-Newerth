@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<state
+	name="State_Kenisis_Ability1_After"
+
+	ishidden="true"
+	
+>
+	<onexpired>
+		<pushability source="this_owner_entity" slot="0" />
+		<setlevel entity="stack_entity" value="accumulator" />
+		<startcooldown entity="stack_entity" duration="16000,14000,12000,10000" />
+	</onexpired>
+
+</state>

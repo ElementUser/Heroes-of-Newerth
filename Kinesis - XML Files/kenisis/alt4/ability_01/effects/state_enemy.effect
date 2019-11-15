@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<effect name="cyclone" deferred="true">
+	<definitions>
+		<particlesystem name="system0" space="world" scale="1">
+
+			<simpleemitter
+				bone="_bone_center"
+				spawnrate="60"
+				expirelife="1000"
+				maxparticlelife="250"
+				minparticlelife="250"
+				minspeed="-50"
+				maxspeed="51"
+				acceleration="1"
+				position="0 0 0"
+				minangle="0"
+				maxangle="0"
+				material="/shared/effects/materials/corona_07.material"
+				offsetsphere=" 0 0 45"
+				direction="0 0 1"
+			>
+				<particle 
+					minangle="-360"
+					maxangle="360"
+					anglespeed="220"
+					lockup="1"
+					pitch="-90"
+					startcolor="0 0 0"
+					midcolor=".125 .25 0"
+					endcolor="0 0 0"
+					midcolorpos=".25"
+					startsize="50"
+					midsize="50"
+					endsize="50"
+					midsizepos=".3"
+					startalpha="0"
+					midalpha="1"
+					endalpha="0"
+					midalphapos=".6"
+					startstickiness=".75"
+					endstickiness="0"
+				/>
+			</simpleemitter>
+
+			<simpleemitter
+				bone="_bone_center"
+				spawnrate="60"
+				expirelife="1000"
+				maxparticlelife="250"
+				minparticlelife="250"
+				minspeed="-50"
+				maxspeed="51"
+				acceleration="1"
+				position="0 0 0"
+				minangle="0"
+				maxangle="0"
+				material="/shared/effects/materials/corona_07.material"
+				offsetsphere=" 0 0 45"
+				direction="0 0 1"
+			>
+				<particle 
+					minangle="-360"
+					maxangle="360"
+					anglespeed="220"
+					lockup="1"
+					pitch="-90"
+					startcolor="0 0 0"
+					midcolor=".125 .25 0"
+					endcolor="0 0 0"
+					midcolorpos=".25"
+					startsize="50"
+					midsize="50"
+					endsize="50"
+					midsizepos=".3"
+					startalpha="0"
+					midalpha="1"
+					endalpha="0"
+					midalphapos=".6"
+					startstickiness=".75"
+					endstickiness="0"
+				/>
+			</simpleemitter>
+
+		</particlesystem>
+	</definitions>
+	<thread>
+		<spawnparticlesystem instance="instance0" particlesystem="system0" />
+		<waitfordeath instance="instance0" />
+		<!-- <die /> -->
+	</thread>
+</effect>
+
+<!-- [min|max][start|mid|end]property[speed][position] -->
+

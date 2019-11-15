@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<effect deferred="true">
+	<definitions>
+	
+		<particlesystem name="system0" space="world" scale="1">
+
+			<model
+				position="0 0 0"
+				expirelife="1500"
+				name="emitter0" 
+				anim="idle"
+				model="/shared/effects/models/circle_of_bones/model.mdf"
+				scale="2"
+				startcolor="0 0 0"
+				midcolor="0 0 0"
+				endcolor="0 0 0"
+				midcolorpos=".75"
+				startalpha="0"
+				midalpha="0"
+				endalpha="0"
+				midalphapos=".4"
+				rollspeed="1500"
+			>
+			
+				<template name="trails_01">
+					<twopointtrailemitter
+						name="trail01"
+						position="0 0 0"
+						bone_a="{bone01}"
+						bone_b="{bone02}"
+						spawnrate="50"
+						particlelife="500"
+						subframepose="1"
+						texpostime="500"
+						texposscale="0"
+						texstretchscale="1"
+						material="/shared/effects/materials/fire_scrolling_blue_trail.material"
+					>
+						<particle
+							startcolor="0 1 .35"
+							endcolor="0 0 0"
+							startalpha="1"
+							midalpha="1"
+							endalpha="0"
+							size="40"
+						/>
+					</twopointtrailemitter>
+				</template>
+				
+				<instance name="trails_01" bone01="_bone_fx_01"  bone02="_bone_fx_02"/>
+				<instance name="trails_01" bone01="_bone_fx_03"  bone02="_bone_fx_04"/>
+				<instance name="trails_01" bone01="_bone_fx_05"  bone02="_bone_fx_06"/>
+				<instance name="trails_01" bone01="_bone_fx_05"  bone02="_bone_fx_08"/>
+				<instance name="trails_01" bone01="_bone_fx_05"  bone02="_bone_fx_10"/>
+				
+				
+				<template name="trails_02">
+					<simpleemitter
+						bone="{bone}"
+						spawnrate="50"
+						drag=".001"
+						minparticlelife="250"
+						maxparticlelife="350"
+						offsetsphere="10"
+						gravity="-1"
+						minspeed="10"
+						maxspeed="25"								
+						direction="0 0 1"
+						minangle="-45"
+						maxangle="45"
+						material="/shared/effects/materials/flare_03.material"
+						inheritvelocity=".35"				
+					>			
+						<particle
+							startcolor="0 .7 .7"
+							midcolor="0 .7 .5"
+							endcolor="0 0 0"
+							midcolorpos=".75"
+							startsize="35"
+							endsize="5"
+							lockup="false"
+							lockright="false"
+							minangle="-360"
+							maxangle="1"
+							minanglespeed="110"
+							maxanglespeed="-110"
+						/>
+					</simpleemitter>	
+				</template>
+				<instance name="trails_02" bone="_bone_fx_02" />
+				<instance name="trails_02" bone="_bone_fx_03" />
+			</model>
+
+
+			
+			
+			
+			<model
+				position="0 0 0"
+				expirelife="500"
+				name="emitter0" 
+				anim="idle"
+				model="/shared/effects/models/circle_of_bones/model.mdf"
+				scale=".75"
+				startcolor="0 0 0"
+				midcolor="0 0 0"
+				endcolor="0 0 0"
+				midcolorpos=".75"
+				startalpha="0"
+				midalpha="0"
+				endalpha="0"
+				midalphapos=".4"
+				rollspeed="360"
+			>
+				<template name="trails">
+					<trailemitter
+						bone="{bone01}"
+						spawnrate="50"
+						particlelife="500"
+						texpostime="500"
+						texposscale="0.0"
+						texstretchscale=".4"
+						position="0 0 0"
+						material="/shared/effects/materials/arrow_trail.material"
+					>
+						<particle
+							startcolor="0 1 .65"
+							midcolor="0 1 1"
+							endcolor="0 0 0"
+							startsize="6"
+							midsize="4"
+							endsize="1"
+							midsizepos="0.2"
+					 />
+					</trailemitter>	
+				</template>
+				
+				<instance name="trails" bone01="_bone_fx_01"/>
+				<instance name="trails" bone01="_bone_fx_03"/>
+				<instance name="trails" bone01="_bone_fx_05"/>
+			</model>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+
+			
+
+			<model
+				position="0 0 0"
+				expirelife="50"
+				name="emitter0" 
+				anim="idle"
+				pitch="90"
+				model="/heroes/kenisis/alt6/ability_02/effects/stones_single/model.mdf"
+				startscale="6.5"
+				endscale="0"
+				startcolor="0 2 1"
+				endcolor="0 0 0"
+				startalpha=".65"
+				endalpha="0"
+				rollspeed="1500"
+			>
+				<simpleemitter
+					timenudge="1000"
+					spawnrate="3"
+					minparticlelife="750"
+					maxparticlelife="1250"
+					material="/shared/effects/materials/twirl_04.material"
+				>
+					<particle
+						maxangle="360"
+						startcolor="0"
+						midcolor="0 .5 .35"
+						endcolor="0"
+						midcolorpos=".25"
+						startsize="10"
+						minendsize="30"
+						maxendsize="40"
+						anchor="1"
+						minanglespeed="200"
+						maxanglespeed="50"
+					/>
+				</simpleemitter>
+			
+				<billboard
+					expirelife="200"
+					startcolor="0 .2 .15"
+					endcolor="0 0 0"
+					size="35"
+					depthbias="0"
+					material="/shared/effects/materials/whitedot.material"
+					lockup="true"
+					pitch="90"
+					position="0 0 5"
+				/>
+			
+				<billboard
+					expirelife="200"
+					startcolor="0 .2 .2"
+					endcolor="0 0 0"
+					
+					startsize="70"
+					endsize="150"
+					
+					depthbias="0"
+					material="/shared/effects/materials/flare_07.material"
+					lockup="true"
+					pitch="90"
+					position="0 0 5"
+				/>
+					
+				<simpleemitter
+					spawnrate="120"
+					minparticlelife="250"
+					maxparticlelife="550"
+					minspeed="25"
+					maxspeed="50"
+					drag="0"
+					material="/shared/effects/materials/whitedot.material"
+					offsetsphere="5"
+					position="0 0 0"
+					depthbias="0"
+				>
+					<particle
+						turn="1"
+						heightdistort=".05"
+						width="1.25"
+						startscale="2"
+						minendscale="0"
+						maxendscale="2"
+						startcolor=".05 .25 .25"
+						endcolor="0 0 0"
+						midcolorpos=".25"
+					/>
+				</simpleemitter>
+			</model>
+
+		</particlesystem>
+	</definitions>
+	
+<thread>
+	<spawnparticlesystem instance="instance1" particlesystem="system0" />
+	<spawnmodifier instance="instance0"/>
+	<waitfordeath  instance="instance0"/>
+	<waitfordeath  instance="instance1"/>
+</thread>
+</effect>

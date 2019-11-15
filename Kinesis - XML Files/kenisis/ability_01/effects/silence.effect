@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<effect deferred="true" useentityeffectscale="true" >
+	<definitions>
+		<particlesystem name="system0" space="world" scale="1.0">
+			<billboard
+				size="50"
+				position="0 0 40"
+				bone="_bone_overhead"
+				life="700"
+				loop="1"
+				material="/shared/effects/materials/silence.material"
+				color="1 1 1"
+				startalpha="1"
+				midalpha=".4"
+				endalpha="1"
+			/>
+		
+			<billboard
+				bone="_bone_centerofchest"
+				life="400"
+				startsize="320"
+				endsize="0"
+				material="/shared/effects/materials/whitedot.material"
+				startalpha="1"
+				endalpha="0"
+				startcolor="0 0 0 "
+				midcolor=".0 .5 .8"
+				endcolor="0 0 0 "
+				depthbias="-30"
+			/>
+			
+			<simpleemitter
+				life="300"
+				spawnrate="1283"
+				bone="_bone_centerofchest"
+				particlelife="500"
+				gravity="-1.5"
+				speed="143"
+				offsetsphere="22 22 22"
+				position="0 0 50"
+				direction="0 0 0"
+				material="/shared/effects/materials/whitedot.material"
+			>
+				<particle 
+					heightdistort="0.07"
+					startcolor="0 0 0"
+					midcolor=".2 .5 1"
+					endcolor="0 0 0"
+					size="5"
+					turn="1"
+				/>
+			</simpleemitter>
+		
+			
+			<simpleemitter
+				bone="_bone_centerofchest"
+				spawnrate="5"
+				particlelife="800"
+				count="2"
+				position="0 0 30"
+				material="/shared/effects/materials/refract_swell.material"
+				particledirectionalspace="local"
+				offsetdirection="0 0 0"
+				offsetradial="0"
+				param=".4"
+			>
+				<particle
+					startsize="120"
+					endsize="300"
+					param="0.5"
+					startalpha=".3"
+					midalpha=".3"
+					endalpha="0"
+					midalphapos=".5"
+				/>
+			</simpleemitter>
+		</particlesystem>
+		
+		<particlesystem name="system1" space="world" scale="1">
+			<billboard					
+				size="50"
+				position="0 0 40"
+				bone="_bone_overhead"
+				life="700"
+				loop="1"
+				material="/shared/effects/materials/silence.material"
+				color="1 1 1"
+				startalpha="1"			
+				midalpha=".4"
+				endalpha="1"
+		
+			>
+			</billboard>	
+			<simpleemitter
+				spawnrate="30"
+				bone="_bone_centerofchest"
+				minparticlelife="400"
+				maxparticlelife="900"
+				gravity="-20"
+				speed="2"
+				drag="0"
+				acceleration="50"
+				position="0 0 0"
+				material="/shared/effects/materials/phantom_smoke_02.material"
+				offsetsphere="25 25 15"
+				minangle="0"
+				maxangle="90"
+				direction="0 0 0"
+			>
+				<particle 
+					startcolor="0 0 0"
+					midcolor="0 0 0"
+					endcolor="0 0 0"
+					midcolorpos=".8"
+					startsize="200"
+					midsize="150"
+					endsize="100"
+					startalpha="0"
+					midalpha=".5"
+					endalpha="0"
+					midalphapos=".8"
+				/>
+			</simpleemitter>
+	
+			<simpleemitter
+				spawnrate="15"
+				bone="_bone_centerofchest"
+				minparticlelife="400"
+				maxparticlelife="900"
+				gravity="-40"
+				speed="2"
+				drag=".1"
+				acceleration="50"
+				position="0 0 0"
+				material="/shared/effects/materials/phantom_white_reveal.material"
+				offsetsphere="30 30 30"
+				direction="0 0 0"
+			>
+				<particle
+					minangle="0"
+					maxangle="360"
+					minanglespeed="-80"
+					maxanglespeed="80"
+					color=".3 .4 1"
+					startalpha="0"
+					midalpha=".5"
+					endalpha="0"
+					midalphapos=".2"
+					startsize="90"
+					midsize="90"
+					endsize="90"
+					startframe="0"
+					endframe="1"
+				/>
+			</simpleemitter>
+
+			<simpleemitter
+				spawnrate="12"
+				bone="_bone_centerofchest"
+				minparticlelife="400"
+				maxparticlelife="900"
+				gravity="-40"
+				speed="2"
+				drag=".1"
+				acceleration="50"
+				position="0 0 0"
+				material="/shared/effects/materials/stomp_02.material"
+				offsetsphere="25 25 15"
+				minangle="0"
+				maxangle="270"
+				direction="0 0 0"
+			>
+				<particle 
+					startcolor="0 0 0"
+					midcolor=".1 .1 .2"
+					endcolor="0 0 0"
+					midcolorpos=".8"
+					startsize="60"
+					midsize="100"
+					endsize="60"
+				/>
+			</simpleemitter>
+		
+			<simpleemitter
+				spawnrate="15"
+				bone="_bone_centerofchest"
+				minparticlelife="400"
+				maxparticlelife="900"
+				gravity="-60"
+				speed="2"
+				drag=".1"
+				acceleration="50"
+				position="0 0 0"
+				material="/shared/effects/materials/ice_blast_add.material"
+				offsetsphere="30 30 25"
+				minangle="0"
+				maxangle="90"
+				direction="0 0 0"
+			>
+				<particle
+					maxangle="360"
+					startcolor="0 0 0"
+					midcolor=".1 .1 .1"
+					endcolor="0 0 0"
+					midcolorpos=".8"
+					startsize="150"
+					midsize="100"
+					endsize="150"
+				/>
+			</simpleemitter>
+
+			<model
+				position="0 0 60"
+				name="circleOfBones"
+				model="/shared/effects/models/circle_of_bones/model.mdf"
+				anim="idle"
+				pitch="-90"
+				pitchspeed="0"
+				yawspeed="-180"
+				scale="2.5"
+			>
+				<twopointtrailemitter
+					bone_a="_bone_fx_01"
+					bone_b="_bone_fx_03"
+					spawnrate="20"
+					particlelife="1800"
+					startparticlealpha="1"
+					midpartcilealphapos=".99"
+					texpostime="3500"
+					texposscale="0"
+					texstretchscale="1"
+					material="/shared/effects/materials/flare_05.material"
+				>
+					<particle
+						color=".1 .1 .3"
+					/>
+				</twopointtrailemitter>
+
+				<twopointtrailemitter
+					bone_a="_bone_fx_04"
+					bone_b="_bone_fx_06"
+					spawnrate="20"
+					particlelife="1800"
+					startparticlealpha="1"
+					midpartcilealphapos=".99"
+					texpostime="3500"
+					texposscale="0"
+					texstretchscale="1"
+					material="/shared/effects/materials/flare_05.material"
+				>
+					<particle
+						color=".1 .1 .3"
+					/>
+				</twopointtrailemitter>
+			</model>
+			
+		</particlesystem>
+	</definitions>
+	<thread>
+		<spawnparticlesystem instance="instance0" particlesystem="system0" />
+		<spawnparticlesystem instance="instance1" particlesystem="system1" />
+		<waitfordeath instance="instance0" />
+		<waitfordeath instance="instance1" />
+	</thread>
+</effect>

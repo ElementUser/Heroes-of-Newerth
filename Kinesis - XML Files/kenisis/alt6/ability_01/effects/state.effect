@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<effect deferred="1" useentityeffectscale="1">
+	<definitions>
+		<particlesystem name="system0" space="entity" scale="1">
+
+			<sound
+				linearfalloff="true"
+				falloffstart="1000"
+				falloffend="2500"
+				volume=".75"
+				sample="../sounds/impact.wav"
+			/>
+
+			<sound
+				linearfalloff="true"
+				falloffstart="1000"
+				falloffend="2500"
+				volume=".55"
+				sample="/heroes/xalynx/sounds/impact_%.wav"
+			/>
+			
+			<controller
+				bone="_bone_overhead" 
+				position="0 0 15"
+				yawspeed="100"
+				expirelife="100"
+				scale="2"
+			>
+				<model 
+					model="/heroes/kenisis/ability_04/effects/single_stones/model.mdf"
+					material="/shared/effects/materials/shell2.material"
+					anim="idle"
+					startcolor="0 4 1"
+					endcolor="0 0 0"
+					scale=".35"
+					expirelife="500"
+					position="2 2 0"
+				/>
+				
+				<billboard
+					expirelife="200"
+					startcolor="0 .5 .2"
+					endcolor="0 0 0"
+					size="29"
+					maxroll="360"
+					material="/shared/effects/materials/blink.material"
+					life="100"
+					loop="true"
+					position="0 0 0"
+				/>
+				
+				<billboard
+					expirelife="200"
+					startcolor="0 .16 .05"
+					endcolor="0 0 0"
+					size="45"
+					depthbias="0"
+					material="/shared/effects/materials/whitedot.material"
+					lockup="true"
+					pitch="90"
+					position="0 0 0"
+				/>	
+				
+				<billboard
+					expirelife="200"
+					startcolor="0 .2 .1"
+					endcolor="0 0 0"
+					size="75"
+					depthbias="0"
+					material="/shared/effects/materials/flare_07.material"
+					lockup="true"
+					pitch="90"
+					position="0 0 0"
+				/>	
+				
+			</controller>
+	
+			<controller
+				bone="_bone_head"
+			>
+				<trackeremitter
+					spawnrate="50"
+					particlelife="2000"
+					distancelife="true"
+					direction="0 0 -1"
+					minangle="10"
+					maxangle="20"
+					acceleration="80"
+					tracktype="distance"
+					trackspeed="4"
+					targetposition="0 0 10"
+					targetbone="_bone_overhead"
+					targetowner="source"
+					minspeed="20"
+					maxspeed="40"
+					material="/shared/effects/materials/flare_07.material"
+					minoffsetradial="15"
+					maxoffsetradial="25"
+					offsetdirection="0 0 1"
+				>
+					<particle
+						minstartscale="2"
+						maxstartscale="3"
+						midscale="5"
+						endscale="1"
+						midscalepos=".8"
+						anchor="1"
+						startcolor="0 0 0"
+						midcolor="0 2 2"
+						endcolor="0 1 .5"
+					/>
+				</trackeremitter>
+			</controller>
+		</particlesystem>
+		
+	</definitions>
+	<thread>
+		<spawnparticlesystem instance="instance0" particlesystem="system0" />
+		<waitfordeath instance="instance0" />
+	</thread>
+</effect>

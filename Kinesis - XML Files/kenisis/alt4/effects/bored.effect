@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<effect deferred="true" useentityeffectscale="true">
+
+	<definitions>
+
+		<particlesystem name="system0" space="world" scale="1">
+
+			<simpleemitter
+				bone="_bone_head"
+				offsetsphere="20"
+				particlelife="1000"
+				life="1800"
+				gravity="100"
+				direction="0 0 -1"
+				spawnrate="100"
+				material="/shared/effects/materials/blood_drop_white.material"
+				particledirectionalspace="local"
+			>
+				<particle
+					color=".5 1 0"
+					alpha=".75"
+					startsize="10"
+					endsize="0"
+				/>
+			</simpleemitter>
+			
+			<simpleemitter
+				bone="_bone_head"
+				offsetsphere="20"
+				particlelife="1000"
+				life="1800"
+				gravity="100"
+				direction="0 0 -1"
+				spawnrate="100"
+				material="/shared/effects/materials/water_05.material"
+				particledirectionalspace="local"
+			>
+				<particle
+					color=".5 1 0"
+					alpha=".75"
+					startsize="10"
+					endsize="0"
+				/>
+			</simpleemitter>
+
+		</particlesystem>
+	</definitions>
+	<thread>
+		<spawnparticlesystem instance="instance0" particlesystem="system0" />
+		<waitfordeath instance="instance0" />
+		
+	</thread> 
+</effect>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectile
+	name="Projectile_Kenisis_Ability4_Main"
+
+	speed="3000"
+
+	modelscale="1.5"
+	model="/shared/models/invis.mdf"
+	canturn="0"
+	
+	impacteffect="../ability_02/effects/impact_tree.effect"
+>
+	<onimpact>
+		<expirestate name="State_Kenisis_Ability4_Minor" target="this_proxy_entity" />
+		
+		<targettype type="enemy" target="this_proxy_entity">
+			<damage effecttype="Magic" target="this_proxy_entity" amount="0" b="param" op="add" />
+		</targettype>
+		
+		<!-- Normally a replica of the Throw projectile, but also plays the effects and slows -->
+		<killtrees target="this_position" radius="300" />
+		
+		<hasmodifier name="ult_boost">
+			<!-- Exact replica of the areaofeffect below, except the increased radius -->
+			<areaofeffect
+				center="this_proxy_entity"
+				radius="600"
+				targetselection="all"
+				targetscheme="enemy_units"
+				effecttype="Magic"
+			>
+				<applystate name="State_Kenisis_Ability4_Slow" target="target_entity" duration="1500" />
+			
+				<!-- Artsy Stuff -->
+				<hasavatarkey name="Hero_Kenisis.Alt2" >
+					<playeffect effect="/heroes/kenisis/alt2/ability_01/effects/impact.effect" source="target_entity" target="" occlude="true" />
+				</hasavatarkey>
+				<else>
+					<hasavatarkey name="Hero_Kenisis.Alt4" >
+						<playeffect effect="/heroes/kenisis/alt4/ability_01/effects/impact.effect" source="target_entity" target="" occlude="true" />
+					</hasavatarkey>
+					<else>
+						<hasavatarkey name="Hero_Kenisis.Alt5" >
+							<playeffect effect="/heroes/kenisis/alt5/ability_01/effects/impact.effect" source="target_entity" target="" occlude="true" />
+						</hasavatarkey>
+						<else>
+							<hasavatarkey name="Hero_Kenisis.Alt6" >
+								<playeffect effect="/heroes/kenisis/alt6/ability_01/effects/impact.effect" source="target_entity" target="" occlude="true" />
+							</hasavatarkey>
+							<else>
+								<hasavatarkey name="Hero_Kenisis.Alt7" >
+									<playeffect effect="/heroes/kenisis/alt7/ability_04/effects/impact.effect" source="target_entity" target="" occlude="true" />
+								</hasavatarkey>
+								<else>
+									<playeffect effect="effects/impact.effect" source="target_entity" target="" occlude="true" />
+								</else>
+							</else>
+						</else>
+					</else>
+				</else>
+				<!-- End of Art -->
+			</areaofeffect>
+		</hasmodifier>
+		<else>
+			<areaofeffect
+				center="this_proxy_entity"
+				radius="400"
+				targetselection="all"
+				targetscheme="enemy_units"
+				effecttype="Magic"
+			>				
+				<applystate name="State_Kenisis_Ability4_Slow" target="target_entity" duration="1500" />
+				
+				<!-- Artsy Stuff -->
+				<hasavatarkey name="Hero_Kenisis.Alt2" >
+					<playeffect effect="/heroes/kenisis/alt2/ability_01/effects/impact.effect" source="target_entity" target="" occlude="true" />
+				</hasavatarkey>
+				<else>
+					<hasavatarkey name="Hero_Kenisis.Alt4" >
+						<playeffect effect="/heroes/kenisis/alt4/ability_01/effects/impact.effect" source="target_entity" target="" occlude="true" />
+					</hasavatarkey>
+					<else>
+						<hasavatarkey name="Hero_Kenisis.Alt5" >
+							<playeffect effect="/heroes/kenisis/alt5/ability_01/effects/impact.effect" source="target_entity" target="" occlude="true" />
+						</hasavatarkey>
+						<else>
+							<hasavatarkey name="Hero_Kenisis.Alt6" >
+								<playeffect effect="/heroes/kenisis/alt6/ability_01/effects/impact.effect" source="target_entity" target="" occlude="true" />
+							</hasavatarkey>
+							<else>
+								<hasavatarkey name="Hero_Kenisis.Alt7" >
+									<playeffect effect="/heroes/kenisis/alt7/ability_04/effects/impact.effect" source="target_entity" target="" occlude="true" />
+								</hasavatarkey>
+								<else>
+									<playeffect effect="effects/impact.effect" source="target_entity" target="" occlude="true" />
+								</else>
+							</else>
+						</else>
+					</else>
+				</else>
+				<!-- End of Art -->
+			</areaofeffect>
+		</else>
+		
+		<!-- alt avatar art stuff -->
+		<hasavatarkey name="Hero_Kenisis.Alt2" >
+			<playeffect effect="/heroes/kenisis/alt2/ability_01/effects/aoe_impact.effect" source="proxy_position" target="" occlude="true" />
+		</hasavatarkey>
+		<else>
+			<hasavatarkey name="Hero_Kenisis.Alt4" >
+				<playeffect effect="/heroes/kenisis/alt4/ability_01/effects/aoe_impact.effect" source="proxy_position" target="" occlude="true" />
+			</hasavatarkey>
+			<else>
+				<hasavatarkey name="Hero_Kenisis.Alt5" >
+					<playeffect effect="/heroes/kenisis/alt5/ability_01/effects/aoe_impact.effect" source="proxy_position" target="" occlude="true" />
+				</hasavatarkey>
+				<else>
+					<hasavatarkey name="Hero_Kenisis.Alt6" >
+						<playeffect effect="/heroes/kenisis/alt6/ability_01/effects/aoe_impact.effect" source="proxy_position" target="" occlude="true" />
+					</hasavatarkey>
+					<else>
+						<hasavatarkey name="Hero_Kenisis.Alt7" >
+							<playeffect effect="/heroes/kenisis/alt7/ability_04/effects/aoe_impact.effect" source="proxy_position" target="" occlude="true" />
+						</hasavatarkey>
+						<else>
+							<playeffect effect="effects/aoe_impact.effect" source="proxy_position" target="" occlude="true" />
+						</else>
+					</else>
+				</else>
+			</else>
+		</else>
+		<!-- end of art -->
+	</onimpact>
+	
+	
+	<altavatar key="Hero_Kenisis.Alt2"
+		impacteffect="/heroes/kenisis/alt2/ability_02/effects/impact_tree.effect"
+	/>
+	
+	<altavatar key="Hero_Kenisis.Alt4"
+		impacteffect="/heroes/kenisis/alt4/ability_02/effects/impact_tree.effect"
+	/>
+	
+	<altavatar key="Hero_Kenisis.Alt5"
+		impacteffect="/heroes/kenisis/alt5/ability_02/effects/impact_tree.effect"
+	/>
+	
+	<altavatar key="Hero_Kenisis.Alt6"
+		impacteffect="/heroes/kenisis/alt6/ability_02/effects/impact_tree.effect"
+	/>
+	
+	<altavatar key="Hero_Kenisis.Alt7"
+		impacteffect="/heroes/kenisis/alt7/ability_02/effects/impact_tree.effect"
+	/>
+</projectile>

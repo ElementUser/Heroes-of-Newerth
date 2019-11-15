@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<state
+	name="State_Kenisis_Ability2_Projectile"
+	
+	icon="icon.tga"
+	passiveeffect=""
+	
+	ishidden="true"
+	
+	disarmed="true"
+	immobilized="true"
+	
+	effecttype=""
+	modifierkey="Kenisis_Projectile_Bound"
+>
+
+</state>

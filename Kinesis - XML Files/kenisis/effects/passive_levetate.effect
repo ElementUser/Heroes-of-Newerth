@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<effect deferred="true" useentityeffectscale="true">
+
+	<definitions>
+
+		<particlesystem name="system0" space="world" scale=".8">
+
+			<template name="glow">
+				<model 
+					bone="_bone_origin"
+					model="stones/model.mdf"
+					material="/shared/effects/materials/shell2.material"
+					anim="idle"
+					startcolor="0 .35 1.5"
+					endcolor="0 0 0"
+					scale="1.75"
+					yawspeed="-90"
+					expirelife="250"
+					position="0 0 50"
+				>	
+
+					<billboard
+						expirelife="200"
+						bone="{bone1}"
+						startcolor="0 .1 .5"
+						endcolor="0 0 0"
+						size="135"
+						depthbias="0"
+						material="/shared/effects/materials/flare_01.material"
+						lockup="true"
+						pitch="90"
+						position="0 0 5"
+					/>
+
+					<billboard
+						expirelife="200"
+						bone="{bone1}"
+						startcolor=".5 .6 1"
+						endcolor="0 0 0"
+						size="40"
+						maxroll="360"
+						material="/shared/effects/materials/blink.material"
+						lockup="true"
+						pitch="90"
+						life="100"
+						loop="true"
+						position="0 0 5"
+					/>
+
+				</model>	
+			</template>
+
+			<instance name="glow" bone1="Box004" />
+			<instance name="glow" bone1="Box005"/>	
+			<instance name="glow" bone1="Box006"/>
+			<instance name="glow" bone1="Box007"/>
+			<instance name="glow" bone1="Box008"/>
+			<instance name="glow" bone1="Box009"/>
+
+		</particlesystem>
+	</definitions>
+	<thread>
+		<spawnparticlesystem instance="instance0" particlesystem="system0" />
+		<waitfordeath instance="instance0" />
+		
+	</thread> 
+</effect>

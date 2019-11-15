@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<effect deferred="true">
+	<definitions>
+<!--
+		<modifier 
+			expirelife="250"
+			name="modifier0"
+			startalpha="0"
+			endalpha="1"
+		/>
+-->
+		<particlesystem name="system0" space="entity" scale="1">
+			
+			<sound
+				linearfalloff="true"
+				falloffstart="400"
+				falloffend="1300" 
+				volume="1" 
+				sample="/heroes/kenisis/ability_03/sounds/start.wav"
+			/>
+			
+			<sound
+			    soundloop="true"
+			    fadein="500"
+			    fadeout="500"
+				linearfalloff="true" 
+             	falloffstart="0"
+				falloffend="1300"
+				volume=".60"
+				sample="/heroes/kenisis/ability_03/sounds/state.wav"
+			/>
+			<model
+				life="1500"
+				bone="_bone_center"
+				model="/shared/effects/models/sphere/model.mdf"
+				material="/heroes/sapphire/ability_02/effects/sphere/material.material"
+				scale="0.48"
+				color=".5 .1 .5"
+				startalpha=".5"
+				midalpha="1"
+				endalpha=".5"
+				framespeed="1"
+				loop="ture"
+			/>
+			<model
+				bone="_bone_center"
+				expirelife="150"
+				position="0"
+				model="/heroes/riftmage/ability_04/effects/sphere/model.mdf"
+				material="/heroes/sapphire/ability_03/effects/material.material"
+				anim="idle"
+				startscale=".26"
+				endscale="0"
+				startalpha=".7"
+				midalpha=".7"
+				endalpha="0"
+				color=".4 .35 .1"
+			>
+			</model>
+			<orbiteremitter
+				bone="_bone_center"
+				spawnrate="5"
+				minparticlelife="850"
+				maxparticlelife="1050"
+				origin="0 0 0"
+				orbit="-3 0 5"
+				direction="0 0 1"
+				offset="25"
+				position="0 0 5"
+				cylindrical="true"
+				material="/shared/effects/materials/sakura02_blend.material"
+				>
+				<particle
+				minangle="90"
+				maxangle="180"
+				minanglespeed="-200"
+				maxanglespeed="200"
+				color="1"
+				midcolorpos=".5"
+				startframe="0"
+				endframe="1"
+				startsize="5"
+				endsize="10"
+				startalpha="1"
+				midalpha="1"
+				endalpha="0"
+				midalphapos=".5"
+				startanchor="1"
+				endanchor="0"
+				minscale=".6"
+				maxscale="1.1"
+				/>
+			</orbiteremitter>
+			<orbiteremitter
+				bone="_bone_center"
+				spawnrate="5"
+				minparticlelife="850"
+				maxparticlelife="1050"
+				origin="0 0 0"
+				orbit="3 0 5"
+				direction="0 0 1"
+				offset="25"
+				position="0 0 5"
+				cylindrical="true"
+				material="/shared/effects/materials/sakura02_blend.material"
+				>
+				<particle
+				minangle="90"
+				maxangle="180"
+				minanglespeed="-200"
+				maxanglespeed="200"
+				color="1"
+				midcolorpos=".5"
+				startframe="0"
+				endframe="1"
+				startsize="5"
+				endsize="10"
+				startalpha="1"
+				midalpha="1"
+				endalpha="0"
+				midalphapos=".5"
+				startanchor="1"
+				endanchor="0"
+				minscale=".6"
+				maxscale="1.1"
+				/>
+			</orbiteremitter>
+					
+			<orbiteremitter
+				bone="_bone_center"
+				spawnrate="3"
+				minparticlelife="850"
+				maxparticlelife="1050"
+				origin="0 0 0"
+				orbit="-3 0 5"
+				direction="0 0 1"
+				offset="25"
+				position="0 0 5"
+				cylindrical="true"
+				material="/shared/effects/materials/blink_02.material"
+				>
+				<particle
+				minangle="90"
+				maxangle="180"
+				minanglespeed="-200"
+				maxanglespeed="200"
+				startcolor="1 1 .5"
+				midcolor="1 .8 .3"
+				endcolor="0"
+				startframe="0"
+				endframe="1"
+				startsize="5"
+				endsize="10"
+				startalpha="1"
+				midalpha="1"
+				endalpha="0"
+				midalphapos=".5"
+				startanchor="1"
+				endanchor="0"
+				minscale=".5"
+				maxscale="1"
+					>
+					<simpleemitter
+						count="1"
+						particlelife="900"
+						direction="0 0 1"
+						position="0 0 0"
+						material="/shared/effects/materials/blink_02.material"
+					>
+						<particle
+							startcolor="1"
+							midcolor="1"
+							midcolorpos=".7"
+							endcolor="0"
+							startsize="5"
+							endsize="1"
+							anchor="1"
+						/>
+					</simpleemitter>
+				</particle>
+			</orbiteremitter>
+			<!-- <model
+				life="1500"
+				bone="_bone_center"
+				model="/shared/effects/models/sphere/model.mdf"
+				material="/heroes/sapphire/alt/ability_02/effects/sphere.material"
+				scale="0.8"
+				color=".5 .2 .5"
+				startalpha="0"
+				midalpha="1"
+				endalpha="0"
+				loop="ture"
+			/> -->
+		<!-- 	
+			<model
+				bone="_bone_center"
+				model="/shared/effects/models/circle_of_bones/model.mdf"
+				anim="idle"
+				expirelife="125"
+				startscale="1.25"
+				endscale="0"
+				yawspeed="540"
+				pitchspeed="540"
+			>
+				<template name="trails">
+					<trailemitter
+						bone="{bone01}"
+						spawnrate="100"
+						particlelife="750"
+						texpostime="750"
+						texposscale="0.0"
+						texstretchscale=".4"
+						position="0 0 0"
+						material="/shared/effects/materials/wave_trail.material"
+					>
+						<particle
+							startcolor=".5 .25 .5"
+							midcolor=".25 .1 .25"
+							endcolor="0 0 0"
+							startsize="5"
+							midsize="2.5"
+							endsize="1"
+							midsizepos="0.2"
+					 />
+					</trailemitter>	
+					
+					<billboard
+						bone="{bone01}"
+						expirelife="125"
+						startcolor=".5 .1 .5"
+						endcolor="0 0 0"
+						startsize="13"
+						endsize="0"
+						position="0 0 0"
+						material="/shared/effects/materials/whitedot.material"
+						lockup="true"
+						pitch="90"
+					/>
+					
+					<billboard
+						bone="{bone01}"
+						expirelife="125"
+						startcolor=".5 .3 .5"
+						endcolor="0 0 0"
+						startsize="3"
+						endsize="0"
+						position="0 0 0"
+						material="/shared/effects/materials/whitedot.material"
+						lockup="true"
+						pitch="90"
+					/>
+					
+				</template>
+				
+				<instance name="trails" bone01="_bone_fx_01"/>
+				<instance name="trails" bone01="_bone_fx_03"/>
+				<instance name="trails" bone01="_bone_fx_05"/>
+			</model> -->
+		</particlesystem>
+	</definitions>
+	<thread>
+		<spawnparticlesystem instance="instance0" particlesystem="system0" />
+		<spawnmodifier instance="instance1" modifier="modifier0"/>
+      	<waitfordeath instance="instance0" />
+		<waitfordeath instance="instance1" />
+	</thread>
+</effect>
+
+<!-- [min|max][start|mid|end]property[speed][pos] -->
+

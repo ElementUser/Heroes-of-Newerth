@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model name="rig.max" file="high.model" type="K2" >
+	<anim name="idle" clip="clips/default_store_l.clip" fps="30" loop="true" loopbackframe="190" >
+	</anim>
+	<anim name="attack_1" clip="clips/bored_2.clip" fps="30">
+		<frameevent frame="0" cmd="StartModelPanelEffect store2_detail_heroAvatars_large_model effects/body_store2.effect"/>
+	</anim>
+	<anim name="idle2" clip="clips/default_1.clip"  loop="true" fps="30" blendtime="200"/>
+</model>

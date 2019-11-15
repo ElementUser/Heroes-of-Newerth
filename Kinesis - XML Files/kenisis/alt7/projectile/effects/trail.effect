@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<effect deferred="true">
+	<definitions>
+		<particlesystem name="system0" space="world" scale="1">
+			<billboard
+				material="/shared/effects/materials/whitedot.material"
+				position="0 0 0"
+				size="250"
+				roll="105"
+				color=".3 .1 0"
+				lockup="true"
+				lockright="true"
+				pitch="90"
+				yaw="0"
+			/>
+			<model 
+				model="../../effects/sakura/sakura.mdf"
+				material="../../material_noshadow.material"
+				color="1"
+				scale="19"
+				expirelife="500"
+				position="0 0 5"
+				pitch="90"
+				startalpha="1"
+				endalpha="0"
+				rollspeed="700"
+			/>	
+			<model
+				position="0 0 0"
+				expirelife="1500"
+				name="emitter0" 
+				anim="idle"
+				model="/shared/effects/models/circle_of_bones/model.mdf"
+				scale="2"
+				startcolor="0 0 0"
+				midcolor="0 0 0"
+				endcolor="0 0 0"
+				midcolorpos=".75"
+				startalpha="0"
+				midalpha="0"
+				endalpha="0"
+				midalphapos=".4"
+				rollspeed="1500"
+			>
+				<template name="trails">
+					<twopointtrailemitter
+						name="trail01"
+						position="0 0 0"
+						bone_a="{bone01}"
+						bone_b="{bone02}"
+						spawnrate="50"
+						particlelife="300"
+						subframepose="1"
+						texpostime="500"
+						texposscale="0"
+						texstretchscale="1"
+						material="/shared/effects/materials/arrow_trail.material"
+					>
+						<particle
+							startcolor=".3 .05 .25"
+							endcolor="0 0 0"
+							startalpha="0"
+							midalpha="0"
+							endalpha="0"
+						/>
+					</twopointtrailemitter>
+				</template>
+				<instance name="trails" bone01="_bone_fx_01"  bone02="_bone_fx_02"/>
+				<instance name="trails" bone01="_bone_fx_03"  bone02="_bone_fx_04"/>
+				<instance name="trails" bone01="_bone_fx_05"  bone02="_bone_fx_06"/>
+				<instance name="trails" bone01="_bone_fx_05"  bone02="_bone_fx_08"/>
+				<instance name="trails" bone01="_bone_fx_05"  bone02="_bone_fx_10"/>
+			</model>
+			<model
+				position="0 0 0"
+				expirelife="500"
+				name="emitter0" 
+				anim="idle"
+				model="/shared/effects/models/circle_of_bones/model.mdf"
+				scale=".6"
+				startcolor="0 0 0"
+				midcolor="0 0 0"
+				endcolor="0 0 0"
+				midcolorpos=".75"
+				startalpha="0"
+				midalpha="0"
+				endalpha="0"
+				midalphapos=".4"
+				rollspeed="360"
+			>
+				<template name="trails">
+					<trailemitter
+						bone="{bone01}"
+						spawnrate="50"
+						particlelife="600"
+						texpostime="500"
+						texposscale="0.0"
+						texstretchscale=".4"
+						position="0 0 0"
+						material="/shared/effects/materials/arrow_trail.material"
+					>
+						<particle
+							startcolor="1 .5 1"
+							midcolor=".8 0 .8"
+							endcolor="0 0 0"
+							startsize="15"
+							midsize="10"
+							endsize="2"
+							midsizepos="0.2"
+					 />
+					</trailemitter>	
+				</template>
+				<instance name="trails" bone01="_bone_fx_01"/>
+				<instance name="trails" bone01="_bone_fx_03"/>
+				<instance name="trails" bone01="_bone_fx_05"/>
+			</model>
+			<simpleemitter
+				spawnrate="20"
+				minparticlelife="300"
+				maxparticlelife="500"
+				minspeed="35"
+				maxspeed="105"
+				gravity="-10"
+				drag=".05"
+				minparticleangle="0"
+				maxparticleangle="360" 
+				position="0 0 5"
+				offsetsphere="30"
+				material="/shared/effects/materials/sakura02_blend.material"
+			>
+				<particle
+					color="1"
+					startsize="20"
+					endsize="1"
+					minscale="2"
+					maxscale="3.5"
+				/>
+			</simpleemitter>
+			<simpleemitter
+				spawnrate="10"
+				minparticlelife="400"
+				maxparticlelife="600"
+				minspeed="35"
+				maxspeed="105"
+				gravity="-10"
+				drag=".05"
+				minparticleangle="0"
+				maxparticleangle="360" 
+				position="0 0 5"
+				offsetsphere="30"
+				material="/shared/effects/materials/blink_02.material"
+			>
+				<particle
+					startcolor="1 1 .5"
+					midcolor="1 .5 0"
+					endcolor="0"
+					startsize="20"
+					endsize="1"
+					minscale="2.5"
+					maxscale="3.5"
+					>
+					<simpleemitter
+						count="1"
+						particlelife="700"
+						direction="0 0 1"
+						position="0 0 0"
+						material="/shared/effects/materials/blink_02.material"
+					>
+						<particle
+							startcolor="1"
+							midcolor="1"
+							midcolorpos=".7"
+							endcolor="0"
+							startsize="5"
+							endsize="1"
+							anchor="1"
+						/>
+					</simpleemitter>
+				</particle>
+			</simpleemitter>
+		</particlesystem>
+	</definitions>
+<thread>
+	<spawnparticlesystem instance="instance1" particlesystem="system0" />
+	<spawnmodifier instance="instance0"/>
+	<waitfordeath  instance="instance0"/>
+	<waitfordeath  instance="instance1"/>
+</thread>
+</effect>

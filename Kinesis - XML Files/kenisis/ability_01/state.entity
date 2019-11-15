@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<state
+	name="State_Kenisis_Ability1"
+
+	icon="icon.tga"
+	
+	effecttype=""
+	
+	morphinventory0=""
+	morphpriority="100"
+	passiveeffect="effects/sound_state.effect"
+	modifierkey="kinesis_Thoughtsteal"
+>
+	
+	<onexpired>
+		<pushability source="this_owner_entity" slot="0" />
+		<getlevel entity="stack_entity" />
+		<setaccumulator value="result" /> <!-- Save level of Q -->
+		
+		<!-- Expiration events on certain abilities upon forgetting it -->
+		<entitytype type="Ability_Silhouette1" target="stack_entity"> <!-- Silhouette's Q -->
+			<foreachproxy entity="stack_entity">
+				<delete target="target_entity" source="" />
+			</foreachproxy>
+		</entitytype>
+		
+		<playeffect effect="effects/sound_state_end.effect" source="source_entity" />
+		<expirestate name="State_Kenisis_Ability1_Enemy" target="proxy_entity" />
+		<pushability source="this_owner_entity" slot="0" />
+		<setlevel entity="stack_entity" value="accumulator" />
+		<startcooldown entity="stack_entity" duration="16000,14000,12000,10000" />
+		
+		<!-- Unit expiration -->
+		<areaofeffect
+			global="true"
+			targetscheme="my_other_units_and_gadgets"			
+			targetselection="all"
+			ignoreinvulnerable="true"
+			effecttype=""
+		>
+			<!-- Wildsoul's Booboo -->
+			<entitytype type="Pet_Yogi_Ability1" target="target_entity">
+				<kill target="target_entity" source="" />
+			</entitytype>
+			<else>
+				<!-- Parallax's Fulcrum -->
+				<entitytype type="Gadget_Parallax_Ability1" target="target_entity">
+					<kill target="target_entity" source="" />
+				</entitytype>
+				<else>
+					<!-- King Klout's Pets -->
+					<entitytype type="Pet_KingKlout_Ability1_Big" target="target_entity">
+						<kill target="target_entity" source="" />
+					</entitytype>
+					<else>
+						<entitytype type="Pet_KingKlout_Ability1_Normal" target="target_entity">
+							<kill target="target_entity" source="" />
+						</entitytype>
+						<else>
+							<entitytype type="Pet_KingKlout_Ability1_Super" target="target_entity">
+								<kill target="target_entity" source="" />
+							</entitytype>
+							<else>
+								<!-- War Beast's Hellhounds -->
+								<entitytype type="Pet_WolfMan_Ability1" target="target_entity">
+									<kill target="target_entity" source="" />
+								</entitytype>
+							</else>
+						</else>
+					</else>
+				</else>
+			</else>
+		</areaofeffect>
+		
+		<!-- State expiration -->
+		<expirestate name="State_Scout_Ability1" target="source_entity" /> <!-- Scout's Vanish -->
+		<expirestate name="State_Scout_Ability1_Attack" target="source_entity" /> <!-- Scout's Vanish -->
+		<expirestate name="State_Parallax_Ability1_Pointer_FX" target="source_entity" /> <!-- Parallax's Fulcrum Shift -->
+		
+		<!-- We have to do the above twice, essentially, because it sometimes just doesn't work -->
+		<applystate name="State_Kenisis_Ability1_After" target="this_owner_entity" pushentity="true" />
+		<setaccumulator entity="stack_entity" value="accumulator" />
+	</onexpired>
+
+</state>

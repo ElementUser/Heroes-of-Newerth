@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<state
+	name="State_Kenisis_Ability2_b"
+	
+	icon="icon.tga"
+	passiveeffect="effects/state_enemy_tree.effect"
+	
+	movespeedslow="0.15"
+	
+	effecttype="StatusDebuff"
+	allowtransfer="true"
+
+	negativeeffect="slowed"
+>
+
+	<altavatar key="Hero_Kenisis.Alt2" modpriority="1"
+		passiveeffect="/heroes/kenisis/alt2/ability_02/effects/state_enemy_tree.effect"
+	/>
+	
+	<altavatar key="Hero_Kenisis.Alt3" modpriority="1"
+		passiveeffect="/heroes/kenisis/alt3/ability_02/effects/state_enemy_tree.effect"
+	/>
+	
+	<altavatar key="Hero_Kenisis.Alt4" modpriority="1"
+		passiveeffect="/heroes/kenisis/alt4/ability_02/effects/state_enemy_tree.effect"
+	/>
+	
+	<altavatar key="Hero_Kenisis.Alt5" modpriority="1"
+		passiveeffect="/heroes/kenisis/alt5/ability_02/effects/state_enemy_tree.effect"
+	/>
+	
+	<altavatar key="Hero_Kenisis.Alt6" modpriority="1"
+		passiveeffect="/heroes/kenisis/alt6/ability_02/effects/state_enemy_tree.effect"
+	/>
+	
+	<altavatar key="Hero_Kenisis.Alt7" modpriority="1"
+		passiveeffect="/heroes/kenisis/alt7/ability_02/effects/state_enemy_tree.effect"
+	/>
+</state>

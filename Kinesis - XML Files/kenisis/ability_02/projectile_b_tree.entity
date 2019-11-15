@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectile
+	name="Projectile_Kenisis_Ability2_Tree"
+
+	speed="1500"
+	
+
+
+	modelscale="1.5"
+	model="/shared/models/invis.mdf"
+	traileffect="effects/tree_trail.effect"
+	canturn="0"
+
+	impacteffect="effects/impact_tree.effect"
+>
+	<onimpact>
+		<applystate name="State_Kenisis_Ability2_b" duration="2000" target="target_entity" />
+		<damage effecttype="Magic" amount="70" target="target_entity" />
+		
+		<!-- alt avatar art -->
+		<hasavatarkey name="Hero_Kenisis.Alt2" >
+			<playeffect effect="/heroes/kenisis/alt2/ability_02/effects/initial_impact_tree.effect" target="target_entity" source="target_entity"/>
+		</hasavatarkey>
+		<else>
+			<hasavatarkey name="Hero_Kenisis.Alt4" >
+				<playeffect effect="/heroes/kenisis/alt4/ability_02/effects/initial_impact_tree.effect" target="target_entity" source="target_entity"/>
+			</hasavatarkey>
+			<else>
+				<hasavatarkey name="Hero_Kenisis.Alt5" >
+					<playeffect effect="/heroes/kenisis/alt5/ability_02/effects/initial_impact_tree.effect" target="target_entity" source="target_entity"/>
+				</hasavatarkey>
+				<else>
+					<hasavatarkey name="Hero_Kenisis.Alt6" >
+						<playeffect effect="/heroes/kenisis/alt6/ability_02/effects/initial_impact_tree.effect" target="target_entity" source="target_entity"/>
+					</hasavatarkey>
+					<else>
+						<hasavatarkey name="Hero_Kenisis.Alt7" >
+							<playeffect effect="/heroes/kenisis/alt7/ability_02/effects/initial_impact_tree.effect" target="target_entity" source="target_entity"/>
+						</hasavatarkey>
+						<else>
+							<playeffect effect="effects/initial_impact_tree.effect" target="target_entity" source="target_entity"/>
+						</else>
+					</else>
+				</else>
+			</else>
+		</else>
+		<!-- end of alt avatar art -->
+
+		<spawnaffector name="Affector_Kenisis_Ability2_Trees" target="target_entity" />
+		
+		<kill target="proxy_entity" source="" />
+	</onimpact>
+	
+	
+	<altavatar key="Hero_Kenisis.Alt2"
+		impacteffect="/heroes/kenisis/alt2/ability_02/effects/impact_tree.effect"
+		traileffect="/heroes/kenisis/alt2/ability_02/effects/tree_trail.effect"
+	/>
+	
+	<altavatar key="Hero_Kenisis.Alt4"
+		impacteffect="/heroes/kenisis/alt4/ability_02/effects/impact_tree.effect"
+		traileffect="/heroes/kenisis/alt4/ability_02/effects/tree_trail.effect"
+	/>
+	
+	<altavatar key="Hero_Kenisis.Alt5"
+		impacteffect="/heroes/kenisis/alt5/ability_02/effects/impact_tree.effect"
+		traileffect="/heroes/kenisis/alt5/ability_02/effects/tree_trail.effect"
+	/>
+	
+	<altavatar key="Hero_Kenisis.Alt6"
+		impacteffect="/heroes/kenisis/alt6/ability_02/effects/impact_tree.effect"
+		traileffect="/heroes/kenisis/alt6/ability_02/effects/tree_trail.effect"
+	/>	
+	
+	<altavatar key="Hero_Kenisis.Alt7"
+		impacteffect="/heroes/kenisis/alt7/ability_02/effects/impact_tree.effect"
+		traileffect="/heroes/kenisis/alt7/ability_02/effects/tree_trail.effect"
+	/>	
+</projectile>

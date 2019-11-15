@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ability
+	name="Ability_Kenisis3"
+
+	icon="icon.tga"
+	passiveeffect=""
+	
+	maxlevel="5"
+	baselevel="1"
+	requiredlevel="0,1,3,5,7"
+	
+	frontqueue="true"
+	inheritmovement="true"
+	noninterrupting="true"
+	noresponse="true"
+
+	actiontype="no_target"
+	targetscheme="self"
+	
+	cooldowntime="0"
+	manacost="0"
+>
+	<onframe />
+	
+	<onimpact>
+		<expirestate name="State_Kenisis_Ability1" target="source_entity" />
+	</onimpact>
+
+	<ondamage>
+		<compare a="level" b="1" op="gt">
+			<damageeffecttype effecttype="Magic">
+				<damageeffecttype effecttype="DOT" />
+				<else>
+					<targettype type="hero">
+						<applystate name="State_Kenisis_Ability3" duration="8000" target="source_entity" pushentity="true" proxy="this_entity" />
+						<setproxy entity="this_entity" target="stack_entity" />
+						<setvar0 a="damage_attempted" b="0,0.2,0.3,0.4,0.5" op="mult" />
+						<setaccumulator value="accumulator" valueb="var0" valueop="add" />
+						<setaccumulator value="result" entity="stack_entity" />
+					</targettype>
+				</else>
+			</damageeffecttype>
+		</compare>
+	</ondamage>
+	
+	<modifier key="kenisis_shield_on" modpriority="100"
+	>
+		<onframe>
+			<compare a="accumulator" b="500" op="gt">
+				<setaccumulator value="500" />
+			</compare>
+			<setaccumulator value="accumulator" entity="this_proxy_entity" />
+		</onframe>
+		
+		<ondamaged>
+			<setvar0 a="source_damage" b="1" op="mult" />
+			<compare a="var0" b="accumulator" op="ge">
+				<setvar1 a="var0" b="accumulator" op="sub" />
+				<changedamage b="result" op="min" />
+				<setaccumulator entity="this_entity" value="0" />
+			</compare>
+			<else>
+				<changedamage b="0" op="mult" />
+				<evaluate a="accumulator" b="var0" op="sub" />
+				<setaccumulator value="result" />
+			</else>
+		</ondamaged>
+	</modifier>
+	
+	
+	<altavatar key="Hero_Kenisis.Alt2" modpriority="1"
+		icon="/heroes/kenisis/alt2/ability_03/icon.tga"
+	/>
+	
+	<altavatar key="Hero_Kenisis.Alt4" modpriority="1"
+		icon="/heroes/kenisis/alt4/ability_03/icon.tga"
+	/>
+	
+	<modifier key="soccer" modpriority="150"
+		maxlevel="1"
+		attackspeed="0.1"
+		
+		actiontype="passive"
+	>
+		<onimpact />
+		
+		<onattackedpreimpact>
+			<targettype type="enemy">
+				<combatsupertype supertype="spell">
+					<playeffect effect="/heroes/kenisis/ability_03/effects/impact.effect" target="this_owner_entity" />
+				</combatsupertype>
+				<combatsupertype supertype="attack">
+					<playeffect effect="/heroes/kenisis/ability_03/effects/impact.effect" target="this_owner_entity" />
+				</combatsupertype>
+			</targettype>
+		</onattackedpreimpact>
+
+		<ondamage />
+		
+		<ondamaged>
+			<targettype type="enemy">
+				<compare a="source_damage" b="0.1" op="gt">
+					<currentdamageeffecttype effecttype="Returned" />
+					<else>
+						<targettype type="hero">
+							<damage target="target_entity" effecttype="Returned DOT" amount="0.40" b="source_damage" op="mult" />
+							<playeffect effect="impact_self.effect" source="source_entity" />
+							<playeffect effect="impact_enemy.effect" source="target_entity" target="" />
+						</targettype>
+						<else>
+							<compare a="target_owner_entity" b="0" op="eq">
+								<damage target="target_entity" effecttype="Returned DOT" amount="0.40" b="source_damage" op="mult" />
+								<playeffect effect="impact_self.effect" source="source_entity" />
+								<playeffect effect="impact_enemy.effect" source="target_entity" target="" />
+							</compare>
+							<else>
+								<damage target="target_owner_entity" effecttype="Returned DOT" amount="0.40" b="source_damage" op="mult" />
+								<playeffect effect="impact_self.effect" source="source_entity" />
+								<playeffect effect="impact_enemy.effect" source="target_owner_entity" target="" />
+							</else>
+						</else>
+					</else>
+				</compare>
+			</targettype>
+		</ondamaged>
+	</modifier>
+
+	<altavatar key="Hero_Kenisis.Alt6"
+	    icon="../alt6/ability_03/icon.tga" 
+	>
+ 	</altavatar>
+
+</ability>

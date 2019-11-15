@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<state
+	name="State_Kenisis_Ability4"
+	
+	icon="icon.tga"
+	passiveeffect="effects/state_enemy.effect"
+	
+	frozen="true"
+	
+	disarmed="true"
+	silenced="true"
+	immobilized="true"
+	perplexed="true"
+	stunned="true"
+	stunneddurationunmodifiable="true"
+	
+	effecttype="StatusDisable"
+	allowtransfer="false"
+
+	modifierkey="channeled_stun_ability"
+	modifierkey2="kinesis_ability4_Target"
+
+	negativeeffect="frozen"
+>
+	
+	<onexpired>
+		<!-- Damage -->
+		<pushability name="Ability_Kenisis4" />
+		<changeaccumulator entity="stack_entity" b="0" op="add" />
+		<setvar0 a="20,30,40" b="result" op="mult" />
+		<setvar0 a="var0" b="200,300,400" op="add" />
+		
+		<!-- Below, the position of each target relative to the position of the main lifted hero target is replicated (required for sotm) -->
+		<areaofeffect
+			center="this_owner_entity"
+			radius="750"
+			targetscheme="KenisisLiftedTargets"
+			targetselection="all"
+			ignoreinvulnerable="true"
+			maximpactspertarget="1"
+		>
+			<entitytype type="Gadget_Kenisis4_Minor">
+				<setpos0 position="this_owner_entity" positionend="target_entity" positionmodifier="subtract" />
+				<setpos0 position="this_proxy_entity" positionend="pos0" positionmodifier="add" />
+				
+				<!-- Max of 1200 distance moved -->
+				<distance source="pos0" target="target_entity" />
+				<setvar2 a="result" b="1200" op="min" />
+				<setpos0 position="target_entity" positionend="pos0" positionmodifier="pointonline" positionvalue="var2" />
+				
+				<pushentity entity="target_entity" />
+				<unbind target="stack_proxy_entity" />
+				<spawnprojectile name="Projectile_Kenisis_Ability4_Throw" 
+					source="stack_proxy_entity"
+					target="pos0"
+					bind="stack_proxy_entity"
+					bindstate="State_Kenisis_Ability4_Projectile"
+					unbindondeath="true"
+					noresponse="true"
+					proxy="stack_proxy_entity"
+					param="var0"
+				/>
+				<kill target="stack_entity" source="" />
+			</entitytype>
+		</areaofeffect>
+		
+		<unbind target="this_owner_entity" />
+		<setpos0 position="this_proxy_entity" />
+		<distance source="pos0" target="this_owner_entity" />
+		<setvar2 a="result" b="1200" op="min" />
+		<setpos0 position="this_owner_entity" positionend="pos0" positionmodifier="pointonline" positionvalue="var2" />
+		
+		<compare a="dispelled" b="0" op="eq">
+			<!-- The projectile below deals damage to the main target -->
+			<spawnprojectile name="Projectile_Kenisis_Ability4_Main" 
+				source="this_owner_entity"
+				target="pos0"
+				bind="this_owner_entity"
+				bindstate="State_Kenisis_Ability4_Projectile"
+				unbindondeath="true"
+				noresponse="true"
+				proxy="this_owner_entity"
+				param="var0"
+			/>
+		</compare>
+		
+		<kill source="" target="this_proxy_entity" />
+		<playanim name="idle" />			
+	</onexpired>
+	
+	<altavatar key="Hero_Kenisis.Alt2" modpriority="1"
+		icon="/heroes/kenisis/alt2/ability_01/icon.tga"
+		passiveeffect="/heroes/kenisis/alt2/ability_01/effects/state_enemy.effect"
+	/>
+	
+	<altavatar key="Hero_Kenisis.Alt4" modpriority="1"
+		icon="/heroes/kenisis/alt4/ability_01/icon.tga"
+		passiveeffect="/heroes/kenisis/alt4/ability_01/effects/state_enemy.effect"
+	/>
+	
+	<altavatar key="Hero_Kenisis.Alt5" modpriority="1"
+		passiveeffect="/heroes/kenisis/alt5/ability_01/effects/state_enemy.effect"
+	/>
+	
+	<altavatar key="Hero_Kenisis.Alt6" modpriority="1"
+		passiveeffect="/heroes/kenisis/alt6/ability_01/effects/state_enemy.effect"
+	/>
+	
+	<altavatar key="Hero_Kenisis.Alt7" modpriority="1"
+		passiveeffect="/heroes/kenisis/alt7/ability_04/effects/state_enemy.effect"
+	/>
+</state>

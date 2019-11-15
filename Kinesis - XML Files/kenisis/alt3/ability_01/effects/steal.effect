@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<effect name="tracker"  deferred="true" scale="2">
+	<definitions >
+		
+			<trailemitter
+				name="trail_01"
+				life="2000"
+				bone="_bone_centerofchest"
+				spawnrate="50"
+				startminparticlelife="2000"
+				startmaxparticlelife="2000"		
+				
+				endminparticlelife="1"
+				endmaxparticlelife="1" 
+				texpostime="2000"
+			 	texposscale="0"
+			 	texstretchscale="1"
+				position="0 0 0"
+				material="/shared/effects/materials/soul_projectile_white.material"
+			>
+				<particle
+					startcolor="-.1"
+					midcolor=".1 .25 1"
+					endcolor="0 .15 1"
+					midcolorpos=".2"
+					
+					startsize="6"
+					midsize="20"
+					endsize="0"
+					midsizepos=".1"
+				/>
+				
+			</trailemitter>
+
+		<particlesystem name="system0" space="world" >
+			
+			<trackeremitter
+				count="1"
+				
+				bone="_bone_centerofchest"
+				owner="target"
+				targetbone="_bone_centerofchest"
+				targetowner="source"
+				
+				tracktype="distance"
+				trackspeed="22.0" 				
+				drag="0"
+				spawnrate="250"
+				particlelife="2000"
+				gravity="-50"
+				offsetsphere="5 5 5"
+				minspeed="40.0"
+				maxspeed="220.0"
+				
+				acceleration="500.0"
+				direction="0.0 0.0 1.0"
+				
+				inheritvelocity="0.0"
+				distancelife="true"
+			>
+				<particle		
+					emitter0="trail_01"
+				/>
+				
+			</trackeremitter>
+			
+		
+			<trackeremitter
+				life="2000"
+				spawnrate="15"
+				bone="_bone_centerofchest"
+				owner="target"
+				targetbone="_bone_centerofchest"
+				targetowner="source"
+				
+				tracktype="lerp"
+				trackspeed="1"
+				
+				minspeed="300"
+				maxspeed="400"
+				direction="0 0 1"
+				angle="0"
+				particlelife="1500"
+				distancelife="true"
+				startparticlescale="1"
+				endparticlescale="0"
+				expirelife="200"
+			>
+				<particle
+					minyawspeed="-750"
+					maxyawspeed="750"
+					minstartscale=".5"
+					maxstartscale="2"
+					minmidscale=".25"
+					maxmidscale="2.25"
+					minendscale="0"
+					maxendscale=".25"
+				>
+					<billboard
+						maxroll="360"
+						position="10 10 0"
+						life="1000"
+						material="/shared/effects/materials/flare_05.material"
+						size="20"
+						startcolor=".2 .5 1"
+						midcolor=".2 .6 .8"
+						endcolor="0"
+						midcolorpos=".8"
+						directionalspace="local"
+						startscale="0"
+						minscale="1"
+						maxscale="4"
+						midscalepos=".2"
+					/>
+				</particle>
+			</trackeremitter>
+
+			
+		</particlesystem>
+	</definitions>
+	<thread>
+		<spawnparticlesystem instance="instance0" particlesystem="system0" />
+		<waitfordeath instance="instance0" />
+		<!-- <die /> -->
+	</thread>
+</effect>
+
+<!-- [min|max][start|mid|end]property[speed][pos] -->
+

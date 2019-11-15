@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<effect name="cyclone">
+	<definitions>
+		<particlesystem name="system0" space="world" scale="1">
+			
+			<sound
+			    soundloop="true"
+			    fadein="200"
+			    fadeout="500"
+				linearfalloff="true" 
+				falloffstart="0"
+				minfalloffend="500"
+				maxfalloffend="1300"
+				volume=".55"
+				sample="/heroes/kenisis/ability_02/sounds/tree_float_%.wav"
+			/>
+
+			<model
+				position="0 0 50"
+				expirelife="200"
+				model="../../../ability_02/effects/tree/model.mdf"
+				anim="idle"
+				color="1.25 1 .6"
+				startscale=".5"
+				endscale="0"
+				startalpha="1"
+				endalpha="0"
+				yaw="360"
+				yawspeed="180"
+				pitchspeed="180"
+			>
+			</model>
+			
+			<model
+				position="0 0 50"
+				expirelife="200"
+				model="../../../ability_02/effects/bark/model.mdf"
+				anim="idle"
+				color=".8"
+				startscale=".65"
+				endscale="0"
+				startalpha="1"
+				endalpha="0"
+				yaw="0"
+				yawspeed="-180"
+				pitchspeed="-180"
+			>
+			</model>
+
+			<billboard
+				expirelife="200"
+				position="0 0 50"
+				spawnrate="50"
+				material="/shared/effects/materials/whitedot.material"
+				startsize="150"
+				endsize="0"
+				lockup="1"
+				color=".3 .05 .3"
+				depthbias="-75"
+			/>
+			<billboard
+				life="200"
+				position="0 0 50"
+				spawnrate="50"
+				material="/shared/effects/materials/whitedot.material"
+				startsize="150"
+				endsize="0"
+				lockup="1"
+				color=".5 .2 0"
+				depthbias="-75"
+			/>
+
+			<billboard
+				position="0 0 50"
+				spawnrate="50"
+				life="200"
+				material="/shared/effects/materials/flare2.material"
+				startheight="0"
+				endheight="500"
+				width="10"
+				roll="90"
+				midheightpos=".75"
+				lockup="1"
+				color=".5 .3 .5"
+			/>
+			
+			<model
+				position="0 0 50"
+				startcolor="3 1.5 3"
+				endcolor="0 0 0"
+				model="/heroes/kenisis/ability_04/effects/single_stones/model.mdf"
+				material="/shared/effects/materials/shell2.material"
+				anim="idle"
+				expirelife="200"
+				startscale=".32"
+				endscale="0"
+				yawspeed="180"
+				pitchspeed="180"
+			>
+			</model>
+
+			<model
+				position="0 0 50"
+				startcolor="1 0 1"
+				endcolor="0 0 0"
+				model="/heroes/kenisis/ability_04/effects/single_stones/model.mdf"
+				material="/shared/effects/materials/shell2.material"
+				anim="idle"
+				expirelife="200"
+				startscale=".2"
+				endscale="0"
+				yawspeed="-180"
+				pitchspeed="-180"
+			>
+			</model>
+			
+			<orbiteremitter
+				spawnrate="8"
+				minparticlelife="850"
+				maxparticlelife="1050"
+				origin="0 0 0"
+				orbit="-3 0 10"
+				direction="0 0 1"
+				offset="30"
+				position="0 0 50"
+				cylindrical="true"
+				material="/shared/effects/materials/sakura02_blend.material"
+				>
+				<particle
+				minangle="90"
+				maxangle="180"
+				minanglespeed="-200"
+				maxanglespeed="200"
+				color="1"
+				midcolorpos=".5"
+				startframe="0"
+				endframe="1"
+				startsize="5"
+				endsize="10"
+				startalpha="1"
+				midalpha="1"
+				endalpha="0"
+				midalphapos=".5"
+				startanchor="1"
+				endanchor="0"
+				minscale=".7"
+				maxscale="1.2"
+				/>
+			</orbiteremitter>
+			<orbiteremitter
+				spawnrate="8"
+				minparticlelife="850"
+				maxparticlelife="1050"
+				origin="0 0 0"
+				orbit="3 0 10"
+				direction="0 0 1"
+				offset="23"
+				position="0 0 50"
+				cylindrical="true"
+				material="/shared/effects/materials/sakura02_blend.material"
+				>
+				<particle
+				minangle="90"
+				maxangle="180"
+				minanglespeed="-200"
+				maxanglespeed="200"
+				color="1"
+				midcolorpos=".5"
+				startframe="0"
+				endframe="1"
+				startsize="5"
+				endsize="10"
+				startalpha="1"
+				midalpha="1"
+				endalpha="0"
+				midalphapos=".5"
+				startanchor="1"
+				endanchor="0"
+				minscale=".7"
+				maxscale="1.2"
+				/>
+			</orbiteremitter>
+					
+			<orbiteremitter
+				spawnrate="4"
+				minparticlelife="850"
+				maxparticlelife="1050"
+				origin="0 0 0"
+				orbit="-3 0 10"
+				direction="0 0 1"
+				offset="30"
+				position="0 0 50"
+				cylindrical="true"
+				material="/shared/effects/materials/blink_02.material"
+				>
+				<particle
+				minangle="90"
+				maxangle="180"
+				minanglespeed="-200"
+				maxanglespeed="200"
+				startcolor="1 1 .5"
+				midcolor="1 .8 .3"
+				endcolor="0"
+				startframe="0"
+				endframe="1"
+				startsize="5"
+				endsize="10"
+				startalpha="1"
+				midalpha="1"
+				endalpha="0"
+				midalphapos=".5"
+				startanchor="1"
+				endanchor="0"
+				minscale=".7"
+				maxscale="1.2"
+					>
+					<simpleemitter
+						count="1"
+						particlelife="900"
+						direction="0 0 1"
+						position="0 0 0"
+						material="/shared/effects/materials/blink_02.material"
+					>
+						<particle
+							startcolor="1"
+							midcolor="1"
+							midcolorpos=".7"
+							endcolor="0"
+							startsize="5"
+							endsize="1"
+							anchor="1"
+						/>
+					</simpleemitter>
+				</particle>
+			</orbiteremitter>
+			<simpleemitter
+				position="0 0 50"
+				spawnrate="10"
+				particlelife="250"
+				material="/shared/effects/materials/rad_add.material"
+				offsetsphere="5 5 10"
+			>
+				<particle 
+					minangle="0"
+					maxangle="360"
+					minanglespeed="-25"
+					maxanglespeed="25"
+					startcolor="0"
+					midcolor=".1 .05 .1"
+					endcolor="0"
+					midcolorpos=".25"
+					width="35"
+					startsize="100"
+					endsize="400"
+					lockup="1"
+					lockright="1"
+					pitch="-90"
+					startanchor="1"
+					endanchor=".7"
+					scale="1"
+				/>
+			</simpleemitter>
+
+		</particlesystem>
+	</definitions>
+	<thread>
+		<spawnparticlesystem instance="instance0" particlesystem="system0" />
+		<waitfordeath instance="instance0" />
+		<!-- <die /> -->
+	</thread>
+</effect>
+
+<!-- [min|max][start|mid|end]property[speed][position] -->
+

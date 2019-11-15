@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gadget
+	name="Gadget_Kinisis_Ability4"
+	
+	icon=""
+	portrait=""
+	model="/shared/models/invis.mdf"
+	
+	passiveeffect="effects/cyclone.effect"
+	
+	preglobalscale="0.9"
+	modelscale="1.0"
+	effectscale="0.9"
+	boundsheight="0"
+	boundsradius="0"
+	isselectable="false"
+	iscontrollable="false"
+	selectionradius="0"
+	targetoffset="0 0 0"
+
+	canrotate="false"
+	ismobile="false"
+
+	attacktype="none"
+	combattype="Ranged"
+
+	sightrangeday="1000"
+	sightrangenight="1000"
+	
+	unitwalking="true"
+	buildingwalking="true"
+	treewalking="true"
+	cliffwalking="true"
+	
+	deathtime="0"
+	corpsetime="0"
+	clearvision="true"
+	
+	invulnerable="true"
+	flying="false"
+	drawonmap="false"
+	noblockneutralspawn="true"
+	
+	lifetime="20000"
+>
+	<onframe>
+		<compare a="accumulator" b="0" op="eq">
+			<teleport source="this_entity" target="this_proxy_entity" interpolate="true" noninterrupting="true"/>
+		</compare>
+	</onframe>
+
+	<altavatar key="Hero_Kenisis.Alt2" modpriority="1"
+		icon="/heroes/kenisis/alt2/ability_01/icon.tga"
+		passiveeffect="/heroes/kenisis/alt2/ability_01/effects/cyclone.effect"
+	/>
+	
+	<altavatar key="Hero_Kenisis.Alt3" modpriority="1"
+		passiveeffect="/heroes/kenisis/alt3/ability_01/effects/cyclone.effect"
+	/>
+	
+	<altavatar key="Hero_Kenisis.Alt4" modpriority="1"
+		passiveeffect="/heroes/kenisis/alt4/ability_01/effects/cyclone.effect"
+	/>
+	
+	<altavatar key="Hero_Kenisis.Alt5" modpriority="1"
+		passiveeffect="/heroes/kenisis/alt5/ability_01/effects/cyclone.effect"
+	/>
+	
+	<altavatar key="Hero_Kenisis.Alt6" modpriority="1"
+		passiveeffect="/heroes/kenisis/alt6/ability_01/effects/cyclone.effect"
+	/>
+	
+	<altavatar key="Hero_Kenisis.Alt7" modpriority="1"
+		passiveeffect="/heroes/kenisis/alt7/ability_04/effects/cyclone.effect"
+	/>
+</gadget>

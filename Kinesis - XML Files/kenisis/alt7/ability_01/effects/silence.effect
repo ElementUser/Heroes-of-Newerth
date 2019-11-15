@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<effect deferred="true" useentityeffectscale="true" >
+	<definitions>
+		<particlesystem name="system0" space="world" scale="1.0">
+			<billboard
+				size="50"
+				position="0 0 40"
+				bone="_bone_overhead"
+				life="700"
+				loop="1"
+				material="/shared/effects/materials/silence.material"
+				color="1 1 1"
+				startalpha="1"
+				midalpha=".4"
+				endalpha="1"
+			/>
+		
+			<billboard
+				bone="_bone_centerofchest"
+				life="400"
+				startsize="320"
+				endsize="0"
+				material="/shared/effects/materials/whitedot.material"
+				startalpha="1"
+				endalpha="0"
+				startcolor="0 0 0 "
+				midcolor=".8 .6 .2"
+				endcolor="0 0 0 "
+				depthbias="-30"
+			/>
+			<simpleemitter
+				life="300"
+				spawnrate="53"
+				bone="_bone_centerofchest"
+				minparticlelife="400"
+				maxparticlelife="600"
+				minspeed="35"
+				maxspeed="205"
+				gravity="-10"
+				drag=".04"
+				minparticleangle="0"
+				maxparticleangle="360" 
+				position="0 0 50"
+				offsetsphere="40"
+				material="/shared/effects/materials/blink_02.material"
+			>
+				<particle
+					startcolor="1 1 .5"
+					midcolor="1 .5 0"
+					endcolor="0"
+					startsize="20"
+					endsize="1"
+					minscale="2"
+					maxscale="3"
+					>
+					<simpleemitter
+						count="1"
+						particlelife="900"
+						direction="0 0 1"
+						position="0 0 0"
+						material="/shared/effects/materials/blink_02.material"
+					>
+						<particle
+							startcolor="1"
+							midcolor="1"
+							midcolorpos=".7"
+							endcolor="0"
+							startsize="5"
+							endsize="1"
+							anchor="1"
+						/>
+					</simpleemitter>
+				</particle>
+			</simpleemitter>
+			<simpleemitter
+				life="300"
+				spawnrate="33"
+				bone="_bone_centerofchest"
+				minparticlelife="400"
+				maxparticlelife="600"
+				minspeed="55"
+				maxspeed="405"
+				drag=".04"
+				minparticleangle="0"
+				maxparticleangle="360" 
+				offsetsphere="40"
+				position="0 0 50"
+				material="/shared/effects/materials/sakura02_blend.material"
+			>
+				<particle
+					color="1"
+					startsize="15"
+					endsize="1"
+					minscale="2"
+					maxscale="3"
+				/>
+			</simpleemitter>
+		
+			
+			<simpleemitter
+				bone="_bone_centerofchest"
+				spawnrate="5"
+				particlelife="800"
+				count="2"
+				position="0 0 30"
+				material="/shared/effects/materials/refract_swell.material"
+				particledirectionalspace="local"
+				offsetdirection="0 0 0"
+				offsetradial="0"
+				param=".4"
+			>
+				<particle
+					startsize="120"
+					endsize="300"
+					param="0.5"
+					startalpha=".3"
+					midalpha=".3"
+					endalpha="0"
+					midalphapos=".5"
+				/>
+			</simpleemitter>
+		</particlesystem>
+		
+		<particlesystem name="system1" space="world" scale="1">
+			<billboard					
+				size="50"
+				position="0 0 40"
+				bone="_bone_overhead"
+				life="700"
+				loop="1"
+				material="/shared/effects/materials/silence.material"
+				color="1 1 1"
+				startalpha="1"			
+				midalpha=".4"
+				endalpha="1"
+		
+			>
+			</billboard>	
+			<simpleemitter
+				spawnrate="10"
+				bone="_bone_centerofchest"
+				minparticlelife="400"
+				maxparticlelife="900"
+				gravity="-20"
+				speed="2"
+				drag="0"
+				acceleration="50"
+				position="0 0 0"
+				material="/shared/effects/materials/phantom_smoke_13.material"
+				offsetsphere="25 25 15"
+				minangle="0"
+				maxangle="90"
+				direction="0 0 0"
+			>
+				<particle 
+					startcolor="0"
+					midcolor=".2 .05 .2"
+					endcolor="0"
+					startsize="200"
+					midsize="150"
+					endsize="100"
+					startalpha="0"
+					midalpha=".5"
+					endalpha="0"
+					midalphapos=".8"
+				/>
+			</simpleemitter>
+		
+			<simpleemitter
+				spawnrate="10"
+				bone="_bone_centerofchest"
+				minparticlelife="400"
+				maxparticlelife="900"
+				gravity="-60"
+				speed="2"
+				drag=".1"
+				acceleration="50"
+				position="0 0 0"
+				material="/shared/effects/materials/ice_blast_add.material"
+				offsetsphere="30 30 25"
+				minangle="0"
+				maxangle="90"
+				direction="0 0 0"
+			>
+				<particle
+					maxangle="360"
+					startcolor="0 0 0"
+					midcolor=".2 .1 .2"
+					endcolor="0 0 0"
+					startsize="150"
+					midsize="100"
+					endsize="150"
+					minanglespeed="-100"
+					maxanglespeed="100"
+				/>
+			</simpleemitter>
+			
+			 <simpleemitter
+				spawnrate="12"
+				bone="_bone_centerofchest"
+				minparticlelife="400"
+				maxparticlelife="900"
+				gravity="-40"
+				speed="2"
+				drag=".1"
+				acceleration="50"
+				position="0 0 0"
+				material="/shared/effects/materials/sakura02_blend.material"
+				offsetsphere="30"
+				minangle="0"
+				maxangle="270"
+				direction="0 0 0"
+			>
+				<particle 
+					color="1"
+					startsize="50"
+					endsize="10"
+					minscale=".4"
+					maxscale=".8"
+				/>
+			</simpleemitter>
+		</particlesystem>
+	</definitions>
+	<thread>
+		<spawnparticlesystem instance="instance0" particlesystem="system0" />
+		<spawnparticlesystem instance="instance1" particlesystem="system1" />
+		<waitfordeath instance="instance0" />
+		<waitfordeath instance="instance1" />
+	</thread>
+</effect>

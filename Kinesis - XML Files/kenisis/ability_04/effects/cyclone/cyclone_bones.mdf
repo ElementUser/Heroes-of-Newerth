@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model name="" file="cyclone_bones.model" type="K2">
+	<anim name="spawn" numframes="25" clip="cyclone_bones.clip" fps="30" loop="0"/>
+	<anim name="spawn_1"  clip="cyclone_bones.clip" fps="30" loop="1" loopbackframe="25"/>
+	<anim name="idle" clip="cyclone_bones.clip" startframe="25" numframes="100" loop="1" fps="30" blendtime="0"/>
+</model>

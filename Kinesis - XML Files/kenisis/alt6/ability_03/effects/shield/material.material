@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material>
+	<parameters vDiffuseColor="1.0 1.0 1.0" fSpecularLevel="1.0" fGlossiness="60.0" fOpacity="1.0" fReflect="1.0" >
+		<vec3 name="vReflectColor" value="0.294118 0.862745 0.588235" />
+		<vec3 name="vReflectFresnel" value="0.35 1.5 1.4" />
+		<float name="fSpeed" value="2.0" />
+		<float name="fDelay" value="1.0" />
+		<float name="fGlowBrightness" value="0.5" />
+	</parameters>
+	<phase name="depth" vs="mesh_depth_opacity" ps="mesh_depth_opacity" srcblend="BLEND_ONE" dstblend="BLEND_ZERO" translucent="false" cull="CULL_BACK" alphatest="true">
+		<sampler name="opacity" texture="shield_color.tga" repeat_u="true" repeat_v="true" scale_u="1.0000" scale_v="1.0000" fps="15" mipmaps="true" fullquality="false" nocompress="false" filtering="true" border="false" />
+	</phase>
+	<phase name="color" vs="mesh_color_enviro_unit_cubespec" ps="mesh_color_enviro_unit_team_spec_reflectmask4_glow" srcblend="BLEND_ONE" dstblend="BLEND_ZERO" translucent="false" cull="CULL_BACK" alphatest="true" layer="0">
+		<sampler name="diffuse" texture="shield_color.tga" repeat_u="true" repeat_v="true" scale_u="1.0000" scale_v="1.0000" fps="15" mipmaps="true" fullquality="false" nocompress="false" filtering="true" border="false" />
+		<sampler name="normalmap" texture="shield_normal.tga" repeat_u="true" repeat_v="true" scale_u="1.0000" scale_v="1.0000" fps="15" mipmaps="true" fullquality="false" nocompress="false" filtering="true" border="false" />
+		<sampler name="specular" texture="shield_color.tga" repeat_u="true" repeat_v="true" scale_u="1.0000" scale_v="1.0000" fps="15" mipmaps="true" fullquality="false" nocompress="false" filtering="true" border="false" />
+		<sampler name="lightmap" texture="shield_color.tga" repeat_u="true" repeat_v="true" scale_u="1.0000" scale_v="1.0000" fps="15" mipmaps="true" fullquality="false" nocompress="false" filtering="true" border="false" />
+		<sampler name="glow" texture="shield_glow.tga" repeat_u="true" repeat_v="true" scale_u="1.0000" scale_v="1.0000" fps="15" mipmaps="true" fullquality="false" nocompress="false" filtering="true" border="false" />
+		<samplercube name="cube" texture="/world/sky/silver/1.tga" mipmaps="true" fullquality="false" nocompress="false" filtering="true" />
+	</phase>
+	<phase name="fade" vs="mesh_depth_opacity" ps="mesh_depth_opacity" srcblend="BLEND_ONE" dstblend="BLEND_ZERO" translucent="true" cull="CULL_BACK" alphatest="true" colorwrite="false" >
+		<sampler name="opacity" texture="shield_color.tga" repeat_u="true" repeat_v="true" scale_u="1.0000" scale_v="1.0000" fps="15" mipmaps="true" fullquality="false" nocompress="false" filtering="true" border="false" />
+		<multipass vs="mesh_color_enviro_unit_cubespec" ps="mesh_color_enviro_unit_team_spec_reflectmask4_glow" srcblend="BLEND_SRC_ALPHA" dstblend="BLEND_ONE_MINUS_SRC_ALPHA" translucent="true" cull="CULL_BACK" alphatest="false" layer="0">
+			<sampler name="diffuse" texture="shield_color.tga" repeat_u="true" repeat_v="true" scale_u="1.0000" scale_v="1.0000" fps="15" mipmaps="true" fullquality="false" nocompress="false" filtering="true" border="false" />
+			<sampler name="normalmap" texture="shield_normal.tga" repeat_u="true" repeat_v="true" scale_u="1.0000" scale_v="1.0000" fps="15" mipmaps="true" fullquality="false" nocompress="false" filtering="true" border="false" />
+			<sampler name="specular" texture="shield_color.tga" repeat_u="true" repeat_v="true" scale_u="1.0000" scale_v="1.0000" fps="15" mipmaps="true" fullquality="false" nocompress="false" filtering="true" border="false" />
+			<sampler name="lightmap" texture="shield_color.tga" repeat_u="true" repeat_v="true" scale_u="1.0000" scale_v="1.0000" fps="15" mipmaps="true" fullquality="false" nocompress="false" filtering="true" border="false" />
+			<sampler name="glow" texture="shield_glow.tga" repeat_u="true" repeat_v="true" scale_u="1.0000" scale_v="1.0000" fps="15" mipmaps="true" fullquality="false" nocompress="false" filtering="true" border="false" />
+			<samplercube name="cube" texture="/world/sky/silver/1.tga" mipmaps="true" fullquality="false" nocompress="false" filtering="true" />
+		</multipass>
+	</phase>
+</material>

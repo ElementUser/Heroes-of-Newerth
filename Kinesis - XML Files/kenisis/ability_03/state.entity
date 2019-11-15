@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<statenetaccum
+	name="State_Kenisis_Ability3"
+
+	icon="icon.tga"
+	passiveeffect="effects/state_shield.effect"
+	
+	shield="true"
+	maxaccumulator="500"
+
+	movespeedpercharge="1"
+	movespeed="10"
+	
+	effecttype=""
+	allowtransfer="false"
+	
+	modifierkey="kenisis_shield_on"
+>
+	<onattackedpostimpact>
+		<hasavatarkey name="Hero_Kenisis.Alt2" >
+			<playeffect effect="/heroes/kenisis/alt2/ability_03/effects/impact.effect" source="source_entity"/>
+		</hasavatarkey> 
+		<else>
+			<hasavatarkey name="Hero_Kenisis.Alt4" >
+				<playeffect effect="/heroes/kenisis/alt4/ability_03/effects/impact.effect" source="source_entity"/>
+			</hasavatarkey> 
+			<else>
+				<hasavatarkey name="Hero_Kenisis.Alt5" >
+					<playeffect effect="/heroes/kenisis/alt5/ability_03/effects/impact.effect" source="source_entity"/>
+				</hasavatarkey> 
+				<else>
+					<hasavatarkey name="Hero_Kenisis.Alt6" >
+						<playeffect effect="/heroes/kenisis/alt6/ability_03/effects/impact.effect" source="source_entity"/>
+					</hasavatarkey> 
+					<else>
+						<hasavatarkey name="Hero_Kenisis.Alt7" >
+							<playeffect effect="/heroes/kenisis/alt7/ability_03/effects/impact.effect" source="source_entity"/>
+						</hasavatarkey> 
+						<else>
+							<playeffect effect="effects/impact.effect" source="source_entity"/>
+						</else>
+					</else>
+				</else>
+			</else>
+		</else>
+	</onattackedpostimpact>
+	
+	<onexpired>
+		<hasavatarkey name="Hero_Kenisis.Alt2" >
+			<playeffect effect="/heroes/kenisis/alt2/ability_03/effects/state_expire.effect" source="source_entity"/>
+		</hasavatarkey>
+		<else>
+			<playeffect effect="effects/state_expire.effect" source="source_entity"/>
+		</else>
+		<setaccumulator entity="this_proxy_entity" value="0" />
+	</onexpired>
+
+	<onframe>
+		<evaluate a="accumulator" b="4" op="div" />
+		<setcharges a="result" />
+	</onframe>
+	
+	<altavatar key="Hero_Kenisis.Alt2" modpriority="1"
+		icon="/heroes/kenisis/alt2/ability_03/icon.tga"
+		passiveeffect="/heroes/kenisis/alt2/ability_03/effects/state_shield.effect"
+	/>
+	
+	<altavatar key="Hero_Kenisis.Alt4" modpriority="1"
+		icon="/heroes/kenisis/alt4/ability_03/icon.tga"
+		passiveeffect="/heroes/kenisis/alt4/ability_03/effects/state_shield.effect"
+	/>
+	
+	<altavatar key="Hero_Kenisis.Alt5" modpriority="1"
+		passiveeffect="/heroes/kenisis/alt5/ability_03/effects/state_shield.effect"
+	/>
+	
+	<altavatar key="Hero_Kenisis.Alt6" modpriority="1"
+		icon="../alt6/ability_03/icon.tga" 
+		passiveeffect="/heroes/kenisis/alt6/ability_03/effects/state_shield.effect"
+	/>
+	
+	<altavatar key="Hero_Kenisis.Alt7" modpriority="1"
+		passiveeffect="/heroes/kenisis/alt7/ability_03/effects/state_shield.effect"
+	/>
+</statenetaccum>

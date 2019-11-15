@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<effect deferred="true" useentityeffectscale="true">
+
+	<definitions>
+
+		<particlesystem name="system0" space="world" scale="1">
+		
+			<billboard
+				bone="_bone_centerofchest"
+				expirelife="1500"
+				startcolor=".125 .025 .125"
+				endcolor="0 0 0"
+				size="250"
+				position="0 0 0"
+				material="/shared/effects/materials/whitedot.material"
+				directionalspace="local"
+				depthbias="-60"
+				minroll="-180"
+				maxroll="180"
+				rollspeed="-360"
+				loop="true"
+			/>
+
+			<billboard
+				bone="_bone_centerofchest"
+				expirelife="1500"
+				startcolor=".125 .025 .125"
+				endcolor="0 0 0"
+				size="75"
+				position="0 0 0"
+				material="/shared/effects/materials/whitedot.material"
+				directionalspace="local"
+				depthbias="-60"
+				minroll="-180"
+				maxroll="180"
+				rollspeed="-360"
+				loop="true"
+			/>
+			<template name="glow">
+				<model 
+					bone="_bone_origin"
+					model="../../effects/stones/model.mdf"
+					material="/shared/effects/materials/shell2.material"
+					anim="idle"
+					startcolor="0 .45 2"
+					endcolor="0 0 0"
+					scale="1.75"
+					expirelife="500"
+					position="0 0 0"
+					alpha="0"
+				>	
+				
+					<!-- <simpleemitter
+						bone="{bone1}"
+						spawnrate="5"
+						gravity="-10"
+						offsetsphere="15"
+						inheritvelocity=".1"
+						particlelife="800"
+					>
+						<particle
+						
+						>
+							<billboard
+								life="600"
+								scale=".2" 
+								bone="{bone1}" 
+								expirelife="200"
+								startcolor=".25 .05 .25"
+								endcolor="0 0 0"
+								size="20"
+								depthbias="0"
+								material="/shared/effects/materials/whitedot.material"
+								lockup="true"
+								pitch="90"
+								position="0 0 5"
+							/>
+							
+							<billboard
+								life="600"
+								scale=".2" 
+								bone="{bone1}" 
+								expirelife="200"
+								startcolor=".25 .05 .25"
+								endcolor="0 0 0"
+								size="65"
+								depthbias="0"
+								material="/shared/effects/materials/starlight.material"
+								lockup="true"
+								pitch="90"
+								position="0 0 5"
+							/>
+							
+							<billboard
+								scale=".2" 
+								bone="{bone1}"
+								life="600"
+								expirelife="200"
+								startcolor=".6"
+								endcolor="0 0 0"
+								size="80"
+								depthbias="0"
+								material="/shared/effects/materials/star_03.material"
+								lockup="true"
+								pitch="90"
+								position="0 0 5"
+							/>
+						</particle>
+					</simpleemitter> -->
+				
+				<!-- 	<billboard
+						life="600"
+						loop="ture"
+						bone="{bone1}"
+						startcolor="0"
+						midcolor=".3"
+						endcolor="0 0 0"
+						size="65"
+						depthbias="0"
+						material="/shared/effects/materials/star_03.material"
+						lockup="true"
+						pitch="90"
+						maxroll="360"
+						position="0 0 5"
+					/>
+					 -->
+					<billboard
+						expirelife="200"
+						bone="{bone1}"
+						startcolor=".5 .05 .5"
+						endcolor="0 0 0"
+						size="65"
+						depthbias="0"
+						material="/shared/effects/materials/whitedot.material"
+						position="0 0 5"
+					/>
+
+					
+					 <simpleemitter
+						bone="{bone1}"
+						spawnrate="4"
+						minparticlelife="400"
+						maxparticlelife="600"
+						minspeed="3"
+						maxspeed="6"
+						gravity="-10"
+						drag=".2"
+						minparticleangle="0"
+						maxparticleangle="360" 
+						position="0 0 5"
+						offsetsphere="10"
+						material="/shared/effects/materials/blink.material"
+					>
+						<particle
+							startcolor="1 .5 .8"
+							midcolor="1 .5 .8"
+							endcolor="0"
+							startsize="20"
+							endsize="1"
+							minscale=".5"
+							maxscale=".8"
+							>
+							
+							<simpleemitter
+								count="1"
+								particlelife="900"
+								direction="0 0 1"
+								position="0 0 0"
+								material="/shared/effects/materials/blink.material"
+							>
+								<particle
+									startcolor="1"
+									midcolor="1"
+									midcolorpos=".7"
+									endcolor="0"
+									startsize="5"
+									endsize="1"
+									anchor="1"
+								/>
+							</simpleemitter>
+						</particle>
+					</simpleemitter>
+					<model 
+						bone="{bone1}"
+						model="sakura/sakura.mdf"
+						material="../material_noshadow.material"
+						anim="idle"
+						color="1"
+						expirelife="500"
+						position="0 0 5"
+						pitch="90"
+						minyawspeed="-220"
+						maxyawspeed="220"
+						minscale="2.5"
+						maxscale="3.5"
+						startalpha="1"
+						endalpha="0"
+					/>	
+				</model>	
+			</template>
+
+			<instance name="glow" bone1="Box004" />
+			<instance name="glow" bone1="Box005"/>	
+			<instance name="glow" bone1="Box006"/>
+			<instance name="glow" bone1="Box007"/>
+			<instance name="glow" bone1="Box008"/>
+			<instance name="glow" bone1="Box009"/>
+
+		</particlesystem>
+	</definitions>
+	<thread>
+		<spawnparticlesystem instance="instance0" particlesystem="system0" />
+		<waitfordeath instance="instance0" />
+		
+	</thread> 
+</effect>

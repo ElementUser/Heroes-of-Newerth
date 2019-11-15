@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<affector
+	name="Affector_Kenisis_Ability2_Trees"
+
+	radius="50"
+	
+	lifetime="0"
+	targetselection="all"
+	targetscheme="trees"
+	effecttype="Magic"
+	destroytrees="true"
+>
+	<onimpact/>
+</affector>

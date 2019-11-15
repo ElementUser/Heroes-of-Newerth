@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<effect name="cyclone" deferred="true">
+	<definitions>
+		<particlesystem name="system0" space="world" scale="0.5">
+		
+		
+			<simpleemitter
+				delay="300"
+				bone="_bone_center"
+				spawnrate="30"
+				life="4000"
+				maxparticlelife="250"
+				minparticlelife="250"
+				minspeed="-50"
+				maxspeed="51"
+				acceleration="1"
+				position="0 0 -40"
+				minangle="0"
+				maxangle="0"
+				material="/shared/effects/materials/corona_01.material"
+				offsetsphere=" 0 0 45"
+				direction="0 0 1"
+			>
+				<particle 
+					minangle="-360"
+					maxangle="360"
+					anglespeed="220"
+					lockup="1"
+					pitch="-90"
+					startcolor="0 0 0"
+					midcolor="0 .2 .15"
+					endcolor="0 0 0"
+					midcolorpos=".25"
+					startsize="50"
+					midsize="80"
+					endsize="20"
+					midsizepos=".3"
+					startalpha="0"
+					midalpha="1"
+					endalpha="0"
+					midalphapos=".6"
+					startstickiness=".75"
+					endstickiness="0"
+				/>
+			</simpleemitter>
+
+
+		
+		
+			<simpleemitter
+				bone="_bone_centerofchest"
+				count="1"
+				spawnrate="2000"
+				expirelife="250"
+			>
+				<particle>
+					<model
+						model="/heroes/kenisis/ability_04/effects/cyclone/cyclone_bones.mdf"
+						anim="idle"
+						expirelife="250"
+						startalpha="1"
+						midalpha="1"
+						endalpha="0"
+						midalphapos=".5"
+						startscale=".65"
+						endscale="0"
+						position="0 0 -30"
+					>
+						<groundsprite
+							delay="300"
+							life="4000"
+							bone="_bone_cyclone01"
+							material="/shared/effects/materials/whitedot_ground.material"
+							size="75"
+							startcolor="0 .5 .125"
+							endcolor="0 0 0"
+							midcolorpos=".95"
+							alpha="1"
+						/>
+						
+
+						
+						<simpleemitter
+							count="1"
+							bone="_bone_cyclone01"
+							spawnrate="2000"
+							particlelife="5000"
+						>
+							<particle>
+								<simpleemitter
+									bone="_bone_cyclone01"
+									spawnrate="75"
+									count="20"
+									particlelife="1000"
+									gravity="-55"
+									speed="40"
+									drag=".08"
+									acceleration="0"
+									position="0 0 0"
+									material="/shared/effects/materials/phantom_smoke_10.material"
+									offsetsphere="30 30 0"
+									minangle="90"
+									maxangle="-90"
+								>
+									<particle 
+										startcolor="1"
+										midcolor="0 .5 .25"
+										endcolor="0"
+										midcolorpos=".1"
+										startframe="0"
+										endframe="1"
+										startwidth="50"
+										midwidth="35"
+										endwidth="6"
+										midwidthpos=".5"
+										startheight="0"
+										endheight="500"
+										lockup="true"
+									/>
+								</simpleemitter>
+							</particle>
+						</simpleemitter>
+
+						<simpleemitter
+							count="1"
+							delay="0"
+							bone="_bone_cyclone01"
+							spawnrate="2000"
+							particlelife="5000"
+						>
+							<particle>
+								<simpleemitter
+									bone="_bone_cyclone01"
+									spawnrate="75"
+									count="20"
+									particlelife="1000"
+									gravity="-55"
+									speed="40"
+									drag=".08"
+									acceleration="0"
+									position="0 0 0"
+									material="/shared/effects/materials/phantom_smoke_10.material"
+									offsetsphere="20 20 50"
+									minangle="90"
+									maxangle="-90"
+								>
+									<particle 
+										startcolor="1 1 1"
+										midcolor="0 .5 .25"
+										endcolor="0"
+										midcolorpos=".1"
+										startframe="0"
+										endframe="1"
+										startwidth="20"
+										midwidth="15"
+										endwidth="6"
+										midwidthpos=".5"
+										startheight="0"
+										endheight="1000"
+										lockup="true"
+									/>
+								</simpleemitter>
+							</particle>
+						</simpleemitter>
+
+						<template name="wind">
+							<simpleemitter
+								delay="250"
+								bone="{bone}"
+								spawnrate="8"
+								life="3500"
+								startparticlecolor="1 1 1"
+								endparticlecolor="1 1 1"
+								maxparticlelife="500"
+								minparticlelife="400"
+								minspeed="-50"
+								maxspeed="51"
+								acceleration="1"
+								position="0 0 -50"
+								minangle="0"
+								maxangle="0"
+								material="/shared/effects/materials/corona_06.material"
+								offsetsphere=" 0 0 10"
+								direction="0 0 1"
+							>
+								<particle 
+									minangle="-360"
+									maxangle="360"
+									anglespeed="220"
+									lockup="1"
+									pitch="-90"
+									startcolor="0 0 0"
+									midcolor="0 .15 .15"
+									endcolor="0 0 0"
+									midcolorpos=".5"
+									minstartsize="30"
+									maxstartsize="60"
+									midsize="{size}"
+									endsize="{size2}"
+									midsizepos=".3"
+									startstickiness="0"
+									endstickiness="0"
+									startalpha="1"
+									endalpha="0"
+								/>
+								
+								<particle 
+									minangle="-360"
+									maxangle="360"
+									anglespeed="220"
+									lockup="1"
+									pitch="-90"
+									startcolor="0 0 0"
+									midcolor="0 .1 .1"
+									endcolor="0 0 0"
+									midcolorpos=".5"
+									minstartsize="30"
+									maxstartsize="60"
+									midsize="{size}"
+									endsize="{size2}"
+									midsizepos=".3"
+									startstickiness="0"
+									endstickiness="0"
+									startalpha="1"
+									endalpha="0"
+								/>
+							</simpleemitter>	
+						
+							<billboard
+								delay="1000"
+								life="2700"
+								bone="{bone}"
+								material="/shared/effects/materials/flux_ring.material"
+								position="0 0 0"
+								size="{size}"
+								roll="105"
+								rollspeed="{speed}"
+								color="0 .15 .15"
+								lockup="true"
+								lockright="true"
+								pitch="90"
+								yaw="0"
+								startalpha="1"
+								endalpha="0"
+							/>
+						</template>
+						<instance name="wind"  size="120"  size2="80" roll="180" speed="1600" orbit="-10" origin="40" bone="_bone_cyclone04"/>
+						<instance name="wind"  size="180"  size2="90" roll="220" speed="400" orbit="-8" origin="55" bone="_bone_cyclone05"/>
+						<instance name="wind" size="230"  size2="100" roll="260" speed="400" orbit="-4" origin="70" bone="_bone_cyclone06"/>
+						<instance name="wind"  size="300"  size2="120" roll="320" speed="400" orbit="-4" origin="80" bone="_bone_cyclone07"/>
+					</model>
+				</particle>
+			</simpleemitter>
+			
+			
+			
+			
+			
+			<!-- orbit -->
+			<model
+				delay="1400"
+				bone="_bone_center"
+				model="/heroes/andromeda/ability_03/effects/orbit.mdf"
+				anim="idle"
+				scale="1.25"
+				roll="45"
+				yaw="80"
+				yawspeed="0"
+				position="0 0 0"
+			>
+				<model
+					bone="_bone_fx"
+					position="0 0 0"
+					color="1 6 3"
+					model="/heroes/kenisis/alt6/ability_02/effects/stones_single/model.mdf"
+					material="/shared/effects/materials/shell2.material"
+					anim="idle"
+					expirelife="125"
+					scale="1"
+					yawspeed="180"
+					pitchspeed="180"
+					startalpha="1"
+					endalpha="0"
+				>
+				</model>
+
+				<simpleemitter
+					bone="_bone_fx"
+					spawnrate="50"
+					drag=".001"
+					minparticlelife="500"
+					maxparticlelife="1000"
+					offsetsphere="10"
+					gravity="-1"
+					minspeed="10"
+					maxspeed="25"								
+					direction="0 0 1"
+					minangle="-45"
+					maxangle="45"
+					material="/shared/effects/materials/flare_03.material"
+					inheritvelocity=".35"				
+				>			
+					<particle
+						startcolor="0 .25 .25"
+						midcolor="0 .35 .25"
+						endcolor="0 0 0"
+						midcolorpos=".75"
+						size="15"
+						lockup="false"
+						lockright="false"
+						minangle="-360"
+						maxangle="1"
+						minanglespeed="110"
+						maxanglespeed="-110"
+					/>
+				</simpleemitter>
+			</model>			
+			
+			<model
+				delay="1800"
+				bone="_bone_center"
+				model="/heroes/andromeda/ability_03/effects/orbit.mdf"
+				anim="idle"
+				scale="1.25"
+				roll="135"
+				yaw="80"
+				yawspeed="0"
+				position="0 0 0"
+			>
+				<model
+					bone="_bone_fx"
+					position="0 0 0"
+					color="1 6 3"
+					model="/heroes/kenisis/alt6/ability_02/effects/stones_single/model.mdf"
+					material="/shared/effects/materials/shell2.material"
+					anim="idle"
+					expirelife="125"
+					scale="1"
+					yawspeed="180"
+					pitchspeed="180"
+					startalpha="1"
+					endalpha="0"
+				>
+				</model>
+
+				<simpleemitter
+					bone="_bone_fx"
+					spawnrate="50"
+					drag=".001"
+					minparticlelife="500"
+					maxparticlelife="1000"
+					offsetsphere="10"
+					gravity="-1"
+					minspeed="10"
+					maxspeed="25"								
+					direction="0 0 1"
+					minangle="-45"
+					maxangle="45"
+					material="/shared/effects/materials/flare_03.material"
+					inheritvelocity=".35"				
+				>			
+					<particle
+						startcolor="0 .25 .25"
+						midcolor="0 .35 .25"
+						endcolor="0 0 0"
+						midcolorpos=".75"
+						size="15"
+						lockup="false"
+						lockright="false"
+						minangle="-360"
+						maxangle="1"
+						minanglespeed="110"
+						maxanglespeed="-110"
+					/>
+				</simpleemitter>
+			</model>	
+			
+			
+            <simpleemitter
+                delay="150"
+                life="3000"
+                spawnrate="40"
+                minparticlelife="700"
+                maxparticlelife="1000"
+                position="0 0 0"
+                material="/shared/effects/materials/light_rays.material"
+                depthbias="-1"
+                offsetradial="15 0 0"
+            >
+                <particle
+                    angle="0"
+                    rollspeed="30"
+                    yawspeed="100"
+                    flare="1"
+                    lockup="1"
+                    lockright="1"
+                    startcolor="0" midcolor="0 .25 .1" endcolor="0"
+                    startwidth="25" 
+                    minendwidth="50" maxendwidth="25"
+                    startheight="20"
+                    minendheight="60" maxendheight="180"
+                    startalpha="0" midalpha="1" endalpha="0" midalphapos=".1"
+                 />
+            </simpleemitter>	
+		</particlesystem>
+	</definitions>
+	<thread>
+		<spawnparticlesystem instance="instance0" particlesystem="system0" />
+		<waitfordeath instance="instance0" />
+		<!-- <die /> -->
+	</thread>
+</effect>
+
+<!-- [min|max][start|mid|end]property[speed][position] -->
+

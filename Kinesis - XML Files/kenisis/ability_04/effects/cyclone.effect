@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<effect name="cyclone" deferred="true">
+	<definitions>
+		<particlesystem name="system0" space="entity" scale="2.5">
+			<sound
+				linearfalloff="true"
+				falloffstart="400"
+				falloffend="1300"
+				volume="1"
+				sample="/heroes/kenisis/ability_01/sounds/cast.wav"
+			/>
+			
+			<simpleemitter
+				count="1"
+				spawnrate="2000"
+				expirelife="250"
+			>
+				<particle>
+					<model
+						model="cyclone/cyclone_bones.mdf"
+						anim="idle"
+						expirelife="250"
+						startalpha="1"
+						midalpha="1"
+						endalpha="0"
+						midalphapos=".5"
+						startscale=".65"
+						endscale="0"
+					>
+						<groundsprite
+							expirelife="250"
+							bone="_bone_cyclone01"
+							material="/shared/effects/materials/whitedot_ground.material"
+							size="75"
+							startcolor="0 .25 1"
+							endcolor="0 0 0"
+							midcolorpos=".95"
+							alpha="1"
+						/>
+						<groundsprite
+							expirelife="250"
+							bone="_bone_cyclone01"
+							material="/shared/effects/materials/whitedot_ground.material"
+							size="38"
+							startcolor=".5"
+							endcolor="0"
+							midcolorpos=".95"
+							alpha="1"
+						/>
+						<simpleemitter
+							count="1"
+							bone="_bone_cyclone01"
+							spawnrate="2000"
+							particlelife="5000"
+						>
+							<particle>
+								<simpleemitter
+									bone="_bone_cyclone01"
+									spawnrate="75"
+									count="20"
+									particlelife="1000"
+									gravity="-55"
+									speed="40"
+									drag=".08"
+									acceleration="0"
+									position="0 0 0"
+									material="/shared/effects/materials/phantom_smoke_10.material"
+									offsetsphere="20 20 50"
+									minangle="90"
+									maxangle="-90"
+								>
+									<particle 
+										startcolor="1 1 1"
+										midcolor="0 .25 .5"
+										endcolor="0"
+										midcolorpos=".1"
+										startframe="0"
+										endframe="1"
+										startwidth="20"
+										midwidth="15"
+										endwidth="6"
+										midwidthpos=".5"
+										startheight="0"
+										endheight="1000"
+										lockup="true"
+									/>
+								</simpleemitter>
+							</particle>
+						</simpleemitter>
+						<simpleemitter
+							count="1"
+							delay="1000"
+							bone="_bone_cyclone01"
+							spawnrate="2000"
+							particlelife="5000"
+						>
+							<particle>
+								<simpleemitter
+									bone="_bone_cyclone01"
+									spawnrate="75"
+									count="20"
+									particlelife="1000"
+									gravity="-55"
+									speed="40"
+									drag=".08"
+									acceleration="0"
+									position="0 0 0"
+									material="/shared/effects/materials/phantom_smoke_10.material"
+									offsetsphere="20 20 50"
+									minangle="90"
+									maxangle="-90"
+								>
+									<particle 
+										startcolor="1 1 1"
+										midcolor="0 .25 .5"
+										endcolor="0"
+										midcolorpos=".1"
+										startframe="0"
+										endframe="1"
+										startwidth="20"
+										midwidth="15"
+										endwidth="6"
+										midwidthpos=".5"
+										startheight="0"
+										endheight="1000"
+										lockup="true"
+									/>
+								</simpleemitter>
+							</particle>
+						</simpleemitter>
+						<template name="wind">
+							<billboard
+								bone="{bone}"
+								position="0 0 20"
+								expirelife="250"
+								color="1 1 1"
+								startalpha="1"
+								midalpha="1"
+								endalpha="1"
+								startparam=".025"
+								endparam="0"
+								startsize="100"
+								endsize="500"
+								material="/shared/effects/materials/refract_pinch.material"
+								lockup="1"
+								pitch="90"
+							/>
+							<billboard
+								expirelife="250"
+								bone="{bone}"
+								material="/shared/effects/materials/flux_ring.material"
+								position="0 0 0"
+								size="{size}"
+								roll="105"
+								rollspeed="{speed}"
+								color="0 .1 .225"
+								lockup="true"
+								lockright="true"
+								pitch="90"
+								yaw="0"
+							/>
+						</template>
+						<instance name="wind"  size="120"  size2="80" roll="180" speed="1600" orbit="-10" origin="40" bone="_bone_cyclone04"/>
+						<instance name="wind"  size="180"  size2="90" roll="220" speed="400" orbit="-8" origin="55" bone="_bone_cyclone05"/>
+						<instance name="wind" size="230"  size2="100" roll="300" speed="400" orbit="-4" origin="70" bone="_bone_cyclone06"/>
+						<instance name="wind"  size="320"  size2="140" roll="360" speed="400" orbit="-4" origin="80" bone="_bone_cyclone07"/>
+						<model
+							bone="_bone_cyclone04"
+							model="stones/model.mdf"
+							material="/shared/effects/materials/shell2.material"
+							anim="idle"
+							startcolor="0 2 4"
+							endcolor="0 0 0"
+							scale=".55"
+							expirelife="250"
+							startalpha=".75"
+							endalpha="0"
+							minyaw="0"
+							maxyaw="360"
+							minyawspeed="-180"
+							maxyawspeed="-360"
+						>
+							<billboard
+								bone="_bone_fx_01"
+								material="/shared/effects/materials/whitedot.material"
+								position="0 0 0"
+								size="50"
+								roll="105"
+								color="0 .1 .5"
+								lockup="true"
+								lockright="true"
+								pitch="90"
+								yaw="0"
+							/>
+							<billboard
+								bone="_bone_fx_02"
+								material="/shared/effects/materials/whitedot.material"
+								position="0 0 0"
+								size="50"
+								roll="105"
+								color="0 .1 .5"
+								lockup="true"
+								lockright="true"
+								pitch="90"
+								yaw="0"
+							/>
+							<billboard
+								bone="_bone_fx_03"
+								material="/shared/effects/materials/whitedot.material"
+								position="0 0 0"
+								size="50"
+								roll="105"
+								color="0 .1 .5"
+								lockup="true"
+								lockright="true"
+								pitch="90"
+								yaw="0"
+							/>
+							<billboard
+								bone="_bone_fx_04"
+								material="/shared/effects/materials/whitedot.material"
+								position="0 0 0"
+								size="50"
+								roll="105"
+								color="0 .1 .5"
+								lockup="true"
+								lockright="true"
+								pitch="90"
+								yaw="0"
+							/>
+						</model>
+						<model
+							bone="_bone_cyclone05"
+							model="stones/model.mdf"
+							material="/shared/effects/materials/shell2.material"
+							anim="idle"
+							startcolor="0 2 4"
+							endcolor="0 0 0"
+							scale=".85"
+							expirelife="250"
+							startalpha=".75"
+							endalpha="0"
+							minyaw="0"
+							maxyaw="360"
+							minyawspeed="-180"
+							maxyawspeed="-360"
+						>
+							<billboard
+								bone="_bone_fx_01"
+								material="/shared/effects/materials/whitedot.material"
+								position="0 0 0"
+								size="50"
+								roll="105"
+								color="0 .1 .5"
+								lockup="true"
+								lockright="true"
+								pitch="90"
+								yaw="0"
+							/>
+							<billboard
+								bone="_bone_fx_02"
+								material="/shared/effects/materials/whitedot.material"
+								position="0 0 0"
+								size="50"
+								roll="105"
+								color="0 .1 .5"
+								lockup="true"
+								lockright="true"
+								pitch="90"
+								yaw="0"
+							/>
+							<billboard
+								bone="_bone_fx_03"
+								material="/shared/effects/materials/whitedot.material"
+								position="0 0 0"
+								size="50"
+								roll="105"
+								color="0 .1 .5"
+								lockup="true"
+								lockright="true"
+								pitch="90"
+								yaw="0"
+							/>
+							<billboard
+								bone="_bone_fx_04"
+								material="/shared/effects/materials/whitedot.material"
+								position="0 0 0"
+								size="50"
+								roll="105"
+								color="0 .1 .5"
+								lockup="true"
+								lockright="true"
+								pitch="90"
+								yaw="0"
+							/>
+						</model>
+						<model
+							bone="_bone_cyclone06"
+							model="stones/model.mdf"
+							material="/shared/effects/materials/shell2.material"
+							anim="idle"
+							startcolor="0 2 4"
+							endcolor="0 0 0"
+							scale="1.25"
+							expirelife="250"
+							startalpha=".75"
+							endalpha="0"
+							minyaw="0"
+							maxyaw="360"
+							minyawspeed="-180"
+							maxyawspeed="-360"
+						>
+							<billboard
+								bone="_bone_fx_01"
+								material="/shared/effects/materials/whitedot.material"
+								position="0 0 0"
+								size="50"
+								roll="105"
+								color="0 .1 .5"
+								lockup="true"
+								lockright="true"
+								pitch="90"
+								yaw="0"
+							/>
+							<billboard
+								bone="_bone_fx_02"
+								material="/shared/effects/materials/whitedot.material"
+								position="0 0 0"
+								size="50"
+								roll="105"
+								color="0 .1 .5"
+								lockup="true"
+								lockright="true"
+								pitch="90"
+								yaw="0"
+							/>
+							<billboard
+								bone="_bone_fx_03"
+								material="/shared/effects/materials/whitedot.material"
+								position="0 0 0"
+								size="50"
+								roll="105"
+								color="0 .1 .5"
+								lockup="true"
+								lockright="true"
+								pitch="90"
+								yaw="0"
+							/>
+							<billboard
+								bone="_bone_fx_04"
+								material="/shared/effects/materials/whitedot.material"
+								position="0 0 0"
+								size="50"
+								roll="105"
+								color="0 .1 .5"
+								lockup="true"
+								lockright="true"
+								pitch="90"
+								yaw="0"
+							/>
+						</model>
+						<model
+							bone="_bone_cyclone07"
+							model="stones/model.mdf"
+							material="/shared/effects/materials/shell2.material"
+							anim="idle"
+							startcolor="0 2 4"
+							endcolor="0 0 0"
+							scale="1.5"
+							expirelife="250"
+							startalpha=".75"
+							endalpha="0"
+							minyaw="0"
+							maxyaw="360"
+							minyawspeed="-180"
+							maxyawspeed="-360"
+						>
+							<billboard
+								bone="_bone_fx_01"
+								material="/shared/effects/materials/whitedot.material"
+								position="0 0 0"
+								size="50"
+								roll="105"
+								color="0 .1 .5"
+								lockup="true"
+								lockright="true"
+								pitch="90"
+								yaw="0"
+							/>
+							<billboard
+								bone="_bone_fx_02"
+								material="/shared/effects/materials/whitedot.material"
+								position="0 0 0"
+								size="50"
+								roll="105"
+								color="0 .1 .5"
+								lockup="true"
+								lockright="true"
+								pitch="90"
+								yaw="0"
+							/>
+							<billboard
+								bone="_bone_fx_03"
+								material="/shared/effects/materials/whitedot.material"
+								position="0 0 0"
+								size="50"
+								roll="105"
+								color="0 .1 .5"
+								lockup="true"
+								lockright="true"
+								pitch="90"
+								yaw="0"
+							/>
+							<billboard
+								bone="_bone_fx_04"
+								material="/shared/effects/materials/whitedot.material"
+								position="0 0 0"
+								size="50"
+								roll="105"
+								color="0 .1 .5"
+								lockup="true"
+								lockright="true"
+								pitch="90"
+								yaw="0"
+							/>
+						</model>
+<!--
+						<billboard
+							expirelife="250"
+							bone="_bone_cyclone07"
+							material="/shared/effects/materials/flux_ring.material"
+							position="0 0 0"
+							startsize="200"
+							endsize="400"
+							roll="105"
+							rollspeed="500"
+							color="0 0 .3"
+							startalpha=".5"
+							midalpha="1"
+							endalpha="0"
+							midalphapos=".2"
+							lockup="true"
+							lockright="true"
+							pitch="90"
+							yaw="0"
+						/>
+						<billboard
+							expirelife="250"
+							bone="_bone_cyclone07"
+							material="/shared/effects/materials/flux_ring.material"
+							position="0 0 0"
+							startsize="200"
+							endsize="400"
+							roll="105"
+							rollspeed="500"
+							startcolor="0 .2 .5"
+							endcolor=" 0 0 0"
+							midcolorpos=".7"
+							lockup="true"
+							lockright="true"
+							pitch="90"
+							yaw="0"
+						/>
+-->
+					</model>
+				</particle>
+			</simpleemitter>
+			<sound
+			    soundloop="true"
+			    fadein="50"
+			    fadeout="500"
+				linearfalloff="true" 
+             	falloffstart="200"
+				falloffend="1300"
+				volume="1"
+				sample="/heroes/kenisis/ability_01/sounds/state.wav"
+			/>
+		</particlesystem>
+	</definitions>
+	<thread>
+		<spawnparticlesystem instance="instance0" particlesystem="system0" />
+		<waitfordeath instance="instance0" />
+	</thread>
+</effect>

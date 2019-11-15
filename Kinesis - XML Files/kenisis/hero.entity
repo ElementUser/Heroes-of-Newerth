@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hero
+	name="Hero_Kenisis"
+
+	team="Legion"
+	icon="icon.tga"
+	portrait="icon.tga"
+	model="model.mdf"
+	skin=""
+	
+	passiveeffect="effects/body.effect"
+	respawneffect="/shared/effects/respawn.effect"
+	selectedsound="sounds/voice/select_%.wav"
+	selectedflavorsound="sounds/voice/select_flavour_%.wav"
+	confirmmovesound="sounds/voice/move_%.wav"
+	confirmattacksound="sounds/voice/attack_%.wav"
+	nomanasound="sounds/voice/no_mana.wav"
+	cooldownsound="sounds/voice/cooldown.wav"
+	announcersound="sounds/voice/hero_select.wav"
+	tauntedsound="sounds/voice/taunt_prior.wav"
+	tauntkillsound="sounds/voice/taunt_after.wav"
+	
+	preglobalscale="1.85"
+	modelscale="1"
+	effectscale="0.9"
+	boundsheight="112"
+	boundsradius="24"
+	selectionradius="44"
+	targetoffset="0 0 64"
+
+	category="magic cc"
+	difficulty="3.5"
+
+	solorating="2"
+	junglerating="0"
+	carryrating="0"
+	supportrating="1"
+	initiatorrating="0"
+	gankerrating="4"
+	pusherrating="0"
+	rangedrating="5"
+	meleerating="0"
+	
+	movespeed="290"
+	turnrate="540"
+	turnsmoothing="0.075"
+
+	maxhealth="150"
+	healthregen="0.25"
+	maxmana="0"
+	manaregen="0.01"
+
+	armor="0"
+	magicarmor="5"
+
+	inventory0="Ability_Kenisis1"
+	inventory1="Ability_Kenisis2"
+	inventory2="Ability_Kenisis3"
+	inventory3="Ability_Kenisis4"
+	inventory4="Ability_AttributeBoost"
+	inventory5=""
+	inventory6=""
+	inventory8="Ability_Taunt"
+	inventory9=""
+	inventory10=""
+	inventory11="Ability_Dance"
+	inventory12="Ability_AutomatedCourier"
+
+	attackduration="1000"
+	attackactiontime="400"
+	attackcooldown="1700"
+	attackdamagemin="21"
+	attackdamagemax="25"
+	attacknumanims="2"
+	attackoffset="0 40 70"
+	attackprojectile="Projectile_KenisisAttack"
+	attackrange="550"
+	attackstarteffect=""
+	attackactioneffect=""
+	attackimpacteffect=""
+	attacktype="ranged"
+	combattype="Hero"
+	unittype="masters_legacy_valid"
+
+	aggrorange="800"
+	sightrangeday="1800"
+	sightrangenight="800"
+	wanderrange="250"
+
+	primaryattribute="Intelligence"
+	strength="20"
+	strengthperlevel="1.6"
+	agility="15"
+	agilityperlevel="1.5"
+	intelligence="30"
+	intelligenceperlevel="2.0"
+	
+	corpsetime="3500"
+	corpsefadetime="1000"
+	corpsefadeeffect="/shared/effects/corpse_sink.effect"
+	
+	previewmodel="model.mdf"
+	previewpos="0 0 -80"
+	previewangles="0 0 0"
+	previewscale="1.8"
+	
+	storemodel="preview.mdf"
+	storepos="0 0 -30"
+	storeangles="0 0 0"
+	storescale="1.6"
+	storepassiveeffect="/heroes/kenisis/effects/body_store.effect"
+>
+	<recommendeditem name="Item_ManaPotion" />
+	<recommendeditem name="Item_MinorTotem" />
+	<recommendeditem name="Item_RunesOfTheBlight" />
+	<recommendeditem name="Item_HealthPotion" />
+	<recommendeditem name="Item_HomecomingStone" />
+	
+	<recommendeditem name="Item_FlamingEye" />
+	<recommendeditem name="Item_Strength5" />
+	<recommendeditem name="Item_Striders" />
+	<recommendeditem name="Item_Intelligence7" />
+	<recommendeditem name="Item_PortalKey" />
+	<recommendeditem name="Item_Evasion" />
+	<recommendeditem name="Item_Morph" />
+	
+	<modifier key="Adrenaline_Shard" modpriority="100"
+		preglobalscale="0.8"
+		model="/heroes/adrenaline/ability_01/effects/stone.mdf"
+		passiveeffect="/heroes/adrenaline/ability_01/effects/ground.effect"
+		
+		attackprojectile="Projectile_AdrenalineAttack"
+		
+		ismobile="true"
+		iscontrollable="false"
+		
+		attackrange="1800"
+		attackoffset="0 50 80"
+	>
+		<onattack>
+			<setproxy entity="this_entity" target="target_entity" />
+			<activatemodifierkey name="Adrenaline_Shard" />
+		</onattack>
+		
+		<onframe>
+			<compare a="this_proxy_entity" b="0" op="ne">
+				<applystate name="State_Adrenaline_Ability1_Sight" target="this_proxy_entity" continuous="true" duration="1000" timeout="frametime" />
+			</compare>
+		</onframe>
+	</modifier>
+	
+	<modifier key="ult_boost" modpriority="101"
+		passiveeffect="effects/boost.effect"
+	>
+	</modifier>
+	
+	<modifier key="iamsheeped" modpriority="150"
+		passiveeffect=""
+	/>
+	
+	<modifier key="Something_Lifted" modpriority="150"
+		walkanim="walk_2"
+		idleanim="idle_2"
+		boredanim="bored_2"
+	/>
+
+	<modifier key="soccer" modpriority="190" primaryattribute="" 
+		turnrate="650" magicarmor="0" healthregen="2.5" armor="0" manaregen="0"
+		maxmana="100"
+		attackrange="400"
+		movespeed="320"
+		maxhealth="425"
+		attackdamagemin="45"
+		attackdamagemax="45"
+		intelligence="0"
+		strength="0"
+		agility="0"
+		inventory0="Ability_Soccer_SlideKick"
+		inventory1="Ability_Soccer_Sprint"
+		inventory2="Ability_Kenisis1"
+		inventory3="Ability_Soccer_Kenisis4"
+		inventory4="Ability_Kenisis3"
+		cancarryitems="false" inventory8="" inventory12=""
+	/>
+	
+	<altavatar key="Hero_Kenisis.Alt" modpriority="1"
+		altavatar="true"
+		
+		passiveeffect="alt/effects/body.effect"
+		
+		attackoffset="0 40 85"
+		preglobalscale="2.2"
+		
+		icon2="alt/icon.tga"
+		portrait="alt/icon.tga"
+		model="alt/model.mdf"
+	
+     	selectedsound="alt/sounds/voice/select_%.wav"
+	    selectedflavorsound="alt/sounds/voice/select_flavour_%.wav"
+	    confirmmovesound="alt/sounds/voice/move_%.wav"
+	    confirmattacksound="alt/sounds/voice/attack_%.wav"
+	    nomanasound="alt/sounds/voice/no_mana.wav"
+	    cooldownsound="alt/sounds/voice/cooldown.wav"
+	    tauntedsound="alt/sounds/voice/taunt_prior.wav"
+	    tauntkillsound="alt/sounds/voice/taunt_after.wav"
+	
+		previewmodel="alt/preview.mdf"
+		previewpos="0 0 -85"
+		previewangles="0 0 0"
+		previewscale="2"
+		
+		storemodel="alt/preview.mdf"
+		storepos="0 -100 -25"
+		storeangles="0 0 0"
+		storescale="2"
+		storepassiveeffect="/heroes/kenisis/effects/body_store.effect"
+	/>
+	
+	<altavatar key="Hero_Kenisis.Alt2" modpriority="1"
+		altavatar="true"
+		
+		passiveeffect="alt2/effects/body.effect"
+		
+		attackoffset="0 75 115"
+		attackprojectile="Projectile_KenisisAttack_Alt"
+		
+		preglobalscale="1.55"
+		
+		icon2="alt2/icon.tga"
+		portrait="alt2/icon.tga"
+		model="alt2/model.mdf"
+	
+     	selectedsound="alt2/sounds/voice/select_%.wav"
+	    selectedflavorsound="alt2/sounds/voice/select_flavour_%.wav"
+	    confirmmovesound="alt2/sounds/voice/move_%.wav"
+	    confirmattacksound="alt2/sounds/voice/attack_%.wav"
+	    nomanasound="alt2/sounds/voice/no_mana.wav"
+	    cooldownsound="alt2/sounds/voice/cooldown.wav"
+	    tauntedsound="alt2/sounds/voice/taunt_prior.wav"
+	    tauntkillsound="alt2/sounds/voice/taunt_after.wav"
+	
+		previewmodel="alt2/preview.mdf"
+		previewpos="0 0 -85"
+		previewangles="0 0 0"
+		previewscale="1.5"
+		
+		storemodel="alt2/preview.mdf"
+		storepos="0 -100 -25"
+		storeangles="0 0 0"
+		storescale="1.4"
+		storepassiveeffect="/heroes/kenisis/alt2/effects/body_store.effect"
+	>
+		<modifier key="ult_boost" modpriority="101"
+			passiveeffect="alt2/effects/boost.effect"
+		>
+		</modifier>
+	</altavatar>
+	
+	<altavatar key="Alt3"
+		passiveeffect="alt3/effects/body.effect"
+		
+		attackoffset="0 75 115"
+		attackprojectile="Projectile_KenisisAttack_Alt3"
+		
+		preglobalscale="1.75"
+		
+		icon2="alt3/icon.tga"
+		portrait="alt3/icon.tga"
+		model="alt3/model.mdf"
+	
+		selectedsound="alt3/sounds/voice/select_%.wav"
+		selectedflavorsound="alt3/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt3/sounds/voice/move_%.wav"
+		confirmattacksound="alt3/sounds/voice/attack_%.wav"
+		nomanasound="alt3/sounds/voice/no_mana.wav"
+		cooldownsound="alt3/sounds/voice/cooldown.wav"
+		tauntedsound="alt3/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt3/sounds/voice/taunt_after.wav"
+	
+		previewmodel="alt3/preview.mdf"
+		previewpos="0 0 -85"
+		previewangles="0 0 0"
+		previewscale="1.5"
+		
+		storemodel="alt3/preview.mdf"
+		storepos="0 -100 -25"
+		storeangles="0 0 0"
+		storescale="1.6"
+		storepassiveeffect="/heroes/kenisis/alt3/effects/body_store.effect"
+		
+		corpsetime="500"
+		corpsefadetime="2500"
+	>
+		<onspawn>
+		<ownsproduct target="this_entity" product="aa.Hero_CorruptedDisciple.Alt3 aa.Hero_Jereziah.Alt4 aa.Hero_Silhouette.Alt4 aa.Hero_Berzerker.Alt5 aa.Hero_Prophet.Alt4">
+			<applystate name="State_Blind_Prophet_Set" target="this_entity" continuous="true" />
+		</ownsproduct>
+		</onspawn>
+		
+		<onrespawn>
+		<ownsproduct target="this_entity" product="aa.Hero_CorruptedDisciple.Alt3 aa.Hero_Jereziah.Alt4 aa.Hero_Silhouette.Alt4 aa.Hero_Berzerker.Alt5 aa.Hero_Prophet.Alt4">
+			<applystate name="State_Blind_Prophet_Set" target="this_entity" continuous="true" />
+		</ownsproduct>
+		</onrespawn>
+	
+		<modifier key="ult_boost" modpriority="101"
+			passiveeffect="alt3/effects/boost.effect"
+		>
+		</modifier>
+	</altavatar>
+	
+	<altavatar key="Alt4"
+		passiveeffect="alt4/effects/body.effect"
+		
+		attackoffset="0 75 115"
+		attackprojectile="Projectile_KenisisAttack"
+		
+		preglobalscale="1.75"
+		
+		icon2="alt4/icon.tga"
+		portrait="alt4/icon.tga"
+		model="alt4/model.mdf"
+	
+		selectedsound="alt4/sounds/voice/select_%.wav"
+		selectedflavorsound="alt4/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt4/sounds/voice/move_%.wav"
+		confirmattacksound="alt4/sounds/voice/attack_%.wav"
+		nomanasound="alt4/sounds/voice/no_mana.wav"
+		cooldownsound="alt4/sounds/voice/cooldown.wav"
+		tauntedsound="alt4/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt4/sounds/voice/taunt_after.wav"
+	
+		previewmodel="alt4/preview.mdf"
+		previewpos="0 0 -85"
+		previewangles="0 0 0"
+		previewscale="1.5"
+		
+		storemodel="alt4/preview.mdf"
+		storepos="0 -100 -25"
+		storeangles="0 0 0"
+		storescale="1.6"
+		storepassiveeffect="/heroes/kenisis/alt4/effects/body_store.effect"
+		
+		corpsetime="500"
+		corpsefadetime="2500"
+	>
+	
+	
+		<onframe>
+			<activatemodifierkey name="Kenisis_Alt4_Sound" />
+		</onframe>
+		
+		<onspawn>
+			<ownsproduct target="this_entity" product="aa.Hero_Pyromancer.Alt5 aa.Hero_Tarot.Alt4 aa.Hero_Engineer.Alt5 aa.Hero_Dreadknight.Alt5">
+				<spawnunit name="Pet_Blackwal" target="this_entity" source="target_entity" offset="0 -100" facing="source_entity" pushentity="true" />
+			</ownsproduct>
+		</onspawn>
+		
+		<onrespawn>
+			<ownsproduct target="this_entity" product="aa.Hero_Pyromancer.Alt5 aa.Hero_Tarot.Alt4 aa.Hero_Engineer.Alt5 aa.Hero_Dreadknight.Alt5">
+				<spawnunit name="Pet_Blackwal" target="this_entity" source="target_entity" offset="0 -100" facing="source_entity" pushentity="true" />
+			</ownsproduct>
+		</onrespawn>
+		
+		<modifier key="ult_boost" modpriority="101"
+			passiveeffect="alt4/effects/boost.effect"
+		>
+		</modifier>
+	</altavatar>
+	
+	<altavatar key="Alt5"
+		passiveeffect="alt5/effects/body.effect"
+		
+		attackoffset="0 75 115"
+		attackprojectile="Projectile_KenisisAttack_Alt5"
+		
+		preglobalscale="1.35"
+		modelscale="1.2"
+		portraitcampos="12 -30 40"
+		
+		icon2="alt5/icon.tga"
+		portrait="alt5/icon.tga"
+		model="alt5/model.mdf"
+	
+		selectedsound="alt5/sounds/voice/select_%.wav"
+		selectedflavorsound="alt5/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt5/sounds/voice/move_%.wav"
+		confirmattacksound="alt5/sounds/voice/attack_%.wav"
+		nomanasound="alt5/sounds/voice/no_mana.wav"
+		cooldownsound="alt5/sounds/voice/cooldown.wav"
+		tauntedsound="alt5/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt5/sounds/voice/taunt_after.wav"
+	
+		previewmodel="alt5/preview.mdf"
+		previewpos="0 0 -85"
+		previewangles="0 0 0"
+		previewscale="1.5"
+		
+		storemodel="alt5/preview.mdf"
+		storepos="0 -100 -25"
+		storeangles="0 0 0"
+		storescale="1.3"
+		storepassiveeffect="/heroes/kenisis/alt5/effects/body_store.effect"
+		
+		corpsetime="500"
+		corpsefadetime="2500"
+		>
+		
+		<modifier key="ult_boost" modpriority="101"
+			passiveeffect="alt5/effects/boost.effect"
+		/>
+	</altavatar>	
+	
+	<altavatar key="Alt6"
+		passiveeffect="alt6/effects/body.effect"
+		
+		attackoffset="0 75 115"
+		attackprojectile="Projectile_KenisisAttack_Alt6"
+		
+		preglobalscale="2.5"
+		portraitcampos="16 -45 18"
+		
+		icon2="alt6/icon.tga"
+		portrait="alt6/icon.tga"
+		model="alt6/model.mdf"
+	
+		selectedsound="alt6/sounds/voice/select_%.wav"
+		selectedflavorsound="alt6/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt6/sounds/voice/move_%.wav"
+		confirmattacksound="alt6/sounds/voice/attack_%.wav"
+		nomanasound="alt6/sounds/voice/no_mana.wav"
+		cooldownsound="alt6/sounds/voice/cooldown.wav"
+		tauntedsound="alt6/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt6/sounds/voice/taunt_after.wav"
+	
+		previewmodel="alt6/preview.mdf"
+		previewpos="0 0 -85"
+		previewangles="0 0 0"
+		previewscale="1.5"
+		
+		storemodel="alt6/preview.mdf"
+		storepos="0 -100 -25"
+		storeangles="0 0 0"
+		storescale="2.2"
+		storepassiveeffect="/heroes/kenisis/alt6/effects/body_store.effect"
+		
+		corpsetime="500"
+		corpsefadetime="2500"
+	>
+		
+		<modifier key="ult_boost" modpriority="101"
+			passiveeffect="alt6/effects/boost.effect"
+		/>
+		
+		<onspawn>
+			<ownsproduct target="this_entity" product="aa.Hero_Gauntlet.Alt10 aa.Hero_Flux.Alt6 aa.Hero_Scout.Alt11 aa.Hero_Prisoner.Alt9 aa.Hero_Kenisis.Alt6 aa.Hero_Riptide.Alt7" >
+				<setactivemodifierkey name="Knockout_set_efx" />
+				<activatemodifierkey name="Knockout_set_taunt" />
+			</ownsproduct>
+		</onspawn>
+		
+		<onrespawn>
+			<ownsproduct target="this_entity" product="aa.Hero_Gauntlet.Alt10 aa.Hero_Flux.Alt6 aa.Hero_Scout.Alt11 aa.Hero_Prisoner.Alt9 aa.Hero_Kenisis.Alt6 aa.Hero_Riptide.Alt7" >			
+				<setactivemodifierkey name="Knockout_set_efx" />
+				<activatemodifierkey name="Knockout_set_taunt" />
+			</ownsproduct>
+		</onrespawn>
+		
+		<onkilled>
+			<ownsproduct target="this_entity" product="aa.Hero_Gauntlet.Alt10 aa.Hero_Flux.Alt6 aa.Hero_Scout.Alt11 aa.Hero_Prisoner.Alt9 aa.Hero_Kenisis.Alt6 aa.Hero_Riptide.Alt7" >
+				<setactivemodifierkey name="" />
+			</ownsproduct>
+		</onkilled>
+		
+		<modifier key="Knockout_set_efx" modpriority="1000"
+			tooleffectpath37="alt6/effects/body_knockout_set.effect"
+		/>
+	</altavatar>
+	
+	<altavatar key="Alt7"
+		passiveeffect="alt7/effects/body.effect"
+		
+		attackoffset="0 75 115"
+		attackprojectile="Projectile_KenisisAttack_Alt7"
+		
+		preglobalscale="2.5"
+		portraitcampos="16 -45 6"
+		
+		icon2="alt7/icon.tga"
+		portrait="alt6/icon.tga"
+		model="alt7/model.mdf"
+
+		previewmodel="alt7/preview.mdf"
+		previewpos="0 0 -85"
+		previewangles="0 0 0"
+		previewscale="1.5"
+		
+		selectedsound="alt7/sounds/voice/select_%.wav"
+		selectedflavorsound="alt7/sounds/voice/select_flavour_%.wav"
+		confirmmovesound="alt7/sounds/voice/move_%.wav"
+		confirmattacksound="alt7/sounds/voice/attack_%.wav"
+		nomanasound="alt7/sounds/voice/no_mana.wav"
+		cooldownsound="alt7/sounds/voice/cooldown.wav"
+		tauntedsound="alt7/sounds/voice/taunt_prior.wav"
+		tauntkillsound="alt7/sounds/voice/taunt_after.wav"
+		
+		storemodel="alt7/preview.mdf"
+		storepos="0 -100 -30"
+		storeangles="0 0 0"
+		storescale="2.3"
+		storepassiveeffect="/heroes/kenisis/alt7/effects/body_store_mute.effect"
+		
+		corpsetime="500"
+		corpsefadetime="2500"
+	>
+		<modifier key="ult_boost" modpriority="101"
+			passiveeffect="alt7/effects/boost.effect"
+		/>
+	</altavatar>
+	
+</hero>

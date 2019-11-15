@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gadget
+	name="Gadget_Kenisis2"
+	
+	icon=""
+	portrait=""
+	model="/heroes/kenisis/ability_04/effects/cyclone/cyclone_bones.mdf"
+	passiveeffect=""
+	
+	preglobalscale="1"
+	modelscale="1.75"
+	effectscale="0.9"
+	boundsheight="0"
+	boundsradius="0"
+	isselectable="false"
+	iscontrollable="false"
+	selectionradius="0"
+	targetoffset="0 0 0"
+
+	canturn="true"
+	canrotate="true"
+	ismobile="false"
+
+	movespeed="450"
+	turnrate="900"
+
+	attacktype="none"
+	combattype="Ranged"
+
+	sightrangeday="0"
+	sightrangenight="0"
+
+	deathtime="0"
+	corpsetime="0"
+	
+	invulnerable="true"
+	drawonmap="false"
+	unitwalking="true"
+	
+	lifetime="8000"
+	
+	unittype="Levitated"
+>
+	<onframe/>
+	
+	<modifier key="kinesis_ability2_Moves"
+		ismobile="true"
+	>
+		<onframe>
+			<hasmodifier entity="this_proxy_entity" name="Kenisis_Projectile_Bound" />
+			<else>
+				<order command="follow" force="true" source="this_entity" target="this_owner_entity" />
+				
+				<hasmodifier entity="this_owner_entity" name="kinesis_ability2_Active">
+					<distance source="this_entity" target="this_owner_entity" />
+					<compare a="result" b="1500" op="gt">
+						<expirestate name="State_Kenisis_Ability2" target="this_proxy_entity" />
+						<kill target="this_entity" source="" />
+					</compare>
+				</hasmodifier>
+				<else>
+					<expirestate name="State_Kenisis_Ability2" target="this_proxy_entity" />
+					<kill target="this_entity" source="" />
+				</else>
+			</else>
+		</onframe>
+		
+		<onexpired>
+			<hasmodifier entity="this_proxy_entity" name="kinesis_ability4_Affected" />
+			<else>
+				<teleport source="this_proxy_entity" target="this_entity" />
+			</else>
+		</onexpired>
+	</modifier>
+</gadget>

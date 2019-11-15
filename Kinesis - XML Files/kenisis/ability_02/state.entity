@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<state
+	name="State_Kenisis_Ability2"
+	
+	icon="icon.tga"
+	passiveeffect="effects/state_in_air.effect"
+	ishidden="true"
+	
+	invulnerable="true"
+	disarmed="true"
+	silenced="true"
+	immobilized="true"
+	perplexed="true"
+	
+	unitwalking="true"
+	buildingwalking="true"
+	cliffwalking="true"
+	treewalking="true"
+	
+	unselectable="true"
+	
+	effecttype="StatusDebuff"
+	allowtransfer="true"
+	
+	modifierkey="Kenisis_Lifted"
+>
+
+	<altavatar key="Hero_Kenisis.Alt2" modpriority="1"
+		passiveeffect="/heroes/kenisis/alt2/ability_02/effects/state_in_air.effect"
+		unselectable="true"
+	/>
+	
+	<altavatar key="Hero_Kenisis.Alt4" modpriority="1"
+		passiveeffect="/heroes/kenisis/alt4/ability_02/effects/state_in_air.effect"
+	/>
+
+	<altavatar key="Hero_Kenisis.Alt5" modpriority="1"
+		passiveeffect="/heroes/kenisis/alt5/ability_02/effects/state_in_air.effect"
+	/>
+	
+	<altavatar key="Hero_Kenisis.Alt6" modpriority="1"
+		passiveeffect="/heroes/kenisis/alt6/ability_02/effects/state_in_air.effect"
+	/>
+	
+	<altavatar key="Hero_Kenisis.Alt7" modpriority="1"
+		passiveeffect="/heroes/kenisis/alt7/ability_02/effects/state_in_air.effect"
+	/>
+</state>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<state
+	name="State_Kenisis_Ability4_Modifier"
+
+	ishidden="true"
+	
+	modifierkey="kinesis_ability4_Active"
+>
+	<modifier key="ult_boost" modpriority="100"
+		modifierkey2="kinesis_ability4_BoostActive"
+	>
+	</modifier>
+</state>

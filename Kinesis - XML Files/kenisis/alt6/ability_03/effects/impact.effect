@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<effect deferred="true">
+	<definitions>
+		<particlesystem name="system0" space="world" scale=".9">
+
+			<sound
+				linearfalloff="true"
+				falloffstart="400"
+				falloffend="1300"
+				volume="1"
+				sample="/heroes/kenisis/ability_03/sounds/impact_%.wav"
+			/>
+			
+			
+
+			
+
+			<model
+				life="400"
+				bone="_bone_center"
+				startcolor="1"
+				endcolor="1"
+				position="0 0 0"
+				model="shield/shield.mdf"
+
+				anim="idle"
+				startscale="0"
+				endscale="1"
+				yawspeed="180"
+				pitchspeed="180"
+				
+				startalpha="1"
+				midalpha=".75"
+				midalphapos=".65"
+				endalpha="0"
+			>
+			</model>
+
+
+			
+			
+			<billboard
+				bone="_bone_centerofchest"
+				life="500"
+				startcolor="0 .25 .165"
+				endcolor="0 0 0"
+				startsize="0"
+				endsize="100"
+				position="0 0 0"
+				material="/shared/effects/materials/whitedot.material"
+				depthbias="-75"
+			/>
+
+            <simpleemitter
+                bone="_bone_center"
+                count="5"
+                spawnrate="100"
+                particlelife="200"
+                material="/shared/effects/materials/rad_add.material"
+                offsetsphere="10"
+                position="0 0 0"
+            >
+                <particle 
+                    minangle="0"
+                    maxangle="360"
+                    minanglespeed="-25"
+                    maxanglespeed="25"
+                    startcolor="0"
+                    midcolor="0 .2 .15"
+                    endcolor="0"
+                    midcolorpos=".25"
+					
+                    minwidth="80"
+					maxwidth="150"
+                    startsize="50"
+                    minendsize="200"
+					maxendsize="300"
+					
+                    lockup="1"
+                    lockright="1"
+                    pitch="-90"
+                    startanchor="1"
+                    endanchor=".7"
+					
+					startalpha="1"
+					endalpha="0"
+                />
+            </simpleemitter>    
+			
+		</particlesystem>
+	</definitions>
+
+	<thread>
+		<spawnparticlesystem instance="instance0" particlesystem="system0" />
+		<waitfordeath instance="instance0" />
+	</thread>
+</effect>
+
+
+
+
+
+
+

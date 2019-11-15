@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<effect name="cyclone" deferred="true" useentityeffectscale="1">
+	<definitions>
+		<particlesystem name="system0" space="entity" scale="1">
+					
+
+			
+			<model
+				bone="_bone_origin"
+				model="/heroes/andromeda/ability_03/effects/orbit.mdf"
+				anim="idle"
+				scale="1.5"
+				roll="45"
+				yaw="80"
+				yawspeed="0"
+				position="0 0 100"
+			>
+				<model
+					bone="_bone_fx"
+					position="0 0 0"
+					startcolor="1.5 3 0"
+					endcolor="0 0 0"
+					model="/heroes/kenisis/ability_04/effects/single_stones/model.mdf"
+					material="/shared/effects/materials/shell2.material"
+					anim="idle"
+					expirelife="125"
+					scale=".5"
+					yawspeed="180"
+					pitchspeed="180"
+				>
+				</model>
+
+				
+			
+				<trailemitter
+					life="500"
+					bone="_bone_fx"
+					spawnrate="25"
+					particlelife="2500"
+					texpostime="2500"
+					texposscale="0.0"
+					texstretchscale="1.0"
+					material="/shared/effects/materials/arrow_trail.material"
+					startparticlecolor=".5 1 0"
+					endparticlecolor="0 0 0"
+				>
+					<particle
+						startcolor=".3 0 0"
+						endcolor="0 0 0"
+						startsize="10"
+						endsize="0"
+					/>
+				</trailemitter>
+				
+				<billboard
+					expirelife="250"
+					bone="_bone_fx"
+					material="/shared/effects/materials/whitedot.material"
+					startcolor=".5 0 0"
+					endcolor="0 0 0"
+					scale="1.25"
+					depthbias="25"
+				/>
+
+				<simpleemitter
+					bone="_bone_fx"
+					spawnrate="50"
+					drag=".001"
+					minparticlelife="500"
+					maxparticlelife="1000"
+					offsetsphere="10"
+					gravity="-1"
+					minspeed="10"
+					maxspeed="25"								
+					direction="0 0 1"
+					minangle="-45"
+					maxangle="45"
+					material="/shared/effects/materials/flare_03.material"
+					inheritvelocity=".35"				
+				>			
+					<particle
+						startcolor=".5"
+						midcolor="1 0 0"
+						endcolor="0 0 0"
+						midcolorpos=".75"
+						size="15"
+						lockup="false"
+						lockright="false"
+						minangle="-360"
+						maxangle="1"
+						minanglespeed="110"
+						maxanglespeed="-110"
+					/>
+				</simpleemitter>
+			</model>
+
+			<model
+				delay="1000"
+				bone="_bone_origin"
+				model="/heroes/andromeda/ability_03/effects/orbit.mdf"
+				anim="idle"
+				scale="1.5"
+				roll="135"
+				yaw="80"
+				yawspeed="0"
+				position="0 0 100"
+			>
+				
+			
+				<trailemitter
+					life="500"
+					bone="_bone_fx"
+					spawnrate="25"
+					particlelife="2500"
+					texpostime="2500"
+					texposscale="0.0"
+					texstretchscale="1.0"
+					material="/shared/effects/materials/arrow_trail.material"
+					startparticlecolor=".5 1 0"
+					endparticlecolor="0 0 0"
+				>
+					<particle
+						startcolor=".5 .1 0"
+						endcolor="0 0 0"
+						startsize="10"
+						endsize="0"
+					/>
+				</trailemitter>
+				
+				<billboard
+					expirelife="250"
+					bone="_bone_fx"
+					material="/shared/effects/materials/whitedot.material"
+					startcolor=".5 0 0"
+					endcolor="0 0 0"
+					scale="1.25"
+					depthbias="25"
+				/>
+
+				<simpleemitter
+					bone="_bone_fx"
+					spawnrate="50"
+					drag=".001"
+					minparticlelife="500"
+					maxparticlelife="1000"
+					offsetsphere="10"
+					gravity="-1"
+					minspeed="10"
+					maxspeed="25"								
+					direction="0 0 1"
+					minangle="-45"
+					maxangle="45"
+					material="/shared/effects/materials/flare_03.material"
+					inheritvelocity=".35"				
+				>			
+					<particle
+						startcolor=".5"
+						midcolor="1 .1 0"
+						endcolor="0 0 0"
+						midcolorpos=".75"
+						size="15"
+						lockup="false"
+						lockright="false"
+						minangle="-360"
+						maxangle="1"
+						minanglespeed="110"
+						maxanglespeed="-110"
+					/>
+				</simpleemitter>
+			</model>
+			
+		</particlesystem>
+		<particlesystem name="system1" space="world" scale="1">
+
+		</particlesystem>
+	</definitions>
+	<thread>
+		<spawnparticlesystem instance="instance0" particlesystem="system0" />
+		<spawnparticlesystem instance="instance1" particlesystem="system1" />
+      	<waitfordeath instance="instance0" />
+		<waitfordeath instance="instance1" />
+		<!-- <die /> -->
+	</thread>
+</effect>
+
+<!-- [min|max][start|mid|end]property[speed][position] -->
+
