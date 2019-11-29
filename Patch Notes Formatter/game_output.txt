@@ -1,525 +1,521 @@
-^980Version 4.8.0^*
+^980Version 4.8.1^*
 -------------
-^9808 October 2019^*
+^9803 December 2019^*
 
  
 
-==^960 Champions of Newerth (CoN) ^*==
-
-^947-^* The new Champions of Newerth Season will last indefinitely until further notice.
-   ^274*^* This can change at any point Garena & Frostburn Studios deems appropriate.
-
-^947-^* All players will be reset to a base MMR of 1500 at the start of this Season (instead of starting off at a base MMR of 1250).
-   ^274*^* This MMR reset combats all of the smurfing and stat manipulation that took place in the past, and the MMR system will be considered much more stable since it now uses the Legacy MMR system after the placement match period.
-   ^274*^* Placement Matches will still have additional weight for determining your initial rank, but the weight from these Placement Matches is much lighter than prior Seasons.
-
- 
-
-=^075 User Interface ^*=
-
-^947-^* Shadowpicking will no longer function during the Hero Ban Voting Phase of Ranked Pick (to prevent any confusion or unintended behaviour after the Voting Phase ends).
-
-^947+^* The following changes were implemented from the MVP Mod (credits to EngineerT):
-^947-^* Added a close button to the MVP window (so it does not obstruct your view if you wish to control your hero for a short time after the game ends).
-^947-^* Added a disconnect button to the MVP Window (so you can disconnect from the game without having to navigate to the menu).
-
-^947-^* As a result of the changes for this Champions of Newerth Season, the Ladder button has been re-enabled (since MMR will now really be "permanent" and matters a lot more than before).
-   ^274*^* Disclaimer: the Ladder's displayed information may not be accurate & may need additional time to synchronize properly, or may need additional time & resources to fix the issue. There is no estimated time for a fix if this feature does not display the correct information.
-
-^947-^* HoN Live has also been re-enabled to allow players to watch other HoN games once again!
-
- 
-
-=^075 General ^*=
-
-^075Well/Tarpit^*
-^947-^* Well's/Tarpit's attacks now deal 1.35x damage to enemy heroes.
-^947-^* Well's/Tarpit's attacks now have 25% Armor Penetration against enemy heroes.
-
- 
-
-=^075 Neutral Creeps ^*=
-
-^947-^* Aggro range increased from 225 to 275.
-   ^274*^* Applies to all neutral creeps except for those that are able to spawn in the Easy neutral camps.
-
-^059Dragon Master^*
-^947-^* Max Health reduced from 1800 to 1600.
-
-^059Dragon^*
-^947-^* Max Health increased from 900 to 1000.
-
- 
-
-=^075 Forests of Caldavar ("New") Map ^*=
-
-^947-^* The line of trees closest to the left & right sides of the map near each side lane's Tier 1 (outermost) Tower have been drastically shortened.
+==^960 Staff of the Master & Master's Legacy Changes ^*==
 
 
+
+^947+^* This patch will be the first in a series of multiple patches that will focus on rebalancing Staff of the Master effects across different heroes, as well as focus on making this item's effects "worth it" for heroes that don't normally pick up the item (e.g. carry heroes), but can obtain the effect from an ally's Master's Legacy.
+
+^947+^* Additionally, some of the staler Staff of the Master effects will be revamped, and some new & exciting Staff of the Master effects will be added to the game!
+
+^947+^* To ensure that the power of all of these effects are properly gated, the price of Master's Legacy has to increase by a substantial amount.
+
+
+
+^077Master's Legacy^*
+^947-^* Recipe Cost increased from 2000 Gold to 2500 Gold.
 
 _______________________________________________
 
+^059Aluna^*
 
+^256Emerald Lightning^*
+^947-^* Staff of the Master additions (new):
+   ^274*^* Bounce count increased from 1 to 2 (i.e. max potential units affected increased from 2 to 3).
+^947+^* Yes, this means Aluna can potentially gain another instance of +75 Attack Speed.
 
-==^960 Heroes ^*==
-
-
-
-^059Adrenaline^*
-
-^256Death's Halo^*
-^947-^* Stun duration increased from 1.25 seconds to 1.6 seconds.
-^947-^* Number of Dread Stacks applied increased from 10/20/30 to 12/24/36.
-
-_______________________________________________
-
-^059Amun-Ra^*
-
-^256Path of Destruction^*
-^947-^* Projectile travel time reduced from 0.7 seconds to 0.5 seconds.
-   ^274*^* The impact delay is untouched, but this is still considered a buff on the overall time it takes for the meteor to impact.
-^947-^* Health Cost reduced from 20% to 18% of Max Health.
-
-^256Ashes to Ashes^*
-^947-^* Health Regeneration increased from 1/2/3/4 to 2/3/4/5.
+^256Emerald Red^*
+^947-^* Staff of the Master additions (new):
+   ^274*^* Duration increased from 10 seconds to 20 seconds.
 
 _______________________________________________
 
 ^059Andromeda^*
 
 ^256Dimensional Link^*
-^947-^* Base Attack Damage bonus reduced from 12/18/24/30% to 10/14/18/22%.
+^947-^* Staff of the Master addition (new):
+   ^274*^* Attack Range is increased by 1000 for 4 seconds when an ability you use hits an enemy hero.
 
 ^256Void Rip^*
-^947-^* Damage dealt by the illusion reduced from 75% to 25%.
-^947-^* Damage received by the illusion increased from 125% to 200%.
+^947-^* Staff of the Master addition (to pre-existing):
+   ^274*^* Andromeda now also gains Magic Immunity for 3 seconds after casting this ability.
 
 _______________________________________________
 
 ^059Arachna^*
 
 ^256Spider Sting^*
-^947-^* Cast Range increased from 500 to 600.
-^947-^* Spiderlings now properly have a 600 range Night Vision.
+^947-^* Staff of the Master effect additions and changes (to pre-existing):
+   ^274*^* Cast Range increased to 900.
+   ^274*^* Cooldown reduced to 35/25/15 seconds.
+   ^274*^* Adult Spiderling's Max Health reduced from 600 to 500, and Attack Damage reduced from 90/120/150 to 50/75/100.
+   ^274*^* Child Spiderling's Max Health reduced from 350 to 250, and Attack Damage reduced from 15/25/35 to 10/15/20.
 
 _______________________________________________
 
-^059Artillery^*
+^059Armadon^*
 
-^256LRM^*
-^947-^* Base damage per missile increased from 9 to 10.
-^947-^* Bonus damage per shot fired without breaking channeling increased from 0.75% to 1.25%.
+^256Restless^*
+^947-^* Staff of the Master effect changes (to pre-existing):
+   ^274*^* Cooldown reduced from 50 seconds to 15 seconds.
+   ^274*^* Mana Cost reduced from 200 to 150.
+   ^274*^* Cast Range increased from 800 to 1100.
+   ^274*^* Travel speed increased from 750 to 1500 units per second.
 
-^256Homing Missile^*
-^947-^* Missile base speed increased from 100 to 250 units per second.
-^947-^* Missile acceleration increased from 150 to 300.
-   ^274*^* Note that the stun time is still based off the missile's distance travelled, so nothing has changed in terms of the stun time mathematics. This is ultimately a buff, as it allows the missile to hit an enemy faster.
+_______________________________________________
+
+^059Behemoth^*
+
+^256Enrage^*
+^947-^* Staff of the Master effect additions (new):
+   ^274*^* Now has a 1000 Cast Range, allowing Behemoth to leap to target location and casting Enrage at that location.
+   ^274*^* Heavyweight will not proc at Behemoth's original position if Behemoth travels to target location.
+   ^274*^* Enrage can be cast at your current location if the ability is double-activated.
+   ^274*^* Now grants Behemoth True Strike for the attack.
 
 _______________________________________________
 
 ^059Blitz^*
 
-^256Pilfering^*
-^947-^* Now Reveals the target while active.
+^256Lightning Shackles^*
+^947-^* Staff of the Master effect additions (to pre-existing):
+   ^274*^* Attack Speed Slow increased from 100 to 200.
+   ^274*^* Now also Sights & Reveals affected targets for the duration.
 
 _______________________________________________
 
-^059Bushwack^*
-^947-^* Turn rate increased from 450 degrees per second to 720 degrees per second.
+^059Cthulhuphant^*
+
+^256Dream of Madness^*
+^947-^* Staff of the Master effect addition (new):
+   ^274*^* No longer has the facing restriction.
 
 _______________________________________________
 
-^059Chronos^*
+^059Emerald Warden^*
 
-^256Chronofield^*
-^947-^* Staff of the Master effect only:
-   ^274*^* Cooldown is now reduced to 100 seconds (instead of being reduced to 75 seconds).
+^256Summon Gawain^*
+^947-^* Staff of the Master additions (to pre-existing):
+   ^274*^* Diving Strike: Now also applies a 0.3 second Stun.
+   ^274*^* Forest's Touch: Now also heals Allies 400 radius around the target for 200 Health over 5 seconds.
+   ^274*^* Emerald Storm: Now also Reveals affected targets. Lingers for 8 seconds after target leaves the storm.
+
+_______________________________________________
+
+^059Grinex^*
+
+^256Nether Strike^*
+^947-^* Staff of the Master addition (new):
+   ^274*^* Can now accumulate bonus damage up to 2 times before expending it on your next attack.
+
+^256Illusory Assault^*
+^947-^* Staff of the Master additions (new):
+   ^274*^* Grinex now retains Stealth without breaking it if he stays on the shadow trail.
+   ^274*^* Grinex now gains Single-Target Immunity while on the shadow trail (i.e. cannot be targeted by a spell or autoattacks).
+
+_______________________________________________
+
+^059Hammerstorm^*
+
+^256Hammer Throw^*
+^947-^* Staff of the Master effect changes (to pre-existing):
+   ^274*^* Hammer projectile speed increased from 1300 to 3000 units per second.
+   ^274*^* Cast Range increased from 900 to 1000.
+
+^256Brute Strength^*
+^947-^* Staff of the Master effect addition (new):
+   ^274*^* After activation, now emits an aura that increases the Base Damage of other ally heroes within 900 radius by 15/25/35% of their Base Damage.
+
+_______________________________________________
+
+^059Hellbringer^*
+
+^256Summon Malphas^*
+^947-^* Staff of the Master effect additions (new):
+   ^274*^* A second instance of this ability occurs at the target destination 0.75 seconds after the initial spellcast (will apply all effects on the second instance, including a second Malphas).
+   ^274*^* Malphas Max Health and Attack Damage are reduced by 25% if spawned this way.
+   ^274*^* Hellbringer can only have a max of 3 Malphas at any given time.
+
+_______________________________________________
+
+^059Moon Queen^*
+
+^256Moon Finale^*
+^947-^* Staff of the Master additions (to pre-existing):
+   ^274*^* Moon Beams now stun for 0.1 seconds.
+   ^274*^* Each Moon Beam instance from Moon Finale also deals 75% of the base Magic Damage in a 250 radius around the main target hit.
+
+_______________________________________________
+
+^059Pandamonium^*
+
+^256Flurry^*
+^947-^* Staff of the Master additions (to pre-existing):
+   ^274*^* Increased max charges from 1/2/3/4 to 2/3/4/5.
+   ^274*^* Procs on enemy units from Flurry now count as a real autoattack from Pandamonium.
+   ^274*^* Runed Cleaver will not apply its Cleave effect when attacking via Flurry.
+
+_______________________________________________
+
+^059Plague Rider^*
+
+^256Plague Carrier^*
+^947-^* No longer instantly kills ElitePet units (will deal the regular amount of damage instead).
+   ^274*^* This change primarily means that Hellbringer's Malphas will no longer be instantly killed by Plague Carrier.
+
+_______________________________________________
+
+^059Prophet^*
+
+^256Invigorate^*
+^947-^* Staff of the Master addition (new):
+   ^274*^* Cooldown reduced to 4 seconds.
+
+^256Shared Fate^*
+^947-^* Staff of the Master additions (new):
+   ^274*^* Damage from propagated autoattacks increased from 50% to 100%.
+   ^274*^* Slow duration increased from 1/1.5/2 seconds to 1.5/2/2.5 seconds.
+
+_______________________________________________
+
+^059Tundra^*
+
+^256Call of Winter^*
+^947-^* Staff of the Master additions (new):
+   ^274*^* Coeurl summon count increased from 1 to 2.
+   ^274*^* Passively increases the Max Health of Coeurl to 900/1000/1100/1200.
+
+_______________________________________________
+
+^059Vindicator^*
+
+^256Master's Incantation^*
+^947-^* Staff of the Master effect additions (new):
+   ^274*^* Bonus True Damage increased from 22/33/44/55% to 33/44/55/66% of your Intelligence.
+   ^274*^* Bonus True Damage multiplier against Silenced targets increased from 1.5x to 2x.
+   ^274*^* Now passively grants Vindicator 60 Attack Speed.
+
+_______________________________________________
+
+^059Xemplar^*
+
+^256Schism^*
+^947-^* Staff of the Master additions (new):
+   ^274*^* Spawns 2 extra illusions.
+   ^274*^* Illusion lifetime is increased to 40 seconds.
+
+_______________________________________________
+
+^059Zephyr^*
+
+^256Cyclones^*
+^947-^* Staff of the Master effect additions (new):
+   ^274*^* Max Cyclone count increased from 2/4/6/8 to 6/8/10/12
+   ^274*^* Passive Cyclone spawn interval reduced from 20 seconds to 4 seconds.
+
+^256Typhoon^*
+^947-^* Staff of the Master additions (new):
+   ^274*^* Increased radius from 550 to 825.
+   ^274*^* Duration increased from 6/8/10 to 8/10/12.
+
+_______________________________________________
+
+ 
+
+==^960 Design ^*==
+
+
+
+=^075 MvP Window ^*=
+
+^947-^* MvP Window's "close" button now hides the window instead.
+   ^274*^* Players can re-open the MvP Window by clicking on a new button at the top of the screen.
+^947-^* Votes are now hidden until the end of the voting phase.
+^947-^* Players can no longer vote for themselves.
+
+ 
+
+=^075 Heroes (Balance) ^*=
+
+
+
+^059Adrenaline^*
+
+^256Shard Blast^*
+^947-^* Cooldown increased from 0 seconds to 7.5/5/2.5/1 second(s).
+^947-^* Recatching the Shard now also reduces Shard Blast's cooldown by 2 seconds.
+
+_______________________________________________
+
+^059Amun-Ra^*
+^947-^* Base Armor reduced from 2.5 to 2.25.
+
+^256Path of Destruction^*
+^947-^* Health Cost increased from 18% to 20% of Max Health.
+
+^256Ignite^*
+^947-^* Extra Damage dealt based on Amun-Ra's Max Health reduced from 6% to 5%.
+
+_______________________________________________
+
+^059Andromeda^*
+
+^256Comet^*
+^947-^* Mana Cost increased from 90/100/110/120 to 100/110/120/130.
+
+_______________________________________________
+
+^059Apex^*
+
+^256Decimate^*
+^947-^* Mana Cost reduced from 75/90/105/120 to 65/80/95/110.
+
+^256Fire Surge^*
+^947-^* Magic Damage increased from 60/120/180/240 to 70/130/190/250.
+
+_______________________________________________
+
+^059Arachna^*
+^947-^* Base Strength increased from 18 to 19.
+^947-^* Strength growth per level increased from 1.7 to 2.0.
+
+_______________________________________________
+
+^059Armadon^*
+
+ Armordillo
+^947-^* Max Damage Reduction from the rear increased from 18/27/36/45% to 20/30/40/50%.
+^947-^* Spine Burst damage threshold when taking damage to the rear reduced from 150 Damage to 130 Damage.
+
+_______________________________________________
+
+^059Behemoth^*
+
+^256Enrage^*
+^947-^* Cooldown increased from 7/6/5/4 seconds to 8/7/6/5 seconds.
+^947-^* Bonus Base Damage increased from 75/150/225/300% to 125/200/275/350%.
+
+_______________________________________________
+
+^059Bramble^*
+
+^256Chomp!^*
+^947-^* This ability is now automatically leveled at level 1, making this a 5-point skill. The actual functionality of the ability is disabled when the skill is at level 1.
+   ^274*^* The sole purpose of this change is a quality-of-life change for the Staff of the Master effect for this ability in case Bramble gets a kill before leveling this ability.
+   ^274*^* The skill remains unchanged otherwise.
+
+_______________________________________________
+
+^059Calamity^*
+
+^256Funeral Pyre^*
+^947-^* Agility gain state on self now lasts for 1.75x the original state duration.
+
+_______________________________________________
+
+^059Chipper^*
+
+^256Focus Buffer^*
+^947-^* Cast time and cast action time for this ability has been removed.
+   ^274*^* Casting this ability will not interrupt Chipper's movement.
+^947-^* Ability can now be used while channeling.
+^947-^* No longer requires Chipper's facing to be within 180 degrees of the target of Focus Buffer.
 
 _______________________________________________
 
 ^059Defiler^*
-^947-^* Base Movement Speed increased from 290 to 295.
+^947-^* Base Movement Speed increased from 295 to 305.
 
 ^256Wave of Death^*
-^947-^* Cooldown changed from 9 seconds to 9.5/8.5/7.5/6.5 seconds.
-^947-^* Magic Damage reduced from 100/175/250/325 to 90/165/240/315.
-^947-^* Mana Cost reduced from 100/120/140/160 to 85/110/135/160.
+^947-^* Cooldown reduced from 9.5/8.5/7.5/6.5 to 8.5/7.5/6.5/5.5 seconds.
+^947-^* Magic Damage increased from 90/165/240/315 to 100/175/250/325.
 
 ^256Grave Silence^*
-^947-^* Duration reduced from 3/4/5/6 seconds to 2/2.5/3/3.5 seconds.
-^947-^* Mana Cost changed from 80/70/60/50 to 65.
-^947-^* Cooldown reduced from 15 seconds to 13 seconds.
+^947-^* Duration increased from 2/2.5/3/3.5 seconds to 2/2.7/3.3/4 seconds.
 
-^256Siphon Soul (Reworked from Power in Death)^*
-   ^274*^* Range: 650
-   ^274*^* Mana Cost: 80/100/120/140
-   ^274*^* Cooldown: 20 seconds
-^947-^* Target an enemy hero to latch onto a fragment of their soul for up to 5 seconds, dealing 20 Magic Damage per second and heals Defiler for 8 + 1/2/3/4% of the target's Max Health per second.
-^947-^* While active, the soul link also reduces the target's Movement Speed by 15% and increases Defiler's Movement Speed by 15%.
-^947-^* The soul link has a leash range of 800 units.
-
-^256Unholy Expulsion^*
-^947-^* Number of spirits changed from 6/12/18 to 8/15/22.
+^256Siphon Soul^*
+^947-^* Self-healing increased from 8 + 1/2/3/4% to 10 + 2/3/4/5% of the target's Max Health per second.
+^947-^* Cooldown reduced from 20 seconds to 15 seconds.
+^947-^* Movement Speed Slow on the target increased from 15% to 18%.
+^947-^* Movement Speed increase on Defiler increased from 15% to 18%.
 
 _______________________________________________
 
-^059Doctor Repulsor^*
+^059Electrician^*
 
-^256Opposite Charges^*
-^947-^* Ability can now be used on the closest enemy hero within its cast range from the caster via activation of the third ability of this hero as a subability (default hotkey "E").
-
-^256Ludicrous Speed^*
-^947-^* Cooldown reduced from 0.4 seconds to 0.3 seconds.
-^947-^* Now grants Doctor Repulsor 2/4/6 + 0/50/100% Mana Regeneration.
+^256Cleansing Shock^*
+^947-^* No longer instantly kills enemy summoned units.
+   ^274*^* Instead, now deals 1000 True Damage to enemy summoned units.
 
 _______________________________________________
 
-^059Draconis^*
+^059Emerald Warden^*
 
-^256Cataclysm^*
-^947-^* Now refreshes the cooldown of Draconic Defense when Cataclysm is used.
-
-_______________________________________________
-
-^059Ellonia^*
-
-^256Flash Freeze^*
-^947-^* Base Magic Damage increased from 40/60/80/100 to 55/80/105/130.
+^256Overgrowth^*
+^947-^* Cast Range increased from 600 to 650.
 
 _______________________________________________
 
-^059Gauntlet^*
+^059Forsaken Archer^*
 
-^256Gauntlet Blast^*
-^947-^* Staff of the Master effect only: active ability that attaches Gauntlet to his launched fist has been moved to a subability (default hotkey: "D").
-   ^274*^* Shares cooldown with his regular ultimate ability.
-   ^274*^* Gauntlet can still detach from the launched fist at any time using either his regular ultimate ability or the ultimate's subability.
-   ^274*^* Side note: Grapple's extra ability button was removed as a result, but activating the hotkey for Enfeeble (default hotkey "E") will still have the exact same functionality.
-
-_______________________________________________
-
-^059Gladiator^*
-
-^256Flagellation^*
-^947-^* Now only adds 0.5x bonus damage when attacking ally units.
+^256Split Fire^*
+^947-^* Split attack damage increased from 18/27/36/45% to 25/35/45/55%.
 
 _______________________________________________
 
 ^059Goldenveil^*
 
 ^256Perch & Plunge^*
-^947-^* Plunge: delay before Goldenveil lands to apply the Magic Damage & Stun reduced from 1 second to 0.6 seconds.
-^947-^* Plunge: Stun duration reduced from 1.6/1.9/2.2/2.5 seconds to 1.4/1.6/1.8/2 seconds.
+^947-^* Plunge: delay before Goldenveil lands to apply the Magic Damage & Stun increased from 0.6 seconds to 0.75 seconds.
+
+_______________________________________________
+
+^059Gunblade^*
+^947-^* Attack projectile speed increased from 1200 to 1500 units per second.
 
 _______________________________________________
 
 ^059Hellbringer^*
 
 ^256Evil Presence^*
-^947-^* Cooldown reduced from 15 seconds to 11 seconds.
-^947-^* Mana Cost increased from 50 to 65/80/95/110.
-^947-^* Targeting scheme changed from Target Unit to Target Position.
-^947-^* Movement Speed of the minion increased from 522 to 1600 when the ability is cast.
-^947-^* Enemy units affected by the minion explosion now also heal Hellbringer for 15/20/25/30% of Damage they receive for 5/6/7/8 seconds.
-^947-^* Negative Magic Armor duration increased from 5 seconds to 5/6/7/8 seconds.
-   ^274*^* Movement Speed Slow duration remains the same at 5 seconds.
-   ^274*^* Legacy Life Void has more or less been re-integrated on Hellbringer.
+^947-^* Radius increased from 250 to 325.
+
+^256Summon Malphas^*
+^947-^* Attack Damage for Malphas increased from 50/75/100 to 80/130/180.
+^947-^* Base Movement Speed for Malphas increased from 350/375/400 to 375/400/425.
+^947-^* Max Health for Malphas increased from 900/1350/1800 to 1000/1500/2000.
+^947-^* Base Attack Time for Malphas reduced from 1.8 seconds to 1.5 seconds.
 
 _______________________________________________
 
 ^059Keeper of the Forest^*
 
-^256Nature's Guidance^*
-^947-^* Camouflage state now has a 0.8 second linger time if the target farther than 400 units away from a tree.
-^947-^* While Camouflage is active, the next attack will apply a 0.5/0.8/1.1/1.4 second Root if the owner of Camouflage attacks out of stealth.
-
 ^256Animate Forest^*
-^947-^* Max Animated Tree spawn count changed from 1/2/3/4 to 4.
-^947-^* Max Health of Animated Trees from this ability reduced from 550 to 250/350/450/550.
-^947-^* Attack Damage of Animated Trees from this ability reduced from 28 to 16/20/24/28.
-^947-^* Cooldown reduced from 20 seconds to 17 seconds.
+^947-^* Max Health of Animated Trees from this ability increased from 250/350/450/550 to 370/430/490/550.
+^947-^* Attack Damage of Animated Trees from this ability increased from 16/20/24/28 to 19/22/25/28.
 
 ^256Strength in Numbers^*
-^947-^* Max Health of Animated Trees reduced from 275 to 155/195/235/275.
-^947-^* Attack Damage of Animated Trees from this ability reduced from 28 to 16/20/24/28.
-^947-^* Chance to spawn an Animated Tree is now reduced by 0.6x (multiplicatively) for each Animated Tree that exists from Strength in Numbers when attacking non-hero units.
-   ^274*^* Does not consider the Animated Trees from Animate Forest in this calculation.
+^947-^* Max Health of Animated Trees increased from 155/195/235/275 to 170/205/240/275.
+^947-^* Attack Damage of Animated Trees from this ability increased from 16/20/24/28 to 19/22/25/28.
 
 _______________________________________________
 
-^059Kinesis^*
+^059Lord Salforis^*
 
-^256Thoughtsteal^*
-^947-^* Now has a Mana Cost of 100/120/140/160.
-
-^256Telekinetic Control^*
-^947-^* No longer lifts player-controlled ally units if they have you flagged with NoHelp.
-
-^256Stasis Smash^*
-^947-^* Unit affected by Stasis Smash no longer gains 20% Damage Reduction.
-^947-^* Stun duration and stasis duration (for the side targets) reduced from 2.5/3/3.5 seconds to 2/2.5/3 seconds.
-^947-^* Movement Speed Slow duration after Stasis Smash expires reduced from 2 seconds to 1.5 seconds.
-^947-^* Movement Speed Slow now applies to all enemies in the area after Stasis Smash expires, including the lifted units (as opposed to only being applied to non-lifted units in the area).
+^256Mors Certissima^*
+^947-^* Mana Cost changed from 75/85/95/105 to 80/85/90/95.
+^947-^* Cooldown reduced from 12/10/8/6 seconds to 11/9/7/5 seconds.
 
 _______________________________________________
 
-^059Lodestone^*
+^059Moon Queen^*
+^947-^* Agility growth per level increased from 3.4 to 3.5.
 
-^256Headsmash^*
-^947-^* Ability can now be used on the closest enemy hero within its cast range from the caster via activation of the third ability of this hero as a subability (default hotkey "E").
+^256Multi-Strike^*
+^947-^* Damage penalty per bounce reduced from 30% to 25%.
 
 _______________________________________________
 
 ^059Nitro^*
 
 ^256Ballistic^*
-^947-^* Base Mana Cost reduced from 9 to 6.
-^947-^* Now becomes disabled if Nitro or Mauser is Disarmed.
-^947-^* No longer becomes disabled if Nitro or Mauser is Silenced.
+^947-^* Range changed from 800/900/1000/1100/1200 to 900.
+
+^256Divide & Conquer^*
+^947-^* Base Attack Time for Mauser increased from 1.2 to 1.7.
+^947-^* Attack Action Time for Mauser reduced from 0.4 seconds to 0.2 seconds.
+^947-^* Bonus Attack Damage multiplier for Mauser reduced from 1.2x to 1.1x.
 
 _______________________________________________
 
 ^059Ophelia^*
 
 ^256Nature's Wrath^*
-^947-^* Mana Cost increased from 70 to 70/80/90/100.
-^947-^* State duration reduced from 8 seconds to 6 seconds.
-^947-^* Movement Speed Slow changed from 15/20/25/30% to 16/19/22/25%.
-^947-^* Damage Amplification changed from 15/20/25/30% to 16/19/22/25%.
+^947-^* Mana Cost increased from 70/80/90/100 to 90/100/110/120.
+^947-^* Cooldown increased from 13/12/11/10 seconds to 14/13/12/11 seconds.
+
+^256Command^*
+^947-^* Mana Cost increased from 100 to 100/105/110/115.
 
 _______________________________________________
 
-^059Parallax^*
+^059Qi^*
 
-^256Earthshatter^*
-^947-^* Staff of the Master effect changes only:
-   ^274*^* Percentage of Magic Damage converted to SuperiorMagic Damage reduced from 50% to 40%.
-   ^274*^* Cooldown is now reduced to 55/45/35 seconds (instead of 35/30/25 seconds).
+^256Crippling Puncture^*
+^947-^* SuperiorMagic Damage increased from 60/85/110/135 to 100/120/140/160.
 
-_______________________________________________
-
-^059Pestilence^*
-^947-^* Agility growth per level increased from 1.5 to 1.8.
-
-^256Gore^*
-^947-^* Bonus Physical Damage when proccing increased from 20/40/60/80 to 40/60/80/100.
-
-^256Swarm^*
-^947-^* Armor reduction increased from 6/12/18 to 7/14/21.
-
-_______________________________________________
-
-^059Prisoner 945^*
-
-^256Shackled^*
-^947-^* Ability can now be used on the closest enemy hero within its cast range from the caster via activation of the third ability of this hero as a subability (default hotkey "E").
-
-_______________________________________________
-
-^059Rally^*
-
-^256Battle Experience^*
-^947-^* Armor Penetration for damage dealt by Rally changed from 20/40/60/80% to 25/40/55/70%.
-
-_______________________________________________
-
-^059Ravenor^*
-
-^256Static Shock^*
-^947-^* Max number of side targets affected by Static Shock increased from 2 to 3.
-   ^274*^* Total max number of targets affected by Static Shock increased from 3 to 4.
-
-_______________________________________________
-
-^059Riptide^*
-
-^256Watery Grave^*
-^947-^* Cast Range increased from 500 to 600.
-^947-^* Magic Damage changed from 90/180/270/360 to 95/170/250/330.
-^947-^* Attack Speed Slow reduced from 50% to 20%.
-
-^256Undertow^*
-^947-^* Cooldown changed from 14 seconds to 15/13/11/9 seconds.
-^947-^* Silence duration reduced from 2/2.5/3/3.5 seconds to 1.5/2/2.5/3 seconds.
-^947-^* Now deals 30/45/60/75 Magic Damage to enemies within radius upon impact.
-^947-^* Cast Range reduced from 900 to 800.
-^947-^* Undertow now ignores terrain, so Riptide will now travel to the destination in a straight line.
-
-^256In My Element^*
-^947-^* Minimap detection threshold radius when checking for nearby enemy heroes while in water increased from 800 units to 2500 units.
-
-^256Perfect Storm^*
-^947-^* Bonus Damage granted to allies increased from 10/15/20% to 15/25/35% of Riptide's Agility.
+^256A Thousand Cuts^*
+^947-^* Mana Cost reduced from 90/110/130/150 to 90/100/110/120.
+^947-^* Projectile Speed increased from 1200 to 1500 units per second.
+^947-^* Return projectile's touch radius increased from 115 to 250.
+^947-^* Mana consumed per second while active reduced from 4/8/12/16 to 3/6/9/12.
 
 _______________________________________________
 
 ^059Sapphire^*
 
 ^256Unstable Shard^*
-^947-^* Movement Speed Slow increased from 10/13/16/20% to 10/15/20/25%.
-^947-^* Area Magic Damage upon hitting the Unstable Shard increased from 110/115/120/125% to 115/120/125/130% of the Attacker's Attack Damage.
-
-_______________________________________________
-
-^059Shadowblade^*
-
-^256Essence Shift^*
-^947-^* Max Health reduction decreased from 7 to 3 per point of bonus Strength granted by Essence Shift (if Strength is Shadowblade's Primary Attribute).
-
-_______________________________________________
-
-^059Swiftblade^*
-
-^256Swift Slashes^*
-^947-^* Now resets Swiftblade's attack cooldown upon being cast.
+^947-^* Maximum number of times Unstable Shard can be hit by allies increased from 4/5/6/7 hits to 5/6/7/8 hits.
+^947-^* Area Magic Damage upon hitting the Unstable Shard reduced from 115/120/125/130% to 110/115/120/125% of the Attacker's Attack Damage.
 
 _______________________________________________
 
 ^059Tremble^*
 
 ^256Dark Swarm^*
-^947-^* Damage Reduction from enemies outside Dark Swarm that damage Tremble changed from 35/40/45/50% to 30/40/50/60%.
-
-^256Terrorform^*
-^947-^* Terror Mounds cooldown reduced from 30 seconds to 25 seconds.
-^947-^* Terror Port cooldown reduced from 50 seconds to 45 seconds.
+^947-^* Mana Cost reduced from 90/100/110/120 to 75/85/95/105.
 
 _______________________________________________
 
-^059Xemplar^*
+^059Warchief^*
+^947-^* Intelligence growth per level increased from 2.7 to 2.9.
 
-^256Echo Strikes^*
-^947-^* Whenever one of Xemplar's illusions dies within 900 radius of him, Xemplar receives a bonus 5/10/15/20Attack Speed for 6 seconds (max of 20/40/60/80 Attack Speed from this mechanic).
-   ^274*^* This bonus is separate from the default Echo Strikes buff & will stack with the default Echo Strikes buff.
+^256Sacred Totems^*
+^947-^* Mana Cost reduced from 100/140/180/220 to 100/135/170/205.
+
+_______________________________________________
+
+^059Wretched Hag^*
+^947-^* Base Agility increased from 18 to 19.
+^947-^* Agility growth per level increased from 2.4 to 2.5.
+
+^256Haunt^*
+^947-^* Cooldown reduced from 16/13/10/7 seconds to 15/12/9/6 seconds.
+^947-^* Magic Damage dealt every 3 seconds increased from 10/20/40/50 to 15/25/40/50.
+
+^256Sonar Scream^*
+^947-^* Mana Cost reduced from 110/120/130/140 to 80/100/120/140.
 
 _______________________________________________
 
  
 
-
-==^960 Items ^*==
-
+==^960 Items (Balance) ^*==
 
 
-^077Arcane Bomb^*
-^947-^* Bonus Magic Damage dealt to enemy player-controlled-non-hero units reduced from 40% of the target's Max Health to 30% of the target's Max Health.
-   ^274*^* Still deals the base 150 Magic Damage to enemy player-controlled-non-hero units.
 
-^947-^* Now has new Stock mechanics in the store:
-   ^274*^* Initial stock of 1.
-   ^274*^* Item is only purchaseable after the 6-minute mark.
-   ^274*^* Refreshes at a rate of 1 stock every 15 minutes.
-   ^274*^* Maximum of 1 stock available in the store at any given time.
-
-^947-^* True Damage mechanics dealt to enemy illusions changed.
-
-^947-^* Previously:
-   ^274*^* Target enemy illusion receives 900 True Damage or 75% of their Max Health, whichever is higher.
-
-^947-^* After this patch:
-   ^274*^*  Target enemy illusion receives 500 True Damage or 50% of their Max Health, whichever is higher.
-   ^274*^*  Each enemy illusion affected spawns an invisible arcane shockwave of 600 radius that only affects other enemy illusions in the area, making them receive 200 True Damage or 15% of their Max Health, whichever is higher.
-   ^274*^*  i.e. a Behemoth Shockwave echo effect only for enemy illusions.
-
-_______________________________________________
-
-^077Bloodborne Maul^*
-^947-^* Max charges increased from 120 to 150.
-
-_______________________________________________
-
-^077Daemonic Breastplate^*
-^947-^* Armor granted to self increased from 7 to 10.
-^947-^* Attack Speed to allies increased from 20 to 25.
-
-_______________________________________________
-
-^077Frostfield Plate^*
-^947-^* Attack Speed Slow from the passive aura reduced from 30% to 20%.
-^947-^* Movement Speed Slow from the debuff increased from 40% to 50%.
-
-_______________________________________________
-
-^077Frostwolf's Skull^*
-^947-^* Active effect's debuff: Attack Speed Slow changed from 20 to 50%.
-   ^274*^* Passive effect's debuff numbers remains the same as before.
-   ^274*^* Active effect still applies a 20% Movement Speed Slow.
-   ^274*^* The active effect's debuff now stacks with the passive effect's debuff.
-
-_______________________________________________
-
-^077Hypercrown^*
-^947-^* Magic Damage dealt by the Chain Lightning procs increased from 150 to 175.
-^947-^* Max number of bounces increased from 5 to 10.
-
-_______________________________________________
-
-^077Icon of the Goddess^*
-^947-^* Health Regeneration per charge increased from 1 to 1.5.
-^947-^* Mana Regeneration per charge increased from 20% to 25%.
-^947-^* In addition to its current effects: every 5 charges will grant an additional 100 Health and 100 Mana.
-^947-^* Gift of the Goddess effect: Health Regeneration per second increased from 10 to 15.
-
-_______________________________________________
-
-^077Logger's Hatchet^*
-^947-^* Bonus Damage dealt to non-hero units when wielded by a Ranged Hero reduced from 15 to 12.
-
-_______________________________________________
-
-^077Mock of Brilliance^*
-^947-^* Magic Damage per second reduced from 60 to 50.
-
-_______________________________________________
+^077Nome's Wisdom^*
+^947-^* Heal & Shield value granted to Adrenaline is now reduced to 30% of the original value.
+^947-^* Shield now has a Max Health of 500.
+   ^274*^* State now has a charge indicator to represent the Shield's current health.
 
 ^077Nullfire Blade^*
-^947-^* Recipe upgrades now also grant +2 Strength, +8 Agility, and +2 Intelligence.
-^947-^* Active effect: now removes buffs from enemies when the item is Level 2 (as opposed to Level 3).
-^947-^* Active effect: in addition to its other effects, can now target self (or double-activate) to remove debuffs from self when the item is Level 3.
+^947-^* True Damage dealt to enemy summoned units reduced from 1000 to 800.
 
 _______________________________________________
 
-^077Shieldbreaker^*
-^947-^* Armor reduction increased from 3/5/7 to 4/6/8.
+^077Thunderclaw^*
+^947-^* Number of attacks required to proc Thunderclaw increased from 3 to 4.
+
+^077Hypercrown^*
+^947-^* New recipe: Thunderclaw (3000) + Warpcleft (1800) + Recipe (700) = 5500 Gold Total
+^947-^* Magic Damage dealt by the Chain Lightning procs reduced from 175 to 160.
 
 _______________________________________________
-
-^077Sol's Bulwark^*
-^947-^* New buildup: Ringmail (550) + Recipe (1000) = 1550 Gold
-^947-^* Armor granted to allies/removed from enemies reduced from 4 to 3.
-
-_______________________________________________
-
-^077Soultrap^*
-^947-^* Cast Range reduced from 800 to 700.
-^947-^* Recipe Cost increased from 485 Gold to 585 Gold.
-   ^274*^*  Total Cost increased from 700 Gold to 800 Gold.
-
-_______________________________________________
-
-^077Tome of Elements^*
-^947-^* Stock mechanics changed for the store.
-
-^947-^* Previously:
-   ^274*^* Initial stock of 0.
-   ^274*^* Refreshes at a rate of 1 stock every 10 minutes.
-   ^274*^* Maximum of 3 stocks available in the store at any given time.
-
-^947-^* After this patch:
-   ^274*^* Initial stock of 1.
-   ^274*^* Item is only purchaseable after the 15-minute mark.
-   ^274*^* Refreshes at a rate of 1 stock every 12 minutes.
-   ^274*^* Maximum of 2 stocks available in the store at any given time.
-
-_______________________________________________
-
-^077Whispering Helm^*
-^947-^* Cooldown increased from 300 seconds to 720 seconds.
-^947-^* The current cooldown of Whispering Helm is reduced by 50% when a unit dominated by Whispering Helm dies.
-
-_______________________________________________
-
- 
 
  
 
@@ -543,30 +539,42 @@ _______________________________________________
 
 
 
+=^075 General ^*=
+
+^947-^* The previous changes for skill flow improvement in Patch 4.8.0 (Doctor Repulsor's Ludicrous Speed, Lodestone's Headsmash, and Prisoner's Shackled) no longer have their subability change to an activatable state if a non-visible enemy hero (stealthed or in fog) is within the ability's cast radius.
+^947-^* The game no longer displays the following message when the following event occurs: "The creeps have grown stronger...).
+   ^274*^* Prevents unnecessary screen clutter in the chat log.
+
+ 
+
+=^075 User Interface ^*=
+
+^947-^* Pinging items in an enemy's or ally's Consumable Slot in the bottom-right corner window will now display the appropriate information in your team's chat log.
+^947-^* Stat columns on the post-game statistics page is now player-sortable for the new UI.
+^947-^* A new stat column that represents "Wards Placed" has been added to the post-game match stats screen.
+^947-^* The CoN Season Info button in the top-right corner of the "Ranked" mode option in the mode pick screen has been removed.
+^947-^* Minor optimizations were performed for a few sections in the User Interface.
+
+ 
+
 =^075 Heroes ^*=
 
 ^059Blacksmith^*
-^947-^* Flaming Hammer no longer triggers Null Stone if Null Stone is on cooldown before Flaming Hammer is cast & Null Stone comes off cooldown before the spawned projectile impacts the target with the Null Stone.
+^947-^* Risky Cast (boosted by Staff of the Master) now plays the correct visual effect if a 4x Multicast is procced.
 
-^059Circe^*
-^947-^* Using Twisted Visage on an enemy Hellbringer that has 0 charges of Demon Strike will no longer disable Demon Strike on the Hellbringer mimic that Circe creates.
+^059Chronos^*
+^947-^* Christmas Chronos no longer plays Father Time Chronos' knocked-down sound when she plays her knocked-down animation (e.g. from self-taunting).
 
-^059Shellshock^*
-^947-^* Gadgets will no longer be able to enter Shellshock's shell while Rolling Thunder is active.
-
-^059Tundra^*
-^947-^* Command Shiver will now remain on cooldown while Parasite (with Staff of the Master) is Infesting Shiver.
-^947-^* Shiver will also respawn at the appropriate timing (when Command Shiver goes off cooldown) if killed while Parasite is Infesting Shiver.
-   ^274*^* Previously, Shiver would not respawn until Tundra dies and respawns.
+^059Nitro^*
+^947-^* Abilities that force Nitro to attack a target (Legionnaire's Taunt, Puppet Master's Puppet Show, and Kane's Face Off) now function properly on Nitro.
 
  
 
 =^075 Items ^*=
 
-^075General^*
-^947-^* Pinging items in an enemy's or ally's inventory in the bottom-right corner window will now properly display that item's modifier, if it has one (e.g. Bottle that contains a rune).
+^077Hypercrown^*
+^947-^* No longer plays lightning sounds globally (i.e. will no longer alert enemies of your activity when fighting creeps in fog).
 
-^077Ophelia's Pact^*
-^947-^* Can no longer reap this item's benefits without paying Gold for it if your inventory & stash are full.
+ 
 
 _______________________________________________
