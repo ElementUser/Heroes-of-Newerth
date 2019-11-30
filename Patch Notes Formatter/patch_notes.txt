@@ -72,10 +72,10 @@ Behemoth
 
 Enrage
 - Staff of the Master effect additions (new):
-*Now has a 1000 Cast Range, allowing Behemoth to leap to target location and casting Enrage at that location.
+*Grants a subability (Enraged Leap) that can be cast at target position up to 1000 Range from Behemoth to disjoint, leap there, cast Enrage there, and apply Heavyweight's effects there.
+*Enraged Leap has a 8 second cooldown and places Enrage on cooldown when used. Using Enrage places Enraged Leap on this ability's cooldown.
 *Heavyweight will not proc at Behemoth's original position if Behemoth travels to target location.
-*Enrage can be cast at your current location if the ability is double-activated.
-*Now grants Behemoth True Strike for the attack.
+*Enrage now also grants Behemoth True Strike for the attack.
 
 _______________________________________________
 
@@ -115,7 +115,8 @@ Nether Strike
 Illusory Assault
 - Staff of the Master additions (new):
 *Grinex now retains Stealth without breaking it if he stays on the shadow trail.
-*Grinex now gains Single-Target Immunity while on the shadow trail (i.e. cannot be targeted by a spell or autoattacks).
+*Grinex now gains Single-Target Immunity while on the shadow trail (i.e. cannot be targeted by a single-target spell).
+*Note that you can still autoattack Grinex by issuing an attack order on the ground if he is the closest enemy unit to you, and if you have True Sight of Grinex.
 
 _______________________________________________
 
@@ -161,14 +162,6 @@ Flurry
 
 _______________________________________________
 
-Plague Rider
-
-Plague Carrier
-- No longer instantly kills ElitePet units (will deal the regular amount of damage instead).
-*This change primarily means that Hellbringer's Malphas will no longer be instantly killed by Plague Carrier.
-
-_______________________________________________
-
 Prophet
 
 Invigorate
@@ -197,7 +190,7 @@ Master's Incantation
 - Staff of the Master effect additions (new):
 *Bonus True Damage increased from 22/33/44/55% to 33/44/55/66% of your Intelligence.
 *Bonus True Damage multiplier against Silenced targets increased from 1.5x to 2x.
-*Now passively grants Vindicator 60 Attack Speed.
+*Now passively grants Vindicator 80 Attack Speed.
 
 _______________________________________________
 
@@ -423,12 +416,18 @@ _______________________________________________
 Nitro
 
 Ballistic
-- Range changed from 800/900/1000/1100/1200 to 900.
+- Range reduced from 800/900/1000/1100/1200 to 700.
+- Touch radius reduced from 90 to 65.
 
 Divide & Conquer
 - Base Attack Time for Mauser increased from 1.2 to 1.7.
 - Attack Action Time for Mauser reduced from 0.4 seconds to 0.2 seconds.
 - Bonus Attack Damage multiplier for Mauser reduced from 1.2x to 1.1x.
+- Bonus Movement and Attack Speed granted when Ballistic hits an enemy hero reduced from 10/20/30/40 to 10/15/20/25.
+
++ Nitro's excessive range and kiting capabilities were too frustrating to deal with in many scenarios for too much of HoN's lifetime, allowing Nitro to avoid interaction far too often. Ballistic's hitbox was also far bigger than its visual indicator.
++ These changes will force Nitro to commit more when attacking foes and force her to be more careful with spacing, while simultaneously providing her opponents more opportunities to properly interact with her.
++ Having less range means that it's actually easier to hit her shots too, so landing Nitro's autoattacks will be much easier for the players who don't normally play her.
 
 _______________________________________________
 
@@ -440,6 +439,14 @@ Nature's Wrath
 
 Command
 - Mana Cost increased from 100 to 100/105/110/115.
+
+_______________________________________________
+
+Plague Rider
+
+Plague Carrier
+- No longer instantly kills ElitePet units (will deal the regular amount of damage instead).
+*This change primarily means that Hellbringer's Malphas will no longer be instantly killed by Plague Carrier.
 
 _______________________________________________
 

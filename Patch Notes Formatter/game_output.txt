@@ -72,10 +72,10 @@ _______________________________________________
 
 ^256Enrage^*
 ^947-^* Staff of the Master effect additions (new):
-   ^274*^* Now has a 1000 Cast Range, allowing Behemoth to leap to target location and casting Enrage at that location.
+   ^274*^* Grants a subability (Enraged Leap) that can be cast at target position up to 1000 Range from Behemoth to disjoint, leap there, cast Enrage there, and apply Heavyweight's effects there.
+   ^274*^* Enraged Leap has a 8 second cooldown and places Enrage on cooldown when used. Using Enrage places Enraged Leap on this ability's cooldown.
    ^274*^* Heavyweight will not proc at Behemoth's original position if Behemoth travels to target location.
-   ^274*^* Enrage can be cast at your current location if the ability is double-activated.
-   ^274*^* Now grants Behemoth True Strike for the attack.
+   ^274*^* Enrage now also grants Behemoth True Strike for the attack.
 
 _______________________________________________
 
@@ -115,7 +115,8 @@ _______________________________________________
 ^256Illusory Assault^*
 ^947-^* Staff of the Master additions (new):
    ^274*^* Grinex now retains Stealth without breaking it if he stays on the shadow trail.
-   ^274*^* Grinex now gains Single-Target Immunity while on the shadow trail (i.e. cannot be targeted by a spell or autoattacks).
+   ^274*^* Grinex now gains Single-Target Immunity while on the shadow trail (i.e. cannot be targeted by a single-target spell).
+   ^274*^* Note that you can still autoattack Grinex by issuing an attack order on the ground if he is the closest enemy unit to you, and if you have True Sight of Grinex.
 
 _______________________________________________
 
@@ -161,14 +162,6 @@ _______________________________________________
 
 _______________________________________________
 
-^059Plague Rider^*
-
-^256Plague Carrier^*
-^947-^* No longer instantly kills ElitePet units (will deal the regular amount of damage instead).
-   ^274*^* This change primarily means that Hellbringer's Malphas will no longer be instantly killed by Plague Carrier.
-
-_______________________________________________
-
 ^059Prophet^*
 
 ^256Invigorate^*
@@ -197,7 +190,7 @@ _______________________________________________
 ^947-^* Staff of the Master effect additions (new):
    ^274*^* Bonus True Damage increased from 22/33/44/55% to 33/44/55/66% of your Intelligence.
    ^274*^* Bonus True Damage multiplier against Silenced targets increased from 1.5x to 2x.
-   ^274*^* Now passively grants Vindicator 60 Attack Speed.
+   ^274*^* Now passively grants Vindicator 80 Attack Speed.
 
 _______________________________________________
 
@@ -423,12 +416,18 @@ _______________________________________________
 ^059Nitro^*
 
 ^256Ballistic^*
-^947-^* Range changed from 800/900/1000/1100/1200 to 900.
+^947-^* Range reduced from 800/900/1000/1100/1200 to 700.
+^947-^* Touch radius reduced from 90 to 65.
 
 ^256Divide & Conquer^*
 ^947-^* Base Attack Time for Mauser increased from 1.2 to 1.7.
 ^947-^* Attack Action Time for Mauser reduced from 0.4 seconds to 0.2 seconds.
 ^947-^* Bonus Attack Damage multiplier for Mauser reduced from 1.2x to 1.1x.
+^947-^* Bonus Movement and Attack Speed granted when Ballistic hits an enemy hero reduced from 10/20/30/40 to 10/15/20/25.
+
+^947+^* Nitro's excessive range and kiting capabilities were too frustrating to deal with in many scenarios for too much of HoN's lifetime, allowing Nitro to avoid interaction far too often. Ballistic's hitbox was also far bigger than its visual indicator.
+^947+^* These changes will force Nitro to commit more when attacking foes and force her to be more careful with spacing, while simultaneously providing her opponents more opportunities to properly interact with her.
+^947+^* Having less range means that it's actually easier to hit her shots too, so landing Nitro's autoattacks will be much easier for the players who don't normally play her.
 
 _______________________________________________
 
@@ -440,6 +439,14 @@ _______________________________________________
 
 ^256Command^*
 ^947-^* Mana Cost increased from 100 to 100/105/110/115.
+
+_______________________________________________
+
+^059Plague Rider^*
+
+^256Plague Carrier^*
+^947-^* No longer instantly kills ElitePet units (will deal the regular amount of damage instead).
+   ^274*^* This change primarily means that Hellbringer's Malphas will no longer be instantly killed by Plague Carrier.
 
 _______________________________________________
 
