@@ -1,26 +1,6 @@
-Version 4.8.1.2
+Version 4.8.2
 -------------
-17 December 2019
-
-
-== General ==
-
-- Christmas music has returned to Newerth, and will be playing until Patch 4.8.2!
-- Snow will fall in the main lobby background for a few months!
-
-
-
-= Mid Wars =
-
-- Hero Ban count per player increased from 1 to 2.
-*Happy holidays to all Mid Wars players! This is our gift to you guys specifically =)
-
- 
-
-= MvP Window =
-
-- Votes are no longer hidden until the end of the voting phase (i.e., votes are shown immediately upon submitting them).
-- Players can now vote for themselves (for the time being, anyway).
+11 February 2020
 
 
 
@@ -28,138 +8,373 @@ Version 4.8.1.2
 
 
 
-= Hero Balance =
+= Hero Changes - Swiftblade =
 
-Aluna
++ Swiftblade gets his own section in these patch notes since he has a Staff of the Master change that pertains to a skill rework!
 
-Emerald Lightning
-- Attack Speed buff on Aluna now has a max charge count of 3.
-- Staff of the Master changes (to pre-existing):
-*Bounce count increased from 2 to 3 (i.e. max potential units affected increased from 3 to 4) while boosted by Emerald Red.
++ Counter Attack was an ability that was a result of an afterthought when filling the last ability of Swiftblade's kit.
++ By changing the ability to be more interactive and have practical use throughout the game, this allows the hero to be more engaging to play and transitions him more to a dueling playstyle!
 
-_______________________________________________
+ 
 
-Hammerstorm
+Swiftblade
 
-Hammer Throw
-- Staff of the Master effect changes (to pre-existing):
-*Hammer projectile speed reduced from 3000 to 1800 units per second.
-*Cast Range reduced from 1000 to 900.
+Counter Attack
+- In addition to its current effects, now has a new active effect: Activate to block all incoming autoattacks for 1.5 seconds, while countering with Swiftblade's autoattacks against the next 1/2/3/4 hero attacks during this time.
+- These counterattacks proc Way of the Sword.
+*Note that this state is a Buff, so Blade Frenzy & other sources of Purge effects will dispel the buff.
+*The passive effects of Counter Attack are disabled while Counter Attack's buff state is active.
+*Note that Counter Attack cannot be activated while Blade Frenzy is active (since Blade Frenzy silences Swiftblade).
+*Has a Mana Cost of 50 and a Cooldown of 23/20/17/14 seconds.
 
-_______________________________________________
-
-Hellbringer
-
-Summon Malphas
-- Malphas Max Health reduced from 1000/1500/2000 to 900/1400/1900.
-- Malphas Attack Damage reduced from 80/130/180 to 80/125/170.
-- Malphas' Destruction passive ability: bonus damage dealt to structures reduced from 50/75/100% to 30/40/50%.
+- Staff of the Master effect addition (new):
+*If a hero attack is blocked, when Counter Attack expires, Swiftblade becomes Invulnerable for 1 second, and Counter Attack changes to Counter Strike for the next 5 seconds (800 Cast Range).
+*Target an enemy to use Counter Strike, attacking & teleporting to them and applying a 80% Movement Slow for 2 seconds.
+*Counter Attack's buff duration resets when the initial Invulnerability period ends.
 
 _______________________________________________
+
+ 
+
+= Hero Changes - Keeper of the Forest =
+
++ Ever since the readjustment of Keeper of the Forest's Animated Trees to comfortably kill Ancient Creeps early, Keeper of the Forest has been drastically underperforming.
+
++ Keeper of the Forest received buffs to compensate for this, and also received changes that accentuate his unique structure defense role & being a structural fortifier and healer.
++ Additionally, Keeper of the Forest received another boost from Staff of the Master. This time, it is his legacy Tree Sight ability!
+
+ 
 
 Keeper of the Forest
+- Strength growth per level increased from 3 to 3.3.
 
 Nature's Guidance
-- Can now target ally structures to apply the Armor and Health Regeneration state (but not the stealth state).
-*Any damage a structure takes while the Backdoor Protection System is in effect & the appropriate conditions are fulfilled will not trigger the system if the structure's current health is greater than the "checkpoint" health value saved by the Backdoor Protection System.
-*Example: After a regular push (under non-backdoor conditions), a tower's Health drops from 1900 (max Health) to 1500 (this is the checkpoint health value). The If Nature's Guidance heals the Tower's Health above 1500 and an enemy attempts to backdoor & fulfills the system's conditions, then the Backdoor Protection System will not grant 20 Health Regeneration per second to the tower until it is below the checkpoint health value (1500). This bonus regeneration will only occur until it reaches the checkpoint value again - Nature's Guidance's regeneration will continue to take place throughout these events as intended.
+- Bonus Health Regeneration per second increased from 1/2/3/4 to 2/3/4/5.
+- Structures now gain an extra +3 Armor and Health Regeneration per second from this ability.
+- Immobilize state duration increased from 0.5/0.8/1.1/1.4 seconds to 0.8/1.2/1.6/2 seconds.
+- Units other than Keeper of the Forest attacking out of stealth now apply the Immobilize state for 0.5x the duration.
+
+Animate Forest
+- Max Health of Animated Trees from this ability increased from 370/430/490/550 to 390/460/530/600.
+
+Strength in Numbers
+- Staff of the Master effect addition (new):
+*Grants an active ability that enchants a tree, granting 800 Clearvision around the area.
+*The Clearvision persists as long as the enchanted tree is alive.
+*Enemies can see an enchanted tree if they have vision of it.
+*Ability has a 150 Cast Range, a Mana Cost of 100, and a cooldown of 30 seconds.
+
+_______________________________________________
+
+ 
+
+= Master's Legacy & Staff of the Master effect Changes =
+
+ 
+
+Master's Legacy
+- Cost reduced from 2500 Gold to 2300 Gold.
+- Now grants an additional +5 Strength, Agility and Intelligence when upgraded from Staff of the Master.
+*This item now grants a total of +15 Strength, Agility and Intelligence.
+
++ Players are a little bit too deterred from upgrading their Staff of the Master to Master's Legacy to help their allies.
++ Getting some bonuses for themselves while lowering the cost of the upgrade by just a bit should incentivize players to buy Master's Legacy without making it an obvious item to buy in the majority of their games.
+
+_______________________________________________
+
+Andromeda
+
+Void Rip
+- Staff of the Master effect changes (to pre-existing):
+*Cooldown is now reduced to 20 seconds (instead of 10 seconds).
+*Magic Immunity duration reduced from 3 seconds to 2 seconds.
+
+_______________________________________________
+
+Artesia
+
+Essence Projection
+- Staff of the Master effect changes (to pre-existing):
+*Cast Range increased from 5000 to Global.
+
+_______________________________________________
+
+Tremble
+
+Hive Mind
+- Staff of the Master effect changes (to pre-existing):
+*Now also spawns the uncontrollable Shudder (the one that Tremble normally has without Staff of the Master) in addition to the controllable Shudder.
+*In this scenario, the uncontrollable Shudder will be more transparent than the controllable Shudder (to avoid unnecessary screen obstruction & confusion).
+
+_______________________________________________
+
+
+
+= User Interface: Minimap Changes =
+
+- When Player Colours are enabled: Hero icons in the minimap now have their icon borders match the colour of the player (for your own team only; the icon borders for enemy heroes will still be red).
+- When Player Colours are enabled: also sets the Courier minimap icons to player colours (note that the Courier minimap icon colour will be white if Player Colours are disabled).
+*Note: Player Colours can be toggled via the button above the minimap.
+
+ 
+
+= Heroes =
+
+ 
+
+Adrenaline
+
+Shard Blast
+- Cooldown reduced from 7.5/5/2.5/1 second(s) to 6/4/2/0 seconds.
+
+_______________________________________________
+
+Andromeda
+- Attack Range reduced from 475 to 450.
+
+_______________________________________________
+
+Defiler
+- Base Movement Speed reduced from 305 to 295.
+
+Siphon Soul
+- Cast Range reduced from 650 to 600.
+- Mana Cost increased from 80/100/120/140 to 100/115/130/145.
+- The link will now break if the target gains invulnerability or Magic Immunity.
+- Movement Speed Slow applied to an enemy changed from 18% to -15/25/35/45 Movement Speed.
+- Movement Speed bonus for self changed from 18% to 5/10/15/20%.
+
+_______________________________________________
+
+Demented Shaman
+
+Entangle
+- Now deals a negligible amount of non-lethal damage to its target upon being cast (to put Portal Key on cooldown, cancel Health Potions, etc.).
+
+_______________________________________________
+
+Gauntlet
+
+Grapple
+- Cast action time increased from 200ms to 250ms.
+- Range rescaled from 1100 to 725/850/975/1100.
+
+_______________________________________________
+
+Glacius
+
+Tundra Blast
+- Movement Speed Slow increased from 25/25/30/35% to 25/30/35/40%.
+- Movement Speed Slow duration increased from 3/3.5/3.5/4 seconds to 3/3.5/4/4.5 seconds.
+
+Glacial Downpour
+- Magic Damage per proc increased from 70/95/120 to 75/100/125.
+
+_______________________________________________
+
+Goldenveil
+
+Perch & Plunge
+- Plunge: delay before Goldenveil lands to apply the Magic Damage & Stun increased from 0.75 seconds to 0.8 seconds.
+
+_______________________________________________
+
+Gravekeeper
+
+Corpse Explosion
+- Max number of corpses exploded reduced from 6 to 3/4/5/6.
+- Magic Damage per corpse reduced from 20/40/60/80 to 10/20/30/50.
+- Base Magic Damage increased from 60 to 70/90/120/170.
+
++ Ever since the consistent area damage change, Corpse Explosion has finally not been useless. In fact, it was overperforming and was a free ticket to winning the lane if Gravekeeper chose to max Corpse Explosion.
+
++ Normalizing the damage in the early levels and maintaining its above average power at the max level of the ability will keep it powerful, but only at higher levels of the ability.
+
+_______________________________________________
+
+Master of Arms
+
+Acid Bomb
+- Physical Damage per second increased from 15/30/45/60 to 20/35/50/65.
+- In addition to its previous effects, now also applies a 11/14/17/20% Movement Speed Slow to enemies on the trail.
+- Effects now linger for 0.2 seconds upon leaving the trail.
+
+_______________________________________________
+
+Moira
+
+Shards of Harkon
+- Now has a 300ms Cast Action Time and 600ms Cast Time (as opposed to having neither of those).
+
+Ephemeral Forge
+- Portal Key on the mimic (if it has one) is now put on a 3 second cooldown when the original channeling completes.
+
+_______________________________________________
+
+Monkey King
+
+Vault
+- Affector linger time reduced from 0.8 seconds to 0.3 seconds.
+
+_______________________________________________
+
+Nomad
+- Strength growth per level reduced from 2 to 1.8.
+- Agility growth per level reduced from 2.9 to 2.8.
+- Intelligence growth per level reduced from 2.2 to 2.
 
 _______________________________________________
 
 Nitro
 
 Ballistic
-- Range increased from 700 to 850.
-- Projectile's fixed lifetime reduced from 500ms to 350ms (400ms while detached from Mauser).
-*Properly results in a faster projectile now.
-- Touch radius increased from 65 to 70.
+- While Nitro and Mauser are together, projectile lifetime reduced from 0.35s to 0.25s.
+*Projectile lifetime remains unchanged when Mauser is detached from Nitro.
+
++ Reducing the projectile lifetime should drastically increase the accuracy of her shots for less mechanically accurate players without affecting veteran Nitro players nearly as much. This should reduce the size of Nitro's performance gap between lower and higher bracket play.
 
 _______________________________________________
 
-Slither
+Parasite
 
-Poison Spray
-- Base Magic Damage increased from 60/70/80/100 to 70/80/90/100.
-- Magic Damage over Time inflicted every 2 seconds increased from 10/20/40/50 to 15/25/40/50.
+Infest
+- Infested creep now receives +50% Damage from player-controlled enemy units (+25% Damage if Staff of the Master is on Parasite).
 
-_______________________________________________
++ Parasite's Infest mechanic that allows him to hide inside a mobile creep has been incredibly frustrating to deal with since the hero has been introduced to the game (in the event Alchemist's Bones is not available to be used as a counter when engaging him). Every time Parasite is inside a creep, he basically has a second ~1000 Health bar that soaks up enemy crowd control and overkill damage from nukes with practically no cost to Parasite.
 
-Tremble
-- Base Strength increased from 17 to 18.
-- Strength growth per level increased from 2.5 to 2.8.
-- Agility growth per level increased from 2.7 to 2.8.
++ This change should allow enemy players to more quickly deal with Parasite's "second Health Bar" without it affecting Parasite's jungling capabilities.
 
 _______________________________________________
 
+Qi
+- Attack projectile speed increased from 900 to 1100 units per second.
 
+_______________________________________________
+
+Silhouette
+
+Shadow
+- Like a Ninja (swap ability) changes:
+*Cast time and cast action time reduced from 0.15 seconds to 0 seconds.
+*Cast time and cast action time now increases by 0.1 seconds for every 1000 units between Silhouette and her Shadow (0.15 seconds for the first 1000 units).
+*Max cast time and cast action time of 0.55 seconds.
+
++ Silhouette's relative safety for split-pushing and potential backdooring is much higher than almost every other hero's safety for most of HoN's history because her swap subability is a reliable and quick means of escape with an abnormally long teleport range (relative to other escapes).
+
++ Increasing the risk ever so slightly should increase her window of vulnerability just enough where Silhouette will have to be mindful of her overall Shadow positioning, or be extra mindful of the current situation and swap out earlier than normal if she wishes to be 100% safe.
+
+_______________________________________________
+
+Solstice
+
+Graceful Strikes
+- Day Time: Bonus Physical Damage per proc changed from 50/75/100/125 to 60/80/100/120.
+- Night Time: Bonus Physical Damage per proc increased from 70/105/140/175 to 80/115/150/185.
+
+_______________________________________________
+
+Soul Reaper
+- Attack projectile speed increased from 900 to 1300 units per second.
+
+_______________________________________________
+
+Valkyrie
+- Attack projectile speed increased from 900 to 1100 units per second.
+
+Javelin of Light
+- Projectile touch effect type changed from True to Magic.
+*This is actually considered a buff, as it means that Magic Immune units can no longer "catch" the Javelin & receive no damage and no Stun, which ends up blocking it for their allies without penalty.
+*Instead, the projectile will go through Magic Immune units and no longer consider them as a valid target for impact.
+
+_______________________________________________
+
+War Beast
+
+Metamorphosis
+- Cooldown reduced from 115/95/70 seconds to 115/90/65 seconds.
+
+_______________________________________________
+
+Warchief
+- Intelligence growth per level reduced from 2.9 to 2.7.
+
+_______________________________________________
 
  
 
-= Item Balance =
+= Items =
 
-Hypercrown
-- Max bounce count increased from 10 to 15.
+ 
 
-Thunderclaw
-- Number of attacks required to proc Thunderclaw reduced from 4 to 3.
-- Area Magic Damage on proc reduced from 120 to 90.
+Alchemist's Bones
+- Gold bounty of the creep killed by Alchemist's Bones active ability changed from 3x the creep bounty to 165 Gold.
+*The XP bounty multiplier still remains the same, so targeting a harder creep with Alchemist's Bones will still yield more experience.
 
 _______________________________________________
 
+Hypercrown
+- Active ability can now be used on allies even if they are Magic Immune.
 
+_______________________________________________
+
+Rejuvenation Potion
+- Cost increased from 300 Gold to 350 Gold.
+
+_______________________________________________
+
+ 
+
+== Matchmaking Maps & Modes ==
+
+ 
+
+Champions of Newerth (CoN)
+- Map: Forests of Caldavar ("New" for NAEU/International region, "Old" for SEA region)
+- Mode: Ranked Pick
+
+ 
+
+Mid Wars
+- Hero Ban
+- Single Draft
+
+ 
 
 == Bug Fixes & Optimizations ==
 
-
-
-= User Interface =
-
-- Post-game match stats window (new UI): the Rewards tab now functions properly again.
-- Post-game match stats window (new UI): the Ward Column can now properly be sorted.
-- Post-game match stats window (new UI): clicking on a stat column header on the Hellbourne team will now properly sort just the Hellbourne team's stats accordingly.
-- Post-game match stats window (new UI): the large achievement icons now populate correctly (in the alternate stats window when pressing the "Switch View" button).
-- Ranked MMR on profile page now displays a whole number (i.e. no decimal places). [NAEU client only]
-- Ranked MMR has been moved from the profile page to the Mode Selection Screen into the "Ranked" mode card.
-*Ranked MMR currently cannot be displayed for a particular player outside of the game lobby. This may change in the future, but there are no guarantees.
-
-_______________________________________________
-
-
-
-= General =
-
-- Fixed multiple locations in the "new" Forests of Caldavar map where heroes can unintentionally walk over cliffs in conjunction with the Direct Pathing functionality.
-
-
+ 
 
 = Heroes =
 
-Behemoth
-- Enraged Leap (Enrage, boosted by Staff of the Master) can no longer be cast while immobilized.
-- Enraged Leap (Enrage, boosted by Staff of the Master) no longer triggers Heavyweight at your starting location.
+Andromeda
+- Void Rip (when boosted by Staff of the Master): Magic Immunity effect counts as an Activation Modifier (so the Magic Immunity portion of the buff granted to Andromeda cannot be active at the same time as Shrunken Head or Void Talisman).
+*If you use one of these items and then activate Andromeda's Void Rip, the Magic Immunity from Void Rip will not apply to Andromeda at all. Note that this only has gameplay implications in the most niche of scenarios - most scenarios will still be the same.
 
-Moon Queen
-- Lunari Moon Queen now consistently applies the proper Staff of the Master effects to Moon Finale.
+Corrupted Disciple
+- Electric Tide's inner radius offset was increased from 50 units to 80 units to mitigate cases of its hitbox being undetected by a unit that is moving towards Corrupted Disciple (in the event that one or both units have high Movement Speed).
 
-Prophet
-- Staff of the Master effects now apply properly to all of Prophet's alternate avatars.
+Moira
+- Units affected by Mana Sunder now regain the appropriate amount of mana if they have debuff duration reduction sources.
 
-Vindicator
-- Staff of the Master now properly & passively grants 80 bonus Attack Speed to Vindicator.
+Monkey King
+- Illusive Dash's initial cast is now properly detected as a spellcast by certain sources in the game (e.g. Power Supply).
 
-Zephyr
-- Parrot Zephyr's Typhoon visual is now correct when Zephyr has Staff of the Master.
-- Typhoon will no longer set the enemy's attack range to 150 if boosted by Staff of the Master.
+Nymphora
+- In the Mid Wars map, Teleport restriction boundaries have been adjusted to be the boundary that is roughly defined by the Tier 2 towers.
 
-_______________________________________________
+Predator
+- Stone Hide's Magic Immunity effect now counts as an Activation Modifier (so the Magic Immunity effect cannot be active at the same time as Shrunken Head or Void Talisman).
+*If you use one of these items and then activate Predator's Stone Hide, if the item's immunity duration runs out & Stone Hide's duration is still active, you will NOT receive the immunity effect until other Activation Modifier effects wear off.
 
+Swiftblade
+- Blade Frenzy's Magic Immunity effect now counts as an Activation Modifier (so the Magic Immunity effect cannot be active at the same time as Shrunken Head or Void Talisman).
+*If you use one of these items and then activate Swiftblade's Blade Frenzy, if the item's immunity duration runs out & Blade Frenzy's duration is still active, you will NOT receive the immunity effect for the rest of the state duration. Note that this only has gameplay implications in the most niche of scenarios - most scenarios will still be the same.
 
+ 
 
 = Items =
 
-Orb of Zamos & Grave Locket
-- Blue ring visual now only gets displayed to your team (and not the enemy team) when either of these items synchronizes to another ally hero.
-*Prevents enemies from knowing that a stealthed ally hero is nearby.
-*Note that the blue/green/red swirling light visuals around each hero are still not visible to the enemy team.
+Whispering Helm
+- Cooldown is now properly halved if the dominated creep becomes controlled by another source (e.g. Parasite's Infest).
 
 _______________________________________________
