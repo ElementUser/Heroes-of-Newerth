@@ -14,6 +14,7 @@ yearNowPlusOne = str(timeNow.year + 1)
 
 gamePatchNotes = 'game_output.txt'
 forumPatchNotes = 'forum_output.txt'
+motdPatchNotes = 'motd_output.txt'
 
 # Also contains neutrals
 heroList = [ "Accursed" , "Adrenaline" , "Aluna" , "Amun-Ra" , "Andromeda" , "Apex" , "Arachna" , "Armadon" , "Artesia" , "Artillery" , "Balphagore" , "Behemoth" , "Berzerker" , "Blacksmith" , "Blitz" , "Blood Hunter" , "Bombardier" , "Bramble" , "Bubbles" , "Bushwack" , "Calamity" , "Chipper" , "Chronos" , "Circe" , "Corrupted Disciple" , "Cthulhuphant" , "Dampeer" , "Dark Lady" , "Deadlift" , "Deadwood" , "Defiler" , "Demented Shaman" , "Devourer" , "Doctor Repulsor" , "Draconis" , "Drunken Master" , "Electrician" , "Ellonia" , "Emerald Warden" , "Empath" , "Engineer" , "Fayde" , "Flint Beastwood" , "Flux" , "Forsaken Archer" , "Gauntlet" , "Gemini" , "Genesis" , "Geomancer" , "Glacius" , "Gladiator" , "Goldenveil" , "Gravekeeper" , "Grinex" , "Gunblade" , "Hammerstorm" , "Hellbringer" , "Ichor" , "Jeraziah" , "Kane" , "Keeper of the Forest" , "Kinesis" , "King Klout" , "Klanx" , "Kraken" , "Legionnaire" , "Lodestone" , "Lord Salforis" , "Madman" , "Magebane" , "Magmus" , "Maliken" , "Martyr" , "Master of Arms" , "Midas" , "Moira" , "Monarch" , "Monkey King" , "Moon Queen" , "Moraxus" , "Myrmidon" , "Night Hound" , "Nitro" , "Nomad" , "Nymphora" , "Oogie" , "Ophelia" , "Pandamonium" , "Parallax" , "Parasite" , "Pearl" , "Pebbles" , "Pestilence" , "Pharaoh" , "Plague Rider" , "Pollywog Priest" , "Predator" , "Prisoner 945" , "Prophet" , "Puppet Master" , "Pyromancer" , "Qi" , "Rally" , "Rampage" , "Ravenor" , "Revenant" , "Rhapsody" , "Riftwalker" , "Riptide" , "Salomon" , "Sand Wraith" , "Sapphire" , "Scout" , "Shadowblade" , "Shellshock" , "Silhouette" , "Sir Benzington" , "Skrap" , "Slither" , "Solstice" , "Soul Reaper" , "Soulstealer" , "Succubus" , "Swiftblade" , "Tarot" , "Tempest" , "Thunderbringer" , "Torturer" , "Tremble" , "Tundra" , "Valkyrie" , "Vindicator" , "Voodoo Jester" , "War Beast" , "Warchief" , "Wildsoul" , "Witch Slayer" , "Wretched Hag" , "Zephyr"  "Accursed" , "Adrenaline" , "Aluna" , "Amun-Ra" , "Andromeda" , "Apex" , "Arachna" , "Armadon" , "Artesia" , "Artillery" , "Balphagore" , "Behemoth" , "Berzerker" , "Blacksmith" , "Blitz" , "Blood Hunter" , "Bombardier" , "Bramble" , "Bubbles" , "Bushwack" , "Calamity" , "Chi" , "Chipper" , "Chronos" , "Circe" , "Corrupted Disciple" , "Cthulhuphant" , "Dampeer" , "Dark Lady" , "Deadlift" , "Deadwood" , "Defiler" , "Demented Shaman" , "Devourer" , "Doctor Repulsor" , "Draconis" , "Drunken Master" , "Electrician" , "Ellonia" , "Emerald Warden" , "Empath" , "Engineer" , "Fayde" , "Flint Beastwood" , "Flux" , "Forsaken Archer" , "Gauntlet" , "Gemini" , "Genesis" , "Geomancer" , "Glacius" , "Gladiator" , "Goldenveil" , "Gravekeeper" , "Grinex" , "Gunblade" , "Hammerstorm" , "Hellbringer" , "Ichor" , "Jeraziah" , "Kane" , "Keeper of the Forest" , "Kinesis" , "King Klout" , "Klanx" , "Kraken" , "Legionnaire" , "Lodestone" , "Lord Salforis" , "Madman" , "Magebane" , "Magmus" , "Maliken" , "Martyr" , "Master of Arms" , "Midas" , "Mimix" , "Moira" , "Monarch" , "Monkey King" , "Moon Queen" , "Moraxus" , "Myrmidon" , "Night Hound" , "Nitro" , "Nomad" , "Nymphora" , "Oogie" , "Ophelia" , "Pandamonium" , "Parallax" , "Parasite" , "Pearl" , "Pebbles" , "Pestilence" , "Pharaoh" , "Plague Rider" , "Pollywog Priest" , "Predator" , "Prisoner 945" , "Prophet" , "Puppet Master" , "Pyromancer" , "Rally" , "Rampage" , "Ravenor" , "Revenant" , "Rhapsody" , "Riftwalker" , "Riptide" , "Salomon" , "Sand Wraith" , "Sapphire" , "Scout" , "Shadowblade" , "Shellshock" , "Silhouette" , "Sir Benzington" , "Skrap" , "Slither" , "Solstice" , "Soul Reaper" , "Soulstealer" , "Succubus" , "Swiftblade" , "Tarot" , "Tempest" , "Thunderbringer" , "Torturer" , "Tremble" , "Tundra" , "Valkyrie" , "Vindicator" , "Voodoo Jester" , "War Beast" , "Warchief" , "Wildsoul" , "Witch Slayer" , "Wretched Hag" , "Xemplar" , "Zephyr", "Catman Champion", "Dragon Master", "Dreadbeetle Queen", "Minotaur", "Predasaur Crusher", "Skeleton King", "Vulture Lord", "Vagabond Leader", "Werebeast Enchanter", "Wolf Commander", "Dragon"]
@@ -23,6 +24,7 @@ abilityNameList = ["Decimate" , "Fire Surge", "Armordillo", "Homing Missile", "F
 
 copyfile("patch_notes.txt",gamePatchNotes)
 copyfile("patch_notes.txt",forumPatchNotes)
+copyfile("patch_notes.txt",motdPatchNotes)
 
 # Defs
 
@@ -172,8 +174,90 @@ def formatPatchNotes_Forum(destFile):
             file.write(line)
         file.close()
 
+
+def formatPatchNotes_MotD(destFile):
+    with in_place.InPlace(destFile) as file:
+        for line in file:
+            # Handle whitespaces at start of line
+            if line.startswith('\n'):
+                line = '<br />'
+
+            # Top header: addition of the "Welcome" statement to patch notes
+            if line.startswith('Version '):
+                line = '<p><strong><span style="color: #ffd700; font-size: 18pt;">Welcome to Heroes of Newerth</span></strong></span>' + '<br />' + '<strong><span style="color: #ffd700; font-size: 18pt;">' + line
+                line = line.rstrip('\n')
+
+            if ('-------------' in line):
+                line = line.replace('-------------', ' - ')
+                line = line.rstrip('\n')
+
+            # Date line
+            if line.endswith((yearNow) + '\n') or line.endswith((yearNowPlusOne) + '\n'):
+                line = line.rstrip('\n')
+                line =  line + '</span></strong></p>' + '\n'
+
+            # Headers
+            if line.startswith('=== '):
+                line = line.replace('=== ', '===<strong><span style="font-size: 14pt; color: #ffa500;"> ', 1)
+                line = line.replace(' ===', ' </span></strong>===', 1)
+            if line.startswith('== '):
+                line = line.replace('== ', '==<strong><span style="font-size: 14pt; color: #ffa500;"> ', 1)
+                line = line.replace(' ==', ' </span></strong>==', 1)
+            if line.startswith('= '):
+                line = line.replace('= ', '=<span style="color: #ffd700";> ', 1)
+                line = line.replace(' =', ' </span>=', 1)
+
+            # Starting bullet characters for start of line
+            if line.startswith('- '):
+                line = line.replace('- ', '<br /><span style="color: #ff66cc;">-</span> ', 1)
+            if line.startswith('*'):
+                line = line.replace('*', '<br /><span style="color: #00cc99;">*</span> ', 1)
+            if line.startswith('+'):
+                line = line.replace('+', '<span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;">', 1)
+                line = line.rstrip('\n')
+                line = line + '</em></span>' + '<br />'
+
+            # Hero highlighting
+            for heroName in heroList:
+                if line.startswith(str(heroName)) and (len(str(heroName))+2 >= len(line) or line.endswith('Reworked)\n')): # Specific exception for hero names in hero abilities; accounts for the hidden \n
+                    line = '<br /><strong><span style="color: #0099ff";>' + line
+                    line = line.rstrip('\n')
+                    line =  line + '</span></strong>' + '\n'
+            
+            # Item highlighting
+            for itemName in itemList:
+                if line.startswith(str(itemName)) or line.startswith('New '):
+                    line = '<br /><strong><span style="color: #00cccc";>' + line
+                    line = line.rstrip('\n')
+                    line =  line + '</span></strong>' + '\n'
+
+            # Subheader highlighting
+            for subheaderName in subheaderList:
+                if line.startswith(str(subheaderName)):
+                    line = '<br /><span style="color: #00cc99";>' + line
+                    line = line.rstrip('\n')
+                    line =  line + '</span>' + '\n'
+
+            # Ability name highlighting
+            for abilityName in abilityNameList:
+                if line.startswith(str(abilityName)):
+                    line = '<br /><span style="color: #0099cc";>' + line
+                    line = line.rstrip('\n')
+                    line =  line + '</span>' + '\n'
+
+            # Misc. terms
+            if line.startswith('New Picking Mode') or line.startswith('Kongor'):
+                line = '<br /><span style="color: #ff0066";>' + line
+                line = line.rstrip('\n')
+                line =  line + '</span>' + '\n'
+            
+            file.write(line)
+        file.close()
+
+
 # Main
 formatPatchNotes_InGame(gamePatchNotes)
 formatPatchNotes_Forum(forumPatchNotes)
+formatPatchNotes_MotD(motdPatchNotes)
 
 print("Patch notes formatting complete! :)")
