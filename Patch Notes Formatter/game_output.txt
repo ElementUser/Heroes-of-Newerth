@@ -1,6 +1,6 @@
-^980Version 4.8.2^*
+^980Version 4.8.3^*
 -------------
-^98011 February 2020^*
+^9807 April 2020^*
 
 
 
@@ -8,317 +8,426 @@
 
 
 
-=^075 Hero Changes - Swiftblade ^*=
+=^075 Staff of the Master & Master's Legacy Changes ^*=
 
-^947+^* Swiftblade gets his own section in these patch notes since he has a Staff of the Master change that pertains to a skill rework!
 
-^947+^* Counter Attack was an ability that was a result of an afterthought when filling the last ability of Swiftblade's kit.
-^947+^* By changing the ability to be more interactive and have practical use throughout the game, this allows the hero to be more engaging to play and transitions him more to a dueling playstyle!
 
- 
+^059Gemini^*
 
-^059Swiftblade^*
-
-^256Counter Attack^*
-^947-^* In addition to its current effects, now has a new active effect: Activate to block all incoming autoattacks for 1.5 seconds, while countering with Swiftblade's autoattacks against the next 1/2/3/4 hero attacks during this time.
-^947-^* These counterattacks proc Way of the Sword.
-   ^274*^* Note that this state is a Buff, so Blade Frenzy & other sources of Purge effects will dispel the buff.
-   ^274*^* The passive effects of Counter Attack are disabled while Counter Attack's buff state is active.
-   ^274*^* Note that Counter Attack cannot be activated while Blade Frenzy is active (since Blade Frenzy silences Swiftblade).
-   ^274*^* Has a Mana Cost of 50 and a Cooldown of 23/20/17/14 seconds.
-
+^256Fire and Ice^*
 ^947-^* Staff of the Master effect addition (new):
-   ^274*^* If a hero attack is blocked, when Counter Attack expires, Swiftblade becomes Invulnerable for 1 second, and Counter Attack changes to Counter Strike for the next 5 seconds (800 Cast Range).
-   ^274*^* Target an enemy to use Counter Strike, attacking & teleporting to them and applying a 80% Movement Slow for 2 seconds.
-   ^274*^* Counter Attack's buff duration resets when the initial Invulnerability period ends.
+^947-^* Cooldown reduced from 45 seconds to 20 seconds.
+^947-^* Now also splits Gemini into a third elemental form, Light.
+   ^274*^* Light's life essence is still tied to the other elementals, i.e. Gemini still dies if either Fire, Ice or Light dies.
+   ^274*^* For Fire & Ice, their Rebirth ability now also requires Light to be nearby for them to all recombine.
+   ^274*^* For Fire & Ice, their Rebirth ability now sets Gemini's Health and Mana percentage to the highest of all 3 elemental forms.
+
+^947+^* Fire gains a subability:
+^947-^* Ability 3b - Together in Bright Spirit: After a 3 second cast time, teleports Fire to Light's location.
+   ^274*^* Shares cooldown with Together in Spirit.
+   ^274*^* Default activation hotkey: D
+
+^947+^* Ice gains a subability:
+^947-^* Ability 3b - Together in Bright Spirit: After a 3 second cast time, teleports Ice to Light's location.
+   ^274*^* Shares cooldown with Together in Spirit.
+   ^274*^* Default activation hotkey: D
+
+
+
+^947+^* Light's abilities are as follows:
+
+^947-^* Ability 1 - Light Breath: Unleashes a cone of light that deals 100/175/250 Magic Damage and applies a 40/60/80% Miss Chance to enemies for 3 seconds.
+   ^274*^* Has the same general parameters (Cast Range, Mana Cost, Cooldown) as its analog ability on Fire and Ice.
+
+^947-^* Ability 2 - Light Fang: Shoots Light at target enemy, making him invulnerable during the process. Deals 60/120/180 Magic Damage and applies a 0.5 second Stun.
+   ^274*^* Has the same general parameters (Cast Range, Mana Cost, Cooldown) as its analog ability on Fire and Ice.
+
+^947-^* Ability 3a - Together in Fiery Spirit: After a 3 second cast time, teleports Light to Fire's location.
+   ^274*^* Cooldown: 30 seconds
+   ^274*^* Shares cooldown with Together in Icy Spirit.
+
+^947-^* Ability 3b - Together in Icy Spirit: After a 3 second cast time, teleports Light to Ice's location.
+   ^274*^* Cooldown: 30 seconds
+   ^274*^* Shares cooldown with Together in Fiery Spirit.
+   ^274*^* Default activation hotkey: D
+
+^947-^* Ability 4 - Rebirth / Lightning Form:
+   ^274*^* Passive: While 1200 units away from enemy heroes, Light becomes an an agile elemental also known as Volt, gaining 10/50/10000% Movement Speed. Max Movement Speed is set to 750. This effect is disabled for 12 seconds when Light uses an ability, attacks, or takes damage.
+   ^274*^*  Active: Activate to begin casting for 1.25 seconds. Upon finishing the cast, recreates Gemini at the current location with Health and Mana Percentages equal to the highest of Fire, Ice, and Light. Disabled if Fire, Ice and Light are more than 300 units apart.
+
+^947+^* Light also serves as an agile scouting elemental. This rewards skilled Gemini players that can micromanage all 3 elementals optimally, all while taking advantage of Light's out-of-combat speed to scout and set up a constant global roaming presence in the late game.
 
 _______________________________________________
 
- 
+^059Geomancer^*
 
-=^075 Hero Changes - Keeper of the Forest ^*=
+^256Crystal Field^*
+^947-^* Staff of the Master effect addition (to pre-existing):
+   ^274*^* Now also applies a 35% Movement Speed Slow to enemies within 600 radius before the initial explosion occurs.
 
-^947+^* Ever since the readjustment of Keeper of the Forest's Animated Trees to comfortably kill Ancient Creeps early, Keeper of the Forest has been drastically underperforming.
+_______________________________________________
 
-^947+^* Keeper of the Forest received buffs to compensate for this, and also received changes that accentuate his unique structure defense role & being a structural fortifier and healer.
-^947+^* Additionally, Keeper of the Forest received another boost from Staff of the Master. This time, it is his legacy Tree Sight ability!
+^059Magebane^*
 
- 
+^256Flash^*
+^947-^* Staff of the Master addition (new):
+   ^274*^* Enemy units within 600 radius of Magebane's blink location have Mana Feedback applied to them for 6 seconds. Active abilities cast by these affected targets will deal 110% of that ability's Mana Cost to the caster.
 
-^059Keeper of the Forest^*
-^947-^* Strength growth per level increased from 3 to 3.3.
+^256Mana Rift^*
+^947-^* Staff of the Master effect change (complete replacement of the previous one):
+   ^274*^* Mana Rift's Damage dealt to the main target now propagates to 1 other enemy hero within 800 radius with 60% power.
+   ^274*^* Enemies affected by Mana Rift within the inner 225 radius will not be affected by this new effect, and will still take full damage.
 
-^256Nature's Guidance^*
-^947-^* Bonus Health Regeneration per second increased from 1/2/3/4 to 2/3/4/5.
-^947-^* Structures now gain an extra +3 Armor and Health Regeneration per second from this ability.
-^947-^* Immobilize state duration increased from 0.5/0.8/1.1/1.4 seconds to 0.8/1.2/1.6/2 seconds.
-^947-^* Units other than Keeper of the Forest attacking out of stealth now apply the Immobilize state for 0.5x the duration.
+_______________________________________________
 
-^256Animate Forest^*
-^947-^* Max Health of Animated Trees from this ability increased from 370/430/490/550 to 390/460/530/600.
+^059Martyr^*
 
-^256Strength in Numbers^*
+^256Sol's Conviction^*
 ^947-^* Staff of the Master effect addition (new):
-   ^274*^* Grants an active ability that enchants a tree, granting 800 Clearvision around the area.
-   ^274*^* The Clearvision persists as long as the enchanted tree is alive.
-   ^274*^* Enemies can see an enchanted tree if they have vision of it.
-   ^274*^* Ability has a 150 Cast Range, a Mana Cost of 100, and a cooldown of 30 seconds.
+   ^274*^* Allows Martyr to cast the ability on willing ally heroes within 600 Cast Range.
+
+_______________________________________________
+
+^059Ophelia^*
+
+^256Command^*
+^947-^* Staff of the Master effect change (to pre-existing):
+   ^274*^* Ability now only grants 0.25x the Movement Speed bonus to her Ancient creeps.
+
+_______________________________________________
+
+^059Soul Reaper^*
+
+^256Demonic Execution^*
+^947-^* Staff of the Master effect addition (to pre-existing):
+   ^274*^* Demonic Execution's Damage dealt to the main target now also chains to enemy heroes within 500 radius with 60% power each time, up to 5 times.
+   ^274*^* The chaining effect cannot apply to a hero that is already hit by the same cast instance of Demonic Execution.
 
 _______________________________________________
 
  
 
-=^075 Master's Legacy & Staff of the Master effect Changes ^*=
+=^075 General ^*=
+
+^947-^* On the hero pick screen while selecting an avatar, clicking on an unowned avatar's "Need Coins" button will now redirect you to the HoN Store.
+   ^274*^* If players are lacking Gold Coins to purchase an avatar, they can now navigate to the HoN Store and click on the "Buy Coins" button there. 
+
+^075Forests of Caldavar ("New") - Neutral Creeps^*
+^947-^* Slightly reduced the max chase time & chase distance for the 2 bottom-left-most Legion neutral camps and the top-right-most Hellbourne neutral camp.
+   ^274*^* Greatly mitigates the unintended behaviour of pulling the nearest lane creeps with these neutral camps.
+   ^274*^* Note: this change also makes the double stack timings a bit more strict.
+   ^274*^* This change is considered to be temporary until proper map changes can be made.
+
+^075Towers^*
+^947-^* Aggro check duration against enemy-player-controlled units that attack nearby ally heroes reduced from 2 seconds to 1 second.
+   ^274*^* This does not affect the actual aggro duration of the tower against the targeted unit (i.e. after the tower has locked onto the target). It only affects the time in which it checks whether it needs to switch aggro or not.
+   ^274*^* Mitigates cases where you damage an enemy hero when you are outside the tower's attack range & then proceed to go within tower range to last hit a creep and having the tower lock onto you.
+   ^274*^* A more thorough remedy may be investigated in the future when time permits.
+
+_______________________________________________
 
  
 
-^077Master's Legacy^*
-^947-^* Cost reduced from 2500 Gold to 2300 Gold.
-^947-^* Now grants an additional +5 Strength, Agility and Intelligence when upgraded from Staff of the Master.
-   ^274*^* This item now grants a total of +15 Strength, Agility and Intelligence.
 
-^947+^* Players are a little bit too deterred from upgrading their Staff of the Master to Master's Legacy to help their allies.
-^947+^* Getting some bonuses for themselves while lowering the cost of the upgrade by just a bit should incentivize players to buy Master's Legacy without making it an obvious item to buy in the majority of their games.
-
-_______________________________________________
-
-^059Andromeda^*
-
-^256Void Rip^*
-^947-^* Staff of the Master effect changes (to pre-existing):
-   ^274*^* Cooldown is now reduced to 20 seconds (instead of 10 seconds).
-   ^274*^* Magic Immunity duration reduced from 3 seconds to 2 seconds.
-
-_______________________________________________
-
-^059Artesia^*
-
-^256Essence Projection^*
-^947-^* Staff of the Master effect changes (to pre-existing):
-   ^274*^* Cast Range increased from 5000 to Global.
-
-_______________________________________________
-
-^059Tremble^*
-
-^256Hive Mind^*
-^947-^* Staff of the Master effect changes (to pre-existing):
-   ^274*^* Now also spawns the uncontrollable Shudder (the one that Tremble normally has without Staff of the Master) in addition to the controllable Shudder.
-   ^274*^* In this scenario, the uncontrollable Shudder will be more transparent than the controllable Shudder (to avoid unnecessary screen obstruction & confusion).
-
-_______________________________________________
-
-
-
-=^075 User Interface: Minimap Changes ^*=
-
-^947-^* When Player Colours are enabled: Hero icons in the minimap now have their icon borders match the colour of the player (for your own team only; the icon borders for enemy heroes will still be red).
-^947-^* When Player Colours are enabled: also sets the Courier minimap icons to player colours (note that the Courier minimap icon colour will be white if Player Colours are disabled).
-   ^274*^* Note: Player Colours can be toggled via the button above the minimap.
-
- 
 
 =^075 Heroes ^*=
 
- 
+
 
 ^059Adrenaline^*
 
-^256Shard Blast^*
-^947-^* Cooldown reduced from 7.5/5/2.5/1 second(s) to 6/4/2/0 seconds.
+^256Rush^*
+^947-^* Max number of Dread Stacks reduced from 12/20/28/36 to 15/20/25/30.
+
+^256Death's Halo^*
+^947-^* Number of Dread Stacks applied changed from 12/24/36 to 14/22/30.
+
+^947+^* When playing against Adrenaline, it is simply too frustrating to be almost literally any hero with any amount of farm and be solo killed by Adrenaline with relatively less effective items as a solo ganker with maybe just a touch of ally support.
+   ^274*^* No, hanging back and waiting to react with Stormspirit is not the ideal counterplay against Adrenaline, as it is not always feasible nor reliable.
+
+^947+^* With these changes, Adrenaline's solo kill potential requires a little bit more ally assistance or proper itemization.
 
 _______________________________________________
 
 ^059Andromeda^*
-^947-^* Attack Range reduced from 475 to 450.
+^947-^* Attack Range increased from 450 to 475.
+
+^256Void Rip^*
+^947-^* No longer deals a negligible amount of damage (to interrupt Portal Key, for example).
 
 _______________________________________________
 
-^059Defiler^*
-^947-^* Base Movement Speed reduced from 305 to 295.
+^059Bushwack^*
 
-^256Siphon Soul^*
-^947-^* Cast Range reduced from 650 to 600.
-^947-^* Mana Cost increased from 80/100/120/140 to 100/115/130/145.
-^947-^* The link will now break if the target gains invulnerability or Magic Immunity.
-^947-^* Movement Speed Slow applied to an enemy changed from 18% to -15/25/35/45 Movement Speed.
-^947-^* Movement Speed bonus for self changed from 18% to 5/10/15/20%.
+^256Crippling Dart^*
+^947-^* Movement Speed Slow duration reduced from 1.5 seconds to 1.25 seconds.
+^947-^* Cooldown reduction of this ability per autoattack lowered from 0.4 seconds to 0.2 seconds.
 
-_______________________________________________
-
-^059Demented Shaman^*
-
-^256Entangle^*
-^947-^* Now deals a negligible amount of non-lethal damage to its target upon being cast (to put Portal Key on cooldown, cancel Health Potions, etc.).
+^256Side Step^*
+^947-^* Mana Cost increased from 20 to 30.
 
 _______________________________________________
 
-^059Gauntlet^*
+^059Berzerker^*
 
-^256Grapple^*
-^947-^* Cast action time increased from 200ms to 250ms.
-^947-^* Range rescaled from 1100 to 725/850/975/1100.
+^256Mark of Death^*
+^947-^* Attack Speed bonus against marked targets changed from 40 to 30/40/50/60.
 
 _______________________________________________
 
-^059Glacius^*
+^059Corrupted Disciple^*
 
-^256Tundra Blast^*
-^947-^* Movement Speed Slow increased from 25/25/30/35% to 25/30/35/40%.
-^947-^* Movement Speed Slow duration increased from 3/3.5/3.5/4 seconds to 3/3.5/4/4.5 seconds.
+^256Electric Tide^*
+^947-^* Minimum Magic Damage per hit reduced from 40/60/80/100 to 35/55/75/95.
+^947-^* Maximum Magic Damage per hit reduced from 90/140/190/240 to 70/110/150/190.
 
-^256Glacial Downpour^*
-^947-^* Magic Damage per proc increased from 70/95/120 to 75/100/125.
+^256Corrupted Conduit^*
+^947-^* Cast Range reduced from 600 to 550.
+   ^274*^* Leash range adjusted accordingly.
+
+_______________________________________________
+
+^059Electrician^*
+
+^256Cleansing Shock^*
+^947-^* True Damage dealt to summoned enemy units rescaled from 1000 to 700/850/1000.
+
+_______________________________________________
+
+^059Ellonia^*
+
+^256Flash Freeze^*
+^947-^* Total Magic Damage is now capped at 550.
+
+^947+^* When coupled with Staff of the Master, Flash Freeze's effect on her Absolute Zero ability dealt excessive area damage if Frosted Stacks were accumulated on enemies ahead of time (particularly when coupled with ally crowd control).
+^947+^* Implementing a cap on the total Magic Damage in these circumstances & for long wars of attrition will prevent Ellonia from 1-shotting a hero with a large number of Frosted Stacks on them.
+
+_______________________________________________
+
+^059Engineer^*
+^947-^* Primary Attribute changed from Agility to Intelligence.
+^947-^* Agility growth per level reduced from 2.3 to 2.1.
+^947-^* Intelligence growth per level increased from 2.1 to 2.5.
+
+^947+^* Engineer is underperforming and most of his item build consists of Intelligence items. This small change should help his performance significantly by increasing his damage by mid/late game compared to other support heroes.
 
 _______________________________________________
 
 ^059Goldenveil^*
 
 ^256Perch & Plunge^*
-^947-^* Plunge: delay before Goldenveil lands to apply the Magic Damage & Stun increased from 0.75 seconds to 0.8 seconds.
+^947-^* Plunge: delay before Goldenveil lands to apply the Magic Damage & Stun increased from 0.8 seconds to 0.85 seconds.
 
 _______________________________________________
 
-^059Gravekeeper^*
+^059Hellbringer^*
 
-^256Corpse Explosion^*
-^947-^* Max number of corpses exploded reduced from 6 to 3/4/5/6.
-^947-^* Magic Damage per corpse reduced from 20/40/60/80 to 10/20/30/50.
-^947-^* Base Magic Damage increased from 60 to 70/90/120/170.
-
-^947+^* Ever since the consistent area damage change, Corpse Explosion has finally not been useless. In fact, it was overperforming and was a free ticket to winning the lane if Gravekeeper chose to max Corpse Explosion.
-
-^947+^* Normalizing the damage in the early levels and maintaining its above average power at the max level of the ability will keep it powerful, but only at higher levels of the ability.
+^256Summon Malphas^*
+^947-^* Malphas Max Health reduced from 900/1400/1900 to 900/1350/1800.
+^947-^* Malphas Attack Damage reduced from 80/125/170 to 80/120/160.
+^947-^* Malphas Health Regeneration per second reduced from 15/20/25 to 10/14/18.
 
 _______________________________________________
 
-^059Master of Arms^*
+^059Ichor^*
 
-^256Acid Bomb^*
-^947-^* Physical Damage per second increased from 15/30/45/60 to 20/35/50/65.
-^947-^* In addition to its previous effects, now also applies a 11/14/17/20% Movement Speed Slow to enemies on the trail.
-^947-^* Effects now linger for 0.2 seconds upon leaving the trail.
+^256Transfusion^*
+^947-^* Link duration reduced from 6 seconds to 4.5/5/5.5/6 seconds.
+
+^256Saint's Blood^*
+^947-^* Base Damage Reduction lowered from 10/15/20/25% to 3/6/9/12%.
+^947-^* Damage Reduction increase per debuff active on Ichor increased from 8% to 8/9/10/11%.
+^947-^* No longer requires the damage to exceed 15% of Ichor's Current Health for the Damage Reduction to take place.
+^947-^* Max total Damage Reduction changed from 40/45/50/60% to 25/35/45/55%.
+
+_______________________________________________
+
+^059Martyr^*
+^947-^* Strength growth per level increased from 2.4 to 2.5.
+^947-^* Intelligence growth per level increased from 2.4 to 2.5.
+
+^256Retribution^*
+^947-^* Mana Cost reduced from 95/105/115/125 to 90/100/110/120.
 
 _______________________________________________
 
 ^059Moira^*
 
 ^256Shards of Harkon^*
-^947-^* Now has a 300ms Cast Action Time and 600ms Cast Time (as opposed to having neither of those).
+^947-^* Cast Action Time reduced from 300ms to 200ms.
+^947-^* Cast Time reduced from 600ms to 200ms.
 
 ^256Ephemeral Forge^*
-^947-^* Portal Key on the mimic (if it has one) is now put on a 3 second cooldown when the original channeling completes.
+^947-^* Cooldown increased from 60/55/50/45 seconds to 95/90/85/80 seconds.
+^947-^* Max duration increased from 10/14/18/22 seconds to 12/18/24/30 seconds.
+
+^947+^* The cooldown of Ephemeral Forge caused Moira to be able to assist allies in ganks and teamfights without any risk far too frequently.
+^947+^* Increasing the cooldown of Ephemeral Forge will force Moira to use this ability more wisely. Otherwise, she will have to put herself at risk more often if she uses this ability too haphazardly.
 
 _______________________________________________
 
-^059Monkey King^*
+^059Myrmidon^*
+^947-^* Attack Range increased from 450 to 500.
 
-^256Vault^*
-^947-^* Affector linger time reduced from 0.8 seconds to 0.3 seconds.
+^256Weed Field^*
+^947-^* State duration increased from 1/1.33/1.6/2 seconds to 1/1.4/1.8/2.2 seconds.
+
+^256Magic Carp^*
+^947-^* Mana Cost reduced from 95/100/105/110 to 80/90/100/110.
+^947-^* Now applies a 30/40/50/60% Movement Speed Slow for 0.6 seconds if the target is not moving at the time of impact.
+
+^947+^* The change to Magic Carp only ever so slightly makes it easier to ensure that Weed Field hits your intended target. The change looks stronger on paper than it is in practice.
 
 _______________________________________________
 
-^059Nomad^*
-^947-^* Strength growth per level reduced from 2 to 1.8.
-^947-^* Agility growth per level reduced from 2.9 to 2.8.
-^947-^* Intelligence growth per level reduced from 2.2 to 2.
+^059Pandamonium^*
 
-_______________________________________________
-
-^059Nitro^*
-
-^256Ballistic^*
-^947-^* While Nitro and Mauser are together, projectile lifetime reduced from 0.35s to 0.25s.
-   ^274*^* Projectile lifetime remains unchanged when Mauser is detached from Nitro.
-
-^947+^* Reducing the projectile lifetime should drastically increase the accuracy of her shots for less mechanically accurate players without affecting veteran Nitro players nearly as much. This should reduce the size of Nitro's performance gap between lower and higher bracket play.
+^256Flick^*
+^947-^* Cast Range reduced from 400 to 350.
+^947-^* Mana Cost changed from 50 to 60.
 
 _______________________________________________
 
 ^059Parasite^*
 
 ^256Infest^*
-^947-^* Infested creep now receives +50% Damage from player-controlled enemy units (+25% Damage if Staff of the Master is on Parasite).
+^947-^* Infested creep's bonus damage received from player-controlled enemy units reduced from +50% to +25%.
+^947-^* Consume subability can no longer be used while the Infested creep is Silenced or Stunned.
 
-^947+^* Parasite's Infest mechanic that allows him to hide inside a mobile creep has been incredibly frustrating to deal with since the hero has been introduced to the game (in the event Alchemist's Bones is not available to be used as a counter when engaging him). Every time Parasite is inside a creep, he basically has a second ~1000 Health bar that soaks up enemy crowd control and overkill damage from nukes with practically no cost to Parasite.
+^947+^* Parasite should not be able to break out of crowd control early from his Infested creep. This was a big oversight for most of the HoN's lifetime.
+^947+^* As compensation for this adjustment, the previous nerf has been toned back.
 
-^947+^* This change should allow enemy players to more quickly deal with Parasite's "second Health Bar" without it affecting Parasite's jungling capabilities.
+_______________________________________________
+
+^059Predator^*
+
+^256Venomous Leap^*
+^947-^* Now also applies a Restrain effect for the first 2 seconds of the debuff.
+
+^256Terror^*
+^947-^* Movement Speed bonus granted to attackers increased from 15% to 20%.
+^947-^* Buff duration granted to attackers increased from 3.5 seconds to 4.25 seconds.
 
 _______________________________________________
 
 ^059Qi^*
-^947-^* Attack projectile speed increased from 900 to 1100 units per second.
+
+^256Ancestral Assault^*
+^947-^* Damage now deals less damage as the distance becomes larger between the target and the ability's original cast location.
+   ^274*^* 300 Range and below: starts at 100% Damage
+   ^274*^*  Max Range: scales down to 40% Damage
 
 _______________________________________________
 
-^059Silhouette^*
+^059Sapphire^*
 
-^256Shadow^*
-^947-^* Like a Ninja (swap ability) changes:
-   ^274*^* Cast time and cast action time reduced from 0.15 seconds to 0 seconds.
-   ^274*^* Cast time and cast action time now increases by 0.1 seconds for every 1000 units between Silhouette and her Shadow (0.15 seconds for the first 1000 units).
-   ^274*^* Max cast time and cast action time of 0.55 seconds.
-
-^947+^* Silhouette's relative safety for split-pushing and potential backdooring is much higher than almost every other hero's safety for most of HoN's history because her swap subability is a reliable and quick means of escape with an abnormally long teleport range (relative to other escapes).
-
-^947+^* Increasing the risk ever so slightly should increase her window of vulnerability just enough where Silhouette will have to be mindful of her overall Shadow positioning, or be extra mindful of the current situation and swap out earlier than normal if she wishes to be 100% safe.
+^256Unstable Shards^*
+^947-^* Area Magic Damage upon hitting the Unstable Shard increased from 110/115/120/125% to 115/120/125/130% of the Attacker's Attack Damage.
 
 _______________________________________________
 
-^059Solstice^*
+^059Scout^*
 
-^256Graceful Strikes^*
-^947-^* Day Time: Bonus Physical Damage per proc changed from 50/75/100/125 to 60/80/100/120.
-^947-^* Night Time: Bonus Physical Damage per proc increased from 70/105/140/175 to 80/115/150/185.
+^256Electric Eye^*
+^947-^* Effect type of the Silence application changed from SuperiorMagic to Magic.
+^947-^* Silence duration reduced from 3/4/5/6 seconds to 2/3/4/5 seconds.
+^947-^* Placement restriction for the minimum distance from a tree increased from 75 units to 100 units.
+^947-^* Cast Range increased from 100 to 150.
+^947-^* Vision radius and reveal radius changed from 800 to 700/800/900/1000.
+^947-^* Proximity detection range (for enemies to see the Electric Eye) increased from 200 to 300.
 
-_______________________________________________
+^947+^* Scout's Electric Eyes have been a fundamentally broken tool since his inception. The ability has been made more reasonable (and more importantly, unable to pierce Magic Immunity as a non-ultimate ability) and simultaneously made less aggravating to play against if the Scout player uses Electric Eyes mostly to block neutral camps from spawning, while focusing more on the scouting/vision aspect of the Electric Eyes.
 
-^059Soul Reaper^*
-^947-^* Attack projectile speed increased from 900 to 1300 units per second.
-
-_______________________________________________
-
-^059Valkyrie^*
-^947-^* Attack projectile speed increased from 900 to 1100 units per second.
-
-^256Javelin of Light^*
-^947-^* Projectile touch effect type changed from True to Magic.
-   ^274*^* This is actually considered a buff, as it means that Magic Immune units can no longer "catch" the Javelin & receive no damage and no Stun, which ends up blocking it for their allies without penalty.
-   ^274*^* Instead, the projectile will go through Magic Immune units and no longer consider them as a valid target for impact.
+^947+^* If Scout needs buffs in the future, he will receive them in the appropriate parts of his kit. Until then, these adjustments should make playing against Scout a little more bearable without affecting his actual power much.
 
 _______________________________________________
 
-^059War Beast^*
+^059Skrap^*
 
-^256Metamorphosis^*
-^947-^* Cooldown reduced from 115/95/70 seconds to 115/90/65 seconds.
+^256Mousetrap^*
+^947-^* Magic Damage upon exploding increased from 80/100/120/140 to 80/105/130/155.
+
+^256Zoomerang^*
+^947-^* Magic Damage per hit increased from 60/80/100/120 to 60/85/110/135.
+
+^256Unleash Vorax^*
+^947-^* Gold Bounty amount increased from 40% to 65% when Vorax kills an enemy (non-player-controlled) creep and if Skrap is more than 1500 units away from Vorax.
+   ^274*^* The distance value has also increased from 1000 units to 1500 units in the above change.
+
+_______________________________________________
+
+^059Tarot^*
+
+^256Far Scry^*
+^947-^* State type changed to Debuff (making it purgeable).
+   ^274*^* State will still be unable to be transferred by abilities like Parasite's Facehug for technical reasons.
+
+^256Bound by Fate^*
+^947-^* Tether state type on both affected targets changed to Debuff  (making it purgeable).
+   ^274*^* State will still be unable to be transferred by abilities like Parasite's Facehug for technical reasons.
+   ^274*^* Purging 1 of the debuff states on a target will purge the tether state on the other target.
+
+^256Luck of the Draw^*
+^947-^* Critical Strike chance increased from 20% to 25%.
+
+ _______________________________________________
+
+^059Thunderbringer^*
+
+^256Lightning Rod^*
+^947-^* Procs now occur when Thunderbringer deals Ability Damage to a target (rather than when he casts a spell).
+^947-^* Bonus Magic Damage based on the target's Current Health now deals 0.5x damage if the target is farther than 1000 units from Thunderbringer.
+
+ _______________________________________________
+
+^059Torturer^*
+
+^256Chain Reaction^*
+^947-^* Mana cost reduced from 120/135/150/165 to 105/120/135/150.
+
+^256Impalement^*
+^947-^* Mana cost reduced from 115/130/145/160 to 95/115/135/155.
 
 _______________________________________________
 
 ^059Warchief^*
-^947-^* Intelligence growth per level reduced from 2.9 to 2.7.
+^947-^* Intelligence growth per level increased from 2.7 to 2.8.
 
 _______________________________________________
+
+^059Wildsoul^*
+
+^256Summon Booboo^*
+^947-^* Swipe: cooldown increased from 8 seconds to 11 seconds.
+   ^274*^* This change also applies to Wildsoul while in Bear Form.
+
+_______________________________________________
+
+^059Xemplar^*
+
+^256Fractal Field^*
+^947-^* Each subsequent explosion affecting a target past the third explosion within the last 2 seconds now deals 0.7x Damage of the previous explosion.
+
+_______________________________________________
+
+ 
 
  
 
 =^075 Items ^*=
 
- 
 
-^077Alchemist's Bones^*
-^947-^* Gold bounty of the creep killed by Alchemist's Bones active ability changed from 3x the creep bounty to 165 Gold.
-   ^274*^* The XP bounty multiplier still remains the same, so targeting a harder creep with Alchemist's Bones will still yield more experience.
 
-_______________________________________________
+^077Blight Stones^*
+^947-^* Cast Range increased from 100 to 135.
+   ^274*^* This is mostly to resolve issues where players cannot seem to target trees near them.
+   ^274*^* Keep in mind that sometimes the tree actually does end up falling & a charge on Blight Stones is properly consumed, but you will not see the tree fall in fog. This is an intended feature, as it prevents enemies from seeing when trees fall in fog.
 
-^077Hypercrown^*
-^947-^* Active ability can now be used on allies even if they are Magic Immune.
+^077Bound Eye^*
+^947-^* Active effect now also reveals all enemy gadgets in its detection radius (even those in fog).
 
-_______________________________________________
-
-^077Rejuvenation Potion^*
-^947-^* Cost increased from 300 Gold to 350 Gold.
+^077Shrunken Head^*
+^947-^* Cooldown increased from 65 seconds to 75 seconds.
 
 _______________________________________________
 
@@ -344,37 +453,76 @@ _______________________________________________
 
  
 
+=^075 General ^*=
+
+^947-^* Fixed a MMR exploit where players intentionally made every player's MMR behave as 1500 (and making everyone's MMR change +/- 5 for the game) by switching game modes before entering the matchmaking queue.
+   ^274*^* Players who abused this bug should be ashamed of themselves.
+   ^274*^* Remember to report big game exploits to the Senior Game Masters (SGMs) when possible! The players will be suspended in these scenarios.
+
+^947-^* MvP Show/Hide button no longer displays at the beginning of a subsequent game.
+
+^947-^* Water tile definitions near the middle lane ramps were adjusted to more accurately match the water's visual location for the purposes of abilities dependent on the presence of a water tile (e.g. Riptide's In My Element ability).
+
+
+
 =^075 Heroes ^*=
 
-^059Andromeda^*
-^947-^* Void Rip (when boosted by Staff of the Master): Magic Immunity effect counts as an Activation Modifier (so the Magic Immunity portion of the buff granted to Andromeda cannot be active at the same time as Shrunken Head or Void Talisman).
-   ^274*^* If you use one of these items and then activate Andromeda's Void Rip, the Magic Immunity from Void Rip will not apply to Andromeda at all. Note that this only has gameplay implications in the most niche of scenarios - most scenarios will still be the same.
+^059Berzerker^*
+^947-^* Chain Spike timer is now properly readjusted when the initial state is applied on an enemy (particularly when used against an opponent that reduces debuff durations).
 
-^059Corrupted Disciple^*
-^947-^* Electric Tide's inner radius offset was increased from 50 units to 80 units to mitigate cases of its hitbox being undetected by a unit that is moving towards Corrupted Disciple (in the event that one or both units have high Movement Speed).
+^059Geomancer^*
+^947-^* Slightly increased sight radius while Geo Stalk is active.
+   ^274*^* Fixes a corner case scenario where Geomancer cannot see a target within the Geo Stalk detection radius at very specific angles.
+
+^059Grinex^*
+^947-^* Fixed a minor tooltip error with Nether Strike when the Staff of the Master effect is on Grinex.
+
+^059Hellbringer^*
+^947-^* Malphas can no longer attack buildings if Hellbringer isn't within 925 units.
+^947-^* Summon Malphas visual effects at the target location are now displayed properly for Batllebringer and Arimane the Pit Lord alternate avatars.
+
+^059Lodestone^*
+^947-^* Lodestone Plates visuals now show the appropriate cosmetic for all alternate avatars.
+^947-^* Lodestone Plates visuals are now properly shown when the ability timer reaches 0.
 
 ^059Moira^*
-^947-^* Units affected by Mana Sunder now regain the appropriate amount of mana if they have debuff duration reduction sources.
+^947-^* Mana Sunder no longer causes single target spells cast by the affected targets to apply Mana Sunder to that spell's target for 1 second.
 
-^059Monkey King^*
-^947-^* Illusive Dash's initial cast is now properly detected as a spellcast by certain sources in the game (e.g. Power Supply).
+^059Myrmidon^*
+^947-^* Forced Evolution now propagates the area effect properly to illusions with 33% power when they attack (when boosted by Staff of the Master)
 
-^059Nymphora^*
-^947-^* In the Mid Wars map, Teleport restriction boundaries have been adjusted to be the boundary that is roughly defined by the Tier 2 towers.
-
-^059Predator^*
-^947-^* Stone Hide's Magic Immunity effect now counts as an Activation Modifier (so the Magic Immunity effect cannot be active at the same time as Shrunken Head or Void Talisman).
-   ^274*^* If you use one of these items and then activate Predator's Stone Hide, if the item's immunity duration runs out & Stone Hide's duration is still active, you will NOT receive the immunity effect until other Activation Modifier effects wear off.
+^059Nitro^*
+^947-^* Tesla Cannon Nitro now plays her attack sounds properly when using Ballistic.
+^947-^* Tesla Cannon Nitro's textures are now displayed properly on Low and Medium graphic settings.
 
 ^059Swiftblade^*
-^947-^* Blade Frenzy's Magic Immunity effect now counts as an Activation Modifier (so the Magic Immunity effect cannot be active at the same time as Shrunken Head or Void Talisman).
-   ^274*^* If you use one of these items and then activate Swiftblade's Blade Frenzy, if the item's immunity duration runs out & Blade Frenzy's duration is still active, you will NOT receive the immunity effect for the rest of the state duration. Note that this only has gameplay implications in the most niche of scenarios - most scenarios will still be the same.
+^947-^* Counter Strike (Counter Attack, when boosted by Staff of the Master) active ability state now properly disappears when used to proc a Null Stone or effects similar to it (e.g. Moraxus' Arcane Shield)
+
+^059Xemplar^*
+^947-^* Illusions spawned from Schism now have properly have their attack animations synchronized with the actual attack impact time.
 
  
 
 =^075 Items ^*=
 
-^077Whispering Helm^*
-^947-^* Cooldown is now properly halved if the dominated creep becomes controlled by another source (e.g. Parasite's Infest).
+^947-^* The following items can no longer be transferred to other units or be dropped on the ground to fix an exploit where more than 1 completed of the item can be owned by a particular player in their hero's inventory at any given time:
+   ^274*^* Alchemist's Bones
+   ^274*^* Jade Spire
+   ^274*^* Restoration Stone
+
+^947+^* Note that there is still 1 way to attempt to bypass this, but the player is in for a gold loss surprise (and/or just flat out being inefficient) if they try to go that far. So just don't even try to exploit this, it will only hinder you.
+   ^274*^* This was an unintended exploit. Please use RAP to report players if you see them repeatedly performing any kind of exploit that bypasses an item's intended limit per player.
+
+
+
+^077Flying Courier^*
+^947-^* Can no longer perform a gold pooling exploit by dropping a shareable item with charges & picking it up again with the Flying Courier to change the item's ownership.
+   ^274*^* This was an unintended exploit. Please use RAP to report players if you see them continuously performing any kind of gold pooling exploit in the future, as they will be suspended if they continue to do so.
+
+^077Hypercrown^*
+^947-^* Damage is now sourced properly from the original owner of Hypercrown if the procs from its Charged Up state ends up damaging & killing enemy units.
+   ^274*^* This properly gives gold bounty to Hypercrown's owner when the Charged Up state kills an enemy unit.
+
+
 
 _______________________________________________
