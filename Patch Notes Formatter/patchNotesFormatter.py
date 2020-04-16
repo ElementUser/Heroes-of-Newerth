@@ -104,7 +104,7 @@ def formatPatchNotes_Forum(destFile):
         for line in file:
             # Top header: addition of the "Welcome" statement to patch notes
             if line.startswith('Version '):
-                line = '[CENTER][B][COLOR=#ffd700][SIZE=5]Welcome to Heroes of Newerth[/SIZE]' + '\n' + '[SIZE=4]' + line
+                line = '[CENTER][B][COLOR=#ffd700][SIZE=26]Welcome to Heroes of Newerth[/SIZE]' + '\n' + '[SIZE=20]' + line
                 line = line.rstrip('\n')
 
             if ('-------------' in line):
@@ -118,10 +118,10 @@ def formatPatchNotes_Forum(destFile):
 
             # Headers
             if line.startswith('=== '):
-                line = line.replace('=== ', '===[COLOR=#ffa500][SIZE=3][B] ', 1)
+                line = line.replace('=== ', '===[COLOR=#ffa500][SIZE=18][B] ', 1)
                 line = line.replace(' ===', ' [/B][/SIZE][/COLOR]===', 1)
             if line.startswith('== '):
-                line = line.replace('== ', '==[COLOR=#ffa500][SIZE=3][B] ', 1)
+                line = line.replace('== ', '==[COLOR=#ffa500][SIZE=18][B] ', 1)
                 line = line.replace(' ==', ' [/B][/SIZE][/COLOR]==', 1)
             if line.startswith('= '):
                 line = line.replace('= ', '=[COLOR=#ffd700] ', 1)
