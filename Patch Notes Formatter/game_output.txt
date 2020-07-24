@@ -53,8 +53,8 @@ The main goal of the changes to the "new" Forests of Caldavar map is to make the
 =^075 Jungle Changes ^*=
 
 Hellbourne bottom lane - Medium pull camp (unsafe lane)
-^947-^* Camp is now more accessible to the unsafe lane to be pulled into the lane
-^947-^* Trees in this area now allow for better vision from the unsafe lane, while the vision of that camp ends up being more obscured for the safe lane
+^947-^* Camp is now more accessible to the unsafe lane to be pulled into the lane.
+^947-^* Trees in this area now allow for better vision from the unsafe lane, while the vision of that camp ends up being more obscured for the safe lane.
 ^947-^* Also reworked tree patch in this area to more closely mirror the Hellbourne side of the map.
 
 Legion Ancients camp
@@ -580,7 +580,7 @@ _______________________________________________
    ^274*^* Total Cost increased from 1550 Gold to 1750 Gold.
 
 ^077Grave Locket^*
-^947-^* No longer requires a Ring of Protection in its recipe components list.
+^947-^* No longer requires a Guardian Ring in its recipe components list.
 ^947-^* No longer grants +2 Armor.
 ^947-^* Recipe Cost increased from 25 Gold to 200 Gold.
    ^274*^* Total Cost remains unchanged at 800 Gold.
