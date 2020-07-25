@@ -53,8 +53,8 @@ The main goal of the changes to the "new" Forests of Caldavar map is to make the
 =^075 Jungle Changes ^*=
 
 Hellbourne bottom lane - Medium pull camp (unsafe lane)
-^947-^* Camp is now more accessible to the unsafe lane to be pulled into the lane.
-^947-^* Trees in this area now allow for better vision from the unsafe lane, while the vision of that camp ends up being more obscured for the safe lane.
+^947-^* Camp is now more accessible to the unsafe lane to be pulled into the lane
+^947-^* Trees in this area now allow for better vision from the unsafe lane, while the vision of that camp ends up being more obscured for the safe lane
 ^947-^* Also reworked tree patch in this area to more closely mirror the Hellbourne side of the map.
 
 Legion Ancients camp
@@ -499,6 +499,14 @@ _______________________________________________
 
 _______________________________________________
 
+^059Predator^*
+
+Stone Hide
+^947-^* Cooldown increased from 14 seconds to 16 seconds.
+^947-^* Duration reduced from 4/5/6/7 seconds to 3.75/4.5/5.25/6 seconds.
+
+_______________________________________________
+
 ^059Qi^*
 
 ^256Ancestral Assault^*
@@ -593,6 +601,10 @@ _______________________________________________
 ^947-^* State duration increased from 15 seconds to 20 seconds.
 ^947-^* Bonus Mana Regeneration while active reduced from 6.67 to 6.25.
    ^274*^* Total Mana restored over the state duration increased from 100 to 125.
+
+^077Post Haste^*
+^947-^* Recipe Cost reduced from 1900 Gold to 1800 Gold.
+   ^274*^* Total Cost remains unchanged (due to the Striders change listed later on).
 
 ^077Restoration Stone^*
 ^947-^* Mana Cost increased from 300 to 375.

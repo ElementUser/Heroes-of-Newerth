@@ -24,8 +24,8 @@
 <br /><span style="color: #ff66cc;">-</span> Legion's southeastern most pull camp: a tree to the left of the camp (and to the right of the Observatory) has been removed to allow heroes to move through the nearby path.
 <br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> There were far too many spots near the lane that made it nearly impossible to find a hero unless you were right next to the hero (and even then, sometimes it was nearly impossible to do so)., which led to unhealthy play patterns by solo unsafe lane heroes.</em></span><br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> These changes address that issue, while still allowing for some niche hiding spots to be discovered. While this may appear to be a nerf to solo unsafe lane heroes, the jungle changes will more than compensate for that.</em></span><br /><br /><br /><br />=<span style="color: #ffd700";> Jungle Changes </span>=
 <br />Hellbourne bottom lane - Medium pull camp (unsafe lane)
-<br /><span style="color: #ff66cc;">-</span> Camp is now more accessible to the unsafe lane to be pulled into the lane.
-<br /><span style="color: #ff66cc;">-</span> Trees in this area now allow for better vision from the unsafe lane, while the vision of that camp ends up being more obscured for the safe lane.
+<br /><span style="color: #ff66cc;">-</span> Camp is now more accessible to the unsafe lane to be pulled into the lane
+<br /><span style="color: #ff66cc;">-</span> Trees in this area now allow for better vision from the unsafe lane, while the vision of that camp ends up being more obscured for the safe lane
 <br /><span style="color: #ff66cc;">-</span> Also reworked tree patch in this area to more closely mirror the Hellbourne side of the map.
 <br />Legion Ancients camp
 <br /><span style="color: #ff66cc;">-</span> Now spawns a Hard neutral camp instead of an Ancients neutral camp.
@@ -283,6 +283,11 @@
 <br /><br /><span style="color: #0099cc";>Voodoo Wards</span>
 <br /><span style="color: #ff66cc;">-</span> Mana Cost reduced from 200/350/500 to 150/275/400.
 <br />_______________________________________________
+<br /><br /><strong><span style="color: #0099ff";>Predator</span></strong>
+<br />Stone Hide
+<br /><span style="color: #ff66cc;">-</span> Cooldown increased from 14 seconds to 16 seconds.
+<br /><span style="color: #ff66cc;">-</span> Duration reduced from 4/5/6/7 seconds to 3.75/4.5/5.25/6 seconds.
+<br />_______________________________________________
 <br /><br /><strong><span style="color: #0099ff";>Qi</span></strong>
 <br /><br /><span style="color: #0099cc";>Ancestral Assault</span>
 <br /><span style="color: #ff66cc;">-</span> Percentage of SuperiorMagic Damage dealt based on the target's Attack Damage increased from 60% to 60/67.5/75%.
@@ -342,6 +347,9 @@
 <br /><span style="color: #ff66cc;">-</span> State duration increased from 15 seconds to 20 seconds.
 <br /><span style="color: #ff66cc;">-</span> Bonus Mana Regeneration while active reduced from 6.67 to 6.25.
 <br /><span style="color: #00cc99;">*</span> Total Mana restored over the state duration increased from 100 to 125.
+<br /><br /><strong><span style="color: #00cccc";>Post Haste</span></strong>
+<br /><span style="color: #ff66cc;">-</span> Recipe Cost reduced from 1900 Gold to 1800 Gold.
+<br /><span style="color: #00cc99;">*</span> Total Cost remains unchanged (due to the Striders change listed later on).
 <br /><br /><strong><span style="color: #00cccc";>Restoration Stone</span></strong>
 <br /><span style="color: #ff66cc;">-</span> Mana Cost increased from 300 to 375.
 <br /><br /><strong><span style="color: #00cccc";>Spellshards</span></strong>
