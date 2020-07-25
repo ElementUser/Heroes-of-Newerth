@@ -9,6 +9,9 @@ Version 4.8.5
 New Monkey King Avatar: Jade Macaque
 - This higher-definition Monkey King avatar (originally Six Eared Macaque) was taken from the HoN China client. Refined with jade visual effects, Jade Macaque is ready to dazzle Newerth!
 
+New Animated & Static Wallpaper for the Login Screen: King Klout
+*This may not show up for some clients due to technical issues. This will be resolved in the future.
+
 
 
 == New Items ==
@@ -160,7 +163,7 @@ The main goal of these changes to Mid Wars is to resolve some common frustration
 + This change partially addresses the frustration of getting the base to a low Health value, only to see it regenerate to full Health too quickly.
 
 
-- Neutral camp composition has been changed (no longer spawns the traditional Hard neutral camps).
+- Neutral camp composition has been changed (no longer spawns traditional the Hard neutral camps).
 - Instead, now spawns 1 of the following camps:
 *Dragon Master, Skeleton King, Vagabond Leader, Ice Ogre
 *Predasaur Crusher, Vulture Lord, Minotaur, Wolf Commander
