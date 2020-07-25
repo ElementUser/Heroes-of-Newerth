@@ -159,7 +159,7 @@ The main goal of these changes to Mid Wars is to resolve some common frustration
 [COLOR=#ff66cc]+[/COLOR][I][COLOR=#ffffcc] This change partially addresses the frustration of getting the base to a low Health value, only to see it regenerate to full Health too quickly.[/I][/COLOR]
 
 
-[COLOR=#ff66cc]-[/COLOR] Neutral camp composition has been changed (no longer spawns traditional the Hard neutral camps).
+[COLOR=#ff66cc]-[/COLOR] Neutral camp composition has been changed (no longer spawns the traditional Hard neutral camps).
 [COLOR=#ff66cc]-[/COLOR] Instead, now spawns 1 of the following camps:
 [COLOR=#00cc99]*[/COLOR] Dragon Master, Skeleton King, Vagabond Leader, Ice Ogre
 [COLOR=#00cc99]*[/COLOR] Predasaur Crusher, Vulture Lord, Minotaur, Wolf Commander
