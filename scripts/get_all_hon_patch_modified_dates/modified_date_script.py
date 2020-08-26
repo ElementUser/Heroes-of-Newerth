@@ -13,6 +13,9 @@ from urllib import request
 from urllib.error import HTTPError
 import zipfile, os, sys
 
+# External imports
+import phpserialize
+
 # Constants
 url_string_prefix = "http://dl.heroesofnewerth.com/wac/i686"
 url_string_suffix = "hon.exe.zip"
@@ -45,6 +48,17 @@ def get_modified_date_from_url(url_string):
     except HTTPError as exception:
         raise
 
+# Reference: https://github.com/djuresic/rctbot-discord/blob/master/rctbot/hon/masterserver.py
+# Get latest HoN client version & use that as a loop-ending condition
+def get_latest_client_version():
+    url_string = "http://masterserver.naeu.heroesofnewerth.com/patcher/patcher.php?version=0.0.0.0&os=wac&arch=i686"
+    with request.urlopen(url_string) as response:
+        content = response.read()
+        deserialized_content = phpserialize.loads(content)
+        version_string = deserialized_content[0][b'latest_version'].decode()
+        return version_string
+
+latest_client_version = get_latest_client_version()
 
 # Open output file to write to
 with open(output_file_path, 'a+') as output_file:
@@ -84,7 +98,9 @@ with open(output_file_path, 'a+') as output_file:
         print(formatted_final_patch_string)
         output_file.write(formatted_final_patch_string + "\n")
 
-        #TODO: End condition check
+        # Loop end condition check
+        if (latest_client_version == patch_string):
+            break
 
         # Increment counter
         patch_version_base["patch"] = patch_version_base.get("patch") + 1
