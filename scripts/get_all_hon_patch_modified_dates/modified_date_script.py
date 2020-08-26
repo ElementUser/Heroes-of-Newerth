@@ -34,7 +34,7 @@ patch_version_base = {
 # ===========
 # Functions
 # ===========
-def get_modified_date_from_url(url_string):
+def get_modified_date_from_url(url_string: str):
     """
     Gets a zip file that contains a hon.exe file
     Extracts the modified date of that hon.exe file & returns it
@@ -55,7 +55,7 @@ def get_modified_date_from_url(url_string):
 
 def get_latest_client_version():
     """
-    Get latest HoN client version & use that as a loop-ending condition
+    Returns a string containing the latest HoN client version
 
     Reference: https://github.com/djuresic/rctbot-discord/blob/master/rctbot/hon/masterserver.py
     """
