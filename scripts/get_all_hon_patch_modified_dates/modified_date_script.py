@@ -16,7 +16,9 @@ import zipfile, os, sys
 # External imports
 import phpserialize
 
+# ===========
 # Constants
+# ===========
 url_string_prefix = "http://dl.heroesofnewerth.com/wac/i686"
 url_string_suffix = "hon.exe.zip"
 pathname = os.path.dirname(sys.argv[0])
@@ -29,6 +31,9 @@ patch_version_base = {
     "patch": 21
 }
 
+# ===========
+# Functions
+# ===========
 def get_modified_date_from_url(url_string):
     """
     Gets a zip file that contains a hon.exe file
@@ -48,9 +53,12 @@ def get_modified_date_from_url(url_string):
     except HTTPError as exception:
         raise
 
-# Reference: https://github.com/djuresic/rctbot-discord/blob/master/rctbot/hon/masterserver.py
-# Get latest HoN client version & use that as a loop-ending condition
 def get_latest_client_version():
+    """
+    Get latest HoN client version & use that as a loop-ending condition
+
+    Reference: https://github.com/djuresic/rctbot-discord/blob/master/rctbot/hon/masterserver.py
+    """
     url_string = "http://masterserver.naeu.heroesofnewerth.com/patcher/patcher.php?version=0.0.0.0&os=wac&arch=i686"
     with request.urlopen(url_string) as response:
         content = response.read()
@@ -58,6 +66,10 @@ def get_latest_client_version():
         version_string = deserialized_content[0][b'latest_version'].decode()
         return version_string
 
+
+# ======================
+# Main part of script
+# ======================
 latest_client_version = get_latest_client_version()
 
 # Open output file to write to
