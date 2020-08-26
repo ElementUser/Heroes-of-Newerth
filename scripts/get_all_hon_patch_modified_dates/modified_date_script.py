@@ -3,7 +3,7 @@ This script obtains the date of every HoN patch by extracting the modified date 
 
 These zipped hon.exe files are obtained by downloading them from the official HoN CDN
 
-The results get printed to console & also get appended to an output.txt file
+The results get printed to console & also get appended to an output.log file
 """
 
 
@@ -16,7 +16,7 @@ import zipfile, os, sys
 url_string_prefix = "http://dl.heroesofnewerth.com/wac/i686"
 url_string_suffix = "hon.exe.zip"
 pathname = os.path.dirname(sys.argv[0])
-output_file_name = os.path.abspath(pathname) + "/output.log"
+output_file_path = os.path.abspath(pathname) + "/output.log"
 
 patch_version_base = {
     "major": 0,
@@ -41,7 +41,7 @@ def get_modified_date_from_url(url_string):
                 return modified_date_string
 
 # Open output file to write to
-with open(output_file_name, 'a+') as output_file:
+with open(output_file_path, 'a+') as output_file:
     # Reference for reading & overwriting a file: https://stackoverflow.com/a/2424410
     text = output_file.read()
     output_file.seek(0)
