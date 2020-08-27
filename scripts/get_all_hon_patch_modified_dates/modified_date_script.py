@@ -1,9 +1,16 @@
 """
-This script obtains the date of every HoN patch by extracting the modified date file property from zipped hon.exe files
+This script obtains the date of every HoN patch by extracting the modified date file property from zipped hon.exe files.
 
-These zipped hon.exe files are obtained by downloading them from the official HoN CDN
+These zipped hon.exe files are obtained by downloading them from the official HoN CDN.
 
-The results get printed to console & also get appended to an output.log file
+HoN's patch versions follow semantic versioning, which consists of 3 numbers ("major", "minor", and "patch"): https://semver.org/. 
+Semantic versioning follows a certain pattern, which allows for trial-and-error version checking via version incrementation (since the "patch" number in the version is always monotone increasing & continuous).
+
+Basically, if a patch version does not exist, the "patch" number is set to 0 and the "minor" number is incremented.
+If that minor version does not exist, then increment the "major" version and set the "minor" and "patch" number to 0 again.
+The script stops running when the iteration's patch version string matches the latest patch version string.
+
+Each HoN patch version string & date of the patch are printed to console & are also appended to an output.log file.
 """
 
 from datetime import datetime
@@ -13,7 +20,7 @@ from urllib import request
 from urllib.error import HTTPError
 import zipfile, os, sys
 
-# External imports
+# External imports (pip install required)
 import phpserialize
 
 # ===========
@@ -23,7 +30,10 @@ url_string_prefix = "http://dl.heroesofnewerth.com/wac/i686"
 url_string_suffix = "hon.exe.zip"
 pathname = os.path.dirname(sys.argv[0])
 output_file_path = os.path.abspath(pathname) + "/output.log"
-http_error_count_threshold = 3 # Number of http errors to encounter before incrementing the major version
+
+# Number of http errors to encounter before incrementing the major version
+# Used for tolerance purposes to ensure that versions aren't mistakenly missed
+http_error_count_threshold = 3
 
 patch_version_base = {
     "major": 0,
@@ -34,10 +44,12 @@ patch_version_base = {
 # ===========
 # Functions
 # ===========
-def get_modified_date_from_url(url_string: str):
+def get_modified_date_from_url(url_string: str) -> str:
     """
-    Gets a zip file that contains a hon.exe file
-    Extracts the modified date of that hon.exe file & returns it
+    Gets a zip file that contains a hon.exe file, then extracts the modified date of that hon.exe file
+
+    Attributes:
+        url_string: the URL string to make a request to
     """
     try:
         with request.urlopen(url_string) as response:
@@ -53,7 +65,7 @@ def get_modified_date_from_url(url_string: str):
     except HTTPError as exception:
         raise
 
-def get_latest_client_version():
+def get_latest_client_version() -> str:
     """
     Returns a string containing the latest HoN client version
 
