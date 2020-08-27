@@ -6,17 +6,26 @@ The script was primarily created to simulate the convergence of Curse of Ages pr
 from __future__ import division
 import random
 
-def chance(counter):
+def chance(counter: int) -> bool:
     """
-    Definition for the chance() function
+    Definition for the chance() function to emulate Chronos' Curse of Ages proc chance
+
+    Attributes:
+
+    Returns:
+        True if function passes
+        False if function fails
     """
-    if counter >= 5: return 1
+    if counter >= 5: return True
     else:
         counter_temporary = counter * 14
         roll = random.randint(0,100)
-        if roll < counter_temporary: return 1
+        if roll < counter_temporary: 
+            return True
+        return False
+
   
-# Test iterations
+# Run iterations
 counter = 0
 success = 0
 maxIterations = 1000000
