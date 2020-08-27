@@ -7,7 +7,7 @@ from shutil import copyfile
 import in_place
 import datetime
 
-# Vars
+# Variables
 timeNow = datetime.datetime.now()
 yearNow = str(timeNow.year)
 yearNowPlusOne = str(timeNow.year + 1)
@@ -16,7 +16,7 @@ gamePatchNotes = 'game_output.txt'
 forumPatchNotes = 'forum_output.txt'
 motdPatchNotes = 'motd_output.txt'
 
-# Also contains neutrals
+# heroList also contains neutrals for the sake of entity highlighting
 heroList = [ "Accursed" , "Adrenaline" , "Aluna" , "Amun-Ra" , "Andromeda" , "Apex" , "Arachna" , "Armadon" , "Artesia" , "Artillery" , "Balphagore" , "Behemoth" , "Berzerker" , "Blacksmith" , "Blitz" , "Blood Hunter" , "Bombardier" , "Bramble" , "Bubbles" , "Bushwack" , "Calamity" , "Chipper" , "Chronos" , "Circe" , "Corrupted Disciple" , "Cthulhuphant" , "Dampeer" , "Dark Lady" , "Deadlift" , "Deadwood" , "Defiler" , "Demented Shaman" , "Devourer" , "Doctor Repulsor" , "Draconis" , "Drunken Master" , "Electrician" , "Ellonia" , "Emerald Warden" , "Empath" , "Engineer" , "Fayde" , "Flint Beastwood" , "Flux" , "Forsaken Archer" , "Gauntlet" , "Gemini" , "Genesis" , "Geomancer" , "Glacius" , "Gladiator" , "Goldenveil" , "Gravekeeper" , "Grinex" , "Gunblade" , "Hammerstorm" , "Hellbringer" , "Ichor" , "Jeraziah" , "Kane" , "Keeper of the Forest" , "Kinesis" , "King Klout" , "Klanx" , "Kraken" , "Legionnaire" , "Lodestone" , "Lord Salforis" , "Madman" , "Magebane" , "Magmus" , "Maliken" , "Martyr" , "Master of Arms" , "Midas" , "Moira" , "Monarch" , "Monkey King" , "Moon Queen" , "Moraxus" , "Myrmidon" , "Night Hound" , "Nitro" , "Nomad" , "Nymphora" , "Oogie" , "Ophelia" , "Pandamonium" , "Parallax" , "Parasite" , "Pearl" , "Pebbles" , "Pestilence" , "Pharaoh" , "Plague Rider" , "Pollywog Priest" , "Predator" , "Prisoner 945" , "Prophet" , "Puppet Master" , "Pyromancer" , "Qi" , "Rally" , "Rampage" , "Ravenor" , "Revenant" , "Rhapsody" , "Riftwalker" , "Riptide" , "Salomon" , "Sand Wraith" , "Sapphire" , "Scout" , "Shadowblade" , "Shellshock" , "Silhouette" , "Sir Benzington" , "Skrap" , "Slither" , "Solstice" , "Soul Reaper" , "Soulstealer" , "Succubus" , "Swiftblade" , "Tarot" , "Tempest" , "Thunderbringer" , "Torturer" , "Tremble" , "Tundra" , "Valkyrie" , "Vindicator" , "Voodoo Jester" , "War Beast" , "Warchief" , "Wildsoul" , "Witch Slayer" , "Wretched Hag" , "Zephyr"  "Accursed" , "Adrenaline" , "Aluna" , "Amun-Ra" , "Andromeda" , "Apex" , "Arachna" , "Armadon" , "Artesia" , "Artillery" , "Balphagore" , "Behemoth" , "Berzerker" , "Blacksmith" , "Blitz" , "Blood Hunter" , "Bombardier" , "Bramble" , "Bubbles" , "Bushwack" , "Calamity" , "Chi" , "Chipper" , "Chronos" , "Circe" , "Corrupted Disciple" , "Cthulhuphant" , "Dampeer" , "Dark Lady" , "Deadlift" , "Deadwood" , "Defiler" , "Demented Shaman" , "Devourer" , "Doctor Repulsor" , "Draconis" , "Drunken Master" , "Electrician" , "Ellonia" , "Emerald Warden" , "Empath" , "Engineer" , "Fayde" , "Flint Beastwood" , "Flux" , "Forsaken Archer" , "Gauntlet" , "Gemini" , "Genesis" , "Geomancer" , "Glacius" , "Gladiator" , "Goldenveil" , "Gravekeeper" , "Grinex" , "Gunblade" , "Hammerstorm" , "Hellbringer" , "Ichor" , "Jeraziah" , "Kane" , "Keeper of the Forest" , "Kinesis" , "King Klout" , "Klanx" , "Kraken" , "Legionnaire" , "Lodestone" , "Lord Salforis" , "Madman" , "Magebane" , "Magmus" , "Maliken" , "Martyr" , "Master of Arms" , "Midas" , "Mimix" , "Moira" , "Monarch" , "Monkey King" , "Moon Queen" , "Moraxus" , "Myrmidon" , "Night Hound" , "Nitro" , "Nomad" , "Nymphora" , "Oogie" , "Ophelia" , "Pandamonium" , "Parallax" , "Parasite" , "Pearl" , "Pebbles" , "Pestilence" , "Pharaoh" , "Plague Rider" , "Pollywog Priest" , "Predator" , "Prisoner 945" , "Prophet" , "Puppet Master" , "Pyromancer" , "Rally" , "Rampage" , "Ravenor" , "Revenant" , "Rhapsody" , "Riftwalker" , "Riptide" , "Salomon" , "Sand Wraith" , "Sapphire" , "Scout" , "Shadowblade" , "Shellshock" , "Silhouette" , "Sir Benzington" , "Skrap" , "Slither" , "Solstice" , "Soul Reaper" , "Soulstealer" , "Succubus" , "Swiftblade" , "Tarot" , "Tempest" , "Thunderbringer" , "Torturer" , "Tremble" , "Tundra" , "Valkyrie" , "Vindicator" , "Voodoo Jester" , "War Beast" , "Warchief" , "Wildsoul" , "Witch Slayer" , "Wretched Hag" , "Xemplar" , "Zephyr", "Catman Champion", "Dragon Master", "Dreadbeetle Queen", "Minotaur", "Predasaur Crusher", "Skeleton King", "Vulture Lord", "Vagabond Leader", "Werebeast Enchanter", "Wolf Commander", "Dragon", "Fire Ogre", "Dreadbeetle", "Predasaur"]
 itemList = [ "Abyssal Skull" , "Acolyte's Staff" , "Alacrity Band" , "Alchemist's Bones" , "Amulet of Exile" , "Apprentice's Robe" , "Arcana" , "Arcane Bomb" , "Arcane Nullifier", "Armor of the Mad Mage" , "Assassin's Shroud" , "Astrolabe" , "Axe of the Malphai" , "Barbed Armor" , "Barrier Idol" , "Beastheart" , "Behemoth's Heart" , "Blessed Orb" , "Blight Stones" , "Blood Chalice" , "Bloodborne Maul" , "Bolstering Armband" , "Bottle" , "Bound Eye" , "Broadsword" , "Brutalizer" , "Codex" , "Corrupted Sword" , "Crushing Claws" , "Daemonic Breastplate" , "Dancing Blade" , "Dawnbringer" , "Doom Bringer" , "Dreamcatcher" , "Duck Boots" , "Dust of Revelation" , "Elder Parasite" , "Energizer" , "Firebrand" , "Fleetfeet" , "Flying Courier" , "Fortified Bracer" , "Frostburn" , "Frostwolf's Skull" , "Frozen Light" , "Genjuro" , "Geometer's Bane" , "Ghost Marchers" , "Gloves of the Swift" , "Glowstone" , "Grave Locket" , "Grimoire of Power" , "Guardian Ring" , "Harkon's Blade" , "Health Potion" , "Hellflower" , "Helm of the Black Legion" , "Helm of the Victim" , "Homecoming Stone" , "Hungry Spirit" , "Hypercrown" , "Icebrand" , "Icon of the Goddess" , "Insanitarius" , "Iron Buckler" , "Iron Shield" , "Jade Spire" , "Kuldra's Sheepstick" , "Lex Talionis" , "Lifetube" , "Lightbrand" , "Logger's Hatchet" , "Luminous Prism" , "Madfred's Brass Knuckles" , "Major Totem" , "Mana Potion" , "Manatube" , "Marchers" , "Mark of the Novice" , "Master's Legacy" , "Mighty Blade" , "Minor Totem" , "Mock of Brilliance" , "Mystic Vestments" , "Neophyte's Book" , "Nome's Wisdom" , "Null Stone" , "Nullfire Blade" , "Ophelia's Pact" , "Orb of Zamos" , "Perpetual Cogwheel" , "Pickled Brain" , "Plated Greaves" , "Platemail" , "Portal Key" , "Post Haste" , "Power Supply" , "Pretender's Crown" , "Punchdagger" , "Puzzlebox" , "Quickblade" , "Refreshing Ornament" , "Rejuvenation Potion" , "Restoration Stone" , "Riftshards" , "Ring of Sorcery" , "Ring of the Teacher" , "Ringmail" , "Runed Cleaver" , "Sand Scepter" , "Savage Mace" , "Scarab" , "Searing Light" , "Shaman's Headdress" , "Shield of the Five" , "Shieldbreaker" , "Shrunken Head" , "Slayer" , "Snake Bracelet" , "Sol's Bulwark" , "Sorcery Boots" , "Soulscream Ring" , "Soultrap" , "Spell Sunder" , "Spellshards" , "Spiked Bola" , "Staff of the Master" , "Steamboots" , "Steamstaff" , "Stormspirit" , "Striders" , "Sustainer" , "Sword of the High" , "Symbol of Rage" , "Tablet of Command" , "Thunderclaw" , "Trinket of Restoration" , "Twin Blades" , "Ultor's Heavy Helm" , "Veiled Rot" , "Void Talisman" , "Void Talisman" , "Voltstone" , "Ward of Revelation" , "Ward of Sight" , "Warhammer" , "Warpcleft" , "Whispering Helm" , "Wind Whistle" , "Wingbow", "Tome of Elements", "Ioyn Stone", "Toxin Claws", "Sacrificial Stone", "Token of Life", "Frostfield Plate", "Spyglass", "Golden Apple", "Lunar Tear"]
 subheaderList = [ "Banning Phase", "Picking Phase" , "Single Draft", "Other", "General", "Well", "Bosses", "Champions of Newerth", "Mid Wars", "Team Deathmatch", "Ability", "Consumable Slots", "Forests of Caldavar", "MVP Votes", "Gold Changes", "Towers"]
@@ -26,9 +26,15 @@ copyfile("patch_notes.txt",gamePatchNotes)
 copyfile("patch_notes.txt",forumPatchNotes)
 copyfile("patch_notes.txt",motdPatchNotes)
 
-# Defs
 
-def formatPatchNotes_InGame(destFile):
+# Functions
+def formatPatchNotes_InGame(destFile: str) -> None:
+    """
+    Formats the patch notes for the in-game HoN client
+
+    Attributes:
+        destFile: name of the file to write the formatted content to
+    """
     with in_place.InPlace(destFile) as file:
         for line in file:
             # Version header
@@ -99,7 +105,13 @@ def formatPatchNotes_InGame(destFile):
             file.write(line)
         file.close()
 
-def formatPatchNotes_Forum(destFile):
+def formatPatchNotes_Forum(destFile: str) -> None:
+    """
+    Formats the patch notes for the official HoN forums
+
+    Attributes:
+        destFile: name of the file to write the formatted content to
+    """
     with in_place.InPlace(destFile) as file:
         for line in file:
             # Top header: addition of the "Welcome" statement to patch notes
@@ -175,7 +187,13 @@ def formatPatchNotes_Forum(destFile):
         file.close()
 
 
-def formatPatchNotes_MotD(destFile):
+def formatPatchNotes_MotD(destFile: str) -> None:
+    """
+    Formats the patch notes for the Message-of-the-Day (MotD) panel using HTML tag formatting
+
+    Attributes:
+        destFile: name of the file to write the formatted content to
+    """
     with in_place.InPlace(destFile) as file:
         for line in file:
             # Handle whitespaces at start of line
