@@ -15,7 +15,6 @@ Each HoN patch version string & date of the patch are printed to console & are a
 
 from datetime import datetime
 from io import BytesIO
-from http.client import HTTPException
 from urllib import request
 from urllib.error import HTTPError
 import zipfile, os, sys
