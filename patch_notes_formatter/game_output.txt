@@ -1,253 +1,240 @@
-^980Version 4.8.5^*
+^980Version 4.8.6^*
 -------------
-^98028 July 2020^*
+^98022 September 2020^*
 
 
 
 ==^960 New Content ^*==
 
-^077New Monkey King Avatar: Jade Macaque^*
-^947-^* This higher-definition Monkey King avatar (originally Six Eared Macaque) was taken from the HoN China client. Refined with jade visual effects, Jade Macaque is ready to dazzle Newerth!
-
-^077New Animated & Static Wallpaper for the Login Screen: King Klout^*
-   ^274*^* This may not show up for some clients due to technical issues. This will be resolved in the future.
-
-
-
-==^960 New Items ^*==
-
-^077New Item (Supplies): Golden Apple^*
-^947-^* Cost: 70 Gold
-^947-^* Non-stackable, non-shareable consumable item. Cannot be placed in a Consumable item slot.
-^947-^* Passive effect: +0.3 Mana Regeneration per second.
-^947-^* Active effect: instantly restores 80 Health to self.
-   ^274*^* Cooldown: 5 seconds
-
-^947+^* This item provides some extra burst healing in the laning phase, while providing a tiny amount of Mana Regeneration utility if not consumed.
-
-_______________________________________________
-
-^077New Item (Supplies): Lunar Tear^*
-^947-^* Cost: 90 Gold
-^947-^* Non-stackable, non-shareable consumable item. Cannot be placed in a Consumable item slot.
-^947-^* Passive effect: +0.4 Health Regeneration per second.
-^947-^* Active effect: instantly restores 100 Mana to the target (can be double-activated to use on self).
-   ^274*^* Range: 350
-   ^274*^* Cooldown: 5 seconds
-
-^947+^* This item provides an extra burst of mana when needed during the laning phase, while providing a tiny amount of Health Regeneration utility if not consumed.
-
-_______________________________________________
-
-
-
-==^960 Forests of Caldavar ("New") ^*==
-
-The main goal of the changes to the "new" Forests of Caldavar map is to make the viability of each laning setup choice to be more on par with one another, while retaining their own unique benefits and disadvantages.
-
-^947-^* Legion bottom lane and Hellbourne top lane trees were rearranged significantly.
-^947-^* Legion's southeastern most pull camp: a tree to the left of the camp (and to the right of the Observatory) has been removed to allow heroes to move through the nearby path.
-
-^947+^* There were far too many spots near the lane that made it nearly impossible to find a hero unless you were right next to the hero (and even then, sometimes it was nearly impossible to do so)., which led to unhealthy play patterns by solo unsafe lane heroes.
-^947+^* These changes address that issue, while still allowing for some niche hiding spots to be discovered. While this may appear to be a nerf to solo unsafe lane heroes, the jungle changes will more than compensate for that.
-
-
-
-=^075 Jungle Changes ^*=
-
-Hellbourne bottom lane - Medium pull camp (unsafe lane)
-^947-^* Camp is now more accessible to the unsafe lane to be pulled into the lane
-^947-^* Trees in this area now allow for better vision from the unsafe lane, while the vision of that camp ends up being more obscured for the safe lane
-^947-^* Also reworked tree patch in this area to more closely mirror the Hellbourne side of the map.
-
-Legion Ancients camp
-^947-^* Now spawns a Hard neutral camp instead of an Ancients neutral camp.
-^947-^* The other central Hard neutral camp has been replaced with a Medium neutral camp.
-^947-^* A few trees have been removed to allow for more visibility & to allow for a slightly easier double stack.
-
-Legion left-most Medium & Hard neutral camps
-^947-^* Camps were shifted slightly towards the bottom-right.
-^947-^* Leash range of these camps have been reverted to normal.
-^947-^* Path between both camps are now more cleared of obstructions.
-^947-^* Distance between both camps are now more similar to the Hellbourne equivalent (top-right-most) camps.
-   ^274*^* These changes prevent the camps from being pulled towards the Legion middle lane, while simultaneously solving the difficulties of being difficult to double-stack these camps (due to a prior temporary fix).
-
-Legion top lane - Medium pull camp (unsafe lane)
-^947-^* Camp is now more accessible to the unsafe lane to be pulled into the lane.
-^947-^* Trees in this area now allow for better vision from the unsafe lane, while the vision of that camp ends up being more obscured for the safe lane.
-
-Hellbourne Ancients camp
-^947-^* Now spawns a Hard neutral camp instead of an Ancients neutral camp.
-^947-^* The other central Hard neutral camp has been replaced with a Medium neutral camp.
-   ^274*^* This camp has also been rotated to face the new Hard camp more directly.
-
-Hellbourne top-right-most Hard camp
-^947-^* This neutral camp was shifted slightly downward.
-^947-^* Leash range of the camp has been reverted to normal.
-^947-^* This prevents the camps from being pulled towards the Hellbourne top lane.
-
-
-
-^947+^* Most of these jungle changes were done to balance the jungles between the Legion side and Hellbourne side, as well as make the top and bottom lanes slightly more equal in terms of the safe and unsafe lanes.
-
-^947+^* Overall, these changes (coupled with other changes in previous patches like the Merrick's Rune change) should make laning setup choices more balanced with regards to one another (any permutation/combination of 2-1-2 vs. 1-1-2-jungle and other dynamic variants involving partial/full roamers).
-
-_______________________________________________
-
-
-
-=^075 Neutral Creep Changes ^*=
-
-^059Dragon^*
-^947-^* Gold Bounty: 28-36 -> 35-45
-^947-^* Physical Armor: 2-> 3
-^947-^* Attack Damage: 55-> 60
-
-^059Dragon Master^*
-^947-^* Gold Bounty: 100-120 -> 130-145
-^947-^* Magic Armor: 12 -> 10
-
-^059Dreadbeetle^*
-^947-^* Gold Bounty: 44-52 -> 55-65
-^947-^* Physical Armor: 3 -> 6
-^947-^* Base Attack Time: 1.4 -> 1.3
-
-^059Dreadbeetle Queen^*
-^947-^* Gold Bounty:  74-82 -> 90-105
-^947-^* Physical Armor: 6 -> 10
-^947-^* Base Attack Time: 1.4 -> 1.3
-
-^059Predasaur^*
-^947-^* Gold Bounty: 48-56 -> 60-70
-^947-^* Physical Armor: 3.5 -> 6
-^947-^* Max Health: 900 -> 1000
-
-^059Predasaur Crusher^*
-^947-^* Gold Bounty: 58-66 -> 70-85
-
-
-
-^947+^* The previous Gold Bounty nerfs have been reverted because there will now only be 1 Ancient Camp in the "new" Forests of Caldavar map.
-^947+^* Some stat adjustments were also made to make the camps more comparable to one another in terms of power, while still retaining their unique strengths and weaknesses.
-
-_______________________________________________
-
-
-
-=^075 Mid Wars Changes ^*=
-
-The main goal of these changes to Mid Wars is to resolve some common frustrations encountered by players in this mode, while slowly leaning towards rewarding properly applied early/mid game aggressive plays & pushes.
-
-
-
-^947-^* Zorgath and Transmutanstein return to Mid Wars!
-   ^274*^* Say goodbye to Snotter Boss until next time!
-
-^947-^* Matchmaking constraints for Mid Wars are slightly less relaxed, which should result in increasing the chances of getting a more enjoyable match.
-
-^947-^* Earliest concede time availability reduced from 10 minutes to 5 minutes.
-   ^274*^* This vote still requires 5 votes from a single team to actually pass (at least until 15 minutes where the usual reduction in required votes occurs).
-
-
-
-^947-^* Backdoor Protection is now applied to the Melee and Ranged Barracks as well, and grants the Barracks 50% Damage Reduction against non-hero units while active (Main Base structure has 50% Damage Reduction against non-hero units by default already).
-   ^274*^* Additionally, the Backdoor Protection state on the Main Base Structure and Barracks now also grants 50% Damage Reduction against heroes.
-
-^947+^* This change should help slow down uncoordinated & uncommitted attempts to end the game by backdooring to the point where the defending team can react and take action before the Main Base Structure falls.
-^947+^* The intention is not to remove backdooring (as it has its place to end the game when there are long stalemates for long periods of time), but to make it more of a committal and coordinated strategy to execute & introduce more opportunities to counterplay it. We understand that games ended abruptly without much means for counterplay makes for an anti-climatic ending, but having backdooring as an alternate game-ending option for long games is still necessary if the circumstances make it viable.
-
-
-
-^947-^* Main Base Structure's Health Regeneration per second reduced from 50 to 20 (when not damaged by an enemy within the last 10 seconds).
-
-^947+^* This change partially addresses the frustration of getting the base to a low Health value, only to see it regenerate to full Health too quickly.
-
-
-^947-^* Neutral camp composition has been changed (no longer spawns traditional the Hard neutral camps).
-^947-^* Instead, now spawns 1 of the following camps:
-   ^274*^* Dragon Master, Skeleton King, Vagabond Leader, Ice Ogre
-   ^274*^* Predasaur Crusher, Vulture Lord, Minotaur, Wolf Commander
-   ^274*^* Dreadbeetle Queen, Catman Champion, Vulture Lord, Wild Hunter
-
-^947+^* This change provides minimal disruption to the current map, while making the Gold & Experience value of the neutral camp more suitable for the mid & late game (rather than something that can be tackled in the early game by 1-2 heroes) and simultaneously discourages raw jungling early on (to keep the spirit of the map's name - Mid Wars).
-^947+^* Furthermore, this change allows Ophelia and Parasite to make use of Ancient Creeps if they have Staff of the Master.
-^947+^* This also allows these heroes more variety of creeps they can take control of in the early game, though the Ancient creep has to be cleared (or the camp needs to be stacked) for them to spawn more neutral creeps they can take control of in the early game.
-
-
-
-^947-^* Respawn time equation has been changed.
-   ^274*^* Old equation: Respawn Time (s) = 0.6 * Hero_Level
-   ^274*^* New equation: Respawn Time (s) = (0.5 * Hero_Level) + 3.75 * (2 - Ally_Nonbase_Towers_Remaining)
-
-^947+^* The new respawn times allow for slightly faster early game respawns, while extending the respawn times by 3.75 seconds for each of your ally non-base towers that have been destroyed.
-^947+^* This gives pushing some tangible benefit in Mid Wars and disfavours turtling, without making early/mid game strategies too snowbally in nature.
-^947+^* Overall, this increases the respawn time at level 25 from 17 seconds (in all situations) to 12.5/16.25/20 seconds when 0/1/2 of your non-base towers are down. Further adjustments may be made in the future if this does not prove to be enough of a change.
-
-_______________________________________________
+^077New Pharaoh Avatar: Doge Anubis^*
+^947-^* This higher-definition Pharaoh avatar was taken from the HoN China client. He also happens to look like a dog of the Shiba Inu species, which greatly resembles the iconic Doge!
 
 
 
 ==^960 Design ^*==
 
-^947-^* Max Disconnection Time reduced from 5 minutes to 4 minutes.
-^947-^* AFK Timer duration reduced from 4 minutes to 2.5 minutes.
-   ^274*^* AFK Warning time reduced from 3 minutes to 1.5 minutes.
-
-^947+^* While we understand that real-life situations & technical difficulties can happen once in a blue moon, they should not be happening frequently in any capacity.
-
-^947+^* Players should be active in the game for as much time as possible without disrupting the gameplay for others, and these changes help encourage players to make sure that they exhibit due diligence on their part to do so.
 
 
+=^075 Hero Guides (NAEU/International Client Only) ^*=
 
-Fortification of Sol / Demonic Fortification
-^947-^* Now goes on a 90 second cooldown when the game starts.
-   ^274*^* Prevents players from accidentally triggering it at the start of the game while typing & transitioning from the hero pick lobby to the in-game map.
+Every single default hero guide in-game has been updated with `WhatYouGot's hero guides! Thank you for providing a much-needed update for HoN's hero guides.
+
+^947+^* `WhatYouGot is a competitive-level HoN player, Twitch Streamer & Caster/Commentator for the recent HoN Tournaments & was also a competitive HoN player for Complexity Gaming back in 2015.
+
+^947+^* These updated hero guides are meant to act as a reliable base reference for new players and average players. As players get more experienced, they should adapt their skill builds & item choices to their current game as needed.
+
+^947+^* All of the old default hero guides written by Zlapped still exist, just not as the current default guides anymore. Zlapped's guides were solid in the past, but most have been outdated & been replaced with more up-to-date guides for today's HoN meta.
+
+
+
+=^075 Hero Rework - Qi ^*=
+
+
+
+^059Qi (Reworked)^*
+
+^947+^* The premise of Qi's Enlightenment dealing damage based on the target enemy's Attack Damage is fundamentally flawed on its own. Heroes naturally acquire Attack Damage throughout the game even if they don't have a single item (due to their primary attribute stat gains as they level up). Most heroes also tend to buy items that augment their primary attribute. The combination of these factors means that Qi's bonus damage output based on the target's Attack Damage will always be too weak or too strong against unfarmed or farmed heroes, or unable to be fairly manifested against the intended spectrum of heroes (farmed heroes with high autoattack damage output over time).
+
+^947+^* A more accurate & fair representation of an enemy's autoattack damage over time has been implemented for Qi's Enlightenment ability. This can simply be expressed as "Extra Autoattack DPS" (Damage per Second), and is the difference between the target's total autoattack DPS and their base autaottack DPS.
+
+^947+^* Mathematically: Extra_Autoattack_DPS = Total_Autoattack_DPS - Base_Autoattack_DPS
+
+^947+^* As a result, Qi now properly has a niche role in obliterating farmed autoattack enemy carries, while dealing below-average damage to underfarmed support heroes and not totally obliterating heroes in between that spectrum.
+
+^947+^* Qi's scaling is now much more dependent on his enemy's scaling as a result, so Qi's overall kit and numbers have been tailored towards being a Support Hero.
+
+_______________________________________________
+
+^256Crippling Puncture^*
+^947-^* Cooldown increased from 12 seconds to 24/20/16/12 seconds.
+^947-^* Movement Speed Slow and Disarm duration increased from 1/2/3/4 seconds to 1.6/2.4/3.2/4 seconds.
+^947-^* SuperiorMagic Damage changed from 100/120/140/160 to 90/160/180/200.
+
+^256A Thousand Cuts^*
+^947-^* No longer applies an instance of non-Damage-over-Time (DoT) Ability Damage while the Spirit Shredder is travelling.
+^947-^* The Spirit Shredder now has its DoT effect active starting from its initial launch (rather than only after reaching its initial destination).
+^947-^* Initial Mana Cost changed from 90/100/110/120 to 100.
+^947-^* Upkeep Mana Cost per second changed from 3/6/9/12 to (5/6/7/8 + 0.6/0.8/1/1.2% of your Max Mana).
+^947-^* Magic Damage per second increased from 30/50/70/90 to 45/70/95/120.
+
+^947+^* A Thousand Cuts no longer deals an instance of non-DoT Ability Damage, as it was proven to provide too much burst damage with Enlightenment. It now only deals DoT damage to act as a zoning tool.
+
+^256Enlightenment (Reworked)^*
+^947-^* This ability has 5 levels & starts at level 1 at the start of the game.
+^947-^* Passively deals 20/35/50/65/80% of an enemy hero's Extra Autoattack Damage per Second (DPS) as SuperiorMagic Damage for each instance of Ability Damage dealt to them. Extra Autoattack DPS is the difference between the target's Total Autoattack DPS and their Base Autoattack DPS.
+   ^274*^* Damage over Time effects apply the correct amount of bonus damage per game frame (0.05 seconds).
+^947-^* Staff of the Master: Qi's autoattacks bleed the enemy's Chi, dealing 1 SuperiorMagic Damage per second for 2 seconds. This counts as Ability Damage.
+
+^947-^* Active: Target a position to reposition the Spirit Shredder from A Thousand Cuts (if it is out).
+   ^274*^* Range: 700
+   ^274*^* Cooldown: 4 seconds
+   ^274*^* Mana Cost: 50
+
+^256Ancestral Assault^*
+^947-^* Mana Cost changed from 150/200/250 to 100/175/250.
+^947-^* Number of instances reduced from 3/4/5 to 1/2/3.
+^947-^* Impact interval between each instance increased from 0.1 seconds to 0.3 seconds.
+^947-^* SuperiorMagic Damage changed from (20 + 60/67.5/75% of the target's Attack Damage) to 125.
+^947-^* Now also applies a 1 second Disarm and Perplex to affected enemies upon impact.
+   ^274*^* Note that Enlightenment is procced from Ancestral Assault's damage instances now.
+^947-^* Damage no longer tapers based on the target's distance from your original cast location.
+
+_______________________________________________
+
+
+
+=^075 Hero Rework - Drunken Master ^*=
+
+
+
+^947+^* Drunken Master's ability usage in teamfights was too linear and 1-dimensional.
+
+^947+^* This rework aims to fix those issues by introducing factors of decision-making back to Drunken Master, as well as improving his ebb and flow in actual combat.
+
+^947+^* Healthy elements of the legacy Drink ability has been added back to Drunken Master to make this happen!
+
+_______________________________________________
+
+^059Drunken Master (Reworked)^*
+
+^256Lunge^*
+^947-^* Movement Speed Slow reduced from 20/30/40/50% to 15/20/25/30%.
+^947-^* Cooldown changed from 14/12/10/8 seconds to 13/12/11/10 seconds.
+
+^256Stagger^*
+^947-^* Cooldown is now reduced to 0.8 seconds when Lunge is finished (instead of being refreshed when Lunge is first cast).
+
+^075Ability 3: Drink (Reworked)^*
+   ^274*^* Mana Cost: 50
+   ^274*^* Cooldown: 20/16/12/8 seconds
+   ^274*^* Channel Time: 2 seconds
+^947-^* Channel to Drink, gaining 2/3/4/5 Drunk Charges and reducing the cooldown of Lunge and Stagger by 0.25 seconds per 0.25 seconds of channeling.
+   ^274*^* Max of 16/24/32/40 Drunk Charges.
+^947-^* Each Drunk Charge grants 1% Evasion and 1% Stun/Debuff Duration Reduction.
+^947-^* Each Drunk Charge expires naturally every 2 seconds, healing you for 5 Health.
+^947-^* When Lunge is used, consumes 6 Drunk Charges to add 20% Movement Speed Slow.
+^947-^* When Stagger is used, consumes 4 Drunk Charges to add +30 Movement Speed.
+
+
+
+^947+^* Using Drink in combat sacrifices immediate attack-time-on-target and mobility for reduced cooldowns on Lunge and Stagger (i.e. increased mobility and damage after a short time). It also grants Drunken Master defensive and mobility bonuses, as Lunge and Stagger now consume Drunk charges.
+
+^947+^* To make Drink more interesting, Drink now has a low cooldown when the ability is maxed, allowing Drunken Master to consistently upkeep the Drunk charges in and out of combat.
+
+^947+^* Much like the first iteration of Drink, Drunken Master has more resilience during the laning phase with the healing over time from Drink.
+
+^947+^* Additionally, there is a slight delay before Stagger comes off cooldown after the Stagger-Lunge combo, allowing enemies to have a slightly larger time window for counterplay to 3 Point Strike.
+
+_______________________________________________
 
 
 
 =^075 Staff of the Master & Master's Legacy Changes ^*=
 
-^059Balphagore^*
+^059Bushwack^*
 
-^256Hell on Newerth^*
-^947-^* Staff of the Master effect change (to pre-existing):
-   ^274*^* The initial application of Demonic Pathogen (through this ability) now only affects enemy heroes (instead of enemy heroes and creeps).
-   ^274*^* Demonic Pathogen (when applied through this ability) state duration reduced from 2 seconds to 1.5 seconds.
-
-_______________________________________________
-
-^059Keeper of the Forest^*
-
-^256Strength in Numbers^*
-^947-^* Staff of the Master effect change (to pre-existing):
-   ^274*^* Cooldown increased from 30 seconds to 60 seconds (for the tree sight enchanting active ability).
+^256Jungle Toxin^*
+^947-^* Staff of the Master effect addition (to pre-existing):
+   ^274*^* Now also grants Sight of the target.
 
 _______________________________________________
 
-^059Monkey King^*
+^059Jeraziah^*
 
-^256Illusive Dash^*
+^256Sol's Blessing^*
+^947-^* Staff of the Master effect addition (to pre-existing):
+   ^274*^* Now also applies Protective Charm to affected ally non-building units for 2.5 seconds.
+
+_______________________________________________
+
+^059Lodestone^*
+
+^256Shatterstorm^*
 ^947-^* Staff of the Master effect addition (new):
-   ^274*^* Can now dash up to 3 times (instead of 2).
-   ^274*^* The final dash instance deals 0.7x damage.
+   ^274*^* Can now reactivate the ability after 2 seconds to proc Shatterstorm earlier than its regular detonation time.
+   ^274*^* Lodestone's Armor and Magic Armor is now only reduced by 50% (instead of 100%).
 
 _______________________________________________
 
-^059Tundra^*
+^059Moon Queen^*
 
-^256Piercing Shards^*
-^947-^* Staff of the Master effect addition (new):
-   ^274*^* Cooldown reduced from 13 seconds to 4 seconds.
+^256Moon Finale^*
+^947-^* Staff of the Master effect changes (to pre-existing):
+   ^274*^* Beams no longer deal area damage.
+
+_______________________________________________
+
+
+
+
+
+=^075 Report-A-Player (RAP) System ^*=
+
+Penalties will not include the action of muting players (due to multiple complaints about lack of necessary communication in the picking phase).
+   ^274*^* Note that everything else in the RAP System for the NAEU/International Client remains the same.
+
+
+
+=^075 General ^*=
+
+^947-^* AFK Timer duration increased from 2.5 minutes to 3 minutes.
+
+
+
+=^075 Forests of Caldavar ("New") ^*=
+
+^947-^* The warding high cliff tower near the bottom rune on the Legion jungle side has been shifted very slightly to the southeast (makes ward vision of the Legion camps more consistent).
+^947-^* The bottom rune has been shifted slightly towards the southeast in accordance with the previous change.
+^947-^* The top-left corner of the map has been filled in with some untraversable lava (fixes some pathing issues around that area).
+
+
+
+=^075 Mid Wars ^*=
+
+^947-^* Merrick's Rune now spawns close to the first set of ramps southeast of the middle area of the river.
+   ^274*^* This should allow Merrick's Rune to be more commonly contested compared to when it spawned at the boss lair.
+
+^947-^* Backdoor Protection damage mitigation against heroes increased from 50% to 60%.
+^947-^* Token of Sight now regenerates 15% Max Health and 15% Max Mana over 5 seconds for allies within 900 radius upon being obtained.
+   ^274*^* This regeneration effect can stack up to 2 times.
+   ^274*^* Dispels upon taking damage.
+
+^947-^* Respawn time added per hero level increased from 0.5 seconds to 0.6 seconds.
+^947-^* Respawn time added per missing ally non-base towers reduced from 3.75 seconds to 3.5 seconds.
+   ^274*^* Overall, respawn time at level 25 increased from 12.5/16.25/20 seconds to 15/18.5/22 seconds.
+
+^947+^* This adjustment should make early game deaths feel somewhat impactful again, while still increasing respawn times slightly later on.
+
+
+
+=^075 Neutral Creeps ^*=
+
+^947-^* Medium Camp: total Experience per camp reduced from 185 to 170.
+^947-^* Hard Camp: total Experience per camp reduced from 215 to 205.
+
+^947+^* The jungle changes allowed junglers to level up slightly too fast from the previous patch, so this should slow down their progression slightly.
+
+The Experience changes to each individual neutral creep are as follows:
+   ^274*^* Vagabond Assassin: 25 → 20 (this also reduces the Easy camp's experience containing the Vagabond Assassin to 140, which makes camp's Experience equal to every other Easy camp)
+   ^274*^* Antlore Necromancer: 45 → 30 (not present in the "New" Forests of Caldavar map)
+   ^274*^* Ebula: 55 → 50
+   ^274*^* Pustula: 75 → 70
+   ^274*^* Fire Ogre: 60 → 55
+   ^274*^* Ice Ogre 65 → 60
+   ^274*^* Alchemist Ogre: 60 → 55
+   ^274*^* Wild Hunter: 93 → 85
+   ^274*^* Wolf: 55 → 50
+   ^274*^* Wolf Commander: 75 → 70
+   ^274*^* Catman Soldier: 100 → 95
+   ^274*^* Catman Champion: 115 → 110
+   ^274*^* Goatar: 55 → 50
+   ^274*^* Vulture Lord: 135 → 125
+   ^274*^* Skeleton King: 135 → 125
+   ^274*^* Vagabond Leader: 130 → 125
 
 _______________________________________________
 
-^059Wretched Hag^*
 
-^256Bat Blast^*
-^947-^* Staff of the Master changes (to pre-existing):
-   ^274*^* Cooldown reduced from 70 seconds to 60 seconds.
-
-_______________________________________________
 
 
 
@@ -255,370 +242,225 @@ _______________________________________________
 
 
 
-^059Amun-Ra^*
-^947-^* Agility growth per level reduced from 1.8 to 1.5.
+^059Accursed^*
 
-^256Path of Destruction^*
-^947-^* Cooldown increased from 12/11/10/9 seconds to 13/12/11/10 seconds.
+^256Fire Shield^*
+^947-^* Mana Cost reduced from 100/110/120/130 to 100/105/110/115.
 
-^256Ignite^*
-^947-^* Cooldown increased from 12/10/8/6 seconds to 13/11/9/7 seconds.
+^256Sear^*
+^947-^* In addition to its passive effects, now also has an active effect: activate to create a Searing Flame on the ground for 4 seconds, dealing 10/20/30/40 Magic Damage per second to enemies and Healing yourself for 8/12/16/20 + 0.4/0.6/0.8/1% of your Max Health per second.
+   ^274*^* Cooldown: 24/22/20/18 seconds
+   ^274*^* Mana Cost: 60
+   ^274*^* Radius: 400
 
-_______________________________________________
-
-^059Arachna^*
-^947-^* Attack Range increased from 550 to 575.
-
-_______________________________________________
-
-^059Bushwack^*
-
-^256Side Step^*
-^947-^* Mana Cost reduced from 30 to 20.
-
-^256Spiked Dart^*
-^947-^* Stacks of Jungle Toxin applied to enemies within 300 radius of the target changed from 1 to 1/1/2/2.
-
-^256Jungle Toxin^*
-^947-^* Now Reveals affected targets.
-   ^274*^* Note that this does not grant innate Sight of the target, but simply means that affected targets are detected as though they are not Stealthed.
+^947+^* The Searing Flame will naturally proc Sear's negative effects for enemies and Sear's positive effects for Accursed when used in combat. This ability also further increases his survivability in the laning phase, particularly as a suicide hero.
 
 _______________________________________________
 
-^059Doctor Repulsor^*
-^947-^* Starting Attack Damage changed from 47-57 to 50-54.
-^947-^* Attack action time reduced from 500ms to 350ms.
+^059Behemoth^*
 
-^256Magnetic Contraption^*
-^947-^* Cooldown increased from 4 seconds to 10/8/6/4 seconds.
-^947-^* Cast backswing reduced from 400ms to 300ms.
-
-^256Opposite Charges^*
-^947-^* Mana Cost reduced from 100 to 70/80/90/100.
-^947-^* Duration reduced from 1/1.5/2/2.5 seconds to 1/1.4/1.8/2.2 seconds.
-^947-^* No longer applies a Movement Speed Slow to self upon use.
-
-^256Electric Frenzy^*
-^947-^* Now also resets your autoattack cooldown upon using an ability.
-^947-^* Magic Damage increased from 30/50/70/90 to 40/60/80/100.
-^947-^* Now grants +50 Attack Speed for the boosted attack (helps make this one attack launch faster).
-
-^256Ludicrous Speed^*
-^947-^* No longer resets your autoattack cooldown upon use (since Electric Frenzy does that now).
-^947-^* No longer Stunned while travelling.
-^947-^* Instead, Doctor Repulsor is Perplexed (unable to use items) while travelling.
-   ^274*^* This means that Doctor Repulsor can autoattack & cast spells while Ludicrous Speed is active!
-   ^274*^* The Perplexed state remains on Doctor Repulsor for 0.8 seconds after exiting Ludicrous Speed.
-^947-^* Magic Damage dealt per 100 units travelled reduced from 15/20/25 to 6/12/18.
-^947-^* Max Magic Damage dealt per instance reduced from 300/400/500 to 200/300/400.
-^947-^* Cooldown increased from 0.3 seconds to 0.4 seconds.
-
-
-
-^947+^* Doctor Repulsor has an odd power curve due to the nature of Ludicrous Speed. His laning presence has been virtually non-existent because of his long range ganking potential at level 6, so some raw damage was taken away from Ludicrous Speed, while giving him much better tools for laning & the early game in general.
-
-^947+^* These changes do weaken the raw damage output through his ultimate alone, but the autoattack reset mechanic on Electric Frenzy opens up new combo routes & makes micromanaging his mana pool for Ludicrous Speed even more important. Player mechanical skill in terms of mouse speed & accuracy, cancelling the cast backswing of his abilities, as well as taking advantage of some returning mechanics on Ludicrous Speed will optimize the effectiveness of Doctor Repulsor, while simultaneously retaining options for counterplay (e.g. the Perplex state on Doctor Repulsor means item usage is not immediately available to him after exiting Ludicrous Speed).
-
-^947+^* Overall, these changes favour Doctor Repulsor more in terms of getting that long range ganking power spike at level 6 (which is his unique strength compared to every other hero), without frontloading the power on Ludicrous Speed itself. The changes make him less effective when played as a raw carry if relying on the damage from Ludicrous Speed, and more of a core hero that focuses on capitalizing on the uniqueness of his ganker-carry role and playstyle.
+^256Fissure^*
+^947-^* Mana Cost reduced from 120/130/140/150 to 100/110/120/130.
 
 _______________________________________________
 
-^059Electrician^*
+^059Bombardier^*
 
-^256Static Grip^*
-^947-^* Duration reduced from 2/2.6/3.2/3.8 seconds to 1.5/2/2.5/3 seconds.
-^947-^* Magic Damage per second increased from 50 to 60.
+^256Sticky Bomb^*
+^947-^* Cast Range reduced from 800 to 650/700/750/800.
+^947-^* Mana Cost increased from 95/105/115/125 to 105/115/125/135.
 
-_______________________________________________
-
-^059Ellonia^*
-
-^256Flash Freeze^*
-^947-^* Base Magic Damage increased from 50/70/90/110 to 55/80/105/130.
+^256Air Strike!^*
+^947-^* Magic Damage per strike increased from 200/275/350 to 220/290/360.
 
 _______________________________________________
 
-^059Emerald Warden^*
+^059Bubbles^*
+^947-^* Intelligence growth per level increased from 2.4 to 2.5.
 
-^256Silencing Shot^*
-^947-^* Mana Cost increased from 50 to 60/70/80/90.
-
-^256Hunter's Command^*
-^947-^* Wolves now deal 0.5x damage on impact if it hits targets that you do not actually have sight of.
-^947-^* Cooldown reduced from 18 seconds to 16 seconds.
-
-^256Overgrowth^*
-^947-^* Mana Cost increased from 60 to 60/70/80/90.
-^947-^* Cooldown increased from 9 seconds to 10 seconds.
-^947-^* The delay to activate the self-destruct ability (default hotkey "D") on the overgrowth after it spawns has been increased from 0.4 seconds to 0.5 seconds.
+^256Take Cover^*
+^947-^* Can now be autocast.
 
 _______________________________________________
 
-^059Engineer^*
+^059Cthulhuphant^*
 
-^256Spider Mines^*
-^947-^* Cooldown increased from 5 seconds to 8 seconds.
-^947-^* Now has a max chase time of 3 seconds (will detonate if it has not done so at this point).
+^256Trample^*
+^947-^* Magic Damage dealt by non-hero unit projectiles changed from 20 to 12/16/20/24.
+
+^256Obliterate^*
+^947-^* Cooldown reduced from 25 seconds to 20 seconds.
+
+^256Dreams of Madness^*
+^947-^* Cooldown reduced from 140/120/100 seconds to 100 seconds.
+^947-^* Mana Cost changed from 200 to 150/200/250.
+^947-^* Forced attack duration changed from 3 seconds to 2/2.5/3 seconds.
+^947-^* Movement Speed Slow increased from 20/30/40% to 20/35/50%.
 
 _______________________________________________
 
-^059Gauntlet^*
+^059Demented Shaman^*
 
-^256Grapple^*
-^947-^* Range increased from 725/850/975/1100 to 800/900/1000/1100.
+^256Unbreakable^*
+^947-^* Primary state can no longer be purged/transferred.
+   ^274*^* Damage buff state on self can still be purged/transferred.
 
 _______________________________________________
 
-^059Geomancer^*
+^059Glacius^*
 
-^256Dig^*
-^947-^* Magic Damage changed from 100/150/200/250 to 80/140/200/260.
-
-^256Geo Stalk^*
-^947-^* Tremorsense pulses are now emitted every 2 seconds (frequency has been improved from 3 seconds).
+^256Chilling Presence^*
+^947-^* Bonus Mana Regeneration per second granted to self increased from 1 to 1.5.
 
 _______________________________________________
 
 ^059Goldenveil^*
 
 ^256Perch & Plunge^*
-^947-^* Plunge: delay before Goldenveil lands to apply the Magic Damage & Stun increased from 0.85 seconds to 0.9 seconds.
+^947-^* Perch: Cooldown reduced from 2.5 seconds to 2 seconds.
+^947-^* Perch: Mana Cost for subsequent Perches reduced from 15 to 12.
+^947-^* Perch: While perching, Stun Duration for Goldenveil has been reduced from 3 seconds to 1 second if the tree Goldenveil is perched on becomes destroyed.
+^947-^* Plunge: Stun duration changed from 1.4/1.6/1.8/2 seconds to 1.3/1.6/1.9/2.2 seconds.
+^947-^* Plunge: ability can now used even when not perched on a tree.
+   ^274*^* However, the Cast Range, Airtime, Magic Damage, and Stun Duration are reduced by 50% when used in this manner.
+
+^947+^* Goldenveil is now less dependent on trees & not as hard-countered by items like Arcane Bomb.
+
+^947+^* Goldenveil players who find Plunge unreliable now have a choice of using it while not Perched on a tree, sacrificing range, raw damage & stun duration for sheer reliability and speed.
 
 _______________________________________________
 
 ^059Grinex^*
 
-^256Shadow Step^*
-^947-^* Collision Magic Damage increased from 40/70/100/130 to 60/90/120/150.
-^947-^* Stun duration on collision increased from 1/1.2/1.4/1.6 seconds to 1.35/1.5/1.65/1.8 seconds.
-
 ^256Rift Stalk^*
-^947-^* Now applies -1/1.25/1.5/1.75 Armor to an enemy target for 5 seconds upon attacking out of Rift Stalk.
-   ^274*^* This effect also applies to Shadow Step's impact effect on the main target.
-
-^947+^* With the solo unsafe lane ("suicide" lane) option being more viable this patch, Grinex has been adjusted accordingly to excel in this laning choice (just like in the past)!
+^947-^* Armor debuff value changed from -1/1.25/1.5/1.75 Armor to -0.8 Armor.
 
 _______________________________________________
 
-^059Hellbringer^*
-^947-^* Intelligence growth per level reduced from 3.3 to 2.8.
+^059Hammerstorm^*
 
-^256Evil Presence^*
-^947-^* Range reduced from 1200 to 800.
-^947-^* Active state on enemies: healing for Hellbringer reduced from 15/20/25/30% to 10/15/20/25% of damage received by the affected enemy target.
-
-_______________________________________________
-
-^059Ichor^*
-^947-^* Strength growth per level increased from 2.4 to 2.6.
-^947-^* Attack Range increased from 350 to 475.
-
-_______________________________________________
-
-^059Keeper of the Forest^*
-
-^256Nature's Guidance^*
-^947-^* Now grants the affected ally unit +10% Movement Speed while active.
-^947-^* Root state duration on an enemy increased from 0.8/1.2/1.6/2 seconds to 1.2/1.6/2/2.4 seconds.
-^947-^* Root state now deals 40 Magic Damage per second to the affected enemy target while active.
-
-_______________________________________________
-
-^059Legionnaire^*
-
-^256Whirling Blade^*
-^947-^* Can now be toggled on and off.
-   ^274*^* Primarily intended for niche usages, such as last hitting creeps under your tower.
+^256Mighty Swing^*
+^947-^* Cleave Damage reduced from 30/40/50/60% to 20/30/40/50%.
 
 _______________________________________________
 
 ^059Lodestone^*
 
-^256Headsmash^*
-^947-^* Mana Cost increased from 0 to 50.
-^947-^* Cooldown increased from 6 seconds to 7 seconds.
+^256Rocket Drill^*
+^947-^* Bonus Movement Speed granted to self after the second activation rescaled from 100 to 40/60/80/100.
 
-Shatterstorm
-^947-^* Cooldown increased from 75/60/45 seconds to 90/75/60 seconds.
+^256Lodestone Plates^*
+^947-^* Physical Attack Damage Block value increased from 10/20/30/40 to 15/25/35/45.
+^947-^* While off cooldown, Damage Reduction increased from 30% to 35% for the next instance of hero damage over 150.
+
+^947+^* Lodestone's laning performance should be more on par with other solo suicide laners, while slightly increasing his durability in the mid-game
 
 _______________________________________________
 
-^059Madman^*
+^059Maliken^*
 
-^256Stalk^*
-^947-^* Mana Cost increased from 60 to 70.
-^947-^* State duration reduced from 4 seconds to 3.5 seconds.
+^256Sword of the Damned^*
+^947-^* Life Essence: portion of healing based on Attack Damage reduced from 5% to 1/2/3/4% of your Attack Damage.
 
-^256Barrel Roll^*
-^947-^* Can no longer be cast while Immobilized.
-^947-^* Magic Damage reduced from 100/165/230/295 to 100/160/220/280.
+^256Hellbourne Zeal^*
+^947-^* Magic Armor gained per 1% Health missing changed from 0.1 to 0.025/0.05/0.075/0.1.
 
-^256Gash^*
-^947-^* Bonus damage per stack reduced from 6/7/8/9% to 5/6/7/8%.
+_______________________________________________
+
+^059Midas^*
+^947-^* Primary attribute changed from Strength to Intelligence.
+^947-^* Strength growth per level reduced from 2.2 to 2.
+^947-^* Agility growth per level increased from 1.1 to 1.2.
+
+_______________________________________________
+
+^059Myrmidon^*
+
+^256Weed Field^*
+^947-^* Cooldown increased from 10 seconds to 11 seconds.
+
+^256Magic Carp^*
+^947-^* Cooldown increased from 10 seconds to 11 seconds.
 
 _______________________________________________
 
 ^059Nitro^*
-^947-^* Strength growth per level increased from 1.5 to 2.0.
-^947-^* Base Agility increased from 22 to 25.
-
-^256Ballistic^*
-^947-^* No longer has a cooldown.
-
-^256Blast Off^*
-^947-^* Mana Cost reduced from 110/120/130/140 to 90/100/110/120.
-
-^256Three's a Crowd^*
-^947-^* While active, Nitro now gains 50% Evasion if there is an enemy within 300 radius of her.
 
 ^256Overdrive^*
-^947-^* Sight duration on the target now lasts for the full duration.
-^947-^* Damage penalty against the main target on autoattacks while active reduced from 65/55/45% to 60/50/40%.
-^947-^* Cooldown reduced from 90/75/60 seconds to 70/60/50 seconds.
+^947-^* Initial Bonus Attack Speed is no longer set to 400.
+^947-^* Instead, the Initial Bonus Attack Speed is set to 100 and gradually ramps up to 500 over 2 seconds.
 
 _______________________________________________
 
 ^059Oogie^*
 
 ^256Kindled Fury^*
-^947-^* Cooldown reduced from 8 seconds to 7 seconds.
+^947-^* Cooldown increased from 7 seconds to 7.5 seconds.
 
 _______________________________________________
 
-^059Ophelia^*
+^059Pearl^*
 
-^256Ophelia's Judgment^*
-^947-^* Magic Damage changed from 80/160/240/320 to 90/160/230/300.
-
-_______________________________________________
-
-^059Pollywog Priest^*
-
-^256Morph^*
-^947-^* Mana Cost reduced from 90/125/160/195 to 90/120/150/180.
-
-^256Voodoo Wards^*
-^947-^* Mana Cost reduced from 200/350/500 to 150/275/400.
+^256Asphyxiate^*
+^947-^* Debuffs are now dispelled on an ally upon the initial impact (rather than the delayed bubble explosion).
 
 _______________________________________________
 
-^059Predator^*
+^059Rampage^*
 
-^256Stone Hide^*
-^947-^* Cooldown increased from 14 seconds to 16 seconds.
-^947-^* Duration reduced from 4/5/6/7 seconds to 3.75/4.5/5.25/6 seconds.
-
-_______________________________________________
-
-^059Qi^*
-
-^256Ancestral Assault^*
-^947-^* Percentage of SuperiorMagic Damage dealt based on the target's Attack Damage increased from 60% to 60/67.5/75%.
+^256Might of the Herd^*
+^947-^* Can now be activated to apply -35/50/65/80 Movement Speed to enemies for up to 4 seconds within 300 radius.
+   ^274*^* Mana Cost: 50
+   ^274*^* Cooldown: 15 seconds
 
 _______________________________________________
 
-^059Salomon^*
+^059Solstice^*
+^947-^* Strength growth per level reduced from 3.2 to 2.8.
 
-^256Wish for Power^*
-^947-^* Cooldown reduced from 20 seconds to 15 seconds.
-
-^256Avenging Leap^*
-^947-^* Cooldown reduced from 20 seconds to 15 seconds.
+^256Graceful Strikes^*
+^947-^* Day Time: Bonus Physical Damage per proc changed from 60/80/100/120 to 55/75/100/125.
 
 _______________________________________________
 
-^059Shadowblade^*
+^059Vindicator^*
 
-^256Gargantuan's Blast^*
-^947-^* No longer receives a 20% Damage Penalty in this form.
-^947-^* Base Attack Time increased from 1.7 to 2 while in this form.
-^947-^* Movement Speed Slow applied to self in this form has been removed.
-^947-^* Armor and Magic Armor bonuses reduced from 1/2/3/4 to 0.75/1.5/2.25/3.
+^256Final Chapter^*
+^947-^* Cooldown increased from 110 seconds to 125 seconds.
 
-^256Feint's Siphon^*
-^947-^* No longer amplifies incoming damage to Shadowblade.
-
-^256Soul's Sight^*
-^947-^* Bonus Intelligence in this form increased from 4/8/12/16 to 5/10/15/20.
+^947+^* This ability is incredibly powerful at higher levels of play due to its low overall cooldown, and has been adjusted to increase the window of counterplay against a team with Vindicator.
 
 _______________________________________________
-
-^059Tempest^*
-^947-^* Agility growth per level increased from 1 to 1.6.
-
-^256Elemental^*
-^947-^* Mana Cost reduced from 180 to 150.
-^947-^* Cooldown reduced from 35 seconds to 30 seconds.
-
-^947+^* Tempest has been underperforming for a significantly long time.  These buffs should help him out in the jungle. In particular, Tempest can spawn more Elementals by using one of his own Elementals if needed at a moment's notice!
-
-_______________________________________________
-
-^059Valkyrie^*
-
-^256Call of the Valkyrie^*
-^947-^* Mana Cost increased from 80/90/100/110 to 80/100/120/140.
-
-_______________________________________________
-
-^059Warchief^*
-
-^256Spirit Walk^*
-^947-^* Duration increased from 3 seconds to 3.5 seconds.
-^947-^* Now has a 0.1 second delay before it can be activated again.
-   ^274*^* This particular change is intended to fix a bad packet error bug experienced by a small subset of players when re-activating Spirit Walk too quickly (i.e. a bug we cannot willingly replicate).
-
-_______________________________________________
-
-^059Witch Slayer^*
-
-^256Miniaturization^*
-^947-^* Mana Cost reduced from 110/140/170/200 to 90/120/150/180.
-
-_______________________________________________
-
-
 
 
 
 =^075 Items ^*=
 
-^077Arcane Bomb^*
-^947-^* Illusions can now only receive a maximum of 80% of their Max Health as damage from Arcane Bomb.
+^077Barbed Armor^*
+^947-^* Cooldown reduced from 40 seconds to 30 seconds.
 
-^077Astrolabe^*
-^947-^* Recipe Cost increased from 510 Gold to 710 Gold.
-   ^274*^* Total Cost increased from 1550 Gold to 1750 Gold.
+^077Golden Apple^*
+^947-^* Passive Mana Regeneration per second reduced from 0.3 to 0.25.
 
-^077Grave Locket^*
-^947-^* No longer requires a Guardian Ring in its recipe components list.
-^947-^* No longer grants +2 Armor.
-^947-^* Recipe Cost increased from 25 Gold to 200 Gold.
-   ^274*^* Total Cost remains unchanged at 800 Gold.
-   ^274*^* These changes also fix a bug in the item shop where the recipe icon does not show up as a component.
+^077Logger's Hatchet^*
+^947-^* Bonus Attack Damage against non-hero units reduced from 30/12 to 18/8 when wielded by a Melee/Ranged unit, respectively.
+^947-^* Cooldown increased from 15 seconds to 20 seconds when used on a tree, gadget or ward.
+^947-^* Cost reduced from 200 Gold to 150 Gold.
 
-^077Harkon's Blade^*
-^947-^* Magic Armor reduction lowered from 5 to 4.
+^947+^* This change lessens the damage difference gap between opposing Melee & Ranged heroes, allowing for more counterplay opportunities via timing mixups when contesting for last hits.
 
-^077Mana Potion^*
-^947-^* State duration increased from 15 seconds to 20 seconds.
-^947-^* Bonus Mana Regeneration while active reduced from 6.67 to 6.25.
-   ^274*^* Total Mana restored over the state duration increased from 100 to 125.
+^077Lunar Tear^*
+^947-^* Cost reduced from 90 Gold to 80 Gold.
 
-^077Post Haste^*
-^947-^* Recipe Cost reduced from 1900 Gold to 1800 Gold.
-   ^274*^* Total Cost remains unchanged (due to the Striders change listed later on).
+^947+^* This change should allow more combinations of starting items to exist.
 
-^077Restoration Stone^*
-^947-^* Mana Cost increased from 300 to 375.
+^077Runed Cleaver^*
+^947-^* Recipe Cost reduced from 900 Gold to 550 Gold.
+^947-^* Total Cost reduced from 4400 Gold to 4000 Gold (final numbers here are partially because of the cost change to Logger's Hatchet).
+^947-^* Bonus Attack Damage against non-hero units reduced from 60/30 to 30/15 when wielded by a Melee/Ranged unit, respectively.
+^947-^* Cleave Damage reduced from 60% to 50%.
 
-^077Spellshards^*
-^947-^* Recipe Cost reduced from 825 Gold to 725 Gold.
-   ^274*^* Total Cost reduced from 2150/2975/3800 Gold to 2050/2775/3500 Gold.
-
-^077Striders^*
-^947-^* Recipe Cost increased from 100 Gold to 200 Gold.
-   ^274*^* Total Cost increased from 600 Gold to 700 Gold.
+^947+^* This change combined with the changes to some commonly picked Strength melee carries in competitive-level HoN should allow for some agility heroes who farm Runed Cleaver to be more relevant in today's meta.
 
 _______________________________________________
 
@@ -644,87 +486,127 @@ _______________________________________________
 
 
 
-=^075 Forests of Caldavar ("New") ^*=
+=^075 General ^*=
 
-^947-^* Removed some excessive & duplicate trees.
-^947-^* Lingering outdated tree models on some trees were updated to the new tree models.
-^947-^* Odd blocker locations have been adjusted for the new camps.
-^947-^* Fixed a few texture seams.
-^947-^* Fixed some more unintended cliffwalking spots.
-^947-^* Legion Kongor now properly changes its model to Plushie Kongor if 3 or more Plushie/Misfit heroes are in the game.
+^075Forests of Caldavar ("New")^*
+^947-^* The middle medium camp in the Legion jungle can no longer be pulled to the bottom lane.
 
+Neutral Creeps
+^947-^* Riftwalker's Rift Burn, Emerald Warden's Overgrowth, and Engineer's Spider Mines are no longer counted in their periodic nearby unit count check for casting some of their spells (e.g. Minotaurs, Catman Champions, etc.).
 
+Bots
+^947-^* Bots now properly interact with the 2 Consumable Slots.
+   ^274*^* In other words, they will no longer attempt to spend all of their Gold on Homecoming Stones and other consumable items.
 
-=^075 Mid Wars ^*=
-
-^947-^* Fixed an unintended cliffwalking spot.
+Backdoor Protection System
+^947-^* Tier 2 towers now properly have the Backdoor Protection System disabled for them when at least 1 of their team's Barracks are destroyed.
 
 
 
 =^075 Heroes ^*=
 
-^059Engineer^*
-^947-^* The Keg now properly affects Siege creeps.
-^947-^* Spider Mines will no longer trigger on Magic Immune targets when determining what to chase.
-   ^274*^* This does not apply if the target gains Magic Immunity after Spider Mines starts travelling.
+^059Artesia^*
+^947-^* Arcane Missile now travels the correct distance if Artesia has a Jade Spire in her inventory.
 
-^059Geomancer^*
-^947-^* The visual expanding ring effects of Geo Stalk are no longer shown to the enemy team.
+^059Calamity^*
+^947-^* Units can no longer use direct pathing to escape at the vertices of Sunder's Vault.
 
-^059Goldenveil^*
-^947-^* Plunge can no longer be activated while immobilized.
+^059Gauntlet^*
+^947-^* Grapple will now target in the correct direction when you cast it while Gauntlet is very close to a cliff.
 
-^059Hammerstorm^*
-^947-^* Tin Hammerstorm's Galvanize now has its proper cast visual effects & cast sounds.
+^059Jeraziah^*
+^947-^* Now uses the correct attack animation when attacking with Righteous Strike.
 
-^059Hellbringer^*
-^947-^* ElementBringer's fire and ice variants of Malphas will now properly have their leash range behaviour (relative to Hellbringer's location) applied when attacking towers.
+^059Kinesis^*
+^947-^* Telekinetic Control now gets blocked completely by Null Stone and Moraxus' Arcane Shield (prior to this fix, it was not interacting with it at all).
 
-^059Madman^*
-^947-^* Berserk (when boosted by Staff of the Master) no longer refreshes its own cooldown when Madman dies & Berserk is at level 2 or 3.
+^059Moira^*
+^947-^* Ephemeral Forge mimic can no longer activate Golden Apple or Lunar Tear.
+^947-^* Soultrap and Dreamcatcher now lose charges on the original Moira when consumed by the Ephemeral Forge mimic.
 
-^059Martyr^*
-^947-^* Sol's Conviction now properly displays a cast range indicator (if boosted by Staff of the Master).
+^059Monkey King^*
+^947-^* Attack Range is now properly set to be 150 to be consistent with other melee heroes (instead of 128).
 
-^059Master of Arms^*
-^947-^* Mistress of Arms (URSA avatar) now spawns its URSA Corps bear companion pet properly if you own the Uschi Kane URSA avatar and the Ravus Artillery avatar.
+^059Tempest^*
+^947-^* A timer that represent's the most recent cast instance's minion lifetime will now be shown on the Elementals ability icon.
+^947-^* Meteor's subability hotkey is now properly mapped to the Extra Ability 1 hotkey (default hotkey "D").
 
-^059Nitro^*
-^947-^* Tesla Cannon Nitro's model now displays properly in the hero pick screen.
-^947-^* Nitro is now also categorized as a Ganker in the hero roles section (in addition to being a Carry).
-^947-^* Can no longer teleport to Mauser via Post Haste (since Nitro's rework).
-
-^059Silhouette^*
-^947-^* Shadow's "Like a Ninja" swap subability now displays charges on the ability icon. These charges represent the cast time equal to (seconds/100).
-^947-^* Tree Grapple no longer blocks neutral camps from respawning.
+^059Warchief^*
+^947-^* Warcry no longer reduces Warchief's item cooldowns if their original cooldown is 3 seconds or lower (prevents a data type overflow bug).
 
 
 
 =^075 Items ^*=
 
-^077Bottle^*
-^947-^* Owner now receives the Bottle state for 3 seconds if picking up a Refreshment Rune (via right-clicking on it) while having a full Bottle (with or without a rune in it currently).
+^077Ophelia's Pact^*
+^947-^* No longer triggers its effects upon purchase (i.e. you must use the item manually).
+   ^274*^* This change is required to fix an exploit that artificially inflates your GPM values (although having no effect on your Gold itself) and an exploit that potentially crashes the game server.
 
-^077Icebrand (and Frostburn, Frozen Light, Dawnbringer and Frostwolf's Skull)^*
-^947-^* Melee effect will now be prioritized over the Ranged effect on the slow state if different sources apply the state.
+^077Sand Scepter^*
+^947-^* Projectile no longer affects an enemy with Magic Immunity if the target gains Magic Immunity while the projectile is in midair.
 
-^077Icon of the Goddess^*
-^947-^* Can no longer be dropped if you have taken damage within the last 8 seconds (prevents the player from losing charges on the ability in near-death situations).
-^947-^* Now grants the appropriate amount of bonus Max Health and Max Mana at 25 charges.
-^947-^* Now sets the appropriate bonus Max Health & Max Mana based on charges when picking it up from the ground.
-
-^077Puzzlebox^*
-^947-^* Tooltip has been slightly shortened so its tooltip box does not go past the top of the screen.
-
-^077Spyglass^*
-^947-^* Can now be moved to a consumables slot in your inventory (if the player wants to do so - however, this item should be manually used by the player as soon as possible for its original purpose).
-^947-^* Can no longer be dropped or shared to other units (to prevent it from taking up space in an ally hero's inventory without them being able to get rid of it).
-   ^274*^* You can still remove it from your inventory without using the item by selling it for 0 Gold, if you wish to do so.
-
-^077Toxin Claws^*
-^947-^* Heroes affected by Toxin Claw's DoT state are no longer deniable (based on Toxin Claw's state alone), as Toxin Claws is considered direct Health removal.
-^947-^* Melee effect will now be prioritized over the Ranged effect on the state if different sources apply the state.
+^077Tome of Elements^*
+^947-^* Now correctly excludes terminated players from the calculation of your team's average Experience.
 
 
+
+_______________________________________________
+
+
+
+^980Version 4.8.5.1^*
+-------------
+^9806 August 2020^*
+
+
+
+==^960 Design ^*==
+
+
+
+=^075 Heroes ^*=
+
+^059Doctor Repulsor^*
+^947-^* Attack action time increased from 350ms to 400ms.
+
+^256Opposite Charges^*
+^947-^* Duration reduced from 1/1.4/1.8/2.2 seconds to 0.8/1.2/1.6/2 seconds.
+
+^256Electric Frenzy^*
+^947-^* Magic Damage reduced from 40/60/80/100 to 35/50/65/80.
+^947-^* Ability is no longer activatable & is no longer connected to Opposite Charges.
+^947-^* Autoattack reset mechanic now has a cooldown of 4/3/2/1 seconds.
+   ^274*^* The bonus Magic Damage will still be added to your autoattack even if the ability is on cooldown.
+
+^256Ludicrous Speed^*
+^947-^* Initial Mana Cost increased from (15 + 7% of Max Mana) to (20 + 8% of Max Mana).
+^947-^* Mana Cost per 100 units travelled reduced from (10 + 1% of Max Mana) to (10 + 0.9% of Max Mana).
+
+^947+^* Note that these are all changes based on Patch 4.8.5's content for Doctor Repulsor.
+^947+^* These changes ensure that Doctor Repulsor's burst damage does not get out of control too early in the game.
+
+_______________________________________________
+
+
+
+==^960 Bug Fixes & Optimizations ^*==
+
+
+
+=^075 General ^*=
+
+^947-^* Plinko exchange background texture now displays properly.
+^947-^* Forests of Caldavar ("New") creep pathing has been fixed for the side lane medium pull camps.
+^947-^* Old shop interface has been extended to accommodate additional items (e.g. Arcane Bomb).
+   ^274*^* Credits to Anakonda for the fix.
+
+
+
+=^075 Heroes ^*=
+
+^059Grinex^*
+^947-^* Negative armor state from Rift Stalk no longer applies to structures.
+
+^947+^* Note that all of these changes in Patch 4.8.5.1 were applied for the SEA client back on the listed patch date, but was not applied in the NAEU/International client at the time. These changes will be patched into the NAEU/International client with Patch 4.8.6.
 
 _______________________________________________
