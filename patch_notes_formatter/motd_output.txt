@@ -292,7 +292,7 @@
 <br /><span style="color: #ff66cc;">-</span> Intelligence gain per level increased from 2.9 to 3.0.
 <br /><br /><span style="color: #0099cc";>Tundra Blast</span>
 <br /><span style="color: #ff66cc;">-</span> Magic Damage changed from 110/150/180/210 to 110/170/190/210.
-<br /><br /><span style="color: #0099cc";>Icy Imprisonment</span>
+<br />Ice Imprisonment
 <br /><span style="color: #ff66cc;">-</span> Cast Range increased from 500 to 550.
 <br /><span style="color: #ff66cc;">-</span> Mana Cost increased from 120/130/140/150 to 130/140/150/160.
 <br /><span style="color: #ff66cc;">-</span> Magic Damage per second increased from 70 to 90.

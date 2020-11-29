@@ -516,7 +516,7 @@ Glacius
 Tundra Blast
 - Magic Damage changed from 110/150/180/210 to 110/170/190/210.
 
-Icy Imprisonment
+Ice Imprisonment
 - Cast Range increased from 500 to 550.
 - Mana Cost increased from 120/130/140/150 to 130/140/150/160.
 - Magic Damage per second increased from 70 to 90.

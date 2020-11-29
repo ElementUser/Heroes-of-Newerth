@@ -515,7 +515,7 @@ _______________________________________________
 [COLOR=#0099cc]Tundra Blast[/COLOR]
 [COLOR=#ff66cc]-[/COLOR] Magic Damage changed from 110/150/180/210 to 110/170/190/210.
 
-[COLOR=#0099cc]Icy Imprisonment[/COLOR]
+Ice Imprisonment
 [COLOR=#ff66cc]-[/COLOR] Cast Range increased from 500 to 550.
 [COLOR=#ff66cc]-[/COLOR] Mana Cost increased from 120/130/140/150 to 130/140/150/160.
 [COLOR=#ff66cc]-[/COLOR] Magic Damage per second increased from 70 to 90.
