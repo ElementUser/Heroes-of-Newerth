@@ -674,7 +674,7 @@ _______________________________________________
 _______________________________________________
 
 ^059Pyromancer^*
-^947-^* Starting Attack Daamge increased from 43-49 to 46-50.
+^947-^* Starting Attack Damage increased from 43-49 to 46-50.
 
 ^256Dragonfire^*
 ^947-^* Magic Damage increased from 80/120/160/200 to 80/130/180/230.

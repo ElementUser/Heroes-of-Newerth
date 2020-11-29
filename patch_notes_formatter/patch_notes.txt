@@ -674,7 +674,7 @@ Voodoo Puppet
 _______________________________________________
 
 Pyromancer
-- Starting Attack Daamge increased from 43-49 to 46-50.
+- Starting Attack Damage increased from 43-49 to 46-50.
 
 Dragonfire
 - Magic Damage increased from 80/120/160/200 to 80/130/180/230.

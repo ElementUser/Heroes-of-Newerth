@@ -374,7 +374,7 @@
 <br /><span style="color: #ff66cc;">-</span> Voodoo Puppet's Max Health reduced from 500/750/1000 to 500/700/900.
 <br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> These changes make Puppet Master just a tad less burst-oriented, while increasing his overall damage output over time and improving the availability of his spells.</em></span><br /><br />_______________________________________________
 <br /><br /><strong><span style="color: #0099ff";>Pyromancer</span></strong>
-<br /><span style="color: #ff66cc;">-</span> Starting Attack Daamge increased from 43-49 to 46-50.
+<br /><span style="color: #ff66cc;">-</span> Starting Attack Damage increased from 43-49 to 46-50.
 <br /><br /><span style="color: #0099cc";>Dragonfire</span>
 <br /><span style="color: #ff66cc;">-</span> Magic Damage increased from 80/120/160/200 to 80/130/180/230.
 <br /><span style="color: #ff66cc;">-</span> Cooldown reduced from 10 seconds to 8 seconds.

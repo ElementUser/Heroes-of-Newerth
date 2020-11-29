@@ -673,7 +673,7 @@ _______________________________________________
 _______________________________________________
 
 [COLOR=#0099ff][B]Pyromancer[/B][/COLOR]
-[COLOR=#ff66cc]-[/COLOR] Starting Attack Daamge increased from 43-49 to 46-50.
+[COLOR=#ff66cc]-[/COLOR] Starting Attack Damage increased from 43-49 to 46-50.
 
 [COLOR=#0099cc]Dragonfire[/COLOR]
 [COLOR=#ff66cc]-[/COLOR] Magic Damage increased from 80/120/160/200 to 80/130/180/230.
