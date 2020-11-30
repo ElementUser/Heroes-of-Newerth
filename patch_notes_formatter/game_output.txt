@@ -374,7 +374,7 @@ _______________________________________________
 ^947-^* Now heals Bramble for 0.5x the bonus Magic Damage dealt by this ability.
    ^274*^* Overhealing will grant Bramble a shield state for 5 seconds. Max Shield Health of 400. Shield states are shared between abilities.
 
-^947+^* These changes should allow Bramble to remain more durable in the front lines and allow Ensnaring Shrubbery to be used on allies (instead of himself) more frequently.
+^947+^* These changes should allow Bramble to remain more durable in the front lines and allow Ensnaring Shrubbery to be used on allies (instead of herself) more frequently.
 
 _______________________________________________
 
