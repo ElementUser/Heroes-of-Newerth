@@ -175,12 +175,10 @@ _______________________________________________
 
 [COLOR=#0099cc]Chaotic Flames[/COLOR]
 [COLOR=#ff66cc]-[/COLOR] Staff of the Master effect changes (to pre-existing):
-[COLOR=#00cc99]*[/COLOR] Mana Cost changed from 60% of your current Mana to 40% of your Max Mana.
-[COLOR=#00cc99]*[/COLOR] Cooldown increased from 8 seconds to 75 seconds.
+[COLOR=#00cc99]*[/COLOR] Mana Cost changed from 60% of your current Mana to 33% of your Max Mana.
+[COLOR=#00cc99]*[/COLOR] Cooldown increased from 8 seconds to 30 seconds.
 
-[COLOR=#ff66cc]+[/COLOR][I][COLOR=#ffffcc] Blacksmith is receiving numerous buffs (mentioned later in the patch notes), so the boosted Chaotic Flames ability (Risky Cast) had to be severely limited in its usage, as it was used as a "free" second proc of Fireball most of the time with generally unlimited availability.[/I][/COLOR]
-[COLOR=#ff66cc]+[/COLOR][I][COLOR=#ffffcc] Risky Cast is truly an ultimate-like ability that is worthy of a cooldown appropriate for an ultimate ability.[/I][/COLOR]
-[COLOR=#ff66cc]+[/COLOR][I][COLOR=#ffffcc] Fear not - Blacksmith's other buffs in this patch will more than make up for this nerf![/I][/COLOR]
+[COLOR=#ff66cc]+[/COLOR][I][COLOR=#ffffcc] Blacksmith is receiving numerous buffs (mentioned later in the patch notes), so the boosted Chaotic Flames ability (Risky Cast) had to be more limited in its usage, as it was used as a "free" second proc of Fireball most of the time with generally unlimited availability.[/I][/COLOR]
 
 _______________________________
 
@@ -791,8 +789,10 @@ _______________________________________________
 [COLOR=#0099ff][B]Wildsoul[/B][/COLOR]
 
 [COLOR=#0099cc]Bear Form[/COLOR]
-[COLOR=#ff66cc]-[/COLOR] Now has a cooldown of 1 second to morph into Bear Form (reverting forms does not trigger the cooldown).
-[COLOR=#ff66cc]-[/COLOR] Now has a Mana Cost of 20/35/50.
+[COLOR=#ff66cc]-[/COLOR] Now has a cooldown of 1 second once Wildsoul finishes morphing into Bear Form (reverting forms does not trigger the cooldown).
+[COLOR=#ff66cc]-[/COLOR] Now has a Mana Cost of 20.
+
+[COLOR=#ff66cc]+[/COLOR][I][COLOR=#ffffcc] These changes are not intended to be nerfs, but rather to implement a mechanism to deter players from endlessly spamming the visual/sound effects.[/I][/COLOR]
 
 _______________________________________________
 
@@ -1035,6 +1035,7 @@ _______________________________________________
 
 [COLOR=#00cccc][B]Barbed Armor[/B][/COLOR]
 [COLOR=#ff66cc]-[/COLOR] Returned Damage is now based on pre-mitigation damage (rather than post-mitigation damage).
+[COLOR=#ff66cc]-[/COLOR] Returned Damage reduced from 80% to 65% of the pre-mitigation damage received.
 
 [COLOR=#00cccc][B]Barrier Idol[/B][/COLOR]
 [COLOR=#ff66cc]-[/COLOR] Component change in buildup: Major Totem (540 Gold) is now replaced with a Trinket of Restoration (350 Gold).
@@ -1191,3 +1192,4 @@ Gadgets spawned by the following abilities will no longer block neutral camps fr
 
 
 _______________________________________________
+

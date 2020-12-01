@@ -96,9 +96,9 @@
 <br /><br /><strong><span style="color: #0099ff";>Blacksmith</span></strong>
 <br /><br /><span style="color: #0099cc";>Chaotic Flames</span>
 <br /><span style="color: #ff66cc;">-</span> Staff of the Master effect changes (to pre-existing):
-<br /><span style="color: #00cc99;">*</span> Mana Cost changed from 60% of your current Mana to 40% of your Max Mana.
-<br /><span style="color: #00cc99;">*</span> Cooldown increased from 8 seconds to 75 seconds.
-<br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> Blacksmith is receiving numerous buffs (mentioned later in the patch notes), so the boosted Chaotic Flames ability (Risky Cast) had to be severely limited in its usage, as it was used as a "free" second proc of Fireball most of the time with generally unlimited availability.</em></span><br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> Risky Cast is truly an ultimate-like ability that is worthy of a cooldown appropriate for an ultimate ability.</em></span><br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> Fear not - Blacksmith's other buffs in this patch will more than make up for this nerf!</em></span><br /><br />_______________________________
+<br /><span style="color: #00cc99;">*</span> Mana Cost changed from 60% of your current Mana to 33% of your Max Mana.
+<br /><span style="color: #00cc99;">*</span> Cooldown increased from 8 seconds to 30 seconds.
+<br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> Blacksmith is receiving numerous buffs (mentioned later in the patch notes), so the boosted Chaotic Flames ability (Risky Cast) had to be more limited in its usage, as it was used as a "free" second proc of Fireball most of the time with generally unlimited availability.</em></span><br /><br />_______________________________
 <br /><br /><strong><span style="color: #0099ff";>Bramble</span></strong>
 <br /><br /><span style="color: #0099cc";>Chomp!</span>
 <br /><span style="color: #ff66cc;">-</span> Staff of the Master effect addition (to pre-existing):
@@ -442,9 +442,9 @@
 <br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> These changes should help Vorax maintain relevance throughout the game as time passes by.</em></span><br /><br />_______________________________________________
 <br /><br /><strong><span style="color: #0099ff";>Wildsoul</span></strong>
 <br /><br /><span style="color: #0099cc";>Bear Form</span>
-<br /><span style="color: #ff66cc;">-</span> Now has a cooldown of 1 second to morph into Bear Form (reverting forms does not trigger the cooldown).
-<br /><span style="color: #ff66cc;">-</span> Now has a Mana Cost of 20/35/50.
-<br />_______________________________________________
+<br /><span style="color: #ff66cc;">-</span> Now has a cooldown of 1 second once Wildsoul finishes morphing into Bear Form (reverting forms does not trigger the cooldown).
+<br /><span style="color: #ff66cc;">-</span> Now has a Mana Cost of 20.
+<br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> These changes are not intended to be nerfs, but rather to implement a mechanism to deter players from endlessly spamming the visual/sound effects.</em></span><br /><br />_______________________________________________
 <br /><br /><strong><span style="color: #0099ff";>Witch Slayer</span></strong>
 <br /><br /><span style="color: #0099cc";>Graveyard</span>
 <br /><span style="color: #ff66cc;">-</span> Magic Damage changed from 80/140/200/260 to 100/160/210/260.
@@ -586,6 +586,7 @@
 <br /><span style="color: #00cc99;">*</span> This should not make a difference in most circumstances & primarily only makes a difference against Xemplar's Schism illusions.
 <br /><br /><strong><span style="color: #00cccc";>Barbed Armor</span></strong>
 <br /><span style="color: #ff66cc;">-</span> Returned Damage is now based on pre-mitigation damage (rather than post-mitigation damage).
+<br /><span style="color: #ff66cc;">-</span> Returned Damage reduced from 80% to 65% of the pre-mitigation damage received.
 <br /><br /><strong><span style="color: #00cccc";>Barrier Idol</span></strong>
 <br /><span style="color: #ff66cc;">-</span> Component change in buildup: Major Totem (540 Gold) is now replaced with a Trinket of Restoration (350 Gold).
 <br /><span style="color: #ff66cc;">-</span> Recipe Cost increased from 1060 Gold to 1250 Gold.
@@ -686,3 +687,4 @@
 <br /><span style="color: #ff66cc;">-</span> Now properly disabled on Moira's Ephemeral Forge Mimic.
 <br /><span style="color: #ff66cc;">-</span> No longer interrupts your current unit's command when consumed.
 <br /><br /><br />_______________________________________________
+<br />

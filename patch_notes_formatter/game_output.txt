@@ -176,12 +176,10 @@ _______________________________________________
 
 ^256Chaotic Flames^*
 ^947-^* Staff of the Master effect changes (to pre-existing):
-   ^274*^* Mana Cost changed from 60% of your current Mana to 40% of your Max Mana.
-   ^274*^* Cooldown increased from 8 seconds to 75 seconds.
+   ^274*^* Mana Cost changed from 60% of your current Mana to 33% of your Max Mana.
+   ^274*^* Cooldown increased from 8 seconds to 30 seconds.
 
-^947+^* Blacksmith is receiving numerous buffs (mentioned later in the patch notes), so the boosted Chaotic Flames ability (Risky Cast) had to be severely limited in its usage, as it was used as a "free" second proc of Fireball most of the time with generally unlimited availability.
-^947+^* Risky Cast is truly an ultimate-like ability that is worthy of a cooldown appropriate for an ultimate ability.
-^947+^* Fear not - Blacksmith's other buffs in this patch will more than make up for this nerf!
+^947+^* Blacksmith is receiving numerous buffs (mentioned later in the patch notes), so the boosted Chaotic Flames ability (Risky Cast) had to be more limited in its usage, as it was used as a "free" second proc of Fireball most of the time with generally unlimited availability.
 
 _______________________________
 
@@ -792,8 +790,10 @@ _______________________________________________
 ^059Wildsoul^*
 
 ^256Bear Form^*
-^947-^* Now has a cooldown of 1 second to morph into Bear Form (reverting forms does not trigger the cooldown).
-^947-^* Now has a Mana Cost of 20/35/50.
+^947-^* Now has a cooldown of 1 second once Wildsoul finishes morphing into Bear Form (reverting forms does not trigger the cooldown).
+^947-^* Now has a Mana Cost of 20.
+
+^947+^* These changes are not intended to be nerfs, but rather to implement a mechanism to deter players from endlessly spamming the visual/sound effects.
 
 _______________________________________________
 
@@ -1036,6 +1036,7 @@ _______________________________________________
 
 ^077Barbed Armor^*
 ^947-^* Returned Damage is now based on pre-mitigation damage (rather than post-mitigation damage).
+^947-^* Returned Damage reduced from 80% to 65% of the pre-mitigation damage received.
 
 ^077Barrier Idol^*
 ^947-^* Component change in buildup: Major Totem (540 Gold) is now replaced with a Trinket of Restoration (350 Gold).
@@ -1192,3 +1193,4 @@ Gadgets spawned by the following abilities will no longer block neutral camps fr
 
 
 _______________________________________________
+
