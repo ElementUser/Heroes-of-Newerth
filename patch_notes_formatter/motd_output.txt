@@ -286,7 +286,7 @@
 <br /><br /><span style="color: #0099cc";>Earth's Grasp</span>
 <br /><span style="color: #ff66cc;">-</span> Magic Damage per proc increased from 30/35/40/45 to 35/40/45/50.
 <br /><br /><span style="color: #0099cc";>Geo Stalk</span>
-<br /><span style="color: #ff66cc;">-</span> Radius increased from 1200/1500/180/2100 to 1200/1800/2400/3000.
+<br /><span style="color: #ff66cc;">-</span> Radius increased from 1200/1500/1800/2100 to 1200/1800/2400/3000.
 <br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> Slight number tweaks to increase Geomancer's niche, while not making him too obnoxious to deal with in the laning phase.</em></span><br /><br />_______________________________________________
 <br /><br /><strong><span style="color: #0099ff";>Glacius</span></strong>
 <br /><span style="color: #ff66cc;">-</span> Intelligence gain per level increased from 2.9 to 3.0.

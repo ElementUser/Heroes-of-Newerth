@@ -502,7 +502,7 @@ _______________________________________________
 ^947-^* Magic Damage per proc increased from 30/35/40/45 to 35/40/45/50.
 
 ^256Geo Stalk^*
-^947-^* Radius increased from 1200/1500/180/2100 to 1200/1800/2400/3000.
+^947-^* Radius increased from 1200/1500/1800/2100 to 1200/1800/2400/3000.
 
 ^947+^* Slight number tweaks to increase Geomancer's niche, while not making him too obnoxious to deal with in the laning phase.
 
