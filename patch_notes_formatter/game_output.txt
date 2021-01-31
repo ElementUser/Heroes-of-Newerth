@@ -6,6 +6,11 @@
 
 ==^960 New Content ^*==
 
+^077New Loading Screens have been rotated into the game!^*
+^947-^* The new loading screen art will represent and celebrate the Lunar New Year!
+   ^274*^* This means that the fan art backgrounds (from Patch 4.9.0) will be rotated out of the game. We apologize for the inconvenience.
+   ^274*^* We are delighted to have those art pieces in our game, but we regret to inform that a substantial portion of the player base are unhappy with the art. It is unlikely they will return to the game - if they do return, it will be on a background art rotation basis.
+
 ^077New Behemoth Avatar: Exo Behe^*
 ^947-^* Get ready to electrify your competition with this new Behemoth avatar!
 

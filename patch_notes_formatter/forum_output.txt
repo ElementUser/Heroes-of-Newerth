@@ -5,6 +5,11 @@
 
 ==[COLOR=#ffa500][SIZE=18][B] New Content [/B][/SIZE][/COLOR]==
 
+[COLOR=#00cccc][B]New Loading Screens have been rotated into the game![/B][/COLOR]
+[COLOR=#ff66cc]-[/COLOR] The new loading screen art will represent and celebrate the Lunar New Year!
+[COLOR=#00cc99]*[/COLOR] This means that the fan art backgrounds (from Patch 4.9.0) will be rotated out of the game. We apologize for the inconvenience.
+[COLOR=#00cc99]*[/COLOR] We are delighted to have those art pieces in our game, but we regret to inform that a substantial portion of the player base are unhappy with the art. It is unlikely they will return to the game - if they do return, it will be on a background art rotation basis.
+
 [COLOR=#00cccc][B]New Behemoth Avatar: Exo Behe[/B][/COLOR]
 [COLOR=#ff66cc]-[/COLOR] Get ready to electrify your competition with this new Behemoth avatar!
 

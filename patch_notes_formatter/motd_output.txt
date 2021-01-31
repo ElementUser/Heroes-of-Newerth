@@ -1,5 +1,9 @@
 <p><strong><span style="color: #ffd700; font-size: 18pt;">Welcome to Heroes of Newerth</span></strong></span><br /><strong><span style="color: #ffd700; font-size: 18pt;">Version 4.9.1 - 2 February 2021</span></strong></p>
 <br /><br /><br />==<strong><span style="font-size: 14pt; color: #ffa500;"> New Content </span></strong>==
+<br /><br /><strong><span style="color: #00cccc";>New Loading Screens have been rotated into the game!</span></strong>
+<br /><span style="color: #ff66cc;">-</span> The new loading screen art will represent and celebrate the Lunar New Year!
+<br /><span style="color: #00cc99;">*</span> This means that the fan art backgrounds (from Patch 4.9.0) will be rotated out of the game. We apologize for the inconvenience.
+<br /><span style="color: #00cc99;">*</span> We are delighted to have those art pieces in our game, but we regret to inform that a substantial portion of the player base are unhappy with the art. It is unlikely they will return to the game - if they do return, it will be on a background art rotation basis.
 <br /><br /><strong><span style="color: #00cccc";>New Behemoth Avatar: Exo Behe</span></strong>
 <br /><span style="color: #ff66cc;">-</span> Get ready to electrify your competition with this new Behemoth avatar!
 <br />Empath and Rhapsody:
