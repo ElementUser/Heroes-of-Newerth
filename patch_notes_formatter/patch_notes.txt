@@ -129,7 +129,6 @@ Werebeast Enchanter
 = General =
 
 - Ranged Creep aggro range reduced from 800 to 750.
-*This change slightly buffs solo suicide/off-lane heroes.
 
 
 

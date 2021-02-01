@@ -128,7 +128,6 @@ Neutral Camps
 =[COLOR=#ffd700] General [/COLOR]=
 
 [COLOR=#ff66cc]-[/COLOR] Ranged Creep aggro range reduced from 800 to 750.
-[COLOR=#00cc99]*[/COLOR] This change slightly buffs solo suicide/off-lane heroes.
 
 
 

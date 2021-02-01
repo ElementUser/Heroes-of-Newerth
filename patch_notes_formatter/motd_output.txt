@@ -64,7 +64,6 @@
 <br /><span style="color: #00cc99;">*</span> In other words, the player with the highest MMR in Matchmaking and Champions of Newerth games will no longer always be in the Blue or Pink player slot.
 <br /><br /><br />=<span style="color: #ffd700";> General </span>=
 <br /><br /><span style="color: #ff66cc;">-</span> Ranged Creep aggro range reduced from 800 to 750.
-<br /><span style="color: #00cc99;">*</span> This change slightly buffs solo suicide/off-lane heroes.
 <br /><br /><br />=<span style="color: #ffd700";> Heroes </span>=
 <br /><br /><strong><span style="color: #0099ff";>Adrenaline</span></strong>
 <br /><span style="color: #ff66cc;">-</span> Primary attribute changed from Agility to Strength.
