@@ -1,385 +1,487 @@
-<p><strong><span style="color: #ffd700; font-size: 18pt;">Welcome to Heroes of Newerth</span></strong></span><br /><strong><span style="color: #ffd700; font-size: 18pt;">Version 4.9.1 - 2 February 2021</span></strong></p>
-<br /><br /><br />==<strong><span style="font-size: 14pt; color: #ffa500;"> New Content </span></strong>==
-<br /><br /><strong><span style="color: #00cccc";>New Loading Screens have been rotated into the game!</span></strong>
-<br /><span style="color: #ff66cc;">-</span> The new loading screen art will represent and celebrate the Lunar New Year!
-<br /><span style="color: #00cc99;">*</span> This means that the fan art backgrounds (from Patch 4.9.0) will be rotated out of the game. We apologize for the inconvenience.
-<br /><span style="color: #00cc99;">*</span> We are delighted to have those art pieces in our game, but we regret to inform that a substantial portion of the player base are unhappy with the art. It is unlikely they will return to the game - if they do return, it will be on a background art rotation basis.
-<br /><br /><strong><span style="color: #00cccc";>New Behemoth Avatar: Exo Behe</span></strong>
-<br /><span style="color: #ff66cc;">-</span> Get ready to electrify your competition with this new Behemoth avatar!
-<br />Empath and Rhapsody:
-<br /><span style="color: #ff66cc;">-</span> Base avatars and icons have been reverted to their base versions.
-<br /><span style="color: #ff66cc;">-</span> The HoN China (CN) models and avatars are now available for free in the store!
+<p><strong><span style="color: #ffd700; font-size: 18pt;">Welcome to Heroes of Newerth</span></strong></span><br /><strong><span style="color: #ffd700; font-size: 18pt;">Version 4.9.2 - 30 March 2021</span></strong></p>
 <br /><br /><br />==<strong><span style="font-size: 14pt; color: #ffa500;"> Design </span></strong>==
+<br /><br /><br />==<strong><span style="font-size: 14pt; color: #ffa500;"> New Content </span></strong>==
+<br />Legacy loading screens have been rotated into the game.
+<br /><span style="color: #ff66cc;">-</span> Reminisce in the early days of Newerth!
+<br /><br /><strong><span style="color: #00cccc";>New Miku Products have been released!</span></strong>
+<br /><span style="color: #ff66cc;">-</span> Miku Taunt
+<br /><span style="color: #ff66cc;">-</span> Miku Wards
+<br /><span style="color: #ff66cc;">-</span> Miku TP Effect
+<br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> Complete your Miku cosmetic collection with these stylish Miku products!</em></span><br /><br /><br /><strong><span style="color: #00cccc";>New Throwback Avatar: Throwback Bramble</span></strong>
+<br /><span style="color: #ff66cc;">-</span> Relive Bramble's earliest moments in Newerth!
 <br /><br /><br />=<span style="color: #ffd700";> Staff of the Master & Master's Legacy Changes </span>=
-<br /><br /><strong><span style="color: #0099ff";>Blacksmith</span></strong>
-<br /><br /><span style="color: #0099cc";>Chaotic Flames</span>
-<br /><span style="color: #ff66cc;">-</span> Staff of the Master effect changes (to pre-existing):
-<br /><span style="color: #00cc99;">*</span> Mana Cost reduced from 33% Max Mana to 20% Max Mana.
-<br /><span style="color: #00cc99;">*</span> Chance to cast Fireball, Flaming Hammer or Frenzy when autoattacking increased from 10% to 15%.
-<br />_______________________________________________
-<br /><br /><strong><span style="color: #0099ff";>Flint Beastwood</span></strong>
-<br /><br /><span style="color: #ff66cc;">-</span> Staff of the Master visuals have been implemented on all avatars.
-<br />_______________________________________________
-<br /><br /><strong><span style="color: #0099ff";>Monkey King</span></strong>
-<br /><br /><span style="color: #ff66cc;">-</span> Staff of the Master visuals have been implemented on all avatars.
-<br /><span style="color: #00cc99;">*</span> Credits to RedBear for his assistance on HD Monkey King and the Queen of Fools avatar!
-<br />_______________________________________________
-<br /><br /><strong><span style="color: #0099ff";>Puppet Master</span></strong>
-<br /><br /><span style="color: #0099cc";>Voodoo Puppet</span>
+<br /><br /><strong><span style="color: #0099ff";>Blood Hunter</span></strong>
+<br /><br /><span style="color: #0099cc";>Hemorrhage</span>
 <br /><span style="color: #ff66cc;">-</span> Staff of the Master effect change (to pre-existing):
-<br /><span style="color: #00cc99;">*</span> Damage multiplier reduced from 150/175/200% to 130/155/180%.
+<br /><span style="color: #00cc99;">*</span> Radius increased from 250 to 325.
 <br />_______________________________________________
-<br /><br /><strong><span style="color: #0099ff";>Solstice</span></strong>
-<br /><br /><span style="color: #ff66cc;">-</span> Staff of the Master visuals have been implemented on all avatars.
-<br />_______________________________________________
-<br /><br /><strong><span style="color: #0099ff";>Witch Slayer</span></strong>
-<br /><br /><span style="color: #0099cc";>Silver Bullet</span>
+<br /><br /><strong><span style="color: #0099ff";>Ophelia</span></strong>
+<br /><br /><span style="color: #0099cc";>Command</span>
 <br /><span style="color: #ff66cc;">-</span> Staff of the Master effect change (to pre-existing):
-<br /><span style="color: #00cc99;">*</span> Magic Damage increased from 750/925/1100 to 750/950/1150.
+<br /><span style="color: #00cc99;">*</span> Movement Speed bonus granted to an ancient creep changed from 0.25x of the original bonus to 10.
 <br />_______________________________________________
-<br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> Credits to Whyzozerious for the visual effect changes for Staff of the Master effect visuals!</em></span><br /><br /><br /><br /><br /><br />=<span style="color: #ffd700";> Cosmetic Updates </span>=
-<br /><br /><span style="color: #ff66cc;">-</span> HUD has been reverted to its state prior to Patch 4.9.0.
-<br /><span style="color: #ff66cc;">-</span> Music tracks have been reverted to their state prior to Patch 4.9.0.
-<br /><span style="color: #ff66cc;">-</span> Christmas is over, thus the Forests of Caldavar ("New") and Mid Wars maps have reverted to its state prior to Patch 4.9.0.
-<br /><span style="color: #00cc99;">*</span> After some reconsideration, keeping the UI in from February to April is not suitable.
-<br /><br /><span style="color: #ff66cc;">-</span> The priority level of name colours (in which they display in a chat channel) have been readjusted to be more suitable in terms of their overall value.
-<br /><span style="color: #00cc99;">*</span> The most notable change is the Gold Shield color - players who use this name colour appear above all other non-volunteer, non-staff name colours (for their help to get HoN started)!
-<br /><br /><br />=<span style="color: #ffd700";> User Interface </span>=
-<br /><br /><span style="color: #ff66cc;">-</span> Region selection checkboxes are now visible in the "Play Now" screen (for the "new UI"), without having to press the "Regions" button.
-<br /><span style="color: #00cc99;">*</span> This change should improve visibility on what regions a user is queuing for before actually queuing up for a game.
-<br /><br /><span style="color: #ff66cc;">-</span> Region selection for all players will be reset when the patch occurs.
-<br /><span style="color: #00cc99;">*</span> By default,  no regions will be selected (as opposed to having all of them selected).
-<br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> This change will force players to select the regions they prefer, and should drastically alleviate issues with players playing on servers where they have high ping.</em></span><br /><br /><br /><br />=<span style="color: #ffd700";> Forests of Caldavar ("New") </span>=
-<br /><br /><span style="color: #ff0066";>Kongor Buff Reward</span>
-<br /><span style="color: #ff66cc;">-</span> Movement Speed reward: bonus Movement Speed per charge reduced from 15 to 12.
-<br />Neutral Camps
-<br /><span style="color: #ff66cc;">-</span> Slightly reduced the creep max travel distance of the left-most Legion easy camp.
-<br /><br /><strong><span style="color: #0099ff";>Werebeast Enchanter</span></strong>
-<br /><span style="color: #ff66cc;">-</span> Far Sight's Clearvision radius reduced from 1800 to 1200.
-<br /><br /><br />=<span style="color: #ffd700";> Ranked Pick </span>=
-<br /><br /><span style="color: #ff66cc;">-</span> Banning Phase duration increased from 20 seconds to 30 seconds.
-<br /><span style="color: #ff66cc;">-</span> Wait time between end of banning phase and start of picking phase reduced from 5 seconds to 3 seconds.
-<br /><br />=<span style="color: #ffd700";> Matchmaking </span>=
-<br /><br /><span style="color: #ff66cc;">-</span> Player colour order is now fully randomized in Matchmaking and Champions of Newerth games.
-<br /><span style="color: #00cc99;">*</span> In other words, the player with the highest MMR in Matchmaking and Champions of Newerth games will no longer always be in the Blue or Pink player slot.
-<br /><br /><br />=<span style="color: #ffd700";> General </span>=
-<br /><br /><span style="color: #ff66cc;">-</span> Ranged Creep aggro range reduced from 800 to 750.
+<br /><br /><strong><span style="color: #0099ff";>Prisoner</span></strong>
+<br /><br /><span style="color: #0099cc";>Prison Break</span>
+<br /><span style="color: #ff66cc;">-</span> Staff of the Master effect change (to pre-existing):
+<br /><span style="color: #00cc99;">*</span> Activation on self now reduces the effect delay by 50%.
+<br /><span style="color: #00cc99;">*</span> Prior to this patch, casting on self did not actually make the effect instant, so it is both a bugfix and a balance change.
+<br />_______________________________________________
+<br /><br /><br />=<span style="color: #ffd700";> Staff of the Master Visuals </span>=
+<br />The following heroes now have proper Staff of the Master effect visuals when they receive the state from Master's Legacy:
+<br /><span style="color: #ff66cc;">-</span> Arachna
+<br /><span style="color: #ff66cc;">-</span> Artesia
+<br /><span style="color: #ff66cc;">-</span> Blacksmith
+<br /><span style="color: #ff66cc;">-</span> Calamity
+<br /><span style="color: #ff66cc;">-</span> Corrupted Disciple
+<br /><span style="color: #ff66cc;">-</span> Draconis
+<br /><span style="color: #ff66cc;">-</span> Ellonia
+<br /><span style="color: #ff66cc;">-</span> Engineer
+<br /><span style="color: #ff66cc;">-</span> Gauntlet
+<br /><span style="color: #ff66cc;">-</span> Jeraziah
+<br /><span style="color: #ff66cc;">-</span> Keeper of the Forest
+<br /><span style="color: #ff66cc;">-</span> Legionnaire
+<br /><span style="color: #ff66cc;">-</span> Lord Salforis
+<br /><span style="color: #ff66cc;">-</span> Madman
+<br /><span style="color: #ff66cc;">-</span> Martyr
+<br /><span style="color: #ff66cc;">-</span> Monarch
+<br /><span style="color: #ff66cc;">-</span> Pestilence
+<br /><span style="color: #ff66cc;">-</span> Prisoner
+<br /><span style="color: #ff66cc;">-</span> Rally
+<br /><span style="color: #ff66cc;">-</span> Rhapsody
+<br /><span style="color: #ff66cc;">-</span> Riftwalker
+<br /><span style="color: #ff66cc;">-</span> Scout
+<br /><span style="color: #ff66cc;">-</span> Tempest
+<br /><span style="color: #ff66cc;">-</span> Zephyr
+<br /><br /><br />=<span style="color: #ffd700";> Forests of Caldavar </span>=
+<br /><br /><span style="color: #ff66cc;">-</span> Ally player-controlled non-hero units near the Level 3 Towers will have unitwalking for the first 2 minutes.
+<br /><span style="color: #ff66cc;">-</span> All NPC Neutral creeps now have Push Immunity for the first 2 minutes.
+<br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> These changes will address specific unintentional behaviours from being leveraged too early on in the laning phase of the game for 1 team to get a high reward without reasonable counterplay (or without an appropriate level of risk).</em></span><br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> These unintentional behaviours can still be used after the first 2 minutes. By that time, all players have more appropriate tools and levels available to them to have reasonable counterplay.</em></span><br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> These changes have no impact on regular gameplay.</em></span><br /><br /><br /><br />=<span style="color: #ffd700";> Neutral Creeps </span>=
+<br /><br /><strong><span style="color: #0099ff";>Catman Champion</span></strong>
+<br /><span style="color: #ff66cc;">-</span> Bonus Mana Regeneration per second granted to allies from the aura reduced from 2 to 1.
+<br /><br /><strong><span style="color: #0099ff";>Minotaur</span></strong>
+<br /><span style="color: #ff66cc;">-</span> Attack Speed bonus to allies from the aura reduced from 20 to 15.
+<br /><br /><strong><span style="color: #0099ff";>Vagabond Leader</span></strong>
+<br /><span style="color: #ff66cc;">-</span> Bonus Health Regeneration per second granted to allies from the aura reduced from 5 to 4.
+<br /><span style="color: #ff66cc;">-</span> Magic Damage dealt by Ground Pound reduced from 170 to 150.
+<br /><br /><strong><span style="color: #0099ff";>Vulture Lord</span></strong>
+<br /><span style="color: #ff66cc;">-</span> Armor bonus to allies from the aura reduced from 2 to 1.
+<br /><br /><br />=<span style="color: #ffd700";> Mid Wars </span>=
+<br />Banning Draft
+<br /><span style="color: #ff66cc;">-</span> Ban phase time increased from 15 seconds to 30 seconds per round.
+<br /><span style="color: #ff66cc;">-</span> Hero selection time increased from 20 seconds to 40 seconds per round.
+<br /><span style="color: #ff66cc;">-</span> Time period after all heroes have been picked (but before the game starts) increased from 20 seconds to 30 seconds.
 <br /><br /><br />=<span style="color: #ffd700";> Heroes </span>=
-<br /><br /><strong><span style="color: #0099ff";>Adrenaline</span></strong>
-<br /><span style="color: #ff66cc;">-</span> Primary attribute changed from Agility to Strength.
-<br /><span style="color: #ff66cc;">-</span> Base Armor increased from 2.36 to 3.
-<br /><span style="color: #ff66cc;">-</span> Base Strength increased from 20 to 24.
-<br /><span style="color: #ff66cc;">-</span> Strength growth per level increased from 2 to 2.5.
-<br /><span style="color: #ff66cc;">-</span> Base Agility reduced from 24 to 18.
-<br /><span style="color: #ff66cc;">-</span> Agility growth per level reduced from 2.4 to 1.6.
-<br /><span style="color: #ff66cc;">-</span> Base Intelligence increased from 18 to 20.
-<br /><span style="color: #ff66cc;">-</span> Intelligence growth per level increased from 1.5 to 1.8.
+<br /><br /><br /><br /><strong><span style="color: #0099ff";>Adrenaline</span></strong>
 <br /><br /><span style="color: #0099cc";>Shard Blast</span>
-<br /><span style="color: #ff66cc;">-</span> Bonus damage is now based on Strength (instead of Agility).
-<br /><span style="color: #ff66cc;">-</span> Mana Cost reduced from 80/90/100/110 to 55/70/85/100.
-<br /><span style="color: #ff66cc;">-</span> Base Magic Damage increased from 80/115/150/185 to 80/120/160/200.
-<br /><span style="color: #ff66cc;">-</span> Bonus Magic Damage based on your primary attribute increased from 20/30/40/50% to 30/40/50/60%.
-<br /><span style="color: #ff66cc;">-</span> Touch radius increased from 90 to 100 (120 on tooltip for cast indicator accuracy).
-<br /><span style="color: #ff66cc;">-</span> Cooldown is now reduced to 0.5 seconds (from 0.6 seconds) when hitting 2 or more enemy heroes with this ability.
-<br /><br /><span style="color: #0099cc";>Rush</span>
-<br /><span style="color: #ff66cc;">-</span> Now behaves like a regular dash/charge with pathing (i.e. does not force the destination to be at the very end, like Dark Lady's Charging Strikes).
-<br /><span style="color: #00cc99;">*</span> No longer cuts trees along its path.
-<br /><span style="color: #ff66cc;">-</span> Cooldown reduced from 14/13/12/11 seconds to 13/12/11/10 seconds.
-<br /><span style="color: #ff66cc;">-</span> Range rescaled from 700 to 575/650/725/800.
-<br /><span style="color: #ff66cc;">-</span> No longer has a Dread Stack mechanic.
-<br /><span style="color: #ff66cc;">-</span> Magic Damage changed from 20 + (10 Magic Damage per Dread Stack consumed) to 80/120/160/200 + 30/40/50/60% of your Strength.
+<br /><span style="color: #ff66cc;">-</span> Mana Cost changed from 55/70/85/100 to 50/70/90/110.
+<br /><span style="color: #ff66cc;">-</span> Base Magic Damage reduced from 80/120/160/200 to 80/115/150/185.
+<br /><span style="color: #ff66cc;">-</span> Cooldown reduced from 4 seconds to 3 seconds.
+<br /><span style="color: #ff66cc;">-</span> Cooldown reduction for Rush decreased from 1.5 seconds to 1 second per enemy hero hit.
+<br /><span style="color: #ff66cc;">-</span> When the Shard hits 2 or more enemy heroes, the mechanics have changed.
+<br /><br /><span style="color: #ff66cc;">-</span> Old mechanic:
+<br /><span style="color: #00cc99;">*</span> Cooldown is reduced to 0.5 seconds and 60% of the Mana Cost is refunded.
+<br /><span style="color: #ff66cc;">-</span> New mechanic:
+<br /><span style="color: #00cc99;">*</span> Cooldown is now reduced by 0.75 seconds, and Mana Cost on the ability is reduced by 10/15/20/25.
+<br /><span style="color: #00cc99;">*</span> This effect stacks up to 2 times and lasts for 10 seconds.
 <br /><br /><span style="color: #0099cc";>Ember Shard</span>
-<br /><span style="color: #ff66cc;">-</span> Tether duration changed from 1.8/2.2/2.6/3 seconds to 2/2.5/3/3.5 seconds.
-<br /><span style="color: #ff66cc;">-</span> Self state duration increased from 4 seconds to 8 seconds.
-<br /><span style="color: #ff66cc;">-</span> Now refreshes attack cooldown on cast.
-<br /><span style="color: #ff66cc;">-</span> Enemies now also receive a 25% Movement Speed Slow (in addition to being Restrained) after being pulled.
-<br /><span style="color: #ff66cc;">-</span> Restrain/Movement Speed Slow state duration changed from 1 second to 0.8/1.2/1.6/2 seconds.
+<br /><span style="color: #ff66cc;">-</span> Max pull distance reduced from 1000 units to 800 units.
+<br /><span style="color: #ff66cc;">-</span> Regular distance at which the enemy unit stops from Adrenaline (when travelling to him) increased from 100 units to 150 units.
 <br /><br /><span style="color: #0099cc";>Death's Halo</span>
-<br /><span style="color: #ff66cc;">-</span> Duration is reduced by 1 second when Adrenaline receives cumulative damage equal to 25% of his Max Health (from 20%).
-<br /><span style="color: #ff66cc;">-</span> No longer grants an Agility bonus per real hero trapped.
-<br /><span style="color: #ff66cc;">-</span> Now grants 4/6/8 bonus Strength, 2 bonus Attack Damage, and 1 bonus Armor per real hero trapped (x2 for enemy heroes).
-<br /><span style="color: #ff66cc;">-</span> Magic Armor bonus per real hero caught increased from 1 to 1.5.
-<br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> Adrenaline was dependent on too many attributes, and many options could have been taken to address this. Changing from an Agility hero to a Strength hero was the option that was chosen. With the proper readjustments, he now only requires damage and mana sustain to be effective.</em></span><br /><br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> Adrenaline was also still not surviving nearly as much as expected against multiple opponents during Death's Halo, so he received significant durability buffs while it is active.</em></span><br /><br />_______________________________________________
-<br /><br /><strong><span style="color: #0099ff";>Armadon</span></strong>
-<br /><br /><span style="color: #0099cc";>Armordillo</span>
-<br /><span style="color: #ff66cc;">-</span> Spine Burst damage threshold when taking damage to the rear reduced from 150 Damage to 130 Damage.
-<br />_______________________________________________
+<br /><span style="color: #ff66cc;">-</span> Bonus Strength per real hero caught reduced from 4/6/8 to 3/4/5.
+<br /><span style="color: #00cc99;">*</span> Still 2x the value for enemy heroes.
+<br /><span style="color: #ff66cc;">-</span> No longer gains 2 bonus Attack Damage per real hero trapped.
+<br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> Adrenaline's Shard Blast was a little too explosive and lopsided when encountering multiple enemy heroes, and proved to have too much downtime in teamfights when not hitting 2+ enemy heroes.</em></span><br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> Shard Blast is still intended to perform extremely well when fighting multiple heroes, so its bonus effects will be more fair, sustained and consistent after these changes.</em></span><br /><br />_______________________________________________
 <br /><br /><strong><span style="color: #0099ff";>Artillery</span></strong>
 <br /><br /><span style="color: #0099cc";>LRM</span>
-<br /><span style="color: #ff66cc;">-</span> Now deals 0.8x Damage to non-hero units.
-<br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> Artillery's weakness of farming was alleviated a little too well. A slight reduction to damage dealt against non-hero units should balance his performance out once again.</em></span><br /><br />_______________________________________________
+<br /><span style="color: #ff66cc;">-</span> Percentage of Attack Damage bonus on each LRM rocket changed from 7/14/21/28% to 7/12/17/22%.
+<br /><span style="color: #ff66cc;">-</span> Artillery is now Sighted for 1 second if LRM hits an enemy unit (instead of just player-controlled enemy units).
+<br /><span style="color: #00cc99;">*</span> If you hit a neutral creep, the neutral creep's team will have sight of Artillery (not the opposing Legion/Hellbourne team).
+<br /><span style="color: #ff66cc;">-</span> Base Cast Range reduced from 1200 to 1100.
+<br /><span style="color: #ff66cc;">-</span> Now uses the correct range increase value from Special Ammunition.
+<br /><br /><span style="color: #0099cc";>Mortar Shot</span>
+<br /><span style="color: #ff66cc;">-</span> Base Cast Range reduced from 1200 to 1100.
+<br /><span style="color: #ff66cc;">-</span> Now uses the correct range increase value from Special Ammunition.
+<br /><br /><span style="color: #0099cc";>Homing Missile</span>
+<br /><span style="color: #ff66cc;">-</span> Base Cast Range reduced from 1200 to 1100.
+<br /><span style="color: #ff66cc;">-</span> Now uses the correct range increase value from Special Ammunition.
+<br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> Prior to this patch, these 3 abilities were still using the values prior to 4.9.0, despite the fact that they were intended to be reduced.</em></span><br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> Despite this, Artillery's performance has been significantly higher than intended, so another small nerf was added on top of the intended cast range reduction. This should make his range less polarizing to deal with.</em></span><br /><br />_______________________________________________
+<br /><br /><strong><span style="color: #0099ff";>Blood Hunter</span></strong>
+<br /><br /><span style="color: #0099cc";>Hemorrhage</span>
+<br /><span style="color: #ff66cc;">-</span> Initial Superior Magic Damage increased from 200/300/400 to 250/375/500.
+<br /><span style="color: #ff66cc;">-</span> Superior Magic Damage taken per unit travelled increased from 35/55/75% to 40/60/80%.
+<br /><span style="color: #00cc99;">*</span> Prior to this patch, the values in the tooltip were displayed as 30/45/60% - this change both corrects the tooltips and buffs the ability slightly.
+<br />_______________________________________________
 <br /><br /><strong><span style="color: #0099ff";>Calamity</span></strong>
-<br /><br /><span style="color: #0099cc";>Dragon's Path</span>
-<br /><span style="color: #ff66cc;">-</span> Magic Damage per dragon reduced from 25/50/70/95 to 20/45/65/90.
 <br /><br /><span style="color: #0099cc";>Funeral Pyre</span>
-<br /><span style="color: #ff66cc;">-</span> Agility gain state on self duration reduced from 1.75x to 1.25x the original state duration.
-<br /><span style="color: #ff66cc;">-</span> Damage dealt by the extra attack instance now deals 50/60/70/80% of Calamity's Attack Damage (instead of 100%).
-<br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> Calamity has seen a recent increase in play rate with great success, particularly in tournament play.</em></span><br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> Most of her damage is coming from Funeral Pyre and Dragon's Path, so small nerfs to these abilities should make it more bearable to deal with her in the laning phase and during mid-game.</em></span><br /><br />_______________________________________________
-<br /><br /><strong><span style="color: #0099ff";>Defiler</span></strong>
-<br /><br /><span style="color: #0099cc";>Unholy Expulsion</span>
-<br /><span style="color: #ff66cc;">-</span> Spirit Movement Speed and Max Movement Speed increased from 400/450/500 to 650.
+<br /><span style="color: #ff66cc;">-</span> Agility gain state on self duration increased from 1.25x to 1.5x the original state duration.
+<br />_______________________________________________
+<br /><br /><strong><span style="color: #0099ff";>Circe</span></strong>
+<br /><br /><span style="color: #0099cc";>Doppelganger</span>
+<br /><span style="color: #ff66cc;">-</span> Mana Cost changed from 100/85/70/55 to 60/70/80/90.
+<br />_______________________________________________
+<br /><br /><strong><span style="color: #0099ff";>Cthulhuphant</span></strong>
+<br /><br /><span style="color: #0099cc";>Obliterate</span>
+<br /><span style="color: #ff66cc;">-</span> Using this ability will no longer interrupt your order queue.
+<br /><br /><span style="color: #0099cc";>Maddening Revenge</span>
+<br /><span style="color: #ff66cc;">-</span> Attackers now also have -30/40/50/60% Healing Received for 0.1 seconds upon attacking Cthulhuphant.
+<br /><span style="color: #ff66cc;">-</span> Receiving damage from Cthulhuphant's front will grant Cthulhuphant 5/10/15/20 Health Regeneration per second for 2 seconds.
+<br /><span style="color: #ff66cc;">-</span> The Health Regeneration effect and Return Damage now only have 0.33x effectiveness on Cthulhuphant's illusions.
+<br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> Although Cthulhuphant is in a generally good state, Maddening Revenge does not have really have much going for the ability at the moment.</em></span><br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> Granting Cthulhuphant slightly more durability and preventing regular lifesteal from being a hard counter to this ability will allow this ability to be more worth leveling during the game.</em></span><br /><br />_______________________________________________
+<br /><br /><strong><span style="color: #0099ff";>Deadlift</span></strong>
+<br /><br /><span style="color: #0099cc";>Onslaught</span>
+<br /><span style="color: #ff66cc;">-</span> Cast effect type changed from Magic to Physical.
+<br />_______________________________________________
+<br /><br /><strong><span style="color: #0099ff";>Devourer</span></strong>
+<br /><span style="color: #ff66cc;">-</span> Starting Armor increased from 1.16 to 2.
 <br />_______________________________________________
 <br /><br /><strong><span style="color: #0099ff";>Draconis</span></strong>
-<br /><span style="color: #ff66cc;">-</span> Base Movement Speed reduced from 300 to 290.
-<br /><br /><span style="color: #0099cc";>Draconic Defense</span>
-<br /><span style="color: #ff66cc;">-</span> Cooldown increased from 60/55/50/45 seconds to 75/70/65/60 seconds.
 <br /><br /><span style="color: #0099cc";>Fiery Barrage</span>
-<br /><span style="color: #ff66cc;">-</span> Base Physical Damage per second changed from 6/12/18/24 to 5/10/15/20.
-<br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> These changes should mitigate Draconis' farming speed in the jungle early on and give him a little bit more of a weakness overall.</em></span><br /><br />_______________________________________________
+<br /><span style="color: #ff66cc;">-</span> Dragonflame now only spreads the flames once from Ablaze (instead of spreading it 4 times).
+<br /><span style="color: #ff66cc;">-</span> Base Magic Damage per 4 seconds increased from 5/10/15/20 to 20.
+<br /><span style="color: #ff66cc;">-</span> Damage rate increase per charge reduced from 100% to 70%.
+<br /><span style="color: #ff66cc;">-</span> Max charges reduced from 8 to 5/6/7/8.
+<br /><span style="color: #ff66cc;">-</span> Damage multiplier against heroes increased from 0.5/0.8/1.1/1.4x to 0.8/1/1.2/1.4x.
+<br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> Draconis has the ability to take camps using the unique mechanics of Fiery Barrage (where you damage different enemies to maximize damage by spreading the fire) without taking damage. However, it was too easy to quickly reach the max potential damage of Fiery Barrage against stacked neutral camps by using Dragonflame.</em></span><br /><br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> These changes should slow down Draconis' damage rate against large stacks of neutral creeps with a lower level of Fiery Barrage for his level 1-4 jungling from autoattacks, while simultaneously ensuring that 1 Dragonflame cast does not nearly wipe out an entire camp. Overall, jungling should be better for the average player early on, while the damage output against stacks should be slower when Draconis is level 3-6.</em></span><br /><br />_______________________________________________
 <br /><br /><strong><span style="color: #0099ff";>Drunken Master</span></strong>
-<br /><span style="color: #ff66cc;">-</span> Base Agility increased from 12 to 14.
+<br /><br /><span style="color: #0099cc";>Stagger</span>
+<br /><span style="color: #ff66cc;">-</span> Using Lunge now resets the cooldown of Stagger (instead of reducing its cooldown to 0.8 seconds).
 <br /><br /><span style="color: #0099cc";>Drink</span>
-<br /><span style="color: #ff66cc;">-</span> Max Charges increased from 16/24/32/40 to 18/27/36/45.
-<br /><span style="color: #00cc99;">*</span> Total max Evasion and Stun/Debuff Duration Reduction increased from 16/24/32/40% to 18/27/36/45%.
-<br /><span style="color: #ff66cc;">-</span> In addition to existing bonuses, each Drink charge now also grants a 1.5% Chance to Critically Strike for 1.5x Attack Damage.
-<br /><span style="color: #ff66cc;">-</span> Healing from the natural expiration of a Drunk Charge increased from 6 Health to 7 Health.
+<br /><span style="color: #ff66cc;">-</span> Now instantly grants 3/6/9/12 Drink charges upon starting the channel.
 <br /><br /><span style="color: #0099cc";>3 Point Strike</span>
-<br /><span style="color: #ff66cc;">-</span> Physical Damage reduced from 300/475/600 to 250/375/500.
-<br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> Drunken Master has historically been too focused on being bursty and being built as a glass cannon.</em></span><br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> With the iterations of Drunken Master in 2018-2020, the major complaint was that 3 Point Strike required little to no skill to deal an immaculate amount of burst damage to his targets during the early to mid game.</em></span><br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> Recent changes have addressed this by making it take a bit more skill to achieve said burst and bring back the healthy mechanics of the original Drink ability, though the hero has been underperforming.</em></span><br /><br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> To address all of these concerns and address the hero's performance, a decent amount of damage has been shifted from his ultimate and placed into his Drink mechanic.</em></span><br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> Maintaining a high number of Drink charges allow him to function as a traditional carry/semi-carry, granting him a multitude of defensive and offensive buffs, while still allowing him a choice to Drink for offense/defense and using his skills for mobility/damage while reducing the number of Drink Charges on himself.</em></span><br /><br />_______________________________________________
+<br /><span style="color: #ff66cc;">-</span> Strike point reset delay increased from 8 seconds to 12 seconds.
+<br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> Just a few more quality-of-life changes to Drunken Master to improve his combat flow in accordance with his Drink usage.</em></span><br /><br />_______________________________________________
+<br /><br /><strong><span style="color: #0099ff";>Empath</span></strong>
+<br /><br /><span style="color: #0099cc";>Essence Link</span>
+<br /><span style="color: #ff66cc;">-</span> Tether break range increased from 100 to 200.
+<br /><span style="color: #ff66cc;">-</span> State on Empath (or the target ally hero, if used while As One is active) is no longer considered a buff (and thus can no longer be dispelled).
+<br /><span style="color: #00cc99;">*</span> This ensures that Essence Link does not get dispelled if As One is used after Essence Link is cast.
+<br /><span style="color: #00cc99;">*</span> Note that the debuff on the enemy can still be dispelled, which will cancel Essence Link on Empath (or her host from As One).
+<br />_______________________________________________
+<br /><br /><strong><span style="color: #0099ff";>Engineer</span></strong>
+<br /><br /><span style="color: #0099cc";>The Keg</span>
+<br /><span style="color: #ff66cc;">-</span> Magic Damage increased from 90/150/210/270 to 90/160/230/300.
+<br /><span style="color: #ff66cc;">-</span> Stun duration increased from 1.6/1.8/2/2.2 seconds to 1.6/1.9/2.2/2.5 seconds.
+<br />_______________________________________________
 <br /><br /><strong><span style="color: #0099ff";>Fayde</span></strong>
-<br /><br /><span style="color: #0099cc";>Reflection</span>
-<br /><span style="color: #ff66cc;">-</span> Now reduces the target's Healing Received and Health Regeneration by 20/40/60% for 4 seconds.
-<br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> This small change brings back some legacy effects onto Reflection.</em></span><br /><br />_______________________________________________
+<br /><br /><span style="color: #0099cc";>Shadow Walk</span>
+<br /><span style="color: #ff66cc;">-</span> Now properly acts as a disjoint upon activation.
+<br />_______________________________________________
+<br /><br /><strong><span style="color: #0099ff";>Flint Beastwood</span></strong>
+<br /><br /><span style="color: #0099cc";>Hollowpoint Shells</span>
+<br /><span style="color: #ff66cc;">-</span> Bonus Physical Damage reduced from 20/40/60/80 to 16/34/52/70.
+<br /><span style="color: #ff66cc;">-</span> Stun duration reduced from 0.05/0.1/0.15/0.2 seconds to 0/0.05/0.1/0.15 seconds.
+<br /><span style="color: #ff66cc;">-</span> Now only procs against enemy units (i.e. no longer procs against wards or ally units).
+<br /><br /><span style="color: #0099cc";>Money Shot</span>
+<br /><span style="color: #ff66cc;">-</span> Cooldown changed from 20/15/10 seconds to 20 seconds.
+<br />_______________________________________________
 <br /><br /><strong><span style="color: #0099ff";>Goldenveil</span></strong>
+<br /><br /><span style="color: #0099cc";>Dagger Dance</span>
+<br /><span style="color: #ff66cc;">-</span> Now deals 3.5/5/6.5/8 Magic Damage every 0.25 seconds to targets other than the main target within the area of effect.
 <br /><br /><span style="color: #0099cc";>Perch & Plunge</span>
-<br /><span style="color: #ff66cc;">-</span> While perched on a tree, Perch no longer counts as an ability cast for certain sources (e.g. Power Supply).
-<br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> This change is more of a bugfix, but it has more implications on Goldenveil's performance in lane.</em></span><br /><br />_______________________________________________
+<br /><span style="color: #ff66cc;">-</span> While Perching on a tree, cooldown is set to 6 seconds if the Perched tree is destroyed.
+<br />_______________________________________________
 <br /><br /><strong><span style="color: #0099ff";>Ichor</span></strong>
-<br /><br /><span style="color: #0099cc";>Transfusion</span>
-<br /><span style="color: #ff66cc;">-</span> Cast effect type changed from Magic to SuperiorMagic.
-<br /><span style="color: #00cc99;">*</span> This allows Ichor to properly latch onto allies and enemies that have Magic Immunity.
+<br /><br /><span style="color: #0099cc";>Life Leech</span>
+<br /><span style="color: #ff66cc;">-</span> Life Leech's state application now occurs before the Magic Damage takes place.
+<br /><span style="color: #00cc99;">*</span> This allows the Magic Damage dealt by this ability to trigger from the Life Leech state, allowing Ichor to gain a small amount of healing when Life Leech's projectile hits an enemy.
 <br />_______________________________________________
 <br /><br /><strong><span style="color: #0099ff";>Keeper of the Forest</span></strong>
 <br /><br /><span style="color: #0099cc";>Nature's Guidance</span>
-<br /><span style="color: #ff66cc;">-</span> Camouflage will now only apply its root state on enemies when attacking out of stealth if the attacker is a non-illusion Keeper of the Forest hero (i.e. not his minions or other ally heroes).
-<br /><span style="color: #ff66cc;">-</span> Root duration reduced from 1.2/1.6/2/2.4 seconds to 1.2/1.4/1.6/1.8 seconds.
+<br /><span style="color: #ff66cc;">-</span> Stealth state on Keeper of the Forest will not be dispelled if Nature's Guidance is cast while near trees.
+<br />_______________________________________________
+<br /><br /><strong><span style="color: #0099ff";>Klanx</span></strong>
+<br /><br /><span style="color: #0099cc";>B.A.N.G.</span>
+<br /><span style="color: #ff66cc;">-</span> State duration for enemies facing the flash increased from 1.5 seconds to 2 seconds.
+<br /><br /><span style="color: #0099cc";>Lackey</span>
+<br /><span style="color: #ff66cc;">-</span> Shots now deal 0.33x damage in a 300 radius to enemies around (but excluding) the main target.
 <br />_______________________________________________
 <br /><br /><strong><span style="color: #0099ff";>Kraken</span></strong>
-<br /><span style="color: #ff66cc;">-</span> Base Intelligence increased from 16 to 18.
-<br /><span style="color: #ff66cc;">-</span> Turn rate increased from 360 to 700 degrees per second.
-<br /><br /><span style="color: #0099cc";>Tsunami Charge</span>
-<br /><span style="color: #ff66cc;">-</span> Travel speed increased from 850 to 1000 units per second.
-<br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> A few small number tweaks for Kraken to keep up with the meta.</em></span><br /><br />_______________________________________________
-<br /><br /><strong><span style="color: #0099ff";>Monkey King</span></strong>
-<br /><span style="color: #ff66cc;">-</span> Strength growth per level increased from 1.7 to 2.
-<br /><span style="color: #ff66cc;">-</span> Base Armor increased from 2.8 to 3.2.
-<br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> A small survivability buff to Monkey King to keep up with the meta.</em></span><br /><br />_______________________________________________
-<br /><br /><strong><span style="color: #0099ff";>Moon Queen</span></strong>
-<br /><br /><span style="color: #0099cc";>Multi-Strike</span>
-<br /><span style="color: #ff66cc;">-</span> Bounce radius increased from 450 to 500.
-<br /><br /><span style="color: #0099cc";>Lunar Glow</span>
-<br /><span style="color: #ff66cc;">-</span> Moon Queen receives 1.5x the damage bonus from this ability.
-<br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> Moon Queen currently does not have a good enough reason to be picked over Forsaken Archer at the moment. These changes should help her deal more overall damage than Forsaken Archer if she is able to attack her foes.</em></span><br /><br />_______________________________________________
-<br /><br /><strong><span style="color: #0099ff";>Moraxus</span></strong>
-<br /><br /><span style="color: #0099cc";>More Axes</span>
-<br /><span style="color: #ff66cc;">-</span> Cooldown increased from 1.25 seconds to 1.5 seconds.
-<br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> The increased number of axes was a sufficient buff to Moraxus on its own. As a result, the cooldown of this ability is being reverted to its original values (prior to Patch 4.9.0).</em></span><br /><br />_______________________________________________
-<br /><br /><strong><span style="color: #0099ff";>Nitro</span></strong>
-<br /><br /><span style="color: #0099cc";>Ballistic</span>
-<br /><span style="color: #ff66cc;">-</span> Mana Cost reduced from 15 to 12.
-<br /><br /><span style="color: #0099cc";>Blast Off</span>
-<br /><span style="color: #ff66cc;">-</span> Mana Cost reduced from 100/110/120/130 to 95/105/115/125.
-<br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> A few minor buffs to Nitro were given as she is slightly underperforming. She should be fine where she is after these changes.</em></span><br /><br />_______________________________________________
-<br /><br /><strong><span style="color: #0099ff";>Nomad</span></strong>
-<br /><span style="color: #ff66cc;">-</span> Strength growth per level increased from 1.8 to 2.
-<br /><span style="color: #ff66cc;">-</span> Agility growth per level increased from 2.8 to 3.
-<br /><span style="color: #ff66cc;">-</span> Intelligence growth per level increased from 2 to 2.2.
-<br /><br /><span style="color: #0099cc";>Edge Counter</span>
-<br /><span style="color: #ff66cc;">-</span> On expiration, now grants 20/25/30% Damage Reduction for the next 5 seconds.
-<br /><span style="color: #00cc99;">*</span> This state propagates to illusions he spawns while active.
-<br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> These changes should give Nomad just the right amount of durability he needs without making him too frustrating to deal with.</em></span><br /><br />_______________________________________________
+<br /><br /><span style="color: #0099cc";>Release the Kraken!</span>
+<br /><span style="color: #ff66cc;">-</span> Now constantly applies Restrain to enemies within radius.
+<br />_______________________________________________
 <br /><br /><strong><span style="color: #0099ff";>Ophelia</span></strong>
 <br /><br /><span style="color: #0099cc";>Nature's Wrath</span>
-<br /><span style="color: #ff66cc;">-</span> Cast Range reduced from 800 to 600.
-<br /><span style="color: #ff66cc;">-</span> Duration reduced from 6 seconds to 5 seconds.
+<br /><span style="color: #ff66cc;">-</span> Cast Range increased from 600 to 700.
 <br /><br /><span style="color: #0099cc";>Command</span>
-<br /><span style="color: #ff66cc;">-</span> Cast Range reduced from 900 to 600.
-<br /><span style="color: #ff66cc;">-</span> Cooldown increased from 8 seconds to 15 seconds.
-<br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> Ophelia has been picked and banned more frequently in competitive matches, so she is receiving a few nerfs. She will still be able to dominate the early game, but just does it a little less effectively now.</em></span><br /><br />_______________________________________________
+<br /><span style="color: #ff66cc;">-</span> Movement Speed bonus for creeps reduced from 10/20/30/40 to 15/20/25/30.
+<br /><span style="color: #ff66cc;">-</span> Max Health bonus reduced from 40/120/160/200 to 0/60/90/120.
+<br /><span style="color: #ff66cc;">-</span> Creeps controlled with Command now have a minimum Base Health of 600/700/800/900.
+<br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> Combined with the neutral creep changes in this patch, these changes should slightly reduce Ophelia's performance later in the game without destroying the hero's performance and unique tempo control during the early game.</em></span><br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> These changes also allow Ophelia to have some other targets for Command as the game progresses without sacrificing much durability on them.</em></span><br /><br />_______________________________________________
+<br /><br /><strong><span style="color: #0099ff";>Pandamonium</span></strong>
+<br /><br /><span style="color: #0099cc";>Flurry</span>
+<br /><span style="color: #ff66cc;">-</span> Now destroys trees within its affected area.
+<br /><br /><span style="color: #0099cc";>Flick</span>
+<br /><span style="color: #ff66cc;">-</span> Now deals 20 Physical Damage to the target upon landing near them.
+<br /><span style="color: #ff66cc;">-</span> Delay for flicking (after landing near the target) reduced from 0.4 seconds to 0.35 seconds.
+<br /><span style="color: #ff66cc;">-</span> Pandamonium is no longer stunned for a full 0.5 seconds before actually flicking the target backwards.
+<br /><span style="color: #00cc99;">*</span> Instead, the stun duration on Pandamonium for his Flick animation now matches the delay time for flicking (0.35 seconds).
+<br /><br /><span style="color: #0099cc";>Face Smash</span>
+<br /><span style="color: #ff66cc;">-</span> Pandamonium now faces the target after every attack.
+<br /><span style="color: #00cc99;">*</span> This ensures that Pandamonium faces the target consistently, if for some reason the target or Pandamonium are displaced without breaking the channel.
+<br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> Some simple quality-of-life changes were made to Pandamonium, making him feel more responsive for the player playing the hero.</em></span><br /><br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> Pandamonium's Flurry now has more consistent behaviour while near a tree line, and he can act a little sooner out of the Flick animation.</em></span><br /><br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> The small damage addition to Flick makes it a more reliable tool to put an enemy's Portal Key on cooldown and dispel an enemy's Health Potion, etc.</em></span><br /><br />_______________________________________________
+<br /><br /><strong><span style="color: #0099ff";>Parasite</span></strong>
+<br /><br /><span style="color: #0099cc";>Infest</span>
+<br /><span style="color: #ff66cc;">-</span> Experience and Gold granted to Parasite when the Infested Creep dies is now a static 125 Experience and 75 Gold (rather than the values based off of the Infested Creep).
+<br /><span style="color: #00cc99;">*</span> This will always happen regardless of how the Infested Creep dies.
+<br /><br /><span style="color: #00cc99;">*</span> These values are the highest values among the strongest units in the Hard neutral camps.
+<br /><span style="color: #ff66cc;">-</span> If an enemy player has damaged the creep within the last 10 seconds, the enemy team also will receive the static amount of Experience and Gold split evenly among each enemy player.
+<br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> These changes ensure that the behaviour of the death of the Infested Creep is consistent for both Parasite and his opponents, while also making a failed gank much less punishing for Parasite.</em></span><br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> The changes prevent Parasite from completely denying his opponents of Experience and Gold, while also preventing his opponents from denying Parasite Experience and Gold if they kill the creep.</em></span><br /><br />_______________________________________________
+<br /><br /><strong><span style="color: #0099ff";>Plague Rider</span></strong>
+<br /><span style="color: #ff66cc;">-</span> Base Strength increased from 18 to 19.
+<br /><span style="color: #ff66cc;">-</span> Base Intelligence increased from 18 to 20.
+<br /><br /><span style="color: #0099cc";>Extinguish</span>
+<br /><span style="color: #ff66cc;">-</span> Cooldown reduced from 60/50/40/30 seconds to 45/40/35/30 seconds.
+<br /><br /><span style="color: #0099cc";>Plague Carrier</span>
+<br /><span style="color: #ff66cc;">-</span> Cooldown reduced from 140/100/60 seconds to 100/80/60 seconds.
+<br />_______________________________________________
 <br /><br /><strong><span style="color: #0099ff";>Puppet Master</span></strong>
-<br /><span style="color: #ff66cc;">-</span> Base Movement Speed reduced from 300 to 295.
-<br /><br /><span style="color: #0099cc";>Whiplash</span>
-<br /><span style="color: #ff66cc;">-</span> No longer passively grants Attack Speed.
+<br /><br /><span style="color: #0099cc";>Puppeteer's Hold</span>
+<br /><span style="color: #ff66cc;">-</span> Duration increased from 2.5/3.15/3.85/4.4 seconds to 2.6/3.3/3.9/4.5 seconds.
 <br /><br /><span style="color: #0099cc";>Voodoo Puppet</span>
-<br /><span style="color: #ff66cc;">-</span> Voodoo Puppet's Max Health increased from 500/700/900 to 500/750/1000.
-<br /><span style="color: #ff66cc;">-</span> Damage multiplier reduced from 130/155/180% to 110/120/130%. 
-<br /><span style="color: #ff66cc;">-</span> Cooldown changed from 150/135/120 seconds to 130/120/110 seconds.
-<br /><span style="color: #ff66cc;">-</span> Leash Range increased from 1000 to 1500.
-<br /><span style="color: #ff66cc;">-</span> Now passively grants Puppet Master 15/30/45 Attack Speed.
-<br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> Puppet Master's burst damage as a carry with ganking tools has been too high throughout the history of HoN.</em></span><br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> With the latest free passive bonus Attack Speed on Whiplash and Elder Parasite being a new meta item pickup for Puppet Master, his burst damage potential has been dampened in favour of having a bit more sustained damage over time compared to before.</em></span><br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> Voodoo Puppet is gradually becoming more of what it was originally designed for: a damage proxy for when the target goes out of range, and a proxy to apply Crowd Control to the target without being near the target. It can still be used to burst a target down at close range, but it is just less effective at doing so.</em></span><br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> Elder Parasite will also be receiving a minor nerf in conjunction with this change, as the item in general has been proven to be a little too powerful after its recent changes. These combined changes should put Puppet Master in a better state than before.</em></span><br /><br />_______________________________________________
-<br /><br /><strong><span style="color: #0099ff";>Rhapsody</span></strong>
-<br /><br /><span style="color: #0099cc";>Disco Inferno</span>
-<br /><span style="color: #ff66cc;">-</span> Magic Damage dealt to enemies reduced from 20/30/40/50 to 18/27/36/45.
-<br /><span style="color: #ff66cc;">-</span> Healing per second applied to allies reduced from 13/22/31/40 to 10/18/26/34.
-<br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> Rhapsody has been performing well since her changes in the previous patch. Her numbers on Disco Inferno were proven to be a tad high, so they are being reduced slightly to compensate.</em></span><br /><br />_______________________________________________
+<br /><span style="color: #ff66cc;">-</span> Cooldown reduced from 130/120/110 seconds to 120/110/100 seconds.
+<br />_______________________________________________
+<br /><br /><strong><span style="color: #0099ff";>Qi</span></strong>
+<br /><br /><span style="color: #0099cc";>Crippling Puncture</span>
+<br /><span style="color: #ff66cc;">-</span> Movement Speed tapering midpoint shifted from 15% to 50% of the total slow duration.
+<br /><span style="color: #00cc99;">*</span> This is a small buff, as the tapering mechanic starts later in the slow duration.
+<br /><br /><span style="color: #0099cc";>Ancestral Assault</span>
+<br /><span style="color: #ff66cc;">-</span> Initial delay reduced from 0.6 seconds to 0.4 seconds.
+<br /><span style="color: #ff66cc;">-</span> Number of instances changed from 1/2/3 to 3.
+<br /><span style="color: #ff66cc;">-</span> SuperiorMagic Damage reduced from 125 to 50/90/130.
+<br /><span style="color: #ff66cc;">-</span> Triggered damage from Enlightenment caused by Ancestral Assault deals 0.4/0.7/1x Damage.
+<br /><span style="color: #ff66cc;">-</span> Disarm and Perplex duration changed from 1 second to 0.5/0.75/1 seconds.
+<br /><span style="color: #ff66cc;">-</span> Now also applies a 20% Movement Speed Slow.
+<br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> These changes should smooth out Ancestral Assault and make its performance more appropriate at each phase of the game, without making it feel bad in the early phases of the game.</em></span><br /><br />_______________________________________________
+<br /><br /><strong><span style="color: #0099ff";>Rampage</span></strong>
+<br /><br /><span style="color: #0099cc";>Stampede</span>
+<br /><span style="color: #ff66cc;">-</span> Movement Speed bonus now lingers for 1 second after hitting the target.
+<br /><br /><span style="color: #0099cc";>Horned Strike</span>
+<br /><span style="color: #ff66cc;">-</span> While moving, cooldown is reduced at a rate of (Movement Speed)/1000 seconds.
+<br /><br /><span style="color: #0099cc";>The Chains That Bind</span>
+<br /><span style="color: #ff66cc;">-</span> Physical Damage dealt increased from 25/35/45% to 35/45/55% of the distance travelled.
+<br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> Rampage's kit now plays more towards having higher Movement Speed and encourages Rampage to keep moving!</em></span><br /><br />_______________________________________________
+<br /><br /><strong><span style="color: #0099ff";>Riptide</span></strong>
+<br /><br /><span style="color: #0099cc";>Perfect Storm</span>
+<br /><span style="color: #ff66cc;">-</span> Cooldown reduced from 160/120/80 seconds to 130/105/80 seconds.
+<br />_______________________________________________
 <br /><br /><strong><span style="color: #0099ff";>Shadowblade</span></strong>
-<br /><br /><span style="color: #ff66cc;">-</span> Strength, Agility and Intelligence growth per level increased from 1.5 to 1.8.
-<br /><br /><span style="color: #0099cc";>Gargantuan's Blast</span>
-<br /><span style="color: #ff66cc;">-</span> Gargantuan Form no longer changes Base Attack Time.
-<br /><br /><span style="color: #0099cc";>Feint's Siphon</span>
-<br /><span style="color: #ff66cc;">-</span> Attack Damage drain now applies against enemy non-player-controlled units with 0.5x the original values.
+<br /><br /><span style="color: #ff66cc;">-</span> Base Strength, Agility and Intelligence reduced from 25 to 22.
+<br /><span style="color: #ff66cc;">-</span> Strength, Agility and Intelligence growth per level increased from 1.8 to 2.
+<br /><span style="color: #ff66cc;">-</span> Starting Attack Damage reduced from 55-58 to 47-50.
 <br /><br /><span style="color: #0099cc";>Soul's Sight</span>
-<br /><span style="color: #ff66cc;">-</span> The first attack against an enemy hero in this form deals a bonus 20/30/40/50 Magic Damage and applies a 0.9/1/1.1/1.2 second Stun.
-<br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> After looking at Shadowblade's performance, part of his kit has been reverted more closely to its legacy form, while still allowing Shadowblade to leverage factors (such as the Attack Damage steal from Ancients and Kongor) without them being too good in those situations.</em></span><br /><br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> Soul's Sight now also provides more support-oriented bonuses to allow Shadowblade to have some capabilities as a support hero when underfarmed or when underperforming. Soul's Sight also gained a bit more laning utility to help Shadowblade perform better in this phase.</em></span><br /><br />_______________________________________________
+<br /><span style="color: #ff66cc;">-</span> Mana Cost increased from 45/50/55/60 to 50/60/70/80.
+<br /><span style="color: #ff66cc;">-</span> While Soul's Sight is active, Mana Cost is increased to 70/100/130/160.
+<br /><span style="color: #00cc99;">*</span> This is done to compensate for the extra mana you get from Intelligence form.
+<br /><span style="color: #ff66cc;">-</span> Stun duration reduced from 0.9/1/1.1/1.2 seconds to 0.5/0.6/0.7/0.8 seconds.
+<br /><span style="color: #ff66cc;">-</span> Magic Damage dealt on initial proc reduced from 20/30/40/50 to 16/24/32/40.
+<br /><span style="color: #ff66cc;">-</span> Now procs its one-time bonus on-hit effects when attacking an enemy unit (as opposed to just enemy heroes).
+<br /><span style="color: #ff66cc;">-</span> One-time bonus on-hit effect now expires after 5 seconds if it is not used.
+<br /><br /><span style="color: #0099cc";>Essence Shift</span>
+<br /><span style="color: #ff66cc;">-</span> When Strength is your main attribute: max Health lost per point of bonus Strength granted by this ability reduced from 3 to 2.5/2/1.5.
+<br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> Shadowblade has been liked mostly as a carry that can choose and change their main attribute/build throughout the game, rather than a jack-of-all-trades hero. These changes will change his stats to be more suitable for the carry role.</em></span><br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> These changes will also reduce the extremes of his current frustrations (Soul's Sight first-hit effect from the previous patch).</em></span><br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> The changes to Essence Shift should make Shadowblade's Strength build more viable in the mid and late game without contributing to the frustration of him being unkillable in the early game.</em></span><br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> Soul's Sight will still have its uses, as it was the most largely neglected form.</em></span><br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> In the end, all 3 forms should be viable depending on the game & route you want to go with as Shadowblade.</em></span><br /><br />_______________________________________________
 <br /><br /><strong><span style="color: #0099ff";>Shellshock</span></strong>
 <br /><br /><span style="color: #0099cc";>Rolling Thunder</span>
-<br /><span style="color: #ff66cc;">-</span> Now has a 0.3 second delay after the initial activation (to prevent accidental activation).
+<br /><span style="color: #ff66cc;">-</span> Removed 0.3 second delay from initial activation.
+<br /><span style="color: #ff66cc;">-</span> Delay after actually launching (second activation) increased from 0.1 seconds to 0.2 seconds.
 <br />_______________________________________________
-<br /><br /><strong><span style="color: #0099ff";>Succubus</span></strong>
-<br /><br /><span style="color: #0099cc";>Mesmerize</span>
-<br /><span style="color: #ff66cc;">-</span> Cast Range rescaled from 625 to 530/570/610/650.
-<br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> These changes make Succubus have a little more reward for leveling Mesmerize, while reducing its Cast Range to a more reasonable amount during the laning phase.</em></span><br /><br />_______________________________________________
+<br /><br /><strong><span style="color: #0099ff";>Soulstealer</span></strong>
+<br /><br /><span style="color: #0099cc";>Dread</span>
+<br /><span style="color: #ff66cc;">-</span> Armor penalty for enemies increased from 2/3/4/5 to 3/4/5/6.
+<br /><span style="color: #ff66cc;">-</span> Now also passively grants Soulstealer 0.5/1/1.5/2 Magic Armor Penetration.
+<br /><span style="color: #ff66cc;">-</span> Can now toggle the aura on and off with the "Extra Ability 1" hotkey (default hotkey "D").
+<br /><span style="color: #00cc99;">*</span> This hotkey change does override the short range Demon Hand cast hotkey - however, most players use the "Primary Ability 1" hotkey (default hotkey "Q") to cast the short range Demon Hand.
+<br />_______________________________________________
+<br /><br /><strong><span style="color: #0099ff";>Swiftblade</span></strong>
+<br /><br /><span style="color: #0099cc";>Swift Slashes</span>
+<br /><span style="color: #ff66cc;">-</span> Now Sights and Reveals the main target for 0.2 seconds when this ability is fully cast.
+<br />_______________________________________________
 <br /><br /><strong><span style="color: #0099ff";>War Beast</span></strong>
 <br /><br /><span style="color: #0099cc";>Metamorphosis</span>
-<br /><span style="color: #ff66cc;">-</span> While active, max Movement Speed for your own units increased from 550 to 550/600/650.
+<br /><span style="color: #ff66cc;">-</span> While active, max Movement Speed for your own units reduced from 550/600/650 to 550/575/600.
 <br />_______________________________________________
-<br /><br /><strong><span style="color: #0099ff";>Witch Slayer</span></strong>
-<br /><span style="color: #ff66cc;">-</span> Base Movement Speed increased from 290 to 295.
-<br /><span style="color: #ff66cc;">-</span> Base Intelligence increased from 23 to 25.
-<br /><span style="color: #ff66cc;">-</span> Intelligence growth per level reduced from 3 to 2.8.
-<br /><span style="color: #ff66cc;">-</span> Projectile speed increased from 900 to 1100.
-<br /><br /><span style="color: #0099cc";>Power Drain</span>
-<br /><span style="color: #ff66cc;">-</span> Cooldown reduced from 25/20/15/10 seconds to 17/14/11/8 seconds.
-<br /><br /><span style="color: #0099cc";>Silver Bullet</span>
-<br /><span style="color: #ff66cc;">-</span> Magic Damage changed from 650/750/850 to 550/750/950.
-<br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> Witch Slayer is still not great in a competitive environment - these changes aim to keep him more relevant in the meta, while reducing the polarizing performance of Silver Bullet slightly (while maintaining it as a net buff prior to patch 4.9.0).</em></span><br /><br />_______________________________________________
-<br /><br /><strong><span style="color: #0099ff";>Xemplar</span></strong>
-<br /><br /><span style="color: #0099cc";>Fractal Field</span>
-<br /><span style="color: #ff66cc;">-</span> Fractal Field trigger radius for Xemplar's illusions increased from 900 to 1200.
-<br /><br /><span style="color: #0099cc";>Wall of Mirrors</span>
-<br /><span style="color: #ff66cc;">-</span> Wall of Mirrors trigger radius for Xemplar's illusions increased from 900 to 1200.
-<br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> Xemplar's Wall of Mirrors also received some bugfixes (mentioned in the Bug Fixes & Optimizations section of the patch notes), which indirectly nerfs him to an appropriate power level.</em></span><br /><br />_______________________________________________
-<br /><br /><strong><span style="color: #0099ff";>Zephyr</span></strong>
-<br /><br /><span style="color: #0099cc";>Wind Shield</span>
-<br /><span style="color: #ff66cc;">-</span> The Evasion mechanic from this ability now only functions against ranged attackers.
-<br /><span style="color: #00cc99;">*</span> This prevents melee units from missing if they attack at the edge of Zephyr's hurtbox and Zephyr is currently moving away from an enemy melee unit.
-<br />_______________________________________________
-<br /><br /><br />=<span style="color: #ffd700";> Items </span>=
-<br /><br /><br /><br /><strong><span style="color: #00cccc";>Barbed Armor </span></strong>
-<br /><span style="color: #ff66cc;">-</span> Duration reduced from 5 seconds to 4 seconds.
-<br /><span style="color: #ff66cc;">-</span> Returned Damage type is now the same as the received damage type.
-<br /><span style="color: #ff66cc;">-</span> Returned Damage percentage increased from 65% to 80%.
-<br /><span style="color: #ff66cc;">-</span> Cooldown increased from 30 seconds to 40 seconds.
-<br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> The Returned Damage type change makes it so that the wielder of Barbed Armor will not reduce the amount of Damage Returned to their attacker based on the wielder's Armor/Magic Armor value (this was counter-synergy and was why Barbed Armor was considered a "bad item" in the past).</em></span><br /><br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> Instead, the damage will now be returned of the appropriate type, so that the Returned Damage will be mitigated by the appropriate Armor type of the attacker (and not the wielder of Barbed Armor).</em></span><br /><br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> Overall, these changes allow appropriate counterplay from the attacker's perspective without the effect of Barbed Armor being too strong, while still enabling Barbed Armor to do its job and scale appropriately as the game goes on.</em></span><br /><br />_______________________________________________
-<br /><br /><strong><span style="color: #00cccc";>Elder Parasite</span></strong>
-<br /><span style="color: #ff66cc;">-</span> Passive Attack Damage bonus reduced from 10 to 5.
-<br /><span style="color: #ff66cc;">-</span> Damage Amplification for damage received while the state is active increased from 12% to 15%.
-<br /><span style="color: #ff66cc;">-</span> Passive bonus Attack Speed reduced from 20 to 15.
-<br /><span style="color: #ff66cc;">-</span> Recipe Cost increased from 600 Gold to 800 Gold.
-<br /><span style="color: #00cc99;">*</span> Total Cost increased from 2000 Gold to 2200 Gold.
-<br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> Elder Parasite is supposed to be a mid-game high-risk, high-reward item for autoattack carries, and has been readjusted accordingly to fill this role. It was just a tad too good in the previous patch.</em></span><br /><br />_______________________________________________
-<br /><br /><strong><span style="color: #00cccc";>Lightbrand, Frozen Light, Searing Light, Dawnbringer, Grimoire of Power</span></strong>
-<br /><span style="color: #ff66cc;">-</span> The Searing state is no longer applied in a 200 radius.
-<br /><br /><strong><span style="color: #00cccc";>Grimoire of Power</span></strong>
-<br /><span style="color: #ff66cc;">-</span> Debuff Reduction and Stun Reduction state duration reduced from 1 seconds to 0.6 seconds.
-<br /><span style="color: #ff66cc;">-</span> Recipe Cost increased from 700 Gold to 1100 Gold.
-<br /><span style="color: #00cc99;">*</span> Total Cost increased from 5000 Gold to 5400 Gold.
-<br /><span style="color: #ff66cc;">-</span> Can no longer be activated while Perplexed or under a Forced Order effect (e.g. Legionnaire's Taunt).
-<br /><span style="color: #ff66cc;">-</span> Cooldown increased from 70 seconds to 90 seconds (becomes 72 seconds after its own cooldown reduction mechanic).
-<br /><span style="color: #ff66cc;">-</span> Now applies an Activation Modifier state for 2 seconds, which prevents other Activation Modifiers from being applied while active.
-<br /><span style="color: #ff66cc;">-</span> Now uses an Activation Modifier (i.e. this cannot be active at the same time as Shrunken Head or Void Talisman).
-<br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> Grimoire of Power has proven to be an incredibly viable item pickup option in the game compared to Frostwolf's Skull and Geometer's Bane (finally). In fact, it is likely a little too good right now, as this item also allows you to farm better compared to its counterparts. Because of this, a cost increase is perfectly justified.</em></span><br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> The active effect has been nerfed a little bit to make sure that it still does what it should do (allow the user to cast at least one final ability after breaking CC) without that duration being too long, as well as preventing items like Shrunken Head from being used to guarantee an escape.</em></span><br /><br />_______________________________________________
-<br /><br /><strong><span style="color: #00cccc";>Ioyn Stone</span></strong>
-<br /><span style="color: #ff66cc;">-</span> Can now be purchased at the Outpost.
-<br />_______________________________________________
-<br /><br /><strong><span style="color: #00cccc";>Iron Shield</span></strong>
-<br /><span style="color: #ff66cc;">-</span> Deflection chance against enemy heroes reduced from 100% to 70%.
-<br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> This change allows the item to still be a strong pickup on melee Agility heroes in the laning phase, but does not enable their trades to be too effective.</em></span><br /><br />_______________________________________________
-<br /><br /><strong><span style="color: #00cccc";>Orb of Zamos & Grave Locket</span></strong>
-<br /><span style="color: #ff66cc;">-</span> Now only generate 0.25x bonus Gold when a non-player controlled Neutral Creep is killed by the corresponding Synchronized hero.
-<br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> This item was simply not intended to synergize well with heroes that clear Neutral Creeps throughout the game.</em></span><br /><br />_______________________________________________
-<br /><br /><strong><span style="color: #00cccc";>Pegasus Boots</span></strong>
-<br /><span style="color: #ff66cc;">-</span> Now prioritizes teleporting to ally heroes before prioritizing other targets.
-<br />_______________________________________________
+<br /><br /><br /><br /><br />=<span style="color: #ffd700";> Items </span>=
+<br />Changes to Armor Items:
+<br /><br /><strong><span style="color: #00cccc";>Ring of the Teacher</span></strong>
+<br /><span style="color: #ff66cc;">-</span> Armor bonus for self increased from 1 to 2.
+<br /><span style="color: #ff66cc;">-</span> Armor bonus to allies from the aura reduced from 2 to 1.
+<br /><span style="color: #ff66cc;">-</span> Mana Regeneration bonus from the aura increased from 0.65 to 0.8.
+<br /><br /><strong><span style="color: #00cccc";>Abyssal Skull</span></strong>
+<br /><span style="color: #ff66cc;">-</span> Now passively grants 2 Armor to self.
+<br /><span style="color: #ff66cc;">-</span> Armor bonus to allies from the aura reduced from 5 to 3.5.
+<br /><span style="color: #ff66cc;">-</span> Mana Regeneration bonus from the aura increased from 0.8 to 1.0.
+<br /><br /><strong><span style="color: #00cccc";>Nome's Wisdom</span></strong>
+<br /><span style="color: #ff66cc;">-</span> Now passively grants 2 Armor to self.
+<br /><span style="color: #ff66cc;">-</span> Armor bonus to allies from the aura reduced from 2 to 1.
+<br /><span style="color: #ff66cc;">-</span> Mana Regeneration bonus from the aura increased from 1 to 1.2.
+<br /><br /><strong><span style="color: #00cccc";>Plated Greaves</span></strong>
+<br /><span style="color: #ff66cc;">-</span> Armor granted to allies from the active state reduced from 1.5 to 1.
+<br /><span style="color: #ff66cc;">-</span> Movement Speed bonus reduced from 65 to 55.
+<br /><br /><strong><span style="color: #00cccc";>Sol's Bulwark</span></strong>
+<br /><span style="color: #ff66cc;">-</span> Armor bonus to allies from the ally aura reduced from 3 to 2.
+<br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> Armor items have had far too much benefit for allies at such a low cost.</em></span><br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> The aura effects of these items were generally made weaker so that Physical Damage is not countered so easily and quickly for an entire team in the early phases of the game.</em></span><br /><br />_______________________________________________
+<br />Changes to the Mana Battery line of items:
+<br /><br /><strong><span style="color: #00cccc";>Mana Battery</span></strong>
+<br /><span style="color: #ff66cc;">-</span> Added back into the game (exact same item as Power Supply from Patch 4.9.1, just with a different name, icon and visual effects).
+<br /><span style="color: #00cc99;">*</span> Cost: 200 Gold
+<br /><span style="color: #00cc99;">*</span> Available to be purchased in the Relics shop and Outpost.
 <br /><br /><strong><span style="color: #00cccc";>Power Supply</span></strong>
-<br /><span style="color: #ff66cc;">-</span> No longer has a recipe (i.e. it is a standalone item now).
-<br /><span style="color: #ff66cc;">-</span> Now costs 200 Gold.
-<br /><span style="color: #ff66cc;">-</span> No longer passively grants bonus Strength, Agility or Intelligence.
-<br /><span style="color: #ff66cc;">-</span> Max charges reduced from 15 to 10.
-<br /><span style="color: #ff66cc;">-</span> Can now be purchased at the Outpost.
+<br /><span style="color: #ff66cc;">-</span> Now upgrades from Mana Battery.
+<br /><span style="color: #ff66cc;">-</span> Components: Mana Battery (200 Gold) + Minor Totem (50 Gold) + Minor Totem (50 Gold) + Recipe (240 Gold) = 540 Gold Total
+<br /><span style="color: #ff66cc;">-</span> Passively grants 3 Strength, Agility and Intelligence.
+<br /><span style="color: #ff66cc;">-</span> Maximum of 15 charges.
+<br /><span style="color: #ff66cc;">-</span> No longer purchasable in the Outpost.
+<br /><span style="color: #ff66cc;">-</span> The other effects are the same as Mana Battery.
 <br /><br /><strong><span style="color: #00cccc";>Sacrificial Stone</span></strong>
-<br /><span style="color: #ff66cc;">-</span> New component buildup: Power Supply (200) + Major Totem (540) + Recipe (110) = 850 Gold Total
-<br /><span style="color: #ff66cc;">-</span> Increased Healing Done adjusted from +10% to +15%.
-<br /><span style="color: #ff66cc;">-</span> Health restored per charge increased from 10 to 12.
-<br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> Power Supply now functions like the old Mana Battery - it was too cost-efficient for the stats it provided at the 300 Gold price point, and there was a need for the item to be at a low cost for its active functionality.</em></span><br /><br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;">To prevent changing the item hotkey order once again, Power Supply and Sacrificial Stone were properly adjusted (rather than reintroducing Mana Battery).</em></span><br /><br />_______________________________________________
-<br /><br /><strong><span style="color: #00cccc";>Veiled Rot</span></strong>
-<br /><span style="color: #ff66cc;">-</span> Now applies to the user even if they are invulnerable (addresses a corner case when respawning at fountain right away).
+<br /><span style="color: #ff66cc;">-</span> Recipe cost increased from 110 Gold to 420 Gold.
+<br /><span style="color: #00cc99;">*</span> Total cost increased from 850 Gold to 1500 Gold.
+<br /><span style="color: #ff66cc;">-</span> Base bonus Strength, Agility and Intelligence increased from 5 to 8.
+<br /><span style="color: #ff66cc;">-</span> Increased Healing Done adjusted from +15% to +20%.
+<br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> Mana Battery and Power Supply both fulfilled unique benefits and had solid reasons to be picked up early in the game at their specific price points, so they were both largely reverted back to their legacy states.</em></span><br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> Sacrificial Stone would be too stat-efficient if its recipe cost was not adjusted, though we still want the item to have a solid reason to be picked up. Therefore, it is now one of the most stat-efficient items to pick up and upgrades from a fantastic item at a moderate (but relatively affordable) cost. It also buffs healing output even more as its particular niche effect.</em></span><br /><br />_______________________________________________
+<br /><br /><strong><span style="color: #00cccc";>Frostwolf's Skull</span></strong>
+<br /><span style="color: #ff66cc;">-</span> Movement Speed Slow (when used by a melee hero) increased from 35% to 40%.
+<br /><span style="color: #ff66cc;">-</span> Scouting activation: radius increased from 5000 units to 7000 units.
+<br /><span style="color: #ff66cc;">-</span> Scouting activation: cooldown reduced from 30 seconds to 24 seconds.
+<br /><span style="color: #ff66cc;">-</span> Dire Frost Wolf activation: cooldown reduced from 50 seconds to 40 seconds.
+<br /><span style="color: #ff66cc;">-</span> Dire Frost Wolf activation: in addition to its current effects, also applies a 1 second Root on impact.
+<br /><br /><strong><span style="color: #00cccc";>Ghost Marchers</span></strong>
+<br /><span style="color: #ff66cc;">-</span> Passive Movement Speed bonus reduced from 70 to 60.
+<br /><span style="color: #ff66cc;">-</span> Bonus Attack Damage reduced from 24 to 22.
+<br /><br /><strong><span style="color: #00cccc";>Grimoire of Power</span></strong>
+<br /><span style="color: #ff66cc;">-</span> Recipe cost reduced from 1100 Gold to 900 Gold.
+<br /><span style="color: #00cc99;">*</span> Total cost reduced from 5400 Gold to 5200 Gold.
+<br /><span style="color: #ff66cc;">-</span> Active effect has been reworked:
+<br /><span style="color: #00cc99;">*</span> Activate to grant+30% Spell Damage to self for 15 seconds.
+<br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> The defensive effect on Grimoire of Power was too strong for the game. It is likely to make a return with more appropriate negative side effects on another item in the future.</em></span><br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> In the meantime, Grimoire of Power's effect is reminiscent of its previous passive effect.</em></span><br /><br />_______________________________________________
+<br /><br /><strong><span style="color: #00cccc";>Orb of Zamos & Grave Locket</span></strong>
+<br /><span style="color: #ff66cc;">-</span> Bonus gold multiplier increased from 0.25x to 0.75x when a non-player controlled Neutral Creep is killed by the corresponding Synchronized hero.
+<br /><br /><strong><span style="color: #00cccc";>Ultor's Heavy Helm</span></strong>
+<br /><span style="color: #ff66cc;">-</span> Component change: instead of Ringmail, now requires a Shield of the Five.
+<br /><span style="color: #ff66cc;">-</span> Recipe cost reduced from 1025 Gold to 675 Gold.
+<br /><span style="color: #00cc99;">*</span> Total cost remains the same (3650 Gold).
+<br /><span style="color: #ff66cc;">-</span> Now passively grants 2 bonus Strength, Agility and Intelligence.
+<br /><span style="color: #ff66cc;">-</span> Active effect now also grants 1 Armor to affected allies.
+<br /><span style="color: #00cc99;">*</span> Bonus Armor effect does not stack with Plated Greaves or Shield of the Five.
+<br /><span style="color: #ff66cc;">-</span> Damage Block value for self increased from 70 to 80 (35 to 40 if you are a ranged hero that has Ultor's Heavy Helm).
+<br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> Shield of the Five now builds into an item other than Plated Greaves, making Ultor's Heavy Helm more viable (especially with the nerfs to the other team Armor items).</em></span><br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> Credits to datfizh for the general suggestions for Ultor's Heavy Helm!</em></span><br /><br /><br /><strong><span style="color: #00cccc";>Void Talisman</span></strong>
+<br /><span style="color: #ff66cc;">-</span> Recipe cost reduced from 1160 Gold to 1060 Gold.
+<br /><span style="color: #00cc99;">*</span> Total cost reduced from 1700 Gold to 1600 Gold.
 <br />_______________________________________________
-<br /><br /><strong><span style="color: #00cccc";>Void Talisman</span></strong>
-<br /><span style="color: #ff66cc;">-</span> Recipe Cost increased from 960 Gold to 1160 Gold.
-<br /><span style="color: #00cc99;">*</span> Total Cost increased from 1500 Gold to 1700 Gold.
-<br /><span style="color: #ff66cc;">-</span> Passive Strength, Agility and Intelligence bonus reduced from 6 to 5.
-<br /><span style="color: #ff66cc;">-</span> While Void Talisman is active, your hero deals 25% less Damage.
-<br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> Void Talisman now carries a little bit more of a penalty when used, as well as it being less efficient of an item when picked up.</em></span><br /><span style="color: #ff66cc;">+</span><em><span style="color: #ffffcc;"> It should still be accessible enough to support heroes, while reducing the damage output of certain heroes while active.</em></span><br /><br />_______________________________________________
 <br /><br /><br />==<strong><span style="font-size: 14pt; color: #ffa500;"> Matchmaking Maps & Modes </span></strong>==
-<br /><br /><span style="color: #00cc99";>Champions of Newerth (CoN)</span>
+<br /><br /><br /><br /><span style="color: #00cc99";>Champions of Newerth (CoN)</span>
 <br /><span style="color: #ff66cc;">-</span> Map: Forests of Caldavar ("New" for NAEU/International region, "Old" for SEA region)
 <br /><span style="color: #ff66cc;">-</span> Mode: Ranked Pick
-<br /><br /><span style="color: #00cc99";>Mid Wars</span>
+<br /><br /><br /><br /><span style="color: #00cc99";>Mid Wars</span>
 <br /><span style="color: #ff66cc;">-</span> Hero Ban
 <br /><span style="color: #ff66cc;">-</span> Single Draft
-<br />_______________________________________________
 <br /><br /><br />==<strong><span style="font-size: 14pt; color: #ffa500;"> Bug Fixes & Optimizations </span></strong>==
 <br /><br /><br />=<span style="color: #ffd700";> General </span>=
-<br /><br /><span style="color: #ff66cc;">-</span> Fixed a crash when the video card driver date cannot be found.
-<br /><span style="color: #ff66cc;">-</span> Gadgets can no longer damage Merrick's Rune in Mid Wars.
-<br /><span style="color: #ff66cc;">-</span> Automated Courier now plays its sounds on its own sound channel when the ability is activated.
-<br /><span style="color: #00cc99;">*</span> i.e. this no longer stops other sounds that are currently playing, i.e. the Rune Announcer.
-<br /><br /><span style="color: #ff66cc;">-</span> Mid Wars: Hero Ban mode no longer plays the "Ban a Hero!" audio clip twice.
-<br /><span style="color: #ff66cc;">-</span> Fixed various malformed XML entity errors.
-<br /><span style="color: #ff66cc;">-</span> Fixed a shader cache issue that causes the somewhat uncommon "Area of Effect Indicator" freeze bug for some users.
-<br /><span style="color: #00cc99;">*</span> If you still encounter this issue after the patch, please let us know on the Bug Report forums.
-<br /><br /><br />=<span style="color: #ffd700";> Bots </span>=
-<br />The following bots no longer print errors to the console:
-<br /><span style="color: #ff66cc;">-</span> Maliken
-<br /><span style="color: #ff66cc;">-</span> Ravenor
-<br /><br /><br />=<span style="color: #ffd700";> User Interface </span>=
-<br /><br /><span style="color: #ff66cc;">-</span> If you decline to do an update, you will no longer be able to log in.
-<br /><span style="color: #00cc99;">*</span> This fixes an issue where players may be unable to join a game or crash in the middle of the game if they chose not to update the game prior to playing.
-<br /><br /><span style="color: #ff66cc;">-</span> The server name (e.g. "EU100") is now displayed on the Match Stats screen.
-<br /><span style="color: #ff66cc;">-</span> Removed the Facebook Stream button from the old UI (deprecated feature).
-<br /><span style="color: #ff66cc;">-</span> Fixed the Compatize button in the old UI so that it is only enabled when a replay is selected from the list.
-<br /><span style="color: #ff66cc;">-</span> Fixed the "Gift" button in the HoN Store so that it transitions to the correct UI window.
-<br /><span style="color: #00cc99;">*</span> This prevents misleading information in the future (if we enable Gifting again) where you can gift a product to another user by using Silver Coins (which you cannot do).
+<br /><br /><span style="color: #00cc99";>Mid Wars</span>
+<br /><span style="color: #ff66cc;">-</span> Captain's Pick can now be properly hosted on this map for Public Games.
+<br />User Interface
+<br /><span style="color: #ff66cc;">-</span> New UI: no longer warns that you have no region selected when attempting to start a Public Game or Bot Match game.
+<br /><span style="color: #ff66cc;">-</span> Lobby music now plays properly (there was something wrong with the encoding of the sound file).
+<br /><span style="color: #ff66cc;">-</span> When a hero denies themselves, the game properly displays a message using gender-neutral terminology ("X has killed themselves").
+<br />Healing is now sourced from the appropriate entity for the following sources:
+<br /><span style="color: #ff66cc;">-</span> Accursed's Flame Consumption
+<br /><span style="color: #ff66cc;">-</span> Blood Hunter's Feast
+<br /><span style="color: #ff66cc;">-</span> Deadlift's Soul Syphon
+<br /><span style="color: #ff66cc;">-</span> Defiler's Unholy Expulsion
+<br /><span style="color: #ff66cc;">-</span> Emerald Warden's Forest Touch (from Gawain)
+<br /><span style="color: #ff66cc;">-</span> Hellbringer's Evil Presence
+<br /><span style="color: #ff66cc;">-</span> Nymphora's Volatile Pod
+<br /><span style="color: #ff66cc;">-</span> Warchief's Life Totem (from Sacred Totems)
+<br /><span style="color: #ff66cc;">-</span> Zephyr's Cyclones
 <br /><br /><br />=<span style="color: #ffd700";> Heroes </span>=
-<br /><br /><strong><span style="color: #0099ff";>Artillery</span></strong>
-<br /><span style="color: #ff66cc;">-</span> Demon Hunter Artillery's LRM sound effects are now correctly played.
-<br /><br /><strong><span style="color: #0099ff";>Circe</span></strong>
-<br /><span style="color: #ff66cc;">-</span> Mimic spawned by Twisted Visage is no longer able to use Whispering Helm to permanently control a creep after Twisted Visage expires.
-<br /><br /><strong><span style="color: #0099ff";>Dampeer</span></strong>
-<br /><span style="color: #ff66cc;">-</span> Terrorize's Fear mechanic now functions properly (i.e. prevents opponents from having control over their character for the duration).
-<br /><br /><strong><span style="color: #0099ff";>Demented Shaman</span></strong>
-<br /><span style="color: #ff66cc;">-</span> Entangle's damage over time (DoT) state is now properly considered a debuff state.
+<br /><br /><strong><span style="color: #0099ff";>Adrenaline</span></strong>
+<br /><span style="color: #ff66cc;">-</span> Shard Blast's sound effects are now quieter.
+<br /><span style="color: #ff66cc;">-</span> Shard Blast will no longer play a sound for each time it hits an opponent (and instead will only play once per cast instance).
+<br /><span style="color: #ff66cc;">-</span> Ember Shard state on enemies now expire when Adrenaline is dead.
+<br /><span style="color: #00cc99;">*</span> However, if they are already getting pulled when Adrenaline actually dies, the pull will still continue as intended.
+<br /><span style="color: #ff66cc;">-</span> If the leash range is broken by the target, Ember Shard no longer pulls enemies if they are invulnerable or have Physical Immunity.
+<br /><span style="color: #ff66cc;">-</span> Fixed Death's Halo detection radius so that units from the outside do not accidentally get sucked into the center if they direct path towards the inside (from the outside) and then attempt to walk away again.
+<br /><br /><strong><span style="color: #0099ff";>Amun-Ra</span></strong>
+<br /><span style="color: #ff66cc;">-</span> Ignite now display the appropriate Magic Damage value in the popup.
+<br /><br /><strong><span style="color: #0099ff";>Cthulhuphant</span></strong>
+<br /><span style="color: #ff66cc;">-</span> Obliterate's visual model is now correct for the default Cthulhuphant avatar and King Cthulhuphant avatar.
+<br /><span style="color: #ff66cc;">-</span> Sound effects for Dreams of Madness and Obliterate now plays correctly for the Woolly Cthulhuphant, Royal Cthulhuphant, Caller Cthulhuphant, Daemon Highlord, and HoNTour Cthulu avatars.
+<br /><span style="color: #00cc99;">*</span> Credits to Gimj for submitting some of these changes!
+<br /><span style="color: #ff66cc;">-</span> Trample no longer displaces enemies with Push Immunity.
+<br /><br /><strong><span style="color: #0099ff";>Deadlift</span></strong>
+<br /><span style="color: #ff66cc;">-</span> Onslaught's leash range is now properly adjusted if Onslaught's cast range is increased (e.g. by Jade Spire).
+<br /><span style="color: #ff66cc;">-</span> All Undead creeps spawned from Onslaught now get the proper Movement Speed state.
+<br /><span style="color: #ff66cc;">-</span> Undead creeps spawned from Onslaught will now have the correct behaviour after being bound to a projectile.
+<br /><span style="color: #ff66cc;">-</span> Soul Syphon now heals for the correct amount when the minions spawned from Onslaught expire.
+<br /><span style="color: #ff66cc;">-</span> Soul Syphon now heals Deadlift properly if a unit with a timed life expires naturally.
+<br /><br /><strong><span style="color: #0099ff";>Empath</span></strong>
+<br /><span style="color: #ff66cc;">-</span> In-game icon now displays the default avatar icon (rather than the HD avatar icon).
+<br /><br /><strong><span style="color: #0099ff";>Engineer</span></strong>
+<br /><span style="color: #ff66cc;">-</span> Ol' Briarpatch Engineer's Energy Field gadget model is now properly displayed on Low Model graphic settings.
+<br /><br /><strong><span style="color: #0099ff";>Gemini</span></strong>
+<br /><span style="color: #ff66cc;">-</span> Light Wolf can now purchase items from an item shop.
+<br /><span style="color: #00cc99;">*</span> Items will be transferred to Gemini's inventory if there is enough space. Otherwise, it will go to the Stash as per regular behaviour.
+<br /><span style="color: #00cc99;">*</span> In other words, purchase mechanics are the same as if Fire was purchasing items from an item shop.
+<br /><span style="color: #00cc99;">*</span> Note that Light does not actually have its own item inventory.
+<br /><br /><strong><span style="color: #0099ff";>Goldenveil</span></strong>
+<br /><span style="color: #ff66cc;">-</span> Perch & Plunge's cooldown is now set to the correct value when the Perched tree is destroyed.
+<br /><br /><strong><span style="color: #0099ff";>Ichor</span></strong>
+<br /><span style="color: #ff66cc;">-</span> The healing from Life Leech is now properly sourced from Ichor (not the target).
+<br /><span style="color: #00cc99;">*</span> Affects interactions from healing increase items like Sacrificial Stone.
+<br /><span style="color: #ff66cc;">-</span> Life Leech's projectile no longer bypasses Magic Immunity if the target gains Magic Immunity after Life Leech has been cast, but before Life Leech's projectile hits them.
+<br /><span style="color: #ff66cc;">-</span> Transfusion's initial projectile now properly deals Magic Damage to enemies in the impact area even if it has been disjointed.
+<br /><br /><strong><span style="color: #0099ff";>Kane</span></strong>
+<br /><span style="color: #ff66cc;">-</span> Face Off now properly cancels Homecoming Stone if the target is Disarmed.
 <br /><br /><strong><span style="color: #0099ff";>Legionnaire</span></strong>
-<br /><span style="color: #ff66cc;">-</span> Taunt now properly cancels Homecoming Stone if the target is Disarmed.
-<br /><br /><strong><span style="color: #0099ff";>Magmus</span></strong>
-<br /><span style="color: #ff66cc;">-</span> Saji Magmus' Eruption sound effects are now played properly when boosted by Staff of the Master.
-<br /><br /><strong><span style="color: #0099ff";>Moira</span></strong>
-<br /><span style="color: #ff66cc;">-</span> Ephemeral Forge's channel duration (after the Mimic is able to act) is now properly set to the Mimic's lifetime.
+<br /><span style="color: #ff66cc;">-</span> Decapitate no longer attempts to deal Magic Damage to an enemy unit that he was already designated to kill if they meet Decapitate's kill conditions.
+<br /><br /><strong><span style="color: #0099ff";>Midas</span></strong>
+<br /><span style="color: #ff66cc;">-</span> Midas now travels with the projectile of Elemental Warp.
+<br /><span style="color: #00cc99;">*</span> This has no gameplay impact in most situations and makes the behaviour consistent with other projectile-based travel behaviour from other abilities.
+<br /><br /><strong><span style="color: #0099ff";>Nomad</span></strong>
+<br /><span style="color: #ff66cc;">-</span> True Strike now applies a lingering sighted/revealed state on the target for 1 second or until True Strike's attack occurs (whichever occurs first), after its trigger conditions are met (i.e. when entering into melee range of the target).
+<br /><span style="color: #ff66cc;">-</span> True Strike's trigger range reduced from 200 to 175.
+<br /><span style="color: #00cc99;">*</span> All of these small adjustments to True Strike/Mirage Strike mitigate the instances where the skill is being abnormally cancelled in certain conditions (e.g. near trees when the opponent is attempting to fog you).
+<br /><span style="color: #00cc99;">*</span> In the majority of circumstances, this will not affect gameplay and only serve as quality-of-life changes.
+<br /><br /><strong><span style="color: #0099ff";>Pebbles</span></strong>
+<br /><span style="color: #ff66cc;">-</span> Chuck now properly deals damage to the thrown unit when the thrown unit is unbound from the projectile.
+<br /><br /><strong><span style="color: #0099ff";>Pestilence</span></strong>
+<br /><span style="color: #ff66cc;">-</span> Fixed an exploit where Swarm (when boosted by Staff of the Master) can globally affect an enemy unit.
 <br /><br /><strong><span style="color: #0099ff";>Prisoner</span></strong>
-<br /><span style="color: #ff66cc;">-</span> Prison Break no longer performs a Physical effect type check every frame to determine if the chain should be broken (i.e. Void Talisman will no longer break the chains early).
-<br /><span style="color: #00cc99;">*</span> Being Physically Immune at the time of the chain proc will still protect you from the auxiliary effects.
-<br /><span style="color: #00cc99;">*</span> Additionally, the target becoming invulnerable will no longer break the chains.
-<br /><br /><strong><span style="color: #0099ff";>Qi</span></strong>
-<br /><span style="color: #ff66cc;">-</span> Enlightenment now properly deals SuperiorMagic Damage when boosted by Staff of the Master.
-<br /><br /><strong><span style="color: #0099ff";>Rally</span></strong>
-<br /><span style="color: #ff66cc;">-</span> Kyugo Rally's Seismic Slam sound effects are now played properly when boosted by Staff of the Master.
-<br /><br /><strong><span style="color: #0099ff";>Ravenor</span></strong>
-<br /><span style="color: #ff66cc;">-</span> GSL Ravenor has been properly renamed to Ravenna in the client string tables.
+<br /><span style="color: #ff66cc;">-</span> The ball and chain from Shackled will now properly follow a unit if that unit becomes order disjointed (e.g. with Fayde's Shadow Walk ability).
+<br /><span style="color: #ff66cc;">-</span> Prison Break's effects (when boosted by Staff of the Master) now properly affects Physically Immune units if targeting self.
+<br /><span style="color: #ff66cc;">-</span> Prison Break's effects (when boosted by Staff of the Master) no longer become dispelled if an affected target gains invulnerability at any point before the state naturally expires.
+<br /><br /><strong><span style="color: #0099ff";>Rampage</span></strong>
+<br /><span style="color: #ff66cc;">-</span> Might of the Herd no longer interrupts your order queue when activated.
+<br /><span style="color: #ff66cc;">-</span> Tooltip for Horned Strike no longer mistakenly says that it has Bash properties.
 <br /><br /><strong><span style="color: #0099ff";>Rhapsody</span></strong>
-<br /><span style="color: #ff66cc;">-</span> 3D portrait positions for various alternate avatars have been fixed.
-<br /><br /><strong><span style="color: #0099ff";>Swiftblade</span></strong>
-<br /><span style="color: #ff66cc;">-</span> Counter Attack's active state no longer infinitely loops if two heroes attack each other when both of them have the active state.
-<br /><br /><strong><span style="color: #0099ff";>Warchief</span></strong>
-<br /><span style="color: #ff66cc;">-</span> Spirit Walk now properly stops Warchief's previously queued orders so he won't continue walking to a target location after casting (if queued to move towards a specific target unit).
-<br /><br /><strong><span style="color: #0099ff";>Xemplar</span></strong>
-<br /><span style="color: #ff66cc;">-</span> Wall of Mirrors no longer erroneously applies a second instance of Magic Damage.
-<br /><span style="color: #ff66cc;">-</span> Magic Damage applied from Wall of Mirrors is now scaled properly based on the level of Schism.
+<br /><span style="color: #ff66cc;">-</span> In-game icon now displays the default avatar icon (rather than the HD avatar icon).
+<br /><br /><strong><span style="color: #0099ff";>Riptide</span></strong>
+<br /><span style="color: #ff66cc;">-</span> Undertow's tooltip now properly states it deals 30/45/60/75 Magic Damage.
+<br /><span style="color: #00cc99;">*</span> No gameplay change has been made, as Undertow still deals this damage even prior to this patch.
+<br /><br /><strong><span style="color: #0099ff";>Shadowblade</span></strong>
+<br /><span style="color: #ff66cc;">-</span> Soul's Sight's effects that apply on the first hit will now properly check for misses (e.g. against Void Talisman or Evasion sources) and immunities (e.g. Shrunken Head) when the attack projectile impacts, rather than predetermining the effect when the attack projectile is launched.
+<br /><span style="color: #ff66cc;">-</span> Fixed some incorrect model positions for Shadowblade's avatars in the HoN store.
+<br /><br /><strong><span style="color: #0099ff";>Solstice</span></strong>
+<br /><span style="color: #ff66cc;">-</span> Illuminate no longer interrupts your order queue when activated.
+<br /><br /><strong><span style="color: #0099ff";>Tempest</span></strong>
+<br /><span style="color: #ff66cc;">-</span> Elementals do not inherit their forced-attack order after splitting if they were affected by Deadlift's Onslaught state.
+<br /><br /><strong><span style="color: #0099ff";>Vindicator</span></strong>
+<br /><span style="color: #ff66cc;">-</span> Space Wizard Merlin's Glyph of Silence now properly plays its catchy space jam soundtrack while it is active!
+<br /><br /><strong><span style="color: #0099ff";>Wildsoul</span></strong>
+<br /><span style="color: #ff66cc;">-</span> Throwback Wildsoul now shows the correct model in the HoN store and avatar selection screen.
+<br /><br /><strong><span style="color: #0099ff";>Witch Slayer</span></strong>
+<br /><span style="color: #ff66cc;">-</span> Attack projectiles for Pimp Slayer and Witch Hunter now have the correct models.
 <br /><br /><br />=<span style="color: #ffd700";> Items </span>=
-<br /><br /><strong><span style="color: #00cccc";>Alchemist's Bones</span></strong>
-<br /><span style="color: #ff66cc;">-</span> Tooltip now mentions that charge timer is frozen when your hero is dead.
-<br /><br /><strong><span style="color: #00cccc";>Portal Key</span></strong>
-<br /><span style="color: #ff66cc;">-</span> Cooldown (when taking damage) is now manually set to 3 seconds properly if you have Grimoire of Power in your inventory.
-<br /><br /><strong><span style="color: #00cccc";>Sacrificial Stone</span></strong>
-<br /><span style="color: #ff66cc;">-</span> Mid Wars: now properly removes the boosted effect when your hero dies.
-<br />_______________________________________________
+<br /><br /><strong><span style="color: #00cccc";>Bottle, Health Potion, Mana Potion, Rejuvenation Potion, Refreshment Rune effects</span></strong>
+<br /><span style="color: #ff66cc;">-</span> Damage from sources that are non-boss, non-player controlled (NPC) neutral creeps (when not owned by a player) will no longer accidentally disable the active states of these items if the source deals damage to the hero while the source is dead (e.g. a ranged projectile that hits a hero after the source dies).
+<br /><span style="color: #ff66cc;">-</span> Refreshment Rune's state is now consistent with the behaviour of the related state effects from Bottle, Health Potion, Mana Potion and Rejuvenation Potion.
+<br /><br /><strong><span style="color: #00cccc";>Genjuro</span></strong>
+<br /><span style="color: #ff66cc;">-</span> Each player can only purchase a maximum of 1 Genjuro per game.
+<br /><span style="color: #ff66cc;">-</span> Genjuro can no longer be dropped.
+<br /><br /><strong><span style="color: #00cccc";>Homecoming Stone</span></strong>
+<br /><span style="color: #ff66cc;">-</span> Disarm state on towers is no longer considered a Debuff.
+<br /><span style="color: #00cc99;">*</span> This should prevent assist attribution bugs if a tower kills a hero while someone is teleporting to it.
+<br /><br /><strong><span style="color: #00cccc";>Veiled Rot</span></strong>
+<br /><span style="color: #ff66cc;">-</span> Effect now also applies in a 600 radius around the user for the user's owned units when the fade state expires naturally.
+<br /><span style="color: #00cc99;">*</span> This does not change much in most situations, but it specifically lets Parasite properly take advantage of Veiled Rot with his Infested creep (i.e. use Veiled Rot, then Infest a creep).
+<br /><br /><strong><span style="color: #00cccc";>Whispering Helm</span></strong>
+<br /><span style="color: #ff66cc;">-</span> Can no longer be activated on a Mimic (e.g. Moira's Ephemeral Forge, Circe's Twisted Visage).
+<br /><br /><br />_______________________________________________
