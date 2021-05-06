@@ -5,3 +5,8 @@ This repository contains some scripts & tools that I use to make my life easier 
 - Google Sheets available to the general public: https://drive.google.com/open?id=0BxfgW5wc6hfsbDFmRHdkems0R0E
   - Most of what I did here are general mathematical/trend analysis for something before & after a patch, or game mechanics analysis in general
   - One particular sheet assists me with managing the HoN Store & is semi-automatic in speeding up the process of generating XML files: https://drive.google.com/open?id=1Va-Ye8GBHkLUiDfsliRr330c2qr_6lYQDiKOS677RzI
+
+
+## Installation of Python dependencies
+
+Open a terminal in the root directory of this repository after cloning it and run `pip install -r requirements.txt`.
