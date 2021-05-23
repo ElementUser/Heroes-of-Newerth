@@ -567,6 +567,11 @@ _______________________________________________
 [COLOR=#ff66cc]-[/COLOR] Magic Damage changed from 90/140/190/240 to 100/150/200/240.
 
 [COLOR=#0099cc]Saint's Blood[/COLOR]
+[COLOR=#ff66cc]-[/COLOR] Base Damage Reduction against Physical and Magic damage changed from 3/6/9/12% to 4/6/8/10%.
+[COLOR=#ff66cc]-[/COLOR] Bonus Damage Reduction per debuff reduced from 8/9/10/11% to 4/6/8/10%.
+[COLOR=#ff66cc]-[/COLOR] Max Damage Reduction from Saint's Blood reduced from 25/35/45/55% to 20/30/40/50%.
+[COLOR=#00cc99]*[/COLOR] Max Damage Reduction is now obtained by having 4 debuffs on Ichor (rather than 3/4/4/5 debuffs with efficiency loss on the final debuff).
+
 [COLOR=#ff66cc]-[/COLOR] When Bloodrush is learned, Saint's Blood gains an active effect.
 [COLOR=#ff66cc]-[/COLOR] Target another ally hero to apply Ichoric Blood to them indefinitely, only expiring if they die or if Ichoric Blood is transferred to another ally hero.
 [COLOR=#ff66cc]-[/COLOR] While within 1200 radius of Ichor, damage dealt by Ichor's autoattacks and non-ultimate abilities to enemy heroes heal the ally with Ichoric Blood for 10/15/20 Health.
@@ -1010,6 +1015,9 @@ Certain abilities that are classified as "non-interrupting" (i.e. did not interr
 [COLOR=#00cc99]*[/COLOR] Goldenveil's Dagger Dance
 [COLOR=#00cc99]*[/COLOR] Swiftblade's Counter Attack
 [COLOR=#00cc99]*[/COLOR] Lodestone's Shatterstorm
+
+[COLOR=#0099ff][B]Chipper[/B][/COLOR]
+[COLOR=#ff66cc]-[/COLOR] Rocket Barrage now has a touch effect type of Magic (i.e. will pass through units that have Magic Immunity).
 
 [COLOR=#0099ff][B]Gemini[/B][/COLOR]
 [COLOR=#ff66cc]-[/COLOR] Heropets (Fire, Ice and Light) are now properly deniable only if their Current Health percentage is less than 10% of their Max Health.
