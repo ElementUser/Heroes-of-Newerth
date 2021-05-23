@@ -718,7 +718,7 @@ Poison Spray
 - Magic Damage per tick increased from 15/25/40/50 to 15/30/45/60.
 
 Poison Burst
-- Cooldown reduced from 140/120/100 seconds to 100/85/70 seconds.
+- Cooldown reduced from 140/120/100 seconds to 110/90/70 seconds.
 
 _______________________________________________
 
