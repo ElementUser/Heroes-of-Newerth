@@ -388,6 +388,10 @@ _______________________________________________
 [COLOR=#ff66cc]-[/COLOR] Mana Cost reduced from 65/80/95/110 to 60/75/90/105.
 [COLOR=#ff66cc]-[/COLOR] Cast Range increased from 575/650/725/800 to 650/700/750/800.
 
+[COLOR=#0099cc]Death's Halo[/COLOR]
+[COLOR=#ff66cc]-[/COLOR] Bonus Strength per real hero caught increased from 3/4/5 to 4/5/6.
+[COLOR=#00cc99]*[/COLOR] Still 2x the value for enemy heroes.
+
 [COLOR=#ff66cc]+[/COLOR][I][COLOR=#ffffcc] A few small buffs were made to address his low performance after the most recent set of nerfs.[/I][/COLOR]
 
 _______________________________________________
@@ -1020,7 +1024,7 @@ Certain abilities that are classified as "non-interrupting" (i.e. did not interr
 [COLOR=#0099ff][B]Parallax[/B][/COLOR]
 [COLOR=#ff66cc]-[/COLOR] Earthshatter (when boosted with Staff of the Master) now deals the correct amount of damage if Parallax's max mana is greater than the target's.
 
-Qi
+[COLOR=#0099ff][B]Qi[/B][/COLOR]
 [COLOR=#ff66cc]-[/COLOR] Damage from Enlightenment now uses the correct damage multiplier when the damage source is from Ancestral Assault.
 
 [COLOR=#0099ff][B]Tremble[/B][/COLOR]
