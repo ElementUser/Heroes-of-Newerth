@@ -204,7 +204,7 @@ _______________________________________________
 [COLOR=#ff66cc]-[/COLOR] Attack Range reduced from 600 to 500.
 
 [COLOR=#0099ff][B]Emerald Warden[/B][/COLOR]
-[COLOR=#ff66cc]-[/COLOR] Attack Range reduced from 625 to 550.
+[COLOR=#ff66cc]-[/COLOR] Attack Range reduced from 625 to 600.
 
 [COLOR=#0099ff][B]Flint Beastwood[/B][/COLOR]
 [COLOR=#ff66cc]-[/COLOR] Attack Range reduced from 600 to 550.
@@ -587,6 +587,17 @@ _______________________________________________
 [COLOR=#ff66cc]+[/COLOR][I][COLOR=#ffffcc] This playstyle makes Ichor a proactive support hero with high durability that is encouraged to rush into the front lines of a teamfight, damaging as many enemy heroes as possible to sustain his team's Health.[/I][/COLOR]
 [COLOR=#ff66cc]+[/COLOR][I][COLOR=#ffffcc] His new Bloodrush ability also encourages his team to have at least 1 other frontline hero to take advantage of the healing around Ichor.[/I][/COLOR]
 [COLOR=#ff66cc]+[/COLOR][I][COLOR=#ffffcc] Transfusion still serves as a powerful mobility tool, as well as a constant debuff transfer tool for protecting allies.[/I][/COLOR]
+
+_______________________________________________
+
+[COLOR=#0099ff][B]King Klout[/B][/COLOR]
+
+[COLOR=#0099cc]Goblin Toss[/COLOR]
+[COLOR=#ff66cc]-[/COLOR] Red minion: base Magic Damage increased from 30/40/50/60 to 70/90/110/130 (same as Blue minion), Magic Damage over time reduced from 55/70/85/100 to 15/20/25/30.
+[COLOR=#00cc99]*[/COLOR] Total damage taken over time remains unchanged.
+[COLOR=#00cc99]*[/COLOR] Green's minion also inherits Red minion's effects.
+
+[COLOR=#ff66cc]+[/COLOR][I][COLOR=#ffffcc] This adjustment was made to accommodate King Klout's new Staff of the Master effect with Goblin Toss.[/I][/COLOR]
 
 _______________________________________________
 
