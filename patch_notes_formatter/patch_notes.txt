@@ -989,8 +989,7 @@ Champions of Newerth (CoN)
 
 Mid Wars
 - Hero Ban
-- Balanced Random (NAEU/International region)
-*For SEA, this may remain as Single Draft (or whatever mode is currently active).
+- Single Draft
 
 
 
