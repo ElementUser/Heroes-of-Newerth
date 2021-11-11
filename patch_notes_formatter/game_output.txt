@@ -1,14 +1,12 @@
-^980Version 4.9.4^*
+^980Version 4.9.5^*
 -------------
-^98026 October 2021^*
+^98016 November 2021^*
 
 
 
-==^960 New Content ^*==
+==^960 Patch Versioning Change ^*==
 
-^077New Draconis Avatar: Abyss Draco^*
-^947-^* Feast on your opponents' despair with this undying Draconis avatar!
-   ^274*^* Credits to Narandea for the hero icon art!
+From this point onward, the vast majority of hotfix patches will have their patch version (the third number in the patch notes) actually incremented. This is done to ensure that replay compatibility works between patch versions (even hotfix patches).
 
 
 
@@ -16,336 +14,33 @@
 
 
 
-=^075 Staff of the Master & Master's Legacy Changes ^*=
+=^075 General ^*=
 
-^059Artesia^*
+Experience Changes
+^947-^* Assist Experience Penalty changed from 0/0/20/40/60% to 0/0/10/35/60% for 1/2/3/4/5 real ally heroes within the Experience Proximity of the target.
 
-^256Essence Projection^*
-^947-^* Staff of the Master effect change (to pre-existing):
-   ^274*^* While the Essence Projection is active: relocation ability's cooldown reduced to 4 seconds (changed from 2 seconds).
-   ^274*^* Essence Projection relocation gains an additional 2 seconds of cooldown if used within 1600 radius of the enemy Well.
-
-_______________________________________________
-
-^059Lord Salforis^*
-
-^256Life Tap^*
-^947-^* Staff of the Master effect addition (new):
-   ^274*^* Cooldown reduced to 3 seconds.
-
-^256The Undying^*
-^947-^* Staff of the Master effect change (to pre-existing):
-   ^274*^* Distance required from the enemy to pause the duration of The Undying increased from 600 units to 900 units.
-
-_______________________________________________
+^947+^* This change was made to lessen the experience penalty for a successful gank involving 3 heroes.
 
 
 
 =^075 Heroes ^*=
 
-^059Adrenaline^*
-
-^256Shard Blast^*
-^947-^* Base Mana Cost increased from 60/75/90/105 to 65/80/95/110.
-^947-^* Base Cooldown increased from 2.4 seconds to 2.7 seconds.
-   ^274*^* Overall, Shard Blast's possible cooldown values are now reduced from 2.4/1.8/1.2 seconds to 2.7/2.1/1.5 seconds with respect to hitting 2 or more enemy heroes 0/1/2 times within the last 10 seconds.
-^947-^* Bonus Magic Damage dealt based on your primary attribute reduced from 30/40/50/60% to 20/30/40/50%.
-^947-^* Touch radius reduced from 100 to 80.
-^947-^* Projectile speed reduced from 2500 to 2200.
-
-^947+^* Adrenaline's play numbers are in a healthy position, though he is outputting a little too much damage at a slightly too frequent rate. These adjustments should resolve those issues.
-
-_______________________________________________
-
-^059Aluna^*
-
-^256Deja Vu^*
-^947-^* Mana Cost reduced from 70/80/90/100 to 60/70/80/90.
-^947-^* Cooldown reduced from 30/28/26/24 seconds to 24/22/20/18 seconds.
-
-^947+^* Aluna has been slightly underperforming on a consistent basis ever since Emerald Lightning had its early Attack Speed drain nerfed.
-^947+^* Deja Vu has a long cooldown with an unnecessarily high mana cost for its level of impact, so reducing these values will allow her to use Deja Vu more liberally.
-
-_______________________________________________
-
-^059Arachna^*
-^947-^* Strength per level increased from 1.8 to 1.9.
-
-^256Webbed Shot^*
-^947-^* Movement Speed Slow increased from 10/20/30/40% to 15/25/35/45%.
-^947-^* Attack Speed Slow increased from 10/20/30/40 to 15/25/35/45.
-
-^256Spider Sting^*
-^947-^* Max Health of the Spiderling increased from 4 to 4/5/6.
-
-^947+^* Arachna has been consistently underperforming with the shift in the meta (due to items like Lightbrand previously being buffed).
-^947+^* The late-game resilience of the Spiderling from Spider Sting has been increased to make the ability more impactful for its active duration.
-
-_______________________________________________
-
-^059Apex^*
-
-^256Decimate^*
-^947-^* Attack Damage dealt increased from 0.5/1/1.5/2x to 1/1.4/1.8/2.2x.
-
-^256Fire Surge^*
-^947-^* Now resets Apex's attack cooldown upon use.
-
-_______________________________________________
-
-^059Blitz^*
-^947-^* Attack Range reduced from 500 to 475.
-
-_______________________________________________
-
-^059Bombardier^*
-
-^256Bombardment^*
-^947-^* Magic Damage increased from 25/35/45/55 to 25/40/55/70.
-   ^274*^* Max potential Magic Damage increased from 100/140/180/220 to 100/160/220/280.
-
-_______________________________________________
-
-^059Bramble^*
-
-^256Spore Breath^*
-^947-^* Shield trait: max shield health reduced from 400 to 300.
-^947-^* Self-healing trait: healing multiplier reduced from 0.5x to 0.4x when damaging enemy heroes.
-
-^256Ensnaring Shrubbery^*
-^947-^* Heal magnitude when receiving Hero Damage reduced from 35% to 30%.
-
-^256Chomp!^*
-^947-^* Shield trait: max shield health reduced from 400 to 300.
-^947-^* Self-healing trait: healing multiplier reduced from 0.5x to 0.4x when damaging enemy heroes.
-
-^947+^* Bramble has been ever so slightly overperforming throughout 6+ patches and has not been talked about. Small nerfs over time will determine if she requires more changes or not.
-
-_______________________________________________
-
-^059Bushwack^*
-
-^256Crippling Dart^*
-^947-^* Now also applies a 75% Miss Chance to the affected target for the duration.
-^947-^* Movement Speed Slow increased from 70% to 75%.
-
-^947+^* Bushwack's niche as a specialized Kongor slayer is a little too narrow. A small quality-of-life change to timing Crippling Dart correctly will make him more useful in actual teamfights.
-
-_______________________________________________
-
-^059Draconis^*
-^947-^* Strength gain per level increased from 2.4 to 2.5.
-
-_______________________________________________
-
-^059Drunken Master^*
-
-^256Drink^*
-^947-^* Stun and Debuff duration reduction per charge decreased from 1% to 0.5%.
-
-^947+^* Drunken Master is a little too resilient to crowd control with the recent changes to Drink. This helps alleviate those issues.
-
-_______________________________________________
-
-^059Fayde^*
-^947-^* Base Strength reduced from 20 to 18.
-
-_______________________________________________
-
-^059Gravekeeper^*
-
-^256Corpse Toss^*
-^947-^* Now has 2 charges at all levels (instead of having 1/1/2/2 charges).
-^947-^* Magic Damage rescaled from 60/100/100/140 to 50/80/110/140.
-^947-^* Stun duration rescaled from 1 second to 0.4/0.6/1/1.2 seconds.
-^947-^* Mana Cost rescaled from 75 to 55/60/65/70.
-
-^947+^* Gravekeeper gets more flexibility in the laning phase and in his usage of Corpse Toss.
-
-_______________________________________________
-
-^059Ichor^*
-^947-^* Strength growth per level increased from 2.4 to 2.6.
-
-^256Life Leech^*
-^947-^* Cooldown reduced from 14 seconds to 12 seconds.
-
-^256Saint's Blood^*
-^947-^* Now grants a base 5% Damage Reduction.
-   ^274*^* Max Damage Reduction increased from 16/24/32/40% to 21/29/38/45%.
-^947-^* Ichoric Blood active effect no longer depends on Bloodrush in any way.
-^947-^* Ichoric Blood active effect is now available once level 1 of Saint's Blood is learned.
-^947-^* Ichoric Blood now heals the affected target for 5/10/15/20 Health.
-
-^256Bloodrush^*
-^947-^* Base Heal per second increased from 15 to 20.
-
-^947+^* These minor buffs after Ichor's adjustments in Patch 4.9.3.1 should make him strong, but fair with appropriate counterplay.
-
-_______________________________________________
-
-^059Klanx^*
-^947-^* Attack Range reduced from 550 to 475.
-
-^947+^* This change allows for more realistic counterplay against Klanx, as well as making it more difficult for him to kite neutral creeps around while farming them (increasing the amount of damage Klanx receives overall when farming neutrals).
-
-_______________________________________________
-
-^059Kraken^*
-
-^256Tsunami Charge^*
-^947-^* Travel speed reduced from 1000 to 925 units per second.
-
-^256Release the Kraken!^*
-^947-^* Radius for the pull/Movement Speed Slow/Restrain effect reduced from 300 to 250.
-
-_______________________________________________
-
-^059Magebane^*
-
-^256Flash^*
-^947-^* Range changed from 600/800/1000/1200 to 650/800/950/1100.
-
-_______________________________________________
-
-^059Maliken^*
-
-^256Possession^*
-^947-^* Affected enemies are now Sighted and Revealed for the duration.
-
-_______________________________________________
-
-^059Monkey King^*
-
-^256Flying Nimbus^*
-^947-^* Mana Regeneration per second while active reduced from 5/7.5/10 to 3/5/7.
-
-_______________________________________________
-
-^059Moraxus^*
-
-^256Arcane Shield^*
-^947-^* Cooldown reduced from 30/25/20/15 seconds to 24/21/18/15 seconds.
-^947-^* Buff duration is increased from 6 seconds to 7 seconds after a successful absorption.
-
-_______________________________________________
-
-^059Nitro^*
-^947-^* Attack Range increased from 575 to 600.
-
-^256Overdrive^*
-^947-^* Attack Damage penalty reduced from 60/50/40% to 50/40/30%.
-
-_______________________________________________
-
-^059Parasite^*
-
-^256Draining Venom^*
-^947-^* Increased damage dealt to affected target and damage mitigated when receiving damage from the target decreased from 7/14/21/28% to 6/12/18/24%.
-
-_______________________________________________
-
-^059Pearl^*
-
-^256Asphyxiate^*
-^947-^* Magic Damage on initial impact increased from 30 to 40.
-^947-^* Initial impact now also instantly removes buffs on the affected enemy target.
-
-_______________________________________________
-
-^059Pebbles^*
-^947-^* Base Intelligence increased from 16 to 17.
-
-_______________________________________________
-
-^059Puppet Master^*
-
-^256Puppeteer's Hold^*
-^947-^* Pull force increased from 80 to 80/100/120/140 units per second.
-
-^256Voodoo Puppet^*
-^947-^* Voodoo Puppet is now unkillable. Upon reaching 0 HP, it will persist for another 1.4/1.8/2.2 seconds and then expire.
-   ^274*^* Overflow damage will not be amplified after this point.
-   ^274*^* Voodoo Puppet still expires if the affected target moves outside of the leash range.
-
-^947+^* Puppet Master's performance has been low ever since his one-trick burst damage playstyle with Assassin's Shroud into Voodoo Puppet has been discouraged with changes in a past patch.
-
-^947+^* Puppet Master and his teammates can now properly use Voodoo Puppet as a damage and crowd-control proxy, without amplifying excess damage to the foe and encouraging one-shot burst damage builds with Voodoo Puppet.
-
-^947+^* This single change to Voodoo Puppet drastically buffs Puppet Master, as damage-time-on-target is greatly increased without directly amplifying damage dealt to the target.
-
-_______________________________________________
-
-^059Qi^*
-^947-^* Base Strength increased from 18 to 22.
-
-_______________________________________________
-
-^059Rampage^*
-
-^256Stampede^*
-^947-^* Upon casting Stampede on an enemy hero, now also pings the target on the minimap for your team.
-   ^274*^* Also outputs a team-only chat message that tells them you are charging that player with Stampede!
-^947-^* Now shows a visual effect on the target (only for your team) when they are being targeted by Stampede.
-
-^947+^* Some quality-of-life changes were added for Rampage to let his team know who he is targeting with Stampede.
+^059Deadlift^*
+
+^256Onslaught^*
+^947-^* Initial radius for creep detection is now increased to 300 plus the cast range of Onslaught.
+   ^274*^* This also fixes a bug where the initial radius for creep detection did not increase if Deadlift had Jade Spire in his inventory.
 
 _______________________________________________
 
 ^059Thunderbringer^*
-^947-^* Attack Range reduced from 400 to 350.
-^947-^* Strength growth per level reduced from 2.5 to 2.
 
-^256Chain Lightning^*
-^947-^* Cooldown increased from 1.75 seconds to 2 seconds.
+^256Lightning Storm^*
+^947-^* Can no longer be cast if this ability has been cast within the last 10 seconds.
+   ^274*^* Has no realistic effects on regular gameplay, but does affect Lightning Storm's availability if used in conjunction with Restoration Stone.
 
-^256Blast of Lightning^*
-^947-^* Magic Damage reduced from 115/190/265/340 to 105/180/255/330.
-
-^256Lightning Rod^*
-^947-^* Magic Damage changed from 2/4/6/8% to 2.5/4/5.5/7% of target's Current Health.
-
-^947+^* Thunderbringer is finally recognized as a viable hero in competitive play. He is still slightly overtuned, but he overall has a unique niche in the game despite mostly only offering damage in ganks and teamfights.
-
-_______________________________________________
-
-^059Tremble^*
-
-^256Hive Mind^*
-^947-^* Uncontrollable Shudder's Attack Damage increased from 60/90/120 to 70/105/140.
-^947-^* Attack Range for Shudder (both controllable and uncontrollable) increased from 128 to 150.
-
-_______________________________________________
-
-^059Valkyrie^*
-^947-^* Starting Attack Damage increased from 42-47 to 45-49.
-
-^256Courageous Leap^*
-^947-^* Cooldown reduced from 35/30/25/20 seconds to 25/22/19/16 seconds.
-
-_______________________________________________
-
-^059Voodoo Jester^*
-
-^256Acid Cocktail^*
-^947-^* Initial projectile speed increased from 800 to 1200 units per second.
-^947-^* Bounce projectile speed increased from 600 to 700 units per second.
-
-^256Cursed Ground^*
-^947-^* Magic Damage per second at level 1 of the ability increased from 6 to 8.
-
-^256Spirit Ward^*
-^947-^* Cast Range increased from 400 to 600.
-^947-^* Projectile speed increased from 1000 to 1300 units per second.
-
-^947+^* Voodoo Jester is not a viable pick at higher levels of play. He has received some buffs that make him more reliable throughout the game.
-
-_______________________________________________
-
-^059Wretched Hag^*
-
-^256Flash of Darkness^*
-^947-^* Range reduced from 800/950/1100/1250 to 800/900/1000/1100.
+^947+^* Caster-based items combined with the sheer power of Restoration Stone allows no realistic counterplay against Thunderbringer on a global scope, since their bonuses scale multiplicatively due to their synergy.
+^947+^* By allowing more time to elapse between Lightning Storm casts when Restoration Stone is used, Thunderbringer will not be removing every enemy hero's Health as substantially at a moment's notice.
 
 _______________________________________________
 
@@ -353,34 +48,16 @@ _______________________________________________
 
 =^075 Items ^*=
 
-^077Adeve's Cloak^*
-^947-^* Recipe cost reduced from 1100 Gold to 900 Gold.
-   ^274*^* Total cost reduced from 2300/3400 Gold to 2100/3000 Gold.
-^947-^* Max Health bonus reduced from 180/270 to 150/240.
-^947-^* Max Mana bonus reduced from 140/180 to 120/160.
-^947-^* Damage Reduction while active increased from 15%/40% to 20%/50%.
-^947-^* Stun and debuff duration reduction changed from 15%/40% to 20%/50%.
+^077Codex^*
+^947-^* Strength bonus reduced from 6/7/8/9/10 to 4/5/6/7/8.
+^947-^* Intelligence bonus reduced from 16/18/20/22/24 to 14/16/18/20/22.
+^947-^* Cooldown increased from 30/26/24/22/22 seconds to 40/35/30/26/22 seconds.
 
-^947+^* Adeve's Cloak receives some number changes to make it more of a viable choice compared to other cost-effective mid-game items that are commonly picked up on heroes that need to protect themselves from burst damage.
+^077Geometer's Bane^*
+^947-^* Cooldown increased from 60 seconds to 70 seconds.
 
-^077Barbed Armor^*
-^947-^* Recipe Cost increased from 800 Gold to 1100 Gold.
-   ^274*^* Total Cost increased from 2200 Gold to 2500 Gold.
-^947-^* Cooldown reduced from 40 seconds to 35 seconds.
-^947-^* Return Damage from Barbed Armor's active effect now ignores 50% of the damage reduced by Armor and Magic Armor.
-
-^947+^* Barbed Armor has been a little ineffective since its adjustment. This increases the item's viability without bringing back the problems it previously had, while maintaining an appropriate price point for its effects.
-
-^077Ether Jewel^*
-^947-^* No longer grants Couriers any amount of Max Mana.
-
-^077Portal Key^*
-^947-^* Range reduced from 1200 to 1100.
-
-^947+^* Portal Key's range is being reduced slightly due to the general attack range and cast range changes that have taken place within the last few patches.
-
-^077Ward of Sight and Ward of Revelation^*
-^947-^* Usage is now disabled when on a Courier.
+^077Grimoire of Power^*
+^947-^* Active state's Spell Damage increase changed from 30% to 25%.
 
 _______________________________________________
 
@@ -408,114 +85,89 @@ _______________________________________________
 
 =^075 General ^*=
 
-^947-^* Dead pixels on certain loading screens have been fixed.
-^947-^* Fixed an issue with OpenGL where the game environment would be darkened after certain abilities are cast (e.g. Black Ice Ellonia's Frigid Field).
-^947-^* The opposing team can no longer unpause a paused game earlier than expected in certain circumstances.
-^947-^* Fixed an issue where voice chat occasionally fails to function in certain games.
+Connectivity Issues
+^947-^* Rare connectivity issues immediately after loading the map have been resolved.
+^947-^* The game server's tolerance for players with poor internet connection quality is somewhat more lenient.
 
-Blitz Mode
-^947-^* Cooldown reduction no longer stacks with Grimoire of Power or Mystic Illusion Rune.
+Illusion Behaviour
+^947-^* Illusions that do not inherit orders prior to spawning (i.e., most illusions) now properly have a Stop command issued to them when they spawn.
+   ^274*^* This enables these illusions to automatically aggro against enemy units within their aggro range after spawning.
 
-Hero Behaviour Changes
-^947-^* The "Use Courier" ability no longer erroneously plays an animation for the hero when used.
-^947-^* Toggling an autocastable ability by right-clicking it no longer breaks your hero's current Hold Position command.
-^947-^* The "Use Courier" ability no longer breaks your hero's current Hold Position command.
-^947-^* Queued movement orders for a unit will no longer retain terrainwalking-related traits in their pathing when they are lost if no other order is given during that time.
+Minimap Ping
+^947-^* Added a "Mute Minimap Ping from Voice-Muted Allies" option in Options -> Interface → Gameplay.
+   ^274*^* If enabled, then you will not see minimap pings from an voice-muted ally.
+   ^274*^* Default setting: enabled.
 
-The following abilities will no longer be interrupted if the target teleports into fog:
-^947-^* Deadlift's Onslaught
-^947-^* Legionnaire's Terrifying Charge
-^947-^* Nomad's True Strike
-^947-^* Rampage's Stampede
-^947-^* Solstice's Blinding Rush and Shadow Dash
+^947+^* This option was implemented specifically for the use case where players on the same team are communicating through external voice servers and wish to voice-mute their ally in-game to prevent hearing their ally twice.
+
+
+
+Added missing role filters for the following heroes:
+^947-^* Arachna
+^947-^* Artesia
+^947-^* Balphagore
+^947-^* Blood Hunter
+^947-^* Bombardier
+^947-^* Chipper
+^947-^* Defiler
+^947-^* Doctor Repulsor
+^947-^* Ellonia
+^947-^* Hellbringer
+^947-^* Keeper of the Forest
+^947-^* Legionnaire
+^947-^* Lord Salforis
+^947-^* Midas
+^947-^* Nomad
+^947-^* Ophelia
+^947-^* Parallax
+^947-^* Parasite
+^947-^* Bramble
+^947-^* Pollywog Priest
+^947-^* Qi
+^947-^* Riptide
+^947-^* Skrap
+^947-^* Slither
+^947-^* Solstice
+^947-^* Soulstealer
+^947-^* Tempest
+^947-^* Thunderbringer
+^947-^* Tremble
+^947-^* Wildsoul
+^947-^* Wretched Hag
 
 
 
 =^075 Heroes ^*=
 
-^059Balphagore^*
-^947-^* Hell on Newerth (when boosted by Staff of the Master) now properly deals a maximum of 400/550/700 Magic Damage.
-   ^274*^* Tooltip said a max of 500/750/900 Magic Damage, but the in-game values were actually the same as its unboosted values (300/450/600 Magic Damage).
-   ^274*^* Regardless, the numbers have been changed to be correct.
+^059Blacksmith^*
+^947-^* Plinko Smith no longer spams the console when using his Fireball ability.
 
-^059Berzerker^*
-^947-^* Chain Spike is now properly detected by certain sources (e.g. Mana Battery, Power Supply) on the initial cast of the ability.
+^059Deadwood^*
+^947-^* Rotten Grasp no longer prevents neutral camps from respawning.
 
-^059Corrupted Disciple^*
-^947-^* Loki (HD) avatar model is now correct in the HoN Store.
-
-^059Dampeer^*
-^947-^* Count Dampeer will no longer be immune to Puppet Show's effects when Consume is at max charges.
-
-^059Forsaken Archer^*
-^947-^* Santa's Little Archer attack sound effects are now synchronized properly with her visual attack timings.
-
-^059Flux^*
-^947-^* Staff of the Master's effects now properly apply to Cyborg Flux's Discharge in push mode.
-^947-^* Magnetic Surge no longer causes Flux to stutter when aggroed against an invalid enemy target.
-
-^059Gladiator^*
-^947-^* No longer plays the whip attack animation when attacking structures.
-   ^274*^* Credits to Gimji for the fixes!
+^059Emerald Warden^*
+^947-^* Gawain will now properly follow Emerald Warden if Emerald Warden becomes orderdisjointed (e.g., by Geometer's Bane).
 
 ^059Goldenveil^*
-^947-^* Homecoming Stone, Post Haste, and Pegasus Boots now expire the Perch state on Goldenveil if it is active.
+^947-^* Goldenveil will no longer be permanently stealthed when using Homecoming Stone/Post Haste/Pegasus Boots while Perched on a tree.
 
-^059Grinex^*
-^947-^* Songkran Grinex now shows its full water effects on its tentacles.
-^947-^* Lynn X avatar now uses her own voice lines (instead of the default Grinex avatar's voice lines).
-   ^274*^* Credits to Gimji for the fixes!
+^059Legionnaire^*
+^947-^* Mercenary Legionnaire's Staff of the Master visuals are now displayed correctly when Mercenary Legionnaire is on the Hellbourne team.
 
-^059Ichor^*
-^947-^* Saint's Blood now properly applies its damage reduction when Bloodrush is learned.
+^059Hammerstorm^*
+^947-^* Hammer Leap state on self now expires upon death (when boosted by Staff of the Master).
+^947-^* Tooltip of Hammer Leap (when boosted by Staff of the Master) has been changed to clarify that Hamemrstorm leaps to his hammer on the ground (and not directly to the target).
 
-^059King Klout^*
-^947-^* Conscription's hex effect is no longer restricted by the cooldown on the ability (only the minion upgrade effect is affected by the cooldown).
-
-^059Kraken^*
-^947-^* Killer Kraken's voiceovers are now correct when casting Release the Kraken!
-
-^059Myrmidon^*
-^947-^* Default avatar's Forced Evolution form's attack animations have been fixed.
-   ^274*^* Credits to Gimji for the fixes!
-
-^059Parasite^*
-^947-^* Circe will no longer be able to permanently control an Infested creep if Circe's Twisted Visage on Parasite expires on the same frame that the projectile spawns from her Parasite Mimic.
-^947-^* When attempted to Infest a creep that has already been Infested (e.g. interactions with Circe's mimic), the Infest state on the creep will be dispelled, causing the Infested creep to die and kicking out its host.
-   ^274*^* Previously, the most recent Infest source would have control of the Infested creep, and all previous hosts would be unable to escape from the creep or do anything until the creep dies.
-
-^059Pharaoh^*
-^947-^* Wrath of the Pharaoh no longer considers Couriers as valid potential targets.
-
-^059Predator^*
-^947-^* Terror no longer has a Physical effect type check. This allows attacks enhanced by Harkon's Blade against a Physically immune unit to properly apply Terror.
-
-^059Prisoner^*
-^947-^* The affected enemy unit will now always have sight of the Shackled gadget.
-
-^059Puppet Master^*
-^947-^* Voodoo Puppet no longer plays a sound every frame if a DoT effect is active on it.
+^059Wildsoul^*
+^947-^* Fixed a bug where Wildsoul's Swipe (in Bear Form) did not cause him to automatically aggro to nearby units if he has no other orders in the order queue.
 
 
 
 =^075 Items ^*=
 
-^947-^* Items in consumable slots will now drop properly if the "Drop Items" game option is enabled.
-
-^077Lightbrand, Frozen Light, Searing Light, and Dawnbringer^*
-^947-^* DoT state is now properly transferred by certain abilities (e.g. Parasite's Facehug).
-
 ^077Ophelia's Pact^*
-^947-^* Now outputs chat messages to the player as objectives are being completed.
-   ^274*^* This keeps a record of the current quest progress, which is difficult to feasibly keep track of on the Ophelia's Pact quest state tooltip.
-
-^077Pegasus Boots^*
-^947-^* The user can no longer target themselves with Pegasus Boots' activation.
-
-^077Ward of Sight & Ward of Revelation^*
-^947-^* Wards with the Lookout Ward skin now properly trigger the quests for Ophelia's Pact in the proper scenarios.
+^947-^* Stacking a neutral camp one time will no longer immediately complete the stack requirement of the quest.
 
 
 
 _______________________________________________
-
