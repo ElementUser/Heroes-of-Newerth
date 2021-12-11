@@ -1,12 +1,6 @@
-Version 4.9.5
--------------
-16 November 2021
-
-
-
-== Patch Versioning Change ==
-
-From this point onward, the vast majority of hotfix patches will have their patch version (the third number in the patch notes) actually incremented. This is done to ensure that replay compatibility works between patch versions (even hotfix patches).
+Version 4.10.0.1
+----------------
+16 December 2021
 
 
 
@@ -14,159 +8,127 @@ From this point onward, the vast majority of hotfix patches will have their patc
 
 
 
-= General =
+= Staff of the Master & Master's Legacy Changes =
 
-Experience Changes
-- Assist Experience Penalty changed from 0/0/20/40/60% to 0/0/10/35/60% for 1/2/3/4/5 real ally heroes within the Experience Proximity of the target.
+Soulstealer
 
-+ This change was made to lessen the experience penalty for a successful gank involving 3 heroes.
+Soulsteal
+- Staff of the Master effect change (to pre-existing):
+*Cast Speed bonus is now 50 (instead of 70).
+*Max number of souls is now 20/30/40/50 (instead of 25/35/45/55).
+*To compensate for Attack Damage lost, now also grants Soulstealer +10 Attack Damage.
+
++ Soulstealer was doing a little too much damage with Soul Burst while having Staff of the Master, with not enough room for reasonable counterplay.
++ Reducing the max damage dealt by Soul Burst with Staff of the Master through Soulsteal and slightly reducing the Cast Speed bonus will ease these issues, while still making Staff of the Master be a strong pickup/boost on Soulstealer.
+
+_______________________________________________
 
 
 
 = Heroes =
 
-Deadlift
+Fayde
 
-Onslaught
-- Initial radius for creep detection is now increased to 300 plus the cast range of Onslaught.
-*This also fixes a bug where the initial radius for creep detection did not increase if Deadlift had Jade Spire in his inventory.
+Burning Shadows
+- Stun duration reduced from 1.6/2/2.4/2.8 seconds to 1.6/1.9/2.2/2.5 seconds.
 
-_______________________________________________
-
-Thunderbringer
-
-Lightning Storm
-- Can no longer be cast if this ability has been cast within the last 10 seconds.
-*Has no realistic effects on regular gameplay, but does affect Lightning Storm's availability if used in conjunction with Restoration Stone.
-
-+ Caster-based items combined with the sheer power of Restoration Stone allows no realistic counterplay against Thunderbringer on a global scope, since their bonuses scale multiplicatively due to their synergy.
-+ By allowing more time to elapse between Lightning Storm casts when Restoration Stone is used, Thunderbringer will not be removing every enemy hero's Health as substantially at a moment's notice.
+Reflection
+- Magic Damage dealt based on the target's current Health reduced from 10/17/24% to 10/15/20%.
 
 _______________________________________________
 
+Magebane
+- Base Strength increased from 21 to 22.
+- Strength growth per level increased from 2.4 to 2.6.
+- Base Agility increased from 16 to 18.
+- Agility growth per level increased from 1.4 to 1.6.
+- Base Intelligence increased from 16 to 18.
+- Intelligence growth per level increased from 1.5 to 2.
+- Base Armor increased from 1.8 to 2.5.
 
+Flash of Anti-Magic
+- Cooldown reduced from 12 seconds to 10 seconds.
+- Cast Range increased from 500/600/700/800 to 600/700/800/900.
+- Mana cost reduced from 75/70/65/60 to 60.
+- Damage changed from 30/60/90/120 Physical Damage to 40/70/100/130 Magic Damage.
+- Magic Damage Shield health increased from 30/60/90/120 to 40/70/100/130.
+- Radius increased from 350 units to 400 units.
+- Movement Speed Slow increased from 15/20/25/30% to 20/25/30/35%.
+- Movement Speed Slow duration increased from 2 seconds to 2.5 seconds.
+- Now also triggers the Attack Speed and ally Magic Damage Reduction effects of Master of the Mantra (if it is leveled) if an enemy hero is within the destination's radius of this ability.
 
-= Items =
+Master of the Mantra
+- Now only requires 1 attack against enemy heroes to grant Magebane all of its passive benefits (Attack Speed and ally Magic Damage Resistance), instead of 2/3/4/5 attacks.
+- Mana Cost for the active ability reduced from 65/80/95/110 to 45/60/75/90.
+- Mana Flare and Master of the Mantra aura radius increased from 900 units to 1200 units.
 
-Codex
-- Strength bonus reduced from 6/7/8/9/10 to 4/5/6/7/8.
-- Intelligence bonus reduced from 16/18/20/22/24 to 14/16/18/20/22.
-- Cooldown increased from 30/26/24/22/22 seconds to 40/35/30/26/22 seconds.
+Mana Rift
+- Magic Damage increased from 80/110/140% to 90/120/150% of the main target's missing Mana.
 
-Geometer's Bane
-- Cooldown increased from 60 seconds to 70 seconds.
-
-Grimoire of Power
-- Active state's Spell Damage increase changed from 30% to 25%.
++ Magebane felt a little sluggish and underwhelming at a few specific phases of the game.
++ Through some mechanical changes and number changes, these areas have been smoothened out. Magebane should now be able to do what he is intended to do at each phase of the game, while still ensuring his late-game has reasonable counterplay.
++ All of Magebane's abilities are now pseudo-1-point-wonders, and it is actually optimal to max Master of the Mantra first in most situations.
++ The player still has full flexibility on which ability to max first, though it is strongly suggested to have at least 1 point in each of his non-ultimate abilities by level 4.
 
 _______________________________________________
 
+Nitro
+- Starting Attack Damage reduced from 46-53 to 45-51.
 
+Overdrive
+- Initial Attack Speed bonus reduced from 200 to 100.
 
-== Matchmaking Maps & Modes ==
+_______________________________________________
 
+Pandamonium
 
+Face Smash
+- Cast Range increased from 100 to 150.
 
-Champions of Newerth (CoN)
-- Map: Forests of Caldavar ("New" for NAEU/International region, "Old" for SEA region)
-- Mode: Ranked Pick
+_______________________________________________
 
+Parallax
+- Attack Range reduced from 550 to 525.
+- Strength gain per level reduced from 1.9 to 1.7.
 
+_______________________________________________
 
-Mid Wars
-- Hero Ban
-- Balanced Random
+Sapphire
+
+Quickshield
+- Attack Speed bonus reduced from 20/35/50/65 to 15/30/45/60.
+- After the shield health reaches 0, the persisting Attack Speed buff is halved.
+
+_______________________________________________
 
 
 
 == Bug Fixes & Optimizations ==
 
-
-
 = General =
 
-Connectivity Issues
-- Rare connectivity issues immediately after loading the map have been resolved.
-- The game server's tolerance for players with poor internet connection quality is somewhat more lenient.
+User Interface ("New"):
+- Mid Wars mode selection menu now shows 3 options by default (instead of 2), thus no longer requiring the user to hover over the mode selection menu to view all 3 game options.
 
-Illusion Behaviour
-- Illusions that do not inherit orders prior to spawning (i.e., most illusions) now properly have a Stop command issued to them when they spawn.
-*This enables these illusions to automatically aggro against enemy units within their aggro range after spawning.
-
-Minimap Ping
-- Added a "Mute Minimap Ping from Voice-Muted Allies" option in Options -> Interface → Gameplay.
-*If enabled, then you will not see minimap pings from an voice-muted ally.
-*Default setting: enabled.
-
-+ This option was implemented specifically for the use case where players on the same team are communicating through external voice servers and wish to voice-mute their ally in-game to prevent hearing their ally twice.
-
-
-
-Added missing role filters for the following heroes:
-- Arachna
-- Artesia
-- Balphagore
-- Blood Hunter
-- Bombardier
-- Chipper
-- Defiler
-- Doctor Repulsor
-- Ellonia
-- Hellbringer
-- Keeper of the Forest
-- Legionnaire
-- Lord Salforis
-- Midas
-- Nomad
-- Ophelia
-- Parallax
-- Parasite
-- Bramble
-- Pollywog Priest
-- Qi
-- Riptide
-- Skrap
-- Slither
-- Solstice
-- Soulstealer
-- Tempest
-- Thunderbringer
-- Tremble
-- Wildsoul
-- Wretched Hag
+The following sources of stun states now have unmodifiable durations:
+- Andromeda's Void Rip
+- Chipper's Rocket Barrage
+- Flint Beastwood's Hollowpoint Shells
+- Flint Beastwood's Money Shot
+- Glacius' Ice Imprisonment
+- Swiftblade's Swift Slashes
+- Pharaoh's Hellfire
+- Plague Rider's Plague Carrier
+- Savage Mace
+*These changes allow these stun sources to cancel channels in the niche scenarios if a hero has Shaman's Headdress or Barrier Idol.
+*Note that this list isn't all-inclusive, and more may be added to this patch & future patches without being listed, as these types of changes do not impact gameplay other than the niche scenarios mentioned above.
 
 
 
 = Heroes =
 
-Blacksmith
-- Plinko Smith no longer spams the console when using his Fireball ability.
-
-Deadwood
-- Rotten Grasp no longer prevents neutral camps from respawning.
-
-Emerald Warden
-- Gawain will now properly follow Emerald Warden if Emerald Warden becomes orderdisjointed (e.g., by Geometer's Bane).
-
-Goldenveil
-- Goldenveil will no longer be permanently stealthed when using Homecoming Stone/Post Haste/Pegasus Boots while Perched on a tree.
-
-Legionnaire
-- Mercenary Legionnaire's Staff of the Master visuals are now displayed correctly when Mercenary Legionnaire is on the Hellbourne team.
-
-Hammerstorm
-- Hammer Leap state on self now expires upon death (when boosted by Staff of the Master).
-- Tooltip of Hammer Leap (when boosted by Staff of the Master) has been changed to clarify that Hamemrstorm leaps to his hammer on the ground (and not directly to the target).
-
-Wildsoul
-- Fixed a bug where Wildsoul's Swipe (in Bear Form) did not cause him to automatically aggro to nearby units if he has no other orders in the order queue.
-
-
-
-= Items =
-
-Ophelia's Pact
-- Stacking a neutral camp one time will no longer immediately complete the stack requirement of the quest.
+Kinesis
+- Telekinetic Control now interacts properly with spell block sources (e.g. Null Stone) and ability cast detection sources (e.g. Mana Battery) for all alternate avatars.
 
 
 
