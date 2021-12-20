@@ -15,7 +15,6 @@
 [COLOR=#ff66cc]-[/COLOR] Staff of the Master effect change (to pre-existing):
 [COLOR=#00cc99]*[/COLOR] Cast Speed bonus is now 50 (instead of 70).
 [COLOR=#00cc99]*[/COLOR] Max number of souls is now 20/30/40/50 (instead of 25/35/45/55).
-[COLOR=#00cc99]*[/COLOR] To compensate for Attack Damage lost, now also grants Soulstealer +10 Attack Damage.
 
 [COLOR=#ff66cc]+[/COLOR][I][COLOR=#ffffcc] Soulstealer was doing a little too much damage with Soul Burst while having Staff of the Master, with not enough room for reasonable counterplay.[/I][/COLOR]
 [COLOR=#ff66cc]+[/COLOR][I][COLOR=#ffffcc] Reducing the max damage dealt by Soul Burst with Staff of the Master through Soulsteal and slightly reducing the Cast Speed bonus will ease these issues, while still making Staff of the Master be a strong pickup/boost on Soulstealer.[/I][/COLOR]
@@ -72,7 +71,7 @@ _______________________________________________
 _______________________________________________
 
 [COLOR=#0099ff][B]Nitro[/B][/COLOR]
-[COLOR=#ff66cc]-[/COLOR] Starting Attack Damage reduced from 46-53 to 45-51.
+[COLOR=#ff66cc]-[/COLOR] Starting Attack Damage reduced from 46-53 to 45-50.
 
 [COLOR=#0099cc]Overdrive[/COLOR]
 [COLOR=#ff66cc]-[/COLOR] Initial Attack Speed bonus reduced from 200 to 100.
@@ -100,6 +99,13 @@ _______________________________________________
 
 _______________________________________________
 
+[COLOR=#0099ff][B]Wildsoul[/B][/COLOR]
+
+[COLOR=#0099cc]Bear Form[/COLOR]
+[COLOR=#ff66cc]-[/COLOR] Mana Cost for toggling the ability on reduced from 20 to 5.
+
+_______________________________________________
+
 
 
 ==[COLOR=#ffa500][SIZE=18][B] Bug Fixes & Optimizations [/B][/SIZE][/COLOR]==
@@ -109,7 +115,7 @@ _______________________________________________
 User Interface ("New"):
 [COLOR=#ff66cc]-[/COLOR] Mid Wars mode selection menu now shows 3 options by default (instead of 2), thus no longer requiring the user to hover over the mode selection menu to view all 3 game options.
 
-The following sources of stun states now have unmodifiable durations:
+The following sources of stun states can no longer have their duration reduced by Stun Duration Reduction sources:
 [COLOR=#ff66cc]-[/COLOR] Andromeda's Void Rip
 [COLOR=#ff66cc]-[/COLOR] Chipper's Rocket Barrage
 [COLOR=#ff66cc]-[/COLOR] Flint Beastwood's Hollowpoint Shells
@@ -119,12 +125,22 @@ The following sources of stun states now have unmodifiable durations:
 [COLOR=#ff66cc]-[/COLOR] Pharaoh's Hellfire
 [COLOR=#ff66cc]-[/COLOR] Plague Rider's Plague Carrier
 [COLOR=#ff66cc]-[/COLOR] Savage Mace
-[COLOR=#00cc99]*[/COLOR] These changes allow these stun sources to cancel channels in the niche scenarios if a hero has Shaman's Headdress or Barrier Idol.
+[COLOR=#00cc99]*[/COLOR] These changes allow these stun sources to cancel channels on enemy heroes (e.g. Homecoming Stone) in the niche scenarios if they have enouigh Stun Duration Reduction from various sources (e.g. Shaman's Headdress, Barrier Idol, etc.).
 [COLOR=#00cc99]*[/COLOR] Note that this list isn't all-inclusive, and more may be added to this patch & future patches without being listed, as these types of changes do not impact gameplay other than the niche scenarios mentioned above.
 
 
 
 =[COLOR=#ffd700] Heroes [/COLOR]=
+
+[COLOR=#0099ff][B]Bombardier[/B][/COLOR]
+[COLOR=#ff66cc]-[/COLOR] Using Sticky Bomb's second activation will no longer interrupt Bombardier's current orders.
+
+[COLOR=#0099ff][B]Gunblade[/B][/COLOR]
+[COLOR=#ff66cc]-[/COLOR] Lethal Range now uses Gunblade's correct Attack Range for its range-based calculations when Faux Bow or Wingbow are in his inventory.
+
+[COLOR=#0099ff][B]Moira[/B][/COLOR]
+[COLOR=#ff66cc]-[/COLOR] Ephemeral Forge's lifetime will no longer be temporarily frozen by Arcane Vortex.
+[COLOR=#00cc99]*[/COLOR] This prevents a lifetime and channel time desync bug with Ephemeral Forge.
 
 [COLOR=#0099ff][B]Kinesis[/B][/COLOR]
 [COLOR=#ff66cc]-[/COLOR] Telekinetic Control now interacts properly with spell block sources (e.g. Null Stone) and ability cast detection sources (e.g. Mana Battery) for all alternate avatars.
