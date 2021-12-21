@@ -18,6 +18,7 @@ from io import BytesIO
 from urllib import request
 from urllib.error import HTTPError
 import zipfile, os, sys
+import re
 
 # External imports (pip install required)
 import phpserialize
@@ -75,7 +76,14 @@ def get_latest_client_version() -> str:
         content = response.read()
         deserialized_content = phpserialize.loads(content)
         version_string = deserialized_content[0][b'latest_version'].decode()
-        return version_string
+
+        # Only parse out the first 3 digits, as we will not be checking hotfix patch versions in this script
+        core_version_string = ""
+        core_version = re.search("(\d{1,2}\.\d{1,2}\.\d{1,2})", version_string)
+        for match in core_version.groups():
+            core_version_string += match
+
+        return core_version_string
 
 
 # ======================
