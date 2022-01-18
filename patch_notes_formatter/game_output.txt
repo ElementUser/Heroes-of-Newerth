@@ -1,111 +1,402 @@
-^980Version 4.10.0.1^*
+^980Version 4.10.1^*
 ----------------
-^98016 December 2021^*
+^98018 January 2022^*
 
 
 
 ==^960 Design ^*==
 
+^947-^* Reverted Christmas themed music, map, cosmetics, and in-game Heads-Up Display (HUD) back to their default variants.
+
 
 
 =^075 Staff of the Master & Master's Legacy Changes ^*=
 
-^059Soulstealer^*
+^059Arachna^*
 
-^256Soulsteal^*
-^947-^* Staff of the Master effect change (to pre-existing):
-   ^274*^* Cast Speed bonus is now 50 (instead of 70).
-   ^274*^* Max number of souls is now 20/30/40/50 (instead of 25/35/45/55).
-
-^947+^* Soulstealer was doing a little too much damage with Soul Burst while having Staff of the Master, with not enough room for reasonable counterplay.
-^947+^* Reducing the max damage dealt by Soul Burst with Staff of the Master through Soulsteal and slightly reducing the Cast Speed bonus will ease these issues, while still making Staff of the Master be a strong pickup/boost on Soulstealer.
+^256Spider Sting^*
+^947-^* Staff of the Master effect changes (to pre-existing):
+   ^274*^* Cooldown reduced from 70/50/30 seconds to 30/25/20 seconds (was previously reduced from 70/50/30 seconds to 35/25/15 seconds).
 
 _______________________________________________
+
+^059Deadlift^*
+
+^256Unholy Strength^*
+^947-^* Staff of the Master effect changes (to pre-existing):
+   ^274*^* Cooldown is now reduced by 1.5 seconds (was previously reduced by 2 seconds).
+   ^274*^* Strength stolen increased from 4 Strength to 8 Strength (was previously increased from 4 Strength to 10 Strength).
+
+^947+^* Deadlift's Unholy Strength was a little too strong and frustrating to deal with when boosted by Staff of the Master. This change should alleviate some of those issues while retaining Staff of the Master's viability on Deadlift.
+
+_______________________________________________
+
+^059Drunken Master^*
+
+^256Drink^*
+^947-^* Staff of the Master effect addition (new):
+   ^274*^* Max charges increased by 10.
+
+^2563 Point Strike^*
+^947-^* Staff of the Master effect addition (new):
+   ^274*^* Time to reset all activated strike points for a target (after the effect of 3 Point Strike has been triggered already) reduced from 12 seconds to 4 seconds.
+
+_______________________________________________
+
+^059Master of Arms^*
+
+^077Staff of the Master effect additions (to pre-existing):^*
+^947-^* Combining Bulldozer and Cheetah together has imperfections during Master's Call, causing the bonuses to drop to 70% of their original values.
+   ^274*^* Attack Speed bonus reduced from 100/150/200 to 70/105/140.
+   ^274*^* Attack Damage bonus reduced from 40/50/60 to 28/35/42.
+
+^947+^* Master of Arms' Staff of the Master effect was poorly designed and far too powerful, to the point where it was deemed necessary to pick up as his first core item.
+^947+^* A large part of the poor design stemmed from gaining the full effects from both Bulldozer and Cheetah for an abnormally long duration.
+^947+^* When combined with the other changes to Master of Arms, Staff of the Master is less of a "mandatory" item to get for him.
+
+_______________________________________________
+
+
+
+=^075 General ^*=
+
+^539Kongor Boss Enchantment - Speed^*
+^947-^* Bonus Movement Speed per charge increased from 8 to 10.
+
+^947+^* This enchantment was barely picked up after its nerfs and after the Vitality Enchantment was introduced.
 
 
 
 =^075 Heroes ^*=
 
-^059Fayde^*
+^059Adrenaline^*
+^947-^* Starting Attack Damage increased from 43-53 to 51-57.
 
-^256Burning Shadows^*
-^947-^* Stun duration reduced from 1.6/2/2.4/2.8 seconds to 1.6/1.9/2.2/2.5 seconds.
+^947+^* Adrenaline's starting Attack Damage was drastically lower than the average Strength Hero's starting Attack Damage.
+^947+^* This change should compensate for some of the other following changes to Adrenaline.
 
-^256Reflection^*
-^947-^* Magic Damage dealt based on the target's current Health reduced from 10/17/24% to 10/15/20%.
+^256Shard Blast^*
+^947-^* Base Magic Damage reduced from 80/115/150/185 to 75/110/145/180.
+^947-^* Duration for maintaining charges on Shard Blast (after hitting 2+ enemy heroes) reduced from 10 seconds to 7 seconds.
+
+^256Rush^*
+^947-^* Range reduced from 575/650/725/800 to 530/570/610/650.
+^947-^* Movement Speed bonus when dashing through an enemy hero reduced from 16/24/32/40% to 10/12/14/16%.
+^947-^* Movement Speed bonus from Rush can now stack up to 2 times (max of 20/24/28/32% Movement Speed).
+
+^947+^* The changes to Rush makes it less effective when used as an escape mechanism.
+
+^256Ember Shard^*
+^947-^* Max pull distance reduced from 800 to 700.
+^947-^* Pull speed reduced from 1600 to 1400 units per second.
+   ^274*^* There is no overall change in the max amount of time in which affected enemies are pulled (they are stunned while being pulled).
+^947-^* Leash distance reduced from 750 to 650.
+
+^947+^* The changes to Ember Shard can be considered a minor buff, as you can proc the effects of Ember Shard more reliably without the need to use Rush.
+
+^256Death's Halo^*
+^947-^* Max duration reduced from 5/6/7 seconds to 4/4.5/5 seconds.
+^947-^* Bonuses are now capped at 7 charges (i.e., 3 enemy heroes and yourself).
+^947-^* Magic Armor per charge reduced from 1.5 to 1.
+^947-^* Strength per charge reduced from 4/5/6 to 3/4/5.
+
+^947+^* The changes to Death's Halo slightly reduces its efficacy for Adrenaline's survivability when fighting multiple heroes, which should make Adrenaline slightly easier to deal with while Death's Halo is active.
+^947+^* Adrenaline was far too powerful in the hands of players skilled with him, while having relatively poor performance in the average game. These changes should address both issues and put Adrenaline in a healthy position across all skill brackets, performance-wise.
+
+_______________________________________________
+
+^059Amun-Ra^*
+
+^256Path of Destruction^*
+^947-^* While on the path, Amun-Ra now also gains 80 Max Movement Speed.
+^947-^* While on the path, Movement Speed bonus increased from 300 to 380.
+^947-^* Meteor projectile travel time reduced from 0.5 seconds to 0.4 seconds.
+^947-^* Meteor impact delay reduced from 0.5 seconds to 0.4 seconds.
+   ^274*^* Total delay for impact after casting the ability reduced from 1 second to 0.8 seconds.
+^947-^* Now also passively grants 0.7/1.4/2.1/2.8 Health Regeneration per second.
+
+^256Ignite^*
+^947-^* Now also passively grants 0.7/1.4/2.1/2.8 Health Regeneration per second.
+
+^256Ashes to Ashes^*
+^947-^* Passive Health Regeneration per second reduced from 2/3/4/5 to 0.7/1.4/2.1/2.8.
+^947-^* Non-hero enemy units now take 25% less damage from this ability.
+^947-^* Amun-Ra now also gains 0.4 Attack Speed per charge from this ability (max of 8/12/16/20 bonus Attack Speed).
+^947-^* Requires Hero Level 3 or higher to deal Magic Damage to neutral creeps.
+
+^947+^* Amun-Ra now has better performance against enemy heroes (in general and in the laning phase) and is no longer a viable jungler.
+^947+^* Path of Destruction's overall delay has been reduced by 20%, which should increase its accuracy just enough to be more of a reliable skill to use in combat.
+^947+^* Overall, every ability now grants a small amount of Amun-Ra Health Regeneration, which allows for variations in his skill build without needing to max out Ashes to Ashes first.
+
+_______________________________________________
+
+^059Arachna^*
+^947-^* Attack Range increased from 550 to 575.
+
+^256Webbed Shot^*
+^947-^* Mana Cost reduced from 20 to 15.
+
+^256Spider Sting^*
+^947-^* Max Health of the Spiderling increased from 4/5/6 to 5/6/7.
+
+^947+^* Arachna's lane dominance has been partially reinforced with these small changes, as the hero tapers off due to its lack of a farming tool.
+
+_______________________________________________
+
+^059Calamity^*
+
+^256Dragon's Path^*
+^947-^* Magic Damage per hit increased from 20/45/65/90 to 25/50/70/95.
+
+_______________________________________________
+
+^059Chipper^*
+
+^256Focus Buffer^*
+^947-^* Max Shield Health for Magic Damage reduced from 125/250/375/500 to 125/225/325/425.
+
+_______________________________________________
+
+^059Chronos^*
+^947-^* Strength growth per level increased from 1.4 to 1.5.
+
+_______________________________________________
+
+^059Circe^*
+
+^256Doppelganger^*
+^947-^* Illusion lifetime reduced from 15/20/25/30 seconds to 14/16/18/20 seconds.
+^947-^* Cooldown increased from 11 seconds to 18/16/14/12 seconds.
+
+^947+^* Circe's illusions were frustrating to deal with at higher levels of play. The overall uptime of the illusions have been reduced to address this issue.
+
+^256Twisted Visage^*
+^947-^* Cooldown reduced from 100/80/60 seconds to 90/75/60 seconds.
+^947-^* Mana Cost reduced from 100/150/200 to 100/130/160.
+
+^947+^* In exchange, Circe gets slightly better availability on her most fun ability, Twisted Visage.
+
+_______________________________________________
+
+^059Deadlift^*
+
+^256Unholy Strength^*
+^947-^* Max amount of Strength stolen reduced from 100 to 80.
+
+_______________________________________________
+
+^059Doctor Repulsor^*
+
+^256Ludicrous Speed^*
+^947-^* Cooldown increased from 0.5 seconds to 1.2/0.85/0.5 seconds.
+
+^947+^* This change should make Doctor Repulsor noticeably more vulnerable and have slightly less sustained damage in the early to mid game, without affecting his primary combos at those phases of the game.
+
+_______________________________________________
+
+^059Electrician^*
+^947-^* Intelligence gain per level increased from 1.5 to 1.8.
+
+_______________________________________________
+
+^059Emerald Warden^*
+
+^256Hunter's Command^*
+^947-^* Damage multiplier when hitting enemy heroes that you do not have vision of increased from 0.5x to 0.75x.
+
+_______________________________________________
+
+^059Empath^*
+^947-^* Base Agility reduced from 20 to 18.
+
+_______________________________________________
+
+^059Flux^*
+^947-^* Base Intelligence increased from 16 to 18.
+
+_______________________________________________
+
+^059Glacius^*
+^947-^* Strength growth per level increased from 1.5 to 1.6.
+^947-^* Agility growth per level increased from 1.5 to 1.6.
+^947-^* Base Movement Speed increased from 285 to 290.
+
+^256Tundra Blast^*
+^947-^* Cooldown reduced from 15 seconds to 15/14/13/12 seconds.
 
 _______________________________________________
 
 ^059Magebane^*
-^947-^* Base Strength increased from 21 to 22.
-^947-^* Strength growth per level increased from 2.4 to 2.6.
-^947-^* Base Agility increased from 16 to 18.
-^947-^* Agility growth per level increased from 1.4 to 1.6.
-^947-^* Base Intelligence increased from 16 to 18.
-^947-^* Intelligence growth per level increased from 1.5 to 2.
-^947-^* Base Armor increased from 1.8 to 2.5.
+^947-^* Strength gain per level reduced from 2.6 to 2.5.
+^947-^* Base Strength reduced from 22 to 21.
 
 ^256Flash of Anti-Magic^*
-^947-^* Cooldown reduced from 12 seconds to 10 seconds.
-^947-^* Cast Range increased from 500/600/700/800 to 600/700/800/900.
-^947-^* Mana cost reduced from 75/70/65/60 to 60.
-^947-^* Damage changed from 30/60/90/120 Physical Damage to 40/70/100/130 Magic Damage.
-^947-^* Magic Damage Shield health increased from 30/60/90/120 to 40/70/100/130.
-^947-^* Radius increased from 350 units to 400 units.
-^947-^* Movement Speed Slow increased from 15/20/25/30% to 20/25/30/35%.
-^947-^* Movement Speed Slow duration increased from 2 seconds to 2.5 seconds.
-^947-^* Now also triggers the Attack Speed and ally Magic Damage Reduction effects of Master of the Mantra (if it is leveled) if an enemy hero is within the destination's radius of this ability.
+^947-^* Mana Cost increased from 60 to 65.
+^947-^* Magic Damage Shield Health reduced from 40/70/100/130 to 30/55/80/105.
+^947-^* Magic Damage reduced from 40/70/100/130 to 30/55/80/105.
+^947-^* Magic Damage to enemies in the area now only triggers if the shield breaks from receiving Magic Damage (instead of being applied upon reaching your target destination).
+   ^274*^* This Magic Damage instance will not be triggered if the shield expires normally (i.e., when its state lifetime expires).
+^947-^* Movement Speed Slow reduced from 20/25/30/35% to 15/20/25/30%.
+^947-^* Radius reduced from 400 units to 350 units.
 
 ^256Master of the Mantra^*
-^947-^* Now only requires 1 attack against enemy heroes to grant Magebane all of its passive benefits (Attack Speed and ally Magic Damage Resistance), instead of 2/3/4/5 attacks.
-^947-^* Mana Cost for the active ability reduced from 65/80/95/110 to 45/60/75/90.
-^947-^* Mana Flare and Master of the Mantra aura radius increased from 900 units to 1200 units.
+^947-^* Attack Speed bonus granted to Magebane when attacking an enemy hero reduced from 20/30/40/50 to 16/24/32/40.
 
 ^256Mana Rift^*
-^947-^* Magic Damage increased from 80/110/140% to 90/120/150% of the main target's missing Mana.
+^947-^* Cooldown increased from 100/85/70 seconds to 105/90/75 seconds.
 
-^947+^* Magebane felt a little sluggish and underwhelming at a few specific phases of the game.
-^947+^* Through some mechanical changes and number changes, these areas have been smoothened out. Magebane should now be able to do what he is intended to do at each phase of the game, while still ensuring his late-game has reasonable counterplay.
-^947+^* All of Magebane's abilities are now pseudo-1-point-wonders, and it is actually optimal to max Master of the Mantra first in most situations.
-^947+^* The player still has full flexibility on which ability to max first, though it is strongly suggested to have at least 1 point in each of his non-ultimate abilities by level 4.
-
-_______________________________________________
-
-^059Nitro^*
-^947-^* Starting Attack Damage reduced from 46-53 to 45-50.
-
-^256Overdrive^*
-^947-^* Initial Attack Speed bonus reduced from 200 to 100.
+^947+^* Magebane is powerful in lane and is deliberately intended to be that way to retain his threat level against mages at the point where they are the most powerful.
+^947+^* However, his early game power has been toned down a bit for his opponents to have more reasonable timings regarding counterplay.
+^947+^* Most notably, he has lost a large amount of last-hit power and extra harass damage (as well as a bit of overall farm speed in mid-game) through the nerfs on Flash of Anti-Magic, as the anti-magic shield must be broken for it to deal damage around him.
 
 _______________________________________________
 
-^059Pandamonium^*
+^059Master of Arms^*
+^947-^* Base Intelligence increased from 14 to 16.
 
-^256Face Smash^*
-^947-^* Cast Range increased from 100 to 150.
+^256Weapon Enhancement^*
+^947-^* Bulldozer: Attack Range bonus rescaled from 150 to 90/105/120/135/150.
 
-_______________________________________________
+^256Master's Call^*
+^947-^* Cast action time reduced from 0.2 seconds to 0.1 seconds.
+^947-^* Buff duration for the Attack Speed/Attack Damage bonus on self reduced from 25 seconds to 14 seconds.
+^947-^* Now also grants Master of Arms 60/90/120 tapering bonus Movement Speed for the first 6 seconds.
 
-^059Parallax^*
-^947-^* Attack Range reduced from 550 to 525.
-^947-^* Strength gain per level reduced from 1.9 to 1.7.
-
-_______________________________________________
-
-^059Sapphire^*
-
-^256Quickshield^*
-^947-^* Attack Speed bonus reduced from 20/35/50/65 to 15/30/45/60.
-^947-^* After the shield health reaches 0, the persisting Attack Speed buff is halved.
+^947+^* Master of Arms will now have better overall performance in the mid-game and late-game without Staff of the Master, while having slightly less Attack Range with his Bulldozer gun in the early game.
+^947+^* The ridiculously high buff duration of Master's Call has also been reduced to a reasonable duration.
 
 _______________________________________________
 
-^059Wildsoul^*
+^059Ophelia^*
 
-^256Bear Form^*
-^947-^* Mana Cost for toggling the ability on reduced from 20 to 5.
+^256Command^*
+^947-^* Creeps affected by Command now also gain 0.5/1/1.5/2 Mana Regeneration per second and 25/50/75/100 Max Mana.
+
+^947+^* This change will allow Ophelia players to not always have to pick up Ring of Sorcery in every single game, allowing her more potential build options.
+^947+^* Note that Ophelia can passively boost the Mana Regeneration of her creeps even further with auras like Ring of the Teacher, or by dominating Catman Champion to make use of its Mana Regeneration aura.
 
 _______________________________________________
+
+^059Prophet^*
+
+^256Debilitate^*
+^947-^* Tapering Movement Speed Slow magnitude reduced from 30% to 20%.
+
+_______________________________________________
+
+^059Puppet Master^*
+
+^256Voodoo Puppet^*
+^947-^* After becoming unkillable, increased Voodoo Puppet's lifetime from 1.5/2/2.5 seconds to 1.5/2.25/3 seconds.
+
+_______________________________________________
+
+^059Sand Wraith^*
+
+^256Mirage^*
+^947-^* Cooldown increased from 125/115/105 seconds to 130/120/110 seconds.
+
+_______________________________________________
+
+^059Silhouette^*
+^947-^* Base Strength increased from 15 to 16.
+
+_______________________________________________
+
+^059Thunderbringer^*
+
+^256Blast of Lightning^*
+^947-^* Reveal effect from this ability: reveal radius that reveals enemy Wards now only has a radius of 450 units (from 900 units).
+   ^274*^* Still grants vision in a large area and reveals other stealthed enemy units.
+
+^256Lightning Storm^*
+^947-^* Reveal effect from this ability no longer reveals enemy Wards.
+   ^274*^* Still grants vision in a large area and reveals other stealthed enemy units.
+
+^947+^* Thunderbringer's counterwarding utility yielded too high of a reward for little to no risk.
+^947+^* Reducing the radius drastically increases the precision requirements if the player wishes to counterward.
+^947+^* Overall, significantly more time will have to be spent to check a larger area for wards with Blast of Lightning, should the player wish to be thorough.
+
+_______________________________________________
+
+^059Torturer^*
+
+^256Agonizing Bonds^*
+^947-^* Magic Damage changed from 65/130/195/260 to 80/140/200/260.
+
+^256Torment^*
+^947-^* Using a non-ultimate ability grants Torturer 4/7/10 Health Regeneration per second for 4 seconds.
+   ^274*^* This effect does not stack additively, but using non-ultimate abilities will refresh the duration of the Health Regeneration bonus.
+
+^947+^* Torturer does not have any form of sustain built into his kit. Leveling Torment will now grant him a tiny bit of Health Sustain to help with this issue.
+
+_______________________________________________
+
+^059Tremble^*
+
+^256Terrorform^*
+^947-^* Terror Mound's level 3 cast range increased from 5000 units to 7000 units.
+
+_______________________________________________
+
+^059Voodoo Jester^*
+^947-^* Starting Attack Damage changed from 51-61 to 51-59.
+
+_______________________________________________
+
+
+
+=^075 Items ^*=
+
+=^075 Wingbow-related Changes ^*=
+
+^077Faux Bow^*
+^947-^* Recipe cost reduced from 550 Gold to 250 Gold.
+   ^274*^* Total cost reduced from 2200 Gold to 1900 Gold.
+   ^274*^* Note that this reduces Wingbow's total cost by 300 Gold as well.
+^947-^* Now grants Melee heroes 50 Attack Range.
+
+^077Savage Mace^*
+^947-^* Chance to gain True Strike reduced from 100% to 80%.
+   ^274*^* Chance to proc other effects remain unchanged, at 40%.
+
+^077Wingbow^*
+^947-^* Agility bonus increased from 32 to 33.
+^947-^* Melee heroes now also gain an additional 5 Agility (for a total of 38 Agility) and 75 Attack Range.
+   ^274*^* Total Cost reduced from 6200 Gold to 5900 Gold, based on Faux Bow's cost change.
+
+^947+^* These changes make Wingbow more viable on melee heroes, and retains some usefulness of bonus Evasion even against Savage Mace.
+
+
+
+=^075 Other Item Changes ^*=
+
+^077Codex^*
+^947-^* Magic Damage for level 1 Codex increased from 330 to 350.
+
+^947+^* Heroes that commonly pick up this item are at a much more balanced performance now due to changes made for those heroes. As a result, Codex's level 1 damage value can be reverted.
+
+^077Genjuro^*
+^947-^* Attack Damage bonus reduced from 35 to 30.
+^947-^* Attack Speed bonus reduced from 20 to 10.
+
+^947+^* Genjuro was already giving a lot of value through its upgraded active ability from Assassin's Shroud. Some of its "free" stat bonuses have been toned down slightly because of this.
+^947+^* Its pickup rate should now be more comparable to that of Wingbow.
+
+^077Ghost Marchers^*
+^947-^* State duration for the bonus Movement Speed increased from 3 seconds to 3.5 seconds.
+
+^077Helm of the Black Legion^*
+^947-^* Max Health bonus reduced from 270 to 250.
+^947-^* Block chance reduced from 60% to 50%.
+
+^077Ultor's Heavy Helm^*
+^947-^* Max Health bonus reduced from 300 to 275.
+^947-^* Block amount reduced from 80 to 70 (if the wielder of the item is a melee hero).
+
+^947+^* Ultor's Heavy Helm's was a little too effective after its previous buffs, so its block amount and Max Health bonus have been slightly reduced.
+
+
 
 
 
@@ -113,38 +404,51 @@ _______________________________________________
 
 =^075 General ^*=
 
-User Interface ("New"):
-^947-^* Mid Wars mode selection menu now shows 3 options by default (instead of 2), thus no longer requiring the user to hover over the mode selection menu to view all 3 game options.
-
-The following sources of stun states can no longer have their duration reduced by Stun Duration Reduction sources:
-^947-^* Andromeda's Void Rip
-^947-^* Chipper's Rocket Barrage
-^947-^* Flint Beastwood's Hollowpoint Shells
-^947-^* Flint Beastwood's Money Shot
-^947-^* Glacius' Ice Imprisonment
-^947-^* Swiftblade's Swift Slashes
-^947-^* Pharaoh's Hellfire
-^947-^* Plague Rider's Plague Carrier
-^947-^* Savage Mace
-   ^274*^* These changes allow these stun sources to cancel channels on enemy heroes (e.g. Homecoming Stone) in the niche scenarios if they have enouigh Stun Duration Reduction from various sources (e.g. Shaman's Headdress, Barrier Idol, etc.).
-   ^274*^* Note that this list isn't all-inclusive, and more may be added to this patch & future patches without being listed, as these types of changes do not impact gameplay other than the niche scenarios mentioned above.
+The following sources of Armor Reduction and Magic Armor Reduction will no longer apply to boss units:
+^947-^* Blacksmith's Flaming Hammer
+^947-^* Hellbringer's Evil Presence
+^947-^* Myrmidon's Wave Form
+^947-^* King Klout's Conscription
+^947-^* Revenant's Mortification
+^947-^* Tremble's Impalers (and the controllable Shudder's Impalers)
+^947-^* Armor of the Mad Mage
+^947-^* Harkon's Blade
+^947-^* Shieldbreaker
 
 
 
 =^075 Heroes ^*=
 
-^059Bombardier^*
-^947-^* Using Sticky Bomb's second activation will no longer interrupt Bombardier's current orders.
+^059Amun-Ra^*
+^947-^* Ignite now deals the proper amount of damage upon respawning from Pyroclasmic Rebirth.
 
-^059Gunblade^*
-^947-^* Lethal Range now uses Gunblade's correct Attack Range for its range-based calculations when Faux Bow or Wingbow are in his inventory.
+^059Blood Hunter^*
+^947-^* Reduced the volume of Hemorrhage's initial hissing sound.
 
-^059Moira^*
-^947-^* Ephemeral Forge's lifetime will no longer be temporarily frozen by Arcane Vortex.
-   ^274*^* This prevents a lifetime and channel time desync bug with Ephemeral Forge.
+^059Bubbles^*
+^947-^* Take Cover will no longer trigger when Bubbles damages himself (e.g., with Blood Chalice).
 
-^059Kinesis^*
-^947-^* Telekinetic Control now interacts properly with spell block sources (e.g. Null Stone) and ability cast detection sources (e.g. Mana Battery) for all alternate avatars.
+^059Ellonia^*
+^947-^* Absolute Zero's trail visual effect is now correct for the Frostshard Ellonia avatar.
+
+^059Goldenveil^*
+^947-^* Stun state from Plunge is now correctly treated as a Status Disable (instead of a Status Debuff) to be consistent with other stun states.
+
+^059Magebane^*
+^947-^* Mana Combustion now properly displays its visual mana trail effects when burning an enemy unit's mana (similar to Nullfire Blade's visual effects, but with thinner mana trails).
+
+^059Myrmidon^*
+^947-^* Wave Form's detrimental states applied to enemy units are now properly treated as Status Debuffs.
+
+
+
+=^075 Items ^*=
+
+^077Insanitarius^*
+^947-^* Now toggles off automatically upon death. This resolves a health quantity issue when interacting with Amun-Ra's Pyroclasmic Rebirth and Token of Life.
+
+^077Plated Greaves^*
+^947-^* Activation will no longer interrupt channeling for self.
 
 
 
