@@ -23,9 +23,6 @@ itemList = [ "Abyssal Skull" , "Acolyte's Staff" , "Alacrity Band" , "Alchemist'
 subheaderList = [ "Banning Phase", "Picking Phase" , "Single Draft", "Other", "General", "Well", "Bosses", "Champions of Newerth", "Mid Wars", "Team Deathmatch", "Ability", "Consumable Slots", "Forests of Caldavar", "MVP Votes", "Gold Changes", "Towers"]
 abilityNameList = ["Decimate" , "Fire Surge", "Armordillo", "Homing Missile", "Fissure", "Shockwave", "Rocket Barrage", "Tar Toss", "Sawblade Showdown", "Guttling Hook", "Magic Brew", "Steam Turret", "Explosive Flare", "Deadeye", "Money Shot", "Piercing Arrows", "Recluse", "Greedgutter", "Thoughtsteal", "Elemental Warp", "Chrysalis", "Volatile Pod", "Nymphora's Zeal", "Grace of the Nymph", "Bubble Pop", "Preservation", "Flight", "Whiplash", "Fireflies", "Rolling Thunder", "Withering Presence", "Summon Booboo", "Reboot", "Rush", "Side Step", "Lunge", "Inhuman Nature", "Jungle Toxin", "Glacial Downpour", "Saint's Blood", "Acid Bomb", "Weapon Enhancement", "Overcharged Shot", "Master's Call", "Stampede", "Might of the Herd", "Void Rip", "Carnage", "Entangle", "Unbreakable", "Cascade Event", "Shared Existence", "Rift Burn", "Crippling Pollen", "Shards of Harkon", "Mana Sunder", "Arcane Vortex", "Retribution", "Sol's Conviction", "Life Leech", "Transfusion", "Tundra Blast", "Chilling Presence", "Essence Link", "Noxious Cloud", "Shell Surf", "Firebomb", "Dragon's Path", "Funeral Pyre", "Sunder's Vault", "Time Leap", "Chronofield", "Storm Cloud", "Taunt", "Whirling Blade", "Conflagrate", "Kindled Fury", "Stalagmites", "Chuck", "Enlarge", "Gore", "Decelerate", "Terror Mounds", "Impalers", "Call of Winter", "Flash of Darkness", "Dark Mana", "Willowmaker", "Ludicrous Speed", "Wish for Revenge", "Boulder Toss", "Slam", "Ancient Skin", "Fury", "Draining Venom", "Enfeeble", "Ember Shard", "Regurgitate", "Corpse Conversion", "Hell on Newerth", "Bombardment", "Crippling Puncture", "Healing Wave", "Magnetic Contraption", "Opposite Charges", "Fiery Barrage", "Cataclysm", "Perch & Plunge", "Berserk", "Ballistic", "HEAT Round", "Mirage Strike", "Edge Counter", "Teleport", "Earthshatter", "Puppeteer's Hold", "Puppet Show", "Wish for Power", "Desert's Curse", "Mirage", "Vanish", "Lance-A-Long", "Heart Piercer", "Booboo", "Fractal Field", "Wall of Mirrors", "Dimensional Link", "Life Tap", "Dark Lord's Presence", "The Undying", "Storm Blades", "Static Shock", "Power Overwhelming", "Death Lotus", "Tree Grapple", "Relentless Salvo", "Vault", "Avenging Leap", "Fervor", "Ricochet", "Far Scry", "Bound by Fate", "Luck of the Draw", "Power Throw", "The Burning Ember", "Chaotic Flames", "Crippling Dart", "Enlightenment", "Doppelganger", "Unholy Expulsion", "Stagger", "Electric Shield", "Hunter's Command", "Overgrowth", "As One", "Reflection", "Call of the Damned", "Infernal Instability", "Fire & Ice", "Corpse Explosion", "Crippling Slugs", "Galvanize", "Demon Strike", "Righteous Strike", "Sol's Blessing", "Conscription", "Master of the Mantra", "Transmute", "Primal Surge", "Debilitate", "Persecution", "Voodoo Puppet", "Compel", "Horned Strike", "Mortification", "Essence Shroud", "Staccato", "Disco Inferno", "Undertow", "In My Element", "Unstable Shard", "Crystallize", "Mousetrap", "Unleash Vorax", "Toxicity", "Judgment", "Cursed Ground", "Summon Hellhounds", "Warcry", "Silver Bullet", "Schism", "Cyclones", "Wind Shield", "Spore Breath", "Ensnaring Shrubbery", "Demonic Execution", "Cold Shoulder", "Unholy Strength", "Shadow Step", "Illusory Assault", "Protective Charm", "Noxious Nightcrawler", "Cleansing Wind", "Prison Break", "Elemental", "Meteor", "Wan Jin Slam", "Earth's Grasp", "Crystal Field", "Force of Balance", "Steel Resolve", "Face Off", "Bat Blast", "Blade Frenzy", "Crippling Volley", "Blood Crazy", "Blood Sense", "Hemorrhage", "Terrorize", "Vampiric Flight", "Consume", "Frigid Field", "Hunter's Command", "Mana Rift", "Heavenly Vault", "Ionic Dash", "Extinguish", "Carnivorous", "Metamorphosis", "Sticky Bomb", "The Keg", "Spider Mines", "Sacred Totems", "Spirit Walk", "Power of the Elders", "Curse of Ages", "Discharge", "Stalk", "Barrel Roll", "Gash", "Ephemeral Forge", "Matraxe", "Flurry", "Invigorate", "Shared Fate", "Battle Experience", "Scavenge", "Poison Spray", "Toxin Wards", "Courageous Leap", "Valkyrie's Prism", "Torrent", "Heartache", "Trample", "Glacial Spike", "Shadow Walk", "Twin Breath", "Twin Fangs", "Fire and Ice", "Waylay", "Guardian Angel", "Group Chuck", "Quickshield", "Reckless Charge", "A Thousand Cuts", "Ancestral Assault", "Asphyxiate", "Whirlbubble", "Dark Swarm", "Terrorform", "Hive Mind", "Flick", "Animate Forest", "Strength in Numbers", "Corpse Toss", "Lava Surge", "Swarm", "Divide & Conquer", "LRM", "Spiked Dart", "Rewind", "Energy Absorption", "Split Fire", "Stasis Smash", "Essence Shift", "Death's Halo", "Comet", "Dimensional Link", "Void Rip", "Lethal Range", "Multi-Strike", "Blinding Dash", "Graceful Strikes", "Spider Sting", "Pilfering", "Wave of Death", "Grave Silence", "Siphon Soul", "Gauntlet Blast", "Flagellation", "Headsmash", "Nature's Wrath", "Ophelia's Judgment", "Shackled", "Swift Slashes", "Echo Strikes", "Flash Freeze", "Evil Presence", "Siphon Soul", "Path of Destruction", "Ashes to Ashes", "Watery Grave", "Perfect Storm", "Nature's Guidance", "Telekinetic Control", "Emerald Lightning", "Emerald Red", "Restless", "Enrage", "Lightning Shackles", "Dream of Madness", "Summon Gawain", "Nether Strike", "Hammer Throw", "Brute Strength", "Summon Malphas", "Moon Finale", "Plague Rider", "Master's Incantation", "Typhoon", "Shard Blast", "Ignite", "Chomp!", "Focus Buffer", "Cleansing Shock", "Summon Malphas", "Mors Certissima", "Command", "Haunt", "Sonar Scream", "Plague Carrier", "Counter Attack", "Essence Projection", "Grapple", "Infest", "Shadow", "Javelin of Light", "Flash of Anti-Magic", "Weed Field", "Magic Carp", "Venomous Leap", "Terror", "Electric Eye", "Zoomerang", "Lightning Rod", "Chain Reaction", "Impalement", "Mark of Death", "Electric Tide", "Corrupted Conduit", "Lightning Storm", "Webbed Shot", "Static Discharge", "Overload", "3 Point Strike", "Geo Stalk", "Goblin Toss", "Bluster", "Parade of Power", "Disarm", "Gargantuan's Blast", "Feint's Siphon", "Blast Off", "Three's a Crowd", "Overdrive", "Illusive Dash", "Piercing Shards", "Electric Frenzy", "Static Grip", "Silencing Shot", "Rift Stalk", "Morph", "Voodoo Wards", "Soul's Sight", "Call of the Valkyrie", "Miniaturization", "Dig", "Stone Hide", "Shatterstorm", "Fire Shield", "Sear", "Air Strike!", "Take Cover", "Obliterate", "Dreams of Madness", "Rocket Drill", "Lodestone Plates", "Final Chapter", "Mighty Swing", "Sword of the Damned", "Hellbourne Zeal", "Energy Field", "Blazing Strike", "Protective Melody", "Precision", "Special Ammunition", "Flaming Hammer", "Frenzy", "Draconic Defense", "Drink", "Illusory Veil", "Synergy", "Hollowpoint Shells", "Dead Eye", "Icy Imprisonment", "B.A.N.G.", "Mana Combustion", "More Axes", "Dragonfire", "Arcane Hymn", "Summon Vorax", "Bear Form", "Graveyard", "Tsunami Charge", "Lunar Glow", "Mesmerize", "Power Drain", "Mortar Shot", "Maddening Revenge", "Onslaught", "Dagger Dance", "Lackey", "Face Smash", "The Chains That Bind", "Dread", "Release the Kraken!", "Quicken", "Cadaver Armor", "Strength Sap", "Defiling Touch", "Soothing Presence", "Soulsteal", "Chain Lightning", "Blast of Lightning", "Avalanche", "Mojo", "Poison Burst", "Flying Nimbus", "Arcane Shield", "Acid Cocktail", "Spirit Ward", "Bloodrush", "Deja Vu", "Possession", "Entangling Vine Wall", "Rotten Grasp", "Root", "Forced Evolution", "Defile", "Soul Burst", "Magic Missile", "Fireball", "Boom Dust", "Burning Shadows", "Agonizing Bonds", "Torment", "Twisted Visage", "Glyph of Silence", "Sage's Lore", "Wish for Wealth", "Hand in Hand", "Demonic Wave", "Cull", "Spine Burst", "Snot Storm"]
 
-copyfile("patch_notes.txt",gamePatchNotes)
-copyfile("patch_notes.txt",forumPatchNotes)
-
 # ===========
 # Functions
 # ===========
@@ -117,92 +114,8 @@ def formatPatchNotes_InGame(destFile: str) -> None:
             file.write(line)
         file.close()
 
-def formatPatchNotes_Forum(destFile: str) -> None:
-    """
-    Formats the patch notes for the official HoN forums
+if __name__ == "__main__":
+    copyfile("patch_notes.txt", gamePatchNotes)
+    formatPatchNotes_InGame(gamePatchNotes)
 
-    Attributes:
-        destFile: name of the file to write the formatted content to
-    """
-    file: TextIO
-    with in_place.InPlace(destFile) as file:
-        for line in file:
-
-            # Top header: addition of the "Welcome" statement to patch notes
-            if line.startswith('Version '):
-                line = '[CENTER][B][COLOR=#ffd700][SIZE=26]Welcome to Heroes of Newerth[/SIZE]' + '\n' + '[SIZE=20]' + line
-                line = line.rstrip('\n')
-
-            if ('----------------' in line):
-                line = line.replace('----------------', ' - ')
-                line = line.rstrip('\n')
-
-            # Date line
-            if line.endswith((yearNow) + '\n') or line.endswith((yearNowPlusOne) + '\n'):
-                line = line.rstrip('\n')
-                line = line + '[/SIZE][/COLOR][/B][/CENTER]' + '\n'
-
-            # Headers
-            if line.startswith('=== '):
-                line = line.replace('=== ', '===[COLOR=#ffa500][SIZE=18][B] ', 1)
-                line = line.replace(' ===', ' [/B][/SIZE][/COLOR]===', 1)
-            if line.startswith('== '):
-                line = line.replace('== ', '==[COLOR=#ffa500][SIZE=18][B] ', 1)
-                line = line.replace(' ==', ' [/B][/SIZE][/COLOR]==', 1)
-            if line.startswith('= '):
-                line = line.replace('= ', '=[COLOR=#ffd700] ', 1)
-                line = line.replace(' =', ' [/COLOR]=', 1)
-
-            # Starting bullet characters for start of line
-            if line.startswith('- '):
-                line = line.replace('- ', '[COLOR=#ff66cc]-[/COLOR] ', 1)
-            if line.startswith('*'):
-                line = line.replace('*', '[COLOR=#00cc99]*[/COLOR] ', 1)
-            if line.startswith('+'):
-                line = line.replace('+', '[COLOR=#ff66cc]+[/COLOR][I][COLOR=#ffffcc]', 1)
-                line = line.rstrip('\n')
-                line = line + '[/I][/COLOR]' + '\n'
-
-            # Hero highlighting
-            for heroName in heroList:
-                if line.startswith(str(heroName)) and (len(str(heroName))+2 >= len(line) or line.endswith('Reworked)\n')): # Specific exception for hero names in hero abilities; accounts for the hidden \n
-                    line = '[COLOR=#0099ff][B]' + line
-                    line = line.rstrip('\n')
-                    line =  line + '[/B][/COLOR]' + '\n'
-            
-            # Item highlighting
-            if line_starts_with_prefix(line, itemList) or line.startswith('New '):
-                line = '[COLOR=#00cccc][B]' + line
-                line = line.rstrip('\n')
-                line =  line + '[/B][/COLOR]' + '\n'
-
-            # Subheader highlighting
-            if line_starts_with_prefix(line, subheaderList):
-                line = '[COLOR=#00cc99]' + line
-                line = line.rstrip('\n')
-                line =  line + '[/COLOR]' + '\n'
-
-            # Ability name highlighting
-            if line_starts_with_prefix(line, abilityNameList):
-                line = '[COLOR=#0099cc]' + line
-                line = line.rstrip('\n')
-                line =  line + '[/COLOR]' + '\n'
-
-            # Misc. terms
-            if line.startswith('New Picking Mode') or line.startswith('Kongor'):
-                line = '[COLOR=#ff0066]' + line
-                line = line.rstrip('\n')
-                line =  line + '[/COLOR]' + '\n'
-            
-            file.write(line)
-        file.close()
-
-# ===========
-# Main
-# ===========
-formatPatchNotes_InGame(gamePatchNotes)
-
-# No longer required
-#formatPatchNotes_Forum(forumPatchNotes)
-
-print("Patch notes formatting complete! :)")
+    print("Patch notes formatting complete! :)")
